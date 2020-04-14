@@ -1,0 +1,12 @@
+# OS or Editor
+.DS_Store
+Thumbs.db
+*.swo
+*.swp
+*.tmp
+
+# npm packages
+node_modules/
+
+# composer packages
+vendor/
