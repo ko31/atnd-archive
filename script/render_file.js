@@ -1,5 +1,6 @@
 const ejs = require('ejs')
 const fs = require('fs')
+const moment = require('moment-timezone')
 
 const json_dir = __dirname + '/json/events/'
 const output_dir = __dirname + '/../docs/'
@@ -19,8 +20,8 @@ fs.readdirSync(json_dir).forEach(function (file) {
             catch_text: event.catch,
             description: event.description,
             event_url: event.event_url,
-            started_at: event.started_at,
-            ended_at: event.ended_at,
+            started_at: (event.started_at ? moment.tz(event.started_at, 'UTC').tz("Asia/Tokyo").format('YYYY-MM-DD') : ''),
+            ended_at: (event.ended_at ? moment.tz(event.ended_at, 'UTC').tz("Asia/Tokyo").format('YYYY-MM-DD') : ''),
             url: event.url,
             limit: event.limit,
             address: event.address,
@@ -32,7 +33,7 @@ fs.readdirSync(json_dir).forEach(function (file) {
             owner_twitter_id: event.owner_twitter_id,
             accepted: event.accepted,
             waiting: event.waiting,
-            updated_at: event.updated_at
+            updated_at: (event.updated_at ? moment.tz(event.updated_at, 'UTC').tz("Asia/Tokyo").format('YYYY-MM-DD') : '')
         }
 
         // render single page

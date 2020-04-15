@@ -12,6 +12,7 @@
   "author": "ko31",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.0.2"
+    "ejs": "^3.0.2",
+    "moment-timezone": "^0.5.28"
   }
 }

@@ -6,6 +6,11 @@
     <title>ATND Archive</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style type="text/css">
+    .col-json {
+        width: 200px;
+    }
+    </style>
 </head>
 <body>
 <nav class="navbar">
@@ -30,25 +35,25 @@
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                 <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>タイトル</th>
-                    <th>開催日</th>
-                    <th>JSON</th>
+                    <th class="col-id">ID</th>
+                    <th class="col-title">タイトル</th>
+                    <th class="col-day">開催日</th>
+                    <th class="col-json">JSON</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
-                    <th>ID</th>
-                    <th>タイトル</th>
-                    <th>開催日</th>
-                    <th>JSON</th>
+                    <th class="col-id">ID</th>
+                    <th class="col-title">タイトル</th>
+                    <th class="col-day">開催日</th>
+                    <th class="col-json">JSON</th>
                 </tr>
                 </tfoot>
                 <tbody>
                 <% items.forEach((item)=>{ %>
                 <tr>
                     <td><%= item.event_id %></td>
-                    <td><a href="<%= item.event_id %>.html"><%= item.title %></a></td>
+                    <td><a href="event/<%= item.event_id %>.html"><%= item.title %></a></td>
                     <td><%= item.started_at %></td>
                     <td>
                         <a href="json/events/<%= item.event_id %>.json" download="event.json" class="button is-small is-info">
