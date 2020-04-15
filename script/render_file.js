@@ -37,17 +37,17 @@ fs.readdirSync(json_dir).forEach(function (file) {
             updated_at: (event.updated_at ? moment.tz(event.updated_at, 'UTC').tz("Asia/Tokyo").format('YYYY-MM-DD') : '')
         }
 
-        // // render single page
-        // ejs.renderFile(template_single, item, (error, html) => {
-        //     let output_file = output_dir + 'event/' + item.event_id + '.html'
-        //     fs.writeFile(output_file, html, 'utf8', (error) => {
-        //         if (error) {
-        //             console.log(error);
-        //         } else {
-        //             console.log('Save:' + output_file);
-        //         }
-        //     })
-        // })
+        // render single page
+        ejs.renderFile(template_single, item, (error, html) => {
+            let output_file = output_dir + 'event/' + item.event_id + '.html'
+            fs.writeFile(output_file, html, 'utf8', (error) => {
+                if (error) {
+                    console.log(error);
+                } else {
+                    console.log('Save:' + output_file);
+                }
+            })
+        })
 
         let page
         if (event.event_id <= 10000) {
