@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style type="text/css">
-    .col-json {
-        width: 200px;
+    .col-date, .col-json {
+        white-space: nowrap;
     }
     </style>
 </head>
@@ -32,30 +32,45 @@
                 <a href="https://atnd.org/" target="_blank">ATND</a>に登録されていたイベントデータのアーカイブです。
             </p>
 
+            <div class="tags">
+              <span class="tag"><% if (page != 1) { %><a href="index.html"><% } %>〜10000<% if (page != 1) { %></a><% } %></span>
+              <span class="tag"><% if (page != 2) { %><a href="index2.html"><% } %>10001〜20000<% if (page != 2) { %></a><% } %></span>
+              <span class="tag"><% if (page != 3) { %><a href="index3.html"><% } %>20001〜30000<% if (page != 3) { %></a><% } %></span>
+              <span class="tag"><% if (page != 4) { %><a href="index4.html"><% } %>30001〜40000<% if (page != 4) { %></a><% } %></span>
+              <span class="tag"><% if (page != 5) { %><a href="index5.html"><% } %>40001〜50000<% if (page != 5) { %></a><% } %></span>
+              <span class="tag"><% if (page != 6) { %><a href="index6.html"><% } %>50001〜60000<% if (page != 6) { %></a><% } %></span>
+              <span class="tag"><% if (page != 7) { %><a href="index7.html"><% } %>60001〜70000<% if (page != 7) { %></a><% } %></span>
+              <span class="tag"><% if (page != 8) { %><a href="index8.html"><% } %>70001〜80000<% if (page != 8) { %></a><% } %></span>
+              <span class="tag"><% if (page != 9) { %><a href="index9.html"><% } %>80001〜90000<% if (page != 9) { %></a><% } %></span>
+              <span class="tag"><% if (page != 10) { %><a href="index10.html"><% } %>90001〜100000<% if (page != 10) { %></a><% } %></span>
+              <span class="tag"><% if (page != 11) { %><a href="index11.html"><% } %>10001〜110000<% if (page != 11) { %></a><% } %></span>
+              <span class="tag"><% if (page != 12) { %><a href="index12.html"><% } %>11001〜<% if (page != 12) { %></a><% } %></span>
+            </div>
+
             <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
                 <thead>
                 <tr>
-                    <th class="col-id">ID</th>
-                    <th class="col-title">タイトル</th>
-                    <th class="col-day">開催日</th>
-                    <th class="col-json">JSON</th>
+                    <th>ID</th>
+                    <th>タイトル</th>
+                    <th>開催日</th>
+                    <th>JSON</th>
                 </tr>
                 </thead>
                 <tfoot>
                 <tr>
-                    <th class="col-id">ID</th>
-                    <th class="col-title">タイトル</th>
-                    <th class="col-day">開催日</th>
-                    <th class="col-json">JSON</th>
+                    <th>ID</th>
+                    <th>タイトル</th>
+                    <th>開催日</th>
+                    <th>JSON</th>
                 </tr>
                 </tfoot>
                 <tbody>
                 <% items.forEach((item)=>{ %>
                 <tr>
-                    <td><%= item.event_id %></td>
-                    <td><a href="event/<%= item.event_id %>.html"><%= item.title %></a></td>
-                    <td><%= item.started_at %></td>
-                    <td>
+                    <td class="col-id"><%= item.event_id %></td>
+                    <td class="col-title"><a href="event/<%= item.event_id %>.html"><%= item.title %></a></td>
+                    <td class="col-date"><%= item.started_at %></td>
+                    <td class="col-json">
                         <a href="json/events/<%= item.event_id %>.json" download="event.json" class="button is-small is-info">
                             <span class="icon is-small"><i class="fas fa-file-download"></i></span>
                             <span>イベント</span>

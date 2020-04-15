@@ -7,8 +7,9 @@ const output_dir = __dirname + '/../docs/'
 const template_index = __dirname + "/../ejs/index.ejs"
 const template_single = __dirname + "/../ejs/single.ejs"
 
-let items = [];
+var items = {}
 
+// read json files
 fs.readdirSync(json_dir).forEach(function (file) {
     try {
         let data = fs.readFileSync(json_dir + file, 'utf8')
@@ -38,7 +39,7 @@ fs.readdirSync(json_dir).forEach(function (file) {
 
         // render single page
         ejs.renderFile(template_single, item, (error, html) => {
-            let output_file = output_dir + 'event/' + item.event_id + '.html';
+            let output_file = output_dir + 'event/' + item.event_id + '.html'
             fs.writeFile(output_file, html, 'utf8', (error) => {
                 if (error) {
                     console.log(error);
@@ -48,7 +49,37 @@ fs.readdirSync(json_dir).forEach(function (file) {
             })
         })
 
-        items.push(item)
+        let page
+        if (event.event_id <= 10000) {
+            page = 1
+        } else if (event.event_id <= 20000) {
+            page = 2
+        } else if (event.event_id <= 30000) {
+            page = 3
+        } else if (event.event_id <= 40000) {
+            page = 4
+        } else if (event.event_id <= 50000) {
+            page = 5
+        } else if (event.event_id <= 60000) {
+            page = 6
+        } else if (event.event_id <= 70000) {
+            page = 7
+        } else if (event.event_id <= 80000) {
+            page = 8
+        } else if (event.event_id <= 90000) {
+            page = 9
+        } else if (event.event_id <= 100000) {
+            page = 10
+        } else if (event.event_id <= 110000) {
+            page = 11
+        } else {
+            page = 12
+        }
+
+        if (!items.hasOwnProperty(page)) {
+            items[page] = []
+        }
+        items[page].push(item)
 
     } catch (error) {
         console.log(error)
@@ -57,15 +88,20 @@ fs.readdirSync(json_dir).forEach(function (file) {
 })
 
 // render index page
-ejs.renderFile(template_index, {items: items}, (error, html) => {
-    let output_file = output_dir + 'index.html';
-    fs.writeFile(output_file, html, 'utf8', (error) => {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log('Save:' + output_file);
-        }
+for (let i in items) {
+    if (i == 0) {
+        continue
+    }
+    ejs.renderFile(template_index, {items: items[i], page: i}, (error, html) => {
+        let output_file = output_dir + 'index' + ((i > 1) ? i : '') + '.html'
+        fs.writeFile(output_file, html, 'utf8', (error) => {
+            if (error) {
+                console.log(error);
+            } else {
+                console.log('Save:' + output_file);
+            }
+        })
     })
-})
+}
 
 console.log('Done')

@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.0.2",
+    "html-minifier": "^4.0.0",
     "moment-timezone": "^0.5.28"
   }
 }
