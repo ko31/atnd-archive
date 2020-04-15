@@ -7,7 +7,8 @@ Thumbs.db
 .idea
 
 # npm packages
+package-lock.json
 node_modules/
 
-# composer packages
-vendor/
+# local
+script/json/
