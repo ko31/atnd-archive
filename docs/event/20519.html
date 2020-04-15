@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第3回 RightScale Hackathon</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第3回 RightScale Hackathon</h2>
+
+            <div class="buttons">
+                <a href="../json/events/20519.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/20519.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>20519</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第3回 RightScale Hackathon</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>★★申し込みを開始しました！★★</h2>
+<p>プログラムは一部変更する可能性があります。予めご了承ください。</p>
+<p>RightScale を便利に使うためには、自分たちが日常使いたい、又は使っているサーバ設定の内容を ServerTemplateとして、RightScaleに登録しておくことが必要になります。</p>
+<p>また汎用的なサーバ構築手法のServerTemplateを誰でも使えるように公開しておくことは、新しくクラウドに取り組む人の良い道しるべになるでしょう。RightScale Hackathonでは、自分のPCとアカウントで ServerTemplateを実際に作成することで、RightScaleの理解を深め、また日本向けの安定した ServerTemplateの増加を目指しています。</p>
+<hr />
+<p>日程：2011年 10月29日(土)<br />
+時間：13:00 〜 17:00<br />
+会場：パソナグループ本部ビル(呉服町) セミナールーム<br />
+　　　東京都千代田区大手町2-6-4<br />
+          http://www.pasonatech.co.jp/event/pdf/pgmap_info02.pdf<br />
+　　　JR東京駅 日本橋口より 徒歩3分 呉服町交差点のビル<br />
+料金：無償(お菓子、ドリンク等の差し入れ大歓迎)<br />
+参加者数：25名<br />
+主催: 日本RightScaleユーザ会 (オープンクラウドキャンパス / 一般社団法人クラウド利用促進機構(<span class="caps">CUPA</span>) )<br />
+協力: RightScale Japan、株式会社パソナテック</p>
+<p>・機材:<br />
+各自でノートPCをお持ちください。★★必須★★<br />
+可能であれば、WiMax、e-mobileなどモバイル用ネットワーク端末をご協力をお願いします。<br />
+また電源タップも持参の協力をお願いします。</p>
+<p>・対象者:<br />
+<acronym title="Amazon Web Service"><span class="caps">AWS</span></acronym>のアカウントを持ってる方 ★★必須★★<br />
+※ AWSアカウントをお持ちでない方は、事前にAWSアカウントを取得ください。<br />
+参考URL: http://www.fba-works.com/faq-aws.html</p>
+<p>Hackathonでは、以下の方々を対象にしております。<br />
+(1) RightScaleを使ってみたい方<br />
+※ 可能であれば、RightScaleのアカウント登録は下記をご<br />
+(2) RightScaleをアカウント作ってみたけど次どうすればいいの? という方<br />
+(3) RightScaleのServerTemplate/RightScriptの作成の腕を磨きたい方</p>
+<p>併せて、下記の相談にも効果的です。<br />
+(1) AWSのインスタンスが増えて管理が大変になってきたので、RightScaleで一元管理したい<br />
+(2) RightScaleを使っているが、もっと突っ込んで使ってみたい<br />
+(3) 他の人がどういう風に使っているのか知りたい<br />
+(4) このServerTemplateの書き方であってるのなど 聞きたい</p>
+<p>・内容：<br />
+以下の2コース(グループ)を予定しております。<br />
+(1) 初級者コース：WordPress ServerTemplateを作る！<br />
+   「RightScaleを使ってみたい方」や<br />
+   「RightScaleのアカウント登録はしてみたけど、使い方が良く解らない方」向けに、実際に ServerTemplate を一から作成してみます。</p>
+<p>(2) 上級者コース：ServerTemplate(WordPress)の徹底理解(読書会)<br />
+   汎用性や移行性、データバックアップなどの運用面を考慮して<br />
+   構造的に ServerTemplate + RightScript を作るノウハウを<br />
+   既存の ServerTemplate を読んで解析し、理解します。</p>
+<p>※入館方法<br />
+　入館は「南口」です。<br />
+　開場は呉服橋交差点の緑の茂っている建物です。<br />
+　「南口」あたりに担当がたってて、ご案内します。<br />
+　15分以上の遅刻をされる場合は、正面玄関に着きましたら<br />
+　#rightscale_japan　までつぶやいてください。<br />
+　担当がお迎えにあがります。<br />
+　会場は少しわかりにくいので地図を必ず確認してお越しください！<br />
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+<p>皆様の参加をお待ちしております。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/20519" target="_blank">http://atnd.org/events/20519</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-10-29</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-10-29</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.pasonatech.co.jp/event/pdf/pgmap_info02.pdf" target="_blank">http://www.pasonatech.co.jp/event/pdf/pgmap_info02.pdf</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td> 東京都千代田区大手町2-6-4</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>パソナグループ本部ビル(呉服町)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6841128</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7707583</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>58617</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kimotuki2</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kimotuki" target="_blank">@kimotuki</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-10-05</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

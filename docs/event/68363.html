@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">CreateJS勉強会 (第6回)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">CreateJS勉強会 (第6回)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/68363.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/68363.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>68363</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>CreateJS勉強会 (第6回)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>最新のCreateJSを取り巻く環境にキャッチアップする</h1>
+<h3><a href="http://createjs.com/#!/Home">CreateJS</a> が、昨年末の2014年12月12日のマイナーバージョンアップに引続き、今年2015年5月21日に+0.01アップデートされました。また、2015年6月16日にAdobe Creative Cloud 2015がメジャーアップデートされ、Flash Professional CC 2015はCreateJSの最新版に対応し、HTML5 Canvasのパブリッシュ機能も強化されました。WebGLなど最新の技術を使ったコンテンツの作例もこれから増えてきそうです。そうした環境の中、最新のCreateJSで何ができるのか、その活用の仕方、そして表現の可能性についてご紹介します。</h3>
+<ul>
+	<li>イベントの内容や追加情報は、適宜更新します。</li>
+	<li>参加者の増員に対応するため、 <strong>会場</strong> をアドビ システムズ株式会社から <strong>中野駅</strong> 最寄の <strong><span class="caps">ICTCO</span></strong> (イクトコ) に <strong>変更</strong> しました。</li>
+</ul>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>18:30 -</td>
+		<td></td>
+		<td>開場</td>
+	</tr>
+	<tr>
+		<td>19:00 &#8211; 19:05 (5分)</td>
+		<td></td>
+		<td>ごあいさつ</td>
+	</tr>
+	<tr>
+		<td>19:05 &#8211; 19:15 (10分)</td>
+		<td><a href="https://twitter.com/tonkotsuboy_com">鹿野 壮</a></td>
+		<td> LT#1: オーディオスプライトを使った音声ファイルの最適化 </td>
+	</tr>
+	<tr>
+		<td>19:18 &#8211; 19:28 (10分)</td>
+		<td><a href="https://twitter.com/umi_kappa">蔵下 雅之</a></td>
+		<td> LT#2: SoundJSを使って音を見えるものへ </td>
+	</tr>
+	<tr>
+		<td>19:31 &#8211; 19:41 (10分)</td>
+		<td><a href="https://twitter.com/9ballsyndrome">川勝 研太郎</a></td>
+		<td>LT#3: 意地でもCreateJSでWebGLを使ってみよう </td>
+	</tr>
+	<tr>
+		<td>19:41 &#8211; 19:51</td>
+		<td></td>
+		<td>小憩</td>
+	</tr>
+	<tr>
+		<td>19:51 &#8211; 20:31 (40分)</td>
+		<td><a href="https://twitter.com/FumioNonaka">野中 文雄</a></td>
+		<td> CreateJSのアップデートとFlash Professional CC 2015のHTML5 Canvasパブリッシュ </td>
+	</tr>
+	<tr>
+		<td>20:34 &#8211; 21:14 (40分)</td>
+		<td><a href="https://twitter.com/clockmaker">池田 泰延</a></td>
+		<td> HTML5モーション制作のテクニック </td>
+	</tr>
+	<tr>
+		<td>21:14 &#8211; 21:19 (5分)</td>
+		<td></td>
+		<td>質疑応答</td>
+	</tr>
+</table>
+<h2>内容</h2>
+<h3>LT#1: オーディオスプライトを使った音声ファイルの最適化</h3>
+<p><strong>鹿野 壮</strong><br />
+画像ファイルを1つにまとめてリクエスト数を減らすのと同じように、音声ファイルを1つにまとめて最適化する「オーディオスプライト」という手法があります。SoundJSでは最新バージョン0.6で公式サポートされました。今回は、オーディオスプライトを使ってWebサイト内で扱う音声ファイルを最適化する方法を紹介します。</p>
+<h3>LT#2: SoundJSを使って音を見えるものへ方</h3>
+<p><strong>蔵下 雅之</strong><br />
+Webコンテンツになくてはならないものの一つに音があります。ですがオフィスや電車内など音の出せない環境の閲覧ではその力が発揮されません。そんな目に見えない音をSoundJSを使って目で楽しめるようにする方法をご紹介します。</p>
+<h3>LT#3: 意地でもCreateJSでWebGLを使ってみよう</h3>
+<p><strong>川勝 研太郎</strong><br />
+CreateJS(EaselJS)ではパフォーマンスに優れたWebGLレンダリングに対応しています。ただしWebGL方式は従来のHTML5 Canvas方式に比べ機能制限が多いため、採用を見送った方も多いのではないでしょうか。</p>
+<p>このLTでは、CreateJSのWebGL機能を拡張することで、HTML5 Canvasと同水準まで表現のバリエーションを増やす方法を紹介します。</p>
+<h3>CreateJSのアップデートとFlash Professional CC 2015のHTML5 Canvasパブリッシュ</h3>
+<p><strong>野中 文雄</strong><br />
+2015年6月にメジャーアップデートされたFlash Professional CC 2015のHTML5 Canvasのパブリッシュと2015年5月21日のCreateJSアップデートの新しい機能や、2014年12月12日のバージョンアップの中であまり触れられてこなかったり、ドキュメントからはわかりにくい項目について、少し掘り下げて解説します。</p>
+<h3>HTML5モーション制作のテクニック</h3>
+<p><strong>池田 泰延</strong><br />
+WebGLやHTML5 Canvasコンテンツを作りこむ時、ブランディングの達成や操作の気持ちよさを目標としてモーション制作にこだわりを持つクリエイターは多いのではないでしょうか？ 60分の1秒という短い時間で妥協できない体感の世界。このセッションでは作例を通してモーションの作り込み方の一面を紹介します。</p>
+<h2>イベント情報</h2>
+<table>
+	<tr>
+		<th>参加費 </th>
+		<td> 無料 </td>
+	</tr>
+	<tr>
+		<th>会場 </th>
+		<td> <a href="http://ictco.jp">ICTCO（イクトコ）</a><br />
+東京都中野区中野4-10-1 (<span class="caps">NAKANO</span> <span class="caps">CENTRAL</span> <span class="caps">PARK</span> <span class="caps">EAST</span> 1F) </td>
+	</tr>
+	<tr>
+		<th>アクセス </th>
+		<td> <a href="http://ictco.jp/access.html">地図</a> /  <a href="https://www.google.com/maps/place/日本,+〒164-0001+東京都中野区中野４丁目１０−１/@35.7076016,139.6640506,17z/data=!4m2!3m1!1s0x6018f2906033aac9:0x15fa049e89f59a84?hl=ja-JP">Googleマップ</a> / <a href="http://ceroan.jp/ictco/map.jpg">中野駅北口からの道順</a> </td>
+	</tr>
+	<tr>
+		<th>主催 </th>
+		<td> <a href="http://www.fumiononaka.com/">野中 文雄</a> </td>
+	</tr>
+	<tr>
+		<th>共催 </th>
+		<td> <a href="http://ictco.jp">ICTCO（イクトコ）</a> </td>
+	</tr>
+	<tr>
+		<th>協賛 </th>
+		<td> <a href="http://ics-web.jp/lab/">株式会社 <span class="caps">ICS</span></a> </td>
+	</tr>
+	<tr>
+		<th>中継 </th>
+		<td> USTREAMの配信を準備しています(予定) </td>
+	</tr>
+</table>
+<h2>補足</h2>
+<ul>
+	<li>都合がつかなくなって欠席される場合は必ず、すみやかにキャンセルの登録をお願いいたします。 <strong>無断欠席は参加できなかった方のご迷惑となります</strong> ので、お控えください。</li>
+	<li>ビルの入口とは別に専用入口があります。 <a href="http://ceroan.jp/ictco/map.jpg">中野駅北口からの道順</a> をご覧ください。</li>
+	<li>定員は会場の収容人数に歩留まりを考慮して定めてあります。そのため、最後の方に来られた場合、最悪 <strong>立ち見になる</strong> ことがありえます。あらかじめご了承のうえ、できるだけ定刻にお越しください。</li>
+	<li>勉強会終了後、会場近隣で懇親会(二次会)を予定しています。受付のときに参加のご希望を確認します。</li>
+	<li>会場内にはWiFiの設備があります。ただし、混雑でご利用いただけない場合もありますので、予めご了承ください。</li>
+	<li><strong>Grant Skinner氏へのCreateJS Tシャツ寄贈の募金について</strong><br />
+CreateJSの作者であるGrant Skinner氏へ、日本のユーザーから感謝を込めて <a href="https://suzuri.jp/448jp/199126/t-shirt/s/white">CreateJS Tシャツ</a> の寄贈を計画しています(Tシャツの作成・販売については、 <a href="https://twitter.com/448jp">沖良矢</a> 氏が原価のみで行うことを条件にGrant Skinner氏から許諾を得ています)。<br />
+当日、受付にて募金箱を設置します。ひと口100円からで結構ですので(もちろん小銭も差支えありません)、ご協力をお願いいたします。集まったお金はTシャツの購入代金・送料として使用し、余った場合はCreateJSコミュニティの発展のため、勉強会の費用などに充てさせていただきます。</li>
+	<li>関連Facebookページ
+	<ul>
+		<li><a href="https://www.facebook.com/icswebjp"><strong><span class="caps">ICS</span> <span class="caps">INC</span>.</strong></a><br />
+ICSはインタラクティブコンテンツのプロダクションです。HTML5やFlashに関する技術情報をこちらのFacebookページにてお届けします。</li>
+		<li><a href="https://www.facebook.com/CreateJS"><strong>CreateJS</strong></a><br />
+HTML5のCanvasを使ってダイナミックでインタラクティブな表現ができるCreateJS Suiteの最新情報を公開・共有します。</li>
+	</ul></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/68363" target="_blank">http://atnd.org/events/68363</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-09-04</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-09-04</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://ictco.jp/access.html" target="_blank">http://ictco.jp/access.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都中野区中野4-10-1 (NAKANO CENTRAL PARK EAST 1F)</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ICTCO (イクトコ)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7078096</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.663016</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>59714</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>FumioNonaka</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/FumioNonaka" target="_blank">@FumioNonaka</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-08-26</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

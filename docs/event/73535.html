@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">CreateJS勉強会 (第7回)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">CreateJS勉強会 (第7回)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/73535.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/73535.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>73535</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>CreateJS勉強会 (第7回)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>2016年CreateJSが本格始動なるか</h1>
+<h3><a href="http://createjs.com/#!/Home">CreateJS</a> ライブラリのビルドが2015年11月26日に改められ、中核となるライブラリEaselJSはバージョン0.8.2になりました。いよいよ正規バージョン1.0の公開も睨んだ詰めに入ったと見てよいでしょう。日本の商用サイトへの本格的な導入も期待されます。CreateJSの新たな機能から、アプリケーション開発や実際の応用事例まで、改めて探ってみましょう。</h3>
+<ul>
+	<li>イベントの内容や追加情報は、適宜更新します。</li>
+</ul>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>18:30 -</td>
+		<td></td>
+		<td>開場</td>
+	</tr>
+	<tr>
+		<td>19:00 &#8211; 19:05 (5分)</td>
+		<td></td>
+		<td>ごあいさつ</td>
+	</tr>
+	<tr>
+		<td>19:10 &#8211; 19:40 (30分)</td>
+		<td>リクルートマーケティングパートナーズ<br />
+<a href="http://tech.recruit-mp.co.jp/author/yamada_naoki/">山田 直樹</a></td>
+		<td>Single Page ApplicationにおけるPreloadJSの活用事例</td>
+	</tr>
+	<tr>
+		<td>19:45 &#8211; 20:15 (30分)</td>
+		<td>世路庵 (ceroan)<br />
+<a href="https://twitter.com/448jp">沖 良矢</a></td>
+		<td>事例から見るCreateJSの使いみち</td>
+	</tr>
+	<tr>
+		<td>20:15 &#8211; 20:25</td>
+		<td></td>
+		<td>小憩</td>
+	</tr>
+	<tr>
+		<td>20:25 &#8211; 20:55 (30分)</td>
+		<td><a href="https://twitter.com/FumioNonaka">野中 文雄</a></td>
+		<td>EaselJS 0.8.2の改訂項目とgskinner labの作例「Arc Rainbow」</td>
+	</tr>
+	<tr>
+		<td>21:00 &#8211; 21:30 (30分)</td>
+		<td> <span class="caps">ICS</span><br />
+<a href="https://twitter.com/tonkotsuboy_com">鹿野 壮</a><br />
+<a href="https://twitter.com/nyamogera">野原 のぞみ</a></td>
+		<td>CreateJSで開発するクロスプラットフォームなアプリ開発〜ElectronとPhoneGapで広がる可能性〜</td>
+	</tr>
+	<tr>
+		<td>21:30 &#8211; 21:35 (5分)</td>
+		<td></td>
+		<td>質疑応答</td>
+	</tr>
+</table>
+<h2>内容</h2>
+<h3>Single Page ApplicationにおけるPreloadJSの活用事例</h3>
+<p>リクルートマーケティングパートナーズ <strong>山田 直樹</strong><br />
+リクルートが2015年11月30日にリリースした『英語サプリWeb版』は、これまでのリクルートのサービスには類を見ない大規模かつ本格的なSPA (Single Page Application)です。当アプリでは、大量の画像や音声といったメディアファイルを動的かつスムーズに読み込み管理するための仕組みとしてPreloadJSが使われています。</p>
+<p>今回は、そんなSPAがネイティブアプリに劣らないユーザー体験を提供するためにPreloadJSをどのように活用しているのか、その仕組みをご紹介します。</p>
+<h3>事例から見るCreateJSの使いみち</h3>
+<p>世路庵 (ceroan) <strong>沖 良矢</strong><br />
+「CreateJSの概要は知っているけど、現場での使いみちを知りたい！」という方のために、プロモーションサイトを中心とした様々なプロジェクトで実際にCreateJSを活用した事例を紹介しながら、そのメリットと使いこなしのポイントについてお話しします。</p>
+<h3>EaselJS 0.8.2の改訂項目とgskinner labの作例「Arc Rainbow」</h3>
+<p><strong>野中 文雄</strong><br />
+まず、2015年11月26日付ビルドのEaselJS 0.8.2で改訂されたおもな項目を簡単にご紹介します。つぎに、gskinnerチームの習作が公開されている <a href="http://lab.gskinner.com/">Lab</a> から「 <a href="http://lab.gskinner.com/arc_rainbow">Arc Rainbow</a> 」を採り上げ、その中で用いられているGraphicコマンドなどの技術について解説します。</p>
+<h3>CreateJSで開発するクロスプラットフォームなアプリ開発〜ElectronとPhoneGapで広がる可能性〜</h3>
+<p><span class="caps">ICS</span> <strong>鹿野 壮</strong> / <strong>野原 のぞみ</strong><br />
+昨今のWeb技術の発展により、HTML5製のコンテンツをデスクトップやモバイル向けにアプリとしてリリースできる環境が整ってきています。今回はAdobe Illustratorのようにイラストを描くツールをCreateJSで開発し、デスクトップとモバイルのそれぞれに向けてElectronとPhoneGapでアプリケーション化を行った実例を紹介します。</p>
+<h2>イベント情報</h2>
+<table>
+	<tr>
+		<th>参加費 </th>
+		<td>無料</td>
+	</tr>
+	<tr>
+		<th>会場 </th>
+		<td><a href="http://ictco.jp"><span class="caps">ICTCO</span></a> (イクトコ)<br />
+東京都中野区中野4-10-1 (<span class="caps">NAKANO</span> <span class="caps">CENTRAL</span> <span class="caps">PARK</span> <span class="caps">EAST</span> 1F) </td>
+	</tr>
+	<tr>
+		<th>アクセス </th>
+		<td> <a href="http://ictco.jp/access.html">地図</a> /  <a href="https://www.google.com/maps/place/日本,+〒164-0001+東京都中野区中野４丁目１０−１/@35.7076016,139.6640506,17z/data=!4m2!3m1!1s0x6018f2906033aac9:0x15fa049e89f59a84?hl=ja-JP">Googleマップ</a> / <a href="http://ceroan.jp/ictco/map.jpg">中野駅北口からの道順</a></td>
+	</tr>
+	<tr>
+		<th>主催 </th>
+		<td><a href="http://www.fumiononaka.com/">野中 文雄</a></td>
+	</tr>
+	<tr>
+		<th>共催 </th>
+		<td><a href="http://ictco.jp"><span class="caps">ICTCO</span></a> (イクトコ)</td>
+	</tr>
+	<tr>
+		<th>協賛 </th>
+		<td><a href="http://ics-web.jp/lab/">株式会社 <span class="caps">ICS</span></a></td>
+	</tr>
+	<tr>
+		<th>中継 </th>
+		<td>USTREAMのライブ配信を準備しています。ただし、アーカイブは予定しておりません。</td>
+	</tr>
+</table>
+<h2>補足</h2>
+<ul>
+	<li>都合がつかなくなって欠席される場合は必ず、すみやかにキャンセルの登録をお願いいたします。 <strong>無断欠席は参加できなかった方のご迷惑となります</strong> ので、お控えください。</li>
+	<li>ビルの入口とは別に専用入口があります。 <a href="http://ceroan.jp/ictco/map.jpg">中野駅北口からの道順</a> をご覧ください。</li>
+	<li>定員は会場の収容人数に歩留まりを考慮して定めてあります。そのため、最後の方に来られた場合、最悪 <strong>立ち見になる</strong> ことがありえます。あらかじめご了承のうえ、できるだけ定刻にお越しください。</li>
+	<li>勉強会終了後、会場近隣で懇親会(二次会)を予定しています。受付のときに参加のご希望を確認します。</li>
+	<li>会場内にはWiFiの設備があります。ただし、混雑でご利用いただけない場合もありますので、予めご了承ください。</li>
+	<li>関連Facebookページ
+	<ul>
+		<li><a href="https://www.facebook.com/icswebjp"><strong><span class="caps">ICS</span> <span class="caps">INC</span>.</strong></a><br />
+ICSはインタラクティブコンテンツのプロダクションです。HTML5やFlashに関する技術情報をこちらのFacebookページにてお届けします。</li>
+		<li><a href="https://www.facebook.com/CreateJS"><strong>CreateJS</strong></a><br />
+HTML5のCanvasを使ってダイナミックでインタラクティブな表現ができるCreateJS Suiteの最新情報を公開・共有します。</li>
+	</ul></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/73535" target="_blank">http://atnd.org/events/73535</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2016-01-22</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2016-01-22</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://ictco.jp/access.html" target="_blank">http://ictco.jp/access.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都中野区中野4-10-1 (NAKANO CENTRAL PARK EAST 1F)</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ICTCO (イクトコ)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7078096</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.663016</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>59714</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>FumioNonaka</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/FumioNonaka" target="_blank">@FumioNonaka</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>71</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2016-01-18</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

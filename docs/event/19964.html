@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PE勉強会 (5) MIPS編</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PE勉強会 (5) MIPS編</h2>
+
+            <div class="buttons">
+                <a href="../json/events/19964.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/19964.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>19964</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PE勉強会 (5) MIPS編</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>QEMUでWindows NT 4に挑戦</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><a href="http://d.hatena.ne.jp/n7shi/20111230">※資料を公開しています。</a></h1>
+<hr/>
+<h1>イベントの概要</h1>
+<p>Windowsの実行ファイル (<span class="caps">EXE</span>/<span class="caps">DLL</span>) で使われているPE (Portable Executable) 形式についての勉強会です。バイナリいじりの基礎から始めて、EXEファイルやDLLファイルをコンパイラなしで作って動かすことを目標にします。PEをきっかけにして、各種マシンコードやOSのメモリ管理について理解を深めるのが狙いです。</p>
+<p>今までi386を対象として来ましたが、今回はMIPSを取り上げます。同じPE形式にどのように別のCPUのコードが格納されているのかを比較します。参加者全員にWindows NT 4の正規パッケージを配布します。MIPS版をQEMUにインストールしたり、MIPSのコードを生成して動かしたりする方法について説明します。</p>
+<p><strong>【追記】</strong> 実機としてWindows CEのMIPSマシン（シグマリオン・モバイルギア）も用意します。デスクトップ版WindowsとCEとのPEから見た違いなどを説明します。</p>
+<p>初めて参加される方や途中の回に参加できなかった方には、前回までの資料による対応も可能ですので、お気軽にご参加ください。</p>
+<h2>参加費用</h2>
+<ul>
+	<li>一般: 1,000円</li>
+	<li>学生: 無料</li>
+</ul>
+<p>内訳は場所代とドリンク代です。会場にはセルフサービスのドリンクバーが設置されています。</p>
+<h2>懇親会</h2>
+<p>特に予定していません。当日の流れ次第です。</p>
+<h2>準備する物</h2>
+<p>実際に解析を体験して頂きますので、ノートパソコンをご用意ください。環境や言語は指定しませんが、必要な条件は以下の通りです。</p>
+<ol>
+	<li>OS: 今回のメインはQEMUでMIPS版NTを動かすことです。QEMUが動く環境であれば何でも構いません。</li>
+	<li>gcc: MIPS用にパッチを当ててgccをビルドします。binutils-2.21.1aとgcc-3.4.6のソースをご用意ください。パッチやビルド方法については当日ご説明します。Windowsでは <a href="http://bit.ly/h9K2ws">MSYS＋MinGW</a> を用いて説明しますが、gccがビルドできる環境なら何でも結構です。</li>
+</ol>
+<p>Windows NT 4やWindows CEマシンはこちらで準備します。</p>
+<h3>F#</h3>
+<p>参考としてF#による簡易MIPSコンパイラのソースを配布する予定です。あくまで参考のため言語指定ではありません。得意な言語をご利用いただいて結構です。</p>
+<p>もしF#を使ってみたいという方は、以下をインストールすれば無料で環境が構築できます。</p>
+<ul>
+	<li><a href="http://www.microsoft.com/downloads/ja-jp/details.aspx?FamilyID=8e5aa7b6-8436-43f0-b778-00c3bca733d3">Visual Studio 2010 Shell （Integrated）</a></li>
+	<li><a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=effc5bc4-c3df-4172-ad1c-bc62935861c5">F# <span class="caps">CTP</span></a> （InstallFSharp.msi）</li>
+</ul>
+<p>Windows以外のOSでは <a href="http://www.mono-project.com/Main_Page">Mono</a> がご利用になれます。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:10</td>
+		<td>入室</td>
+	</tr>
+	<tr>
+		<td>13:10 &#8211; 14:50</td>
+		<td>ISOイメージ作成に並行してQEMUやgccのビルド</td>
+	</tr>
+	<tr>
+		<td>14:50 &#8211; 15:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>15:00 &#8211; 15:50</td>
+		<td>QEMUへのNT4/MIPSのインストール</td>
+	</tr>
+	<tr>
+		<td>15:50 &#8211; 16:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>16:00 &#8211; 16:30</td>
+		<td>gccでMIPSバイナリを作成して動かす</td>
+	</tr>
+	<tr>
+		<td>16:30 &#8211; 17:30</td>
+		<td>自作コンパイラでMIPSバイナリを出力して動かす</td>
+	</tr>
+	<tr>
+		<td>17:30 &#8211; 17:40</td>
+		<td>質疑応答</td>
+	</tr>
+	<tr>
+		<td>17:40 &#8211; 18:00</td>
+		<td>片付け・退室</td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/19964" target="_blank">http://atnd.org/events/19964</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-11-19</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-11-19</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.ginza-renoir.co.jp/myspace/msbb002.htm" target="_blank">http://www.ginza-renoir.co.jp/myspace/msbb002.htm</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都豊島区南池袋1-16-20 ぬかりやビル2階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>マイ・スペース＆ビジネスブース池袋西武横店 7号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7264869</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7113832</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>14213</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>7shi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/7shi" target="_blank">@7shi</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-01-15</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

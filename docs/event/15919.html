@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Android × GPSセミナー</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Android × GPSセミナー</h2>
+
+            <div class="buttons">
+                <a href="../json/events/15919.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/15919.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>15919</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Android × GPSセミナー</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Android アプリにおけるGPS開発の実例検証</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p><strong>参加条件、再度、ご確認ください。例外措置はとりませんので、ご来場いただいてもアイコン表示がない場合は、ご入場いただけません。</strong></p>
+<p><strong>※本セミナーは、AndroidにおけるGPS開発をテーマとしています。講演内容上、事前にアプリを使って実体験いただくことが重要であり、参加条件として、下記が必須となりますので、ご協力をお願いいたします。<br />
+①AndroidOS2.1以上搭載の携帯端末を保有していること<br />
+②講演企業の下記のアプリを事前にDLして、事前に実際に使用していること<br />
+　<a href="http://market.android.com/details?id=jp.co.excite.bicyclemap">「自転車日和」</a>　エキサイト株式会社　※有料アプリのためDL＆事前利用は推奨<br />
+ 　<a href="http://market.android.com/details?id=com.clinks.ramenkun">「らーめんなう」</a>　CLINKS株式会社　※無料アプリにつきDL＆事前利用が必須<br />
+ 　<a href="http://market.android.com/details?id=com.alertnavi.android">「あらなび！～Alert navi～」</a>　株式会社コンテンツワン　※無料アプリにつきDL＆事前利用が必須<br />
+　※受付にてアプリアイコンを確認いたします。アイコン表示がない場合は受講できません。</strong></br></br></p>
+<p>2011年になって、本格的にAndroidOS搭載の携帯端末がリリースされ、いよいよスマートフォンが主流となる時代が近づいてきました。そういった時代に今まで以上に注目されるのが、「GPS」です。位置情報を使ったサービスは、携帯端末やAndroidの発達とともに大きな展開をしていくものと予想されます。しかし、GPSがらみの開発は、バッテリー消費の問題、正確な位置情報取得の問題、屋内での対応などまだまだ技術的にクリアしなければならない課題が山積みです。本セミナーでは、「Android×GPS」をテーマとして、3社のアプリ開発を事例に、どういう問題が起こったのか、その問題にどう対応しているのかなどをお話いただきます。AndroidにおけるGPSの開発を担当、検討しているエンジニア必見のコンテンツです。</br></br></p>
+<p>＜主　　　　　催＞<br />
+<a href="http://www.excite.co.jp/">エキサイト株式会社</a>、<a href="http://www.clinks.jp/">CLINKS株式会社</a>、<a href="http://www.contents-one.co.jp/">株式会社コンテンツワン</a> </br></br></p>
+<p>＜タイムテーブル＞　※休憩は挟みませんので、お手洗いなどは済ませてからご入場ください<br />
+18：30　　受付開始<br />
+19：00　　基調講演　GeoHashについて<br />
+19：30　　第1部　AndroidMaps+GPSを利用したトラッキングアプリ開発<br />
+20：10　　第2部　Javaエンジニアが作った初めてのAndroidアプリ『あらなび！ ～Alert navi～』<br />
+20：50　　第3部　ここに困った。Mapview実装事例と、トラブル対応策　<br />
+21：30　　第4部　懇親会　ビールとピザをお楽しみください</br></br></p>
+<p>＜講演概要と講師プロフィール＞</p>
+<p>■基調講演　GeoHashについて</p>
+<p>【講演概要】<br />
+GeoHash生い立ち、仕組み、優れている点などについて解説します。似たような考え方として同じようにビット操作が必要なbloomfiterのようなものもありますが、こう言う色々なテクニックがクラウド時代には必要だという話をします。</p>
+<p>【講師プロフィール】　増井雄一郎氏 Appcelerator Inc. Platform Evangelist　<a href="http://twitter.com/masuidrive">@masuidrive</a> </br><br />
+2009 年までAjax、Ruby on Railsなどの技術を使った Web アプリケーションの構築や雑誌・書籍への執筆をフリーランスとして日本で活動。PukiWikiなどのソーシャルアプリケーションの企画・開発を得意とする。2008 年より渡米し iPhone、iPad関連のアプリケーション開発に従事。主な著書:「Ajax 実装のための基礎テクニック」(技術評論社)、「PukiWiki 入門まとめサイトをつくろう!」(翔泳社)　また、最近の監修本に<a href="http://amzn.to/m4mS5w">「Titanium Mobileで開発するiPhone/Androidアプリ」</a>がある。</p>
+<p><a href="http://web-engineer.buyuden.net/buyuden/2009/10/5.html">増井さんの武勇伝（渡米前）はこちら</a><br />
+<a href="http://web-engineer.buyuden.net/buyuden/2010/12/41masuidrive-appcelerator-inc.html">増井さんの武勇伝（帰国後）はこちら</a></br></br></p>
+<p>■第1部　AndroidMaps+GPSを利用したトラッキングアプリ開発</p>
+<p>【講演概要】<br />
+エキサイト株式会社では数多くのAndroidアプリを展開する中で「はじめよう！ラン＆ウォーク」「自転車日和」などのトラッキングアプリもリ リースしています。今回はそれらのアプリ開発時に直面した問題や、端末・OSバージョンによる精度の問題等を踏まえ、 AndroidMaps+GPSを利用した位置情報の取得やトラッキング機能の実装方法を説明します。</p>
+<p>【講師プロフィール】　黒田将司（くろだしょうじ）氏　<a href="http://twitter.com/shoji_kuroda">@shoji_kuroda</a><br />
+<a href="http://www.excite.co.jp/">エキサイト株式会社</a>　テクノロジーサービス室エンターテイメントグループリーダー<br />
+PHP、Ruby on RailsでのWebサービス開発、iOSアプリ開発を経て最近は主にAndroidアプリの開発に従事。</br></br></p>
+<p>■第2部　Javaエンジニアが作った初めてのAndroidアプリ『あらなび！ ～Alert navi～』</p>
+<p>【講演概要】<br />
+Javaエンジニアが増井雄一郎氏のアドバイスを受けつつ、初めてAndroidアプリ『あらなび！ ～Alert navi～』を１人で開発しました。講演では、アプリでの位置情報取得処理についてやJavaエンジニアが始めてAndroidの開発をした際に遭遇するであろう問題を、自分自身が開発時に直面した問題を交えてお話ししたいと思います。</p>
+<p>【講師プロフィール】　海老原まさ江（えびはらまさえ）氏<br />
+<a href="http://www.contents-one.co.jp/">株式会社コンテンツワン</a>　Android事業部 エンジニア<br />
+主にJavaを使ったWebベースの業務システム開発に従事。2011年1月からAndroid事業部に所属し、新感覚リマインダー『あらなび！ ～Alert navi～』を開発。</br></br></p>
+<p>■第3部　ここに困った。Mapview実装事例と、トラブル対応策</p>
+<p>【講演概要】<br />
+GPSの取得方法（GPS_PROBIDERとNETWORK_PROBIDER）の違いや使い分け方、一つのアプリで複数のMapViewを使った時に、起こる現象とその解決策など、実際のアプリ開発で培った経験を元に、基本的な実装方法からディティールに拘った実装方法まで幅広くお話します。</p>
+<p>【講師プロフィール】　青木 智之（あおき　さとし）氏<br />
+<a href="http://www.clinks.jp/">CLINKS株式会社</a>　エンジニア。<br />
+Androidアプリ開発を主に担当するエンジニア。ユーザーとしてGoogleマップのGPS指定の方法を知らず、ソースからGPSを指定するほどの生粋の&quot;Android馬鹿&quot;。</br></br></p>
+<p>＜対　　　　　象＞<br />
+Androidの開発やGPS機能の開発に興味があるエンジニア全般<br />
+※技術要素が強いセミナーですので、エンジニアであることを前提とします。<br />
+※前述したAndroidOS搭載端末保有、DL必須アプリDLを条件といたします。</br></br></p>
+<p>＜受　　講　　料＞　※お釣りのないようにご用意をお願いいたします<br />
+1,000円（お一人につき、懇親会費用を含む）　※懇親会参加不参加に関わらず受付時にお支払いいただきます。</br></br></p>
+<p>＜そ　　の　　他＞<br />
+※20時を過ぎますと正面玄関が閉まります。それ以降にお越しの方は、080-3170-3416までご連絡ください。<br />
+※受付で名刺を１枚頂戴しますので、名刺をお持ちください。お持ちでない場合は、別紙に必要事項を記載いただきますので、受付に少々時間がかかることがあります。<br />
+※参加人数が多い場合、遅刻されますと立ち見となる可能性がありますが、ご了承ください。<br />
+※ネット接続環境がありませんので、利用される方はご自身でご用意いただくようお願いします。<br />
+※電源については利用できません。</br></br></p>
+<p>＜主催責任者＞<br />
+★川井健史（かわいたけし）　<a href="http://www.contents-one.co.jp/">株式会社コンテンツワン</a>　取締役 Android事業部長　twitter　<a href="http://twitter.com/siroi_mogutan">@siroi_mogutan</a><br />
+　<a href="http://web-engineer.buyuden.net/">Webエンジニア武勇伝.net</a>　サイトオーナー</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/15919" target="_blank">http://atnd.org/events/15919</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-06-13</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-06-13</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区神田錦町3-26　一ツ橋SIビル1F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社オプト会議室（１F）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6932419</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.759292</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>1596</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>siroi_mogutan</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/siroi_mogutan" target="_blank">@siroi_mogutan</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>96</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-08-08</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

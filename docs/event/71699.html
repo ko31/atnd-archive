@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">えれくら！TypeR　～Raspberry Pi勉強会～　第7回</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">えれくら！TypeR　～Raspberry Pi勉強会～　第7回</h2>
+
+            <div class="buttons">
+                <a href="../json/events/71699.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/71699.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>71699</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>えれくら！TypeR　～Raspberry Pi勉強会～　第7回</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2 style="color:blue;"><strong style="color:red;">開催日が1月24日(日)に変更</strong> となりました。ご注意くださいませ。<br></h2>
+<b style="color:red;">(2015/12/19) 「予習について」の項、予習材料とお願いしたい予習の内容を書き足しました。レベル調整はもう全くの独断と偏見ですが、よろしくお願いいたします(;´Д｀)<br><br></b><b style="color:blue;">(2015/12/12) 会場の都合により、 <strong style="color:red;">開催日が1月24日(日)に変更</strong> となりました。当初の開催日1月23日(土)でしたので、1日後ろにずれました。ご注意くださいませ。<br></b><b style="color:blue;">(2015/12/10) 会場の都合により、当初の開催日1月23日から日付が変更になります。候補日は1月24日・30日・31日です。現在打合せ中ですので、決まり次第更新いたします。<br></b><b style="color:blue;">(2015/11/3) とりあえず概要を公開することにしました。予習材料の公開は2015/11/20、遅くとも2015/12/20までにおこないます。</b><hr />
+<h3 style="vertical-align:middle;font-size:200%;">Raspberry Piを使っていろいろやってみよう</h3>
+<p>えれくら！TypeRは、Raspberry Piを主題とした勉強会です。</p>
+<p><strong style="color:red;">第7回目の今回から、6回目までと違って、予習前提とさせていただくことにしました。<br />
+イベント内容は、予習材料に沿ったものになります。<br />
+予習材料の情報を後述しますので、当日までに読む・試す等をお願いいたします。</strong></p>
+<p>今回も引き続き、「<a href="https://ms-iot.github.io/content/en-US/GetStarted.htm">Windows10 IoT Core for Raspberry Pi</a>」を扱います。<br />
+RasPi2とWindows10 IoTにご興味のある方、どんどんご参加くださいませ。</p>
+<h3 style="font-size:150%;">ご用意いただくもの</h3>
+<ul>
+	<li><b>Raspberry Pi 2</b><br>
+RaspberryPiには現在、モデルが数種類ありますが、今回も、 <strong style="color:red;"><a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi 2</a></strong> を使用します。貸し出し用のRasPi2がありませんので、必ずお持ちください。</li>
+</ul>
+<ul>
+	<li><b>ノートPC</b>(できるだけ高性能なものがよいと思います)<br />
+できれば、ノートPCをお持ちくださいませ。試してみた結果をそのまま持ち帰ることができるので便利です。<br />
+ノートPCは、 <strong style="color:red;">Windows8.1 または Windows10 がインストールされているもの</strong> をお持ちくださいませ。<br />
+また、ノートPCには <strong style="color:red;"><a href="https://www.visualstudio.com/ja-jp/products/visual-studio-community-vs.aspx">VisualStudio 2015 Community</a> をインストール</strong> しておいてくださいませ。<br />
+参考資料はこちら：<br />
+<a href="https://github.com/ms-iotkithol-jp/Training/blob/master/Seminars/Win10RP2Azure/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97TIPS.pdf">開発環境セットアップTIPS.pdf</a></li>
+</ul>
+<ul>
+	<li><b>Micro SDカード</b><br />
+SDカードは、OSをインストールするのに使います。8GB以上の容量があるClass 10以上のものをご用意ください。</li>
+</ul>
+<h3 style="font-size:150%;">タイムテーブル</h3>
+<ol>
+	<li><strong>今回の話題について説明・自己紹介など</strong> [13:00-13:20くらい]<br />
+簡単に説明や自己紹介などをおこないます。適宜はしょります :-P<br>
+<br></li>
+	<li><strong>予習結果について情報交換</strong> [13:20-16:00くらい、多少延びたりする]<br />
+予習を行なっていただいた際に、「すんなり分かったよ・できたよ」という方も、「途中で分からなくなっちゃって詰まっちゃった」という方もいらっしゃると思います。<br />
+<ul><br />
+<li>詰まった方は、「何のどんなことで詰まったのか」という情報を出していただければうれしいです。また、すんなり分かった方からフォローも入ると思います。<br />
+<li>すんなり分かった方は、予習材料を発展させて何ができるか、とか、関連してこういう話もある、など、役に立ちそうな情報や豆知識などをご紹介いただければうれしいです。<br />
+</ul>お互いに出し合った情報を元に議論したり、あれこれ試したりするワークショップ的な時間も時々入れたりしながら、いろいろな情報交換ができればいいなとおもっています。<br />
+<br></li>
+	<li><strong>次回の題材について</strong> [16:00-16:30くらい、多少ずれたりする]<br />
+<br></li>
+	<li><strong>発表・LTなど</strong> (残りの時間)<br />
+もし「○○を作ってみたので見せたい！！」「○○をしてみたので発表したい！！」という方がおられましたら、ぜひお願いします。参加登録時のコメント記入、または、このイベントページの下にあるコメント欄にてご連絡くださいませ。</li>
+</ol>
+<h3 style="font-size:150%;">予習について</h3>
+<p>予習材料：</p>
+<ul>
+	<li>(Web)「Windows 10 IoT Coreで始めるIoT入門」<br />
+http://www.atmarkit.co.jp/fwin2k/operation/indexpage/index.html#win10iot</li>
+	<li>(書籍)宇田周平、林宜憲[著]「RaspberryPi2とWindows10ではじめるIoTプログラミング」マイナビ出版<br />
+https://book.mynavi.jp/supportsite/detail/9784839956790.html</li>
+</ul>
+<p>予習レベル：</p>
+<ol>
+	<li><strong>初心者の方もここまではがんばってください</strong>
+	<ul>
+		<li><a href="https://ja.wikipedia.org/wiki/Raspberry_Pi">https://ja.wikipedia.org/wiki/Raspberry_Pi</a> を読む<br />
+すでに買って持ってるでしょうからRaspberryPiがどういうものかはご存知とは思いますが、もしご存じない場合は、ぜひ読んでおいてください。</li>
+		<li>VisualStudio 2015 Community のインストール<br />
+開発環境のインストールは、結構な時間がかかります。なので、前もってやっていただいてくださると大変助かります。どうしても詰まってしまってダメな場合は、詰まったところまででPCをお持ちください。<br />
+インストール時の参考資料：<a href="https://github.com/ms-iotkithol-jp/Training/blob/master/Seminars/Win10RP2Azure/%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97TIPS.pdf">開発環境セットアップTIPS.pdf</a></li>
+		<li>Web記事「Windows 10 IoT Coreで始めるIoT入門」に目を通す</li>
+		<li>Windows10 IoT Core for Raspberry Pi イメージ書込みツールのインストール</li>
+		<li>書籍「RaspberryPi2とWindows10ではじめるIoTプログラミング」を購入して目を通す<br />
+わかるところまでで構いません、また、読んでて「これは分からんなー」というところがあったら適当でいいのでメモを取っておいていただき、会で教えていただけると、それが情報交換のネタになるので、できればお願いいたします。</li>
+	</ul></li>
+	<li><strong>分かる人は挑戦してください</strong>
+	<ul>
+		<li>Windows10 IoT Core for Raspberry Pi イメージの書き込み</li>
+		<li>Windows10 IoT Core for Raspberry Pi の起動テスト<br />
+書込みができたら起動できるかどうかもテストしておいてくださると助かります。</li>
+		<li>Windows10 IoT Core用プログラムを作成してみる<br />
+こちら http://www.atmarkit.co.jp/ait/articles/1511/11/news042.html を参考に、Windows10 IoT Core 上で動作する、何か簡単なプログラムを作成してみてください。GPIOを使わないプログラムで構いません。また、「作ったけど動かなかったよ・・・」てもOK！その時は「動かない」ことをネタにして、会で情報交換ができたら、勉強になると思います。</li>
+	</ul></li>
+	<li><strong>よく御存じの方はぜひお願いします</strong>
+	<ul>
+		<li>GPIOを使ったWindows10 IoT Core用プログラムを作成してみる<br />
+「センサつなぐ？ああ簡単だよ」「モーター？ああもう動かしてる」というエキスパートのあなた！サンプル的なプログラムを見せていただけませんでしょうか。何卒！なにとぞ！！</li>
+		<li>GPIOを使ったWindows10 IoT Core用プログラムをデモしてください<br />
+もう展示物として十分イケてるプロダクトをお持ちのあなた！あなたの作ったアプリケーションをデモしてくださいませんか？「プログラムの中身は見せられないけどな」でも構いません、「こんなことができている」というところをみんなで見てみたいです。よろしくお願いいたします。</li>
+	</ul></li>
+</ol>
+<p>もうエキスパートすぎて「参加者に教えを説いてやるからみんな俺の話聞けよ」レベルの方は、みんな聞きますので、発表資料とか用意していただけると <strong>すごく</strong> うれしいです！ぜひ当日までに、このATNDページの下の方にあるコメント欄へその旨書き込んでください、枠を用意します。</p>
+<h3 style="font-size:150%;">会場について</h3>
+<b style="color:red;">香川高専 <strong style="color:blue;">高松キャンパス</strong>　計測制御実験室(電気情報工学科棟1F)</b><p>当日、学内に案内表示を出していただけるそうなので、ご参考にしてください。</p>
+<h3 style="font-size:150%;">参加費</h3>
+<p>参加費は <strong style="color:red;">無料</strong> です。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/71699" target="_blank">http://atnd.org/events/71699</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2016-01-24</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2016-01-24</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www64.atwiki.jp/elecra296/" target="_blank">http://www64.atwiki.jp/elecra296/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>香川高等専門学校 高松キャンパス 計測制御実験室(電気情報工学科棟1F)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>145338</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>えれくら！</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/elecra296" target="_blank">@elecra296</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2016-02-17</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">ハンズオンScala勉強会 at IPROS</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">ハンズオンScala勉強会 at IPROS</h2>
+
+            <div class="buttons">
+                <a href="../json/events/46137.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/46137.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>46137</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>ハンズオンScala勉強会 at IPROS</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>IPROS Tech Meetup 「ハンズオンScala勉強会 at IPROS 」</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>▼ハンズオンScala勉強会 at <span class="caps">IPROS</span> 内容</h2>
+<ul>
+	<li>Scalaの概要</li>
+	<li>REPLを使って基本的な文法を学習してみよう</li>
+	<li>Scalaプログラミングの真髄に少しだけ触れてみよう</li>
+	<li>SBTを使ってビルドしてみよう</li>
+</ul>
+<h2>▼目標</h2>
+<p>参加者がScalaでごく簡単なコードを書けて、ビルドできるようになることを目標とします</p>
+<h2>▼参加対象</h2>
+<ul>
+	<li>Scalaに興味があるが、まだScalaのコードを書いたことがないJavaプログラマの方</li>
+	<li>これから業務上Scalaを使う必要があるプログラマの方</li>
+	<li>次のコードの違いが？な人</li>
+</ul>
+<pre>
+var a = "Hello, Scala!" 
+val b = "Hello, Scala!" 
+</pre>
+<h2>▼タイムスケジュール</h2>
+<table>
+<tr>
+ <th>時間</th>
+ <th>内容</th>
+</tr>
+<tr>
+ <td>18:30 ～</td>
+ <td>受付開始</td>
+</tr>
+<tr>
+ <td>19:00 ～ 19:10</td>
+ <td>オープニング（担当：菊池）</td>
+</tr>
+<tr>
+ <td>19:10 ～ 19:50</td>
+ <td>ハンズオンScala前編（担当：竹内）</td>
+</tr>
+<tr>
+ <td></td>
+ <td>（休　　　憩）</td>
+</tr>
+<tr>
+ <td>20:00 ～ 20:50</td>
+ <td>ハンズオンScala（担当：本多）</td>
+</tr>
+<tr>
+ <td>20:50 ～ 21:00</td>
+ <td>クロージング（担当：菊池）</td>
+</tr>
+</table>
+<h2>▼事前に準備する環境</h2>
+<ol>
+	<li>Scala</li>
+	<li><span class="caps">SBT</span></li>
+</ol>
+<h3>《JDK（インストールされていない場合）》</h3>
+<p>以下のリンクよりJDKをダウンロードし、インストールします<br />
+ <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a></p>
+<h3>《Scalaインストール手順（使用するバージョンは2.10.3）》</h3>
+<h4>Windows</h4>
+<p>1. 以下のリンクからScalaをダウンロードし、インストールします<br />
+ <a href="http://www.scala-lang.org/files/archive/scala-2.10.3.msi">http://www.scala-lang.org/files/archive/scala-2.10.3.msi</a><br />
+2. コマンドプロンプトでscalaを起動し、プロンプトが表示されればインストール完了です</p>
+<pre>
+C:\&gt; scala
+Welcome to Scala version 2.10.3 (Java HotSpot(TM) Client VM, Java 1.7.0_45).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala &gt;
+</pre>
+<h4>Mac</h4>
+<p>1. homebrewでインストールします</p>
+<pre>
+$ brew install scala
+</pre>
+<p>2. ターミナルでscalaを起動し、プロンプトが表示されればインストール完了です</p>
+<pre>
+$ scala
+Welcome to Scala version 2.10.3 (Java HotSpot(TM) Client VM, Java 1.7.0_45).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala &gt;
+</pre>
+<h4>マニュアルインストールの場合</h4>
+<p>1. 以下のリンクからscalaをダウンロードし、任意のディレクトリに展開します<br />
+ <a href="http://www.scala-lang.org/files/archive/scala-2.10.3.tgz">http://www.scala-lang.org/files/archive/scala-2.10.3.tgz</a></p>
+<p>2. binディレクトリへ移動し、起動確認します</p>
+<pre>
+$ cd /path/to/extracted/dir/bin/
+$ ./scala
+Welcome to Scala version 2.10.3 (Java HotSpot(TM) Client VM, Java 1.7.0_45).
+Type in expressions to have them evaluated.
+Type :help for more information.
+
+scala &gt;
+</pre>
+<h3>《sbtインストール手順（使用するバージョンは0.13）》</h3>
+<h4>Windows</h4>
+<p>1. 以下のリンクからsbtをダウンロードし、インストールします<br />
+ <a href="http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.0/sbt.msi">http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.0/sbt.msi</a><br />
+2. コマンドプロンプトでsbtを起動し、プロンプトが表示されればインストール完了です</p>
+<pre>
+C:\&gt; sbt
+...
+[info] Set current project to ...
+&gt; 
+</pre>
+<h4>Mac</h4>
+<p>1. homebrewでインストールします</p>
+<pre>
+$ brew update
+$ brew install sbt
+</pre>
+<p>2. ターミナルを起動し、インストールされたバージョンを確認</p>
+<pre>
+$ sbt --version
+sbt launcher version 0.13.0
+</pre>
+<p>3. sbtを起動し、プロンプトが表示されればインストール完了です</p>
+<pre>
+$ sbt
+...
+[info] Set current project to ...
+&gt;
+</pre>
+<h4>マニュアルインストールの場合</h4>
+<p>以下の手順に従い、インストールします。<br />
+ <a href="http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html#manual-installation">http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html#manual-installation</a></p>
+<h2>▼イベント概要</h2>
+<h3>《開催日時》</h3>
+<p>2013年12月18日（水） 19:00 ～ 21:00 （開場：18:30）</p>
+<h3>《参加費用》</h3>
+<p>無料（ドリンク提供予定）<br />
+※当日受付にて出欠確認のためにご名刺をいただきますので、ご用意ください。</p>
+<h3>《会場》</h3>
+<p>東京都千代田区丸の内3-8-1　住友不動産丸の内ビル5Ｆ（受付：5F）<br />
+<a href="http://corporate.ipros.jp/company/access_map.html">http://corporate.ipros.jp/company/access_map.html</a><br />
+【最寄り駅】：東京駅、有楽町駅</p>
+<h3>《会場情報》</h3>
+<ul>
+	<li>ドリンク提供予定</li>
+	<li>無線LAN使用可</li>
+</ul>
+<h3>《お問い合わせ》</h3>
+<p>ito-y@ipros.jp （担当：株式会社イプロス 伊藤）</p>
+<h2>▼担当者紹介</h2>
+<h3>《本多陽平》</h3>
+<p>株式会社イプロス　リードプログラマ</p>
+<h3>《竹内孝志》</h3>
+<p>株式会社イプロス　カイゼンチームリーダー</p>
+<h3>《菊池大輔》</h3>
+<p>株式会社イプロス　エンジニア</p>
+<h2>▼主催企業</h2>
+<h3>株式会社イプロス</h3>
+<p>イプロスは、製造技術・建設技術・ライフサイエンスに関する情報を集めた国内最大のデータベースサイトです</p>
+<h4>《コーポレートサイト》</h4>
+<p><a href="http://corporate.ipros.jp/">http://corporate.ipros.jp/</a></p>
+<h2>▼その他</h2>
+<h3>《勉強会スライド掲載予定サイト》</h3>
+<p>イプログ<br />
+<a href="http://ipros-creators.tumblr.com/">http://ipros-creators.tumblr.com/</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/46137" target="_blank">http://atnd.org/events/46137</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-12-18</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-12-18</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://corporate.ipros.jp/company/access_map.html" target="_blank">http://corporate.ipros.jp/company/access_map.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区丸の内3-8-1　住友不動産丸の内ビル5Ｆ</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社イプロス セミナールーム</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6763951</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7656073</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>155318</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>株式会社イプロス</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-12-18</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

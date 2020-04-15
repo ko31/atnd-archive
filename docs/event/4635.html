@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">MyDNS.JP勉強会 in 札幌</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">MyDNS.JP勉強会 in 札幌</h2>
+
+            <div class="buttons">
+                <a href="../json/events/4635.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/4635.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>4635</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>MyDNS.JP勉強会 in 札幌</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>初心者から上級者まで!?自宅サーバーの仕組みと運用を勉強しませんか？</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>MyDNS.JPを使った自宅サーバーの仕組みとその運用について勉強する会を、<B>08月21日(土)</B>に<B>札幌市産業振興センター</B>(※1)にて開催したいと思います。<BR><br />
+<BR><br />
+内容ですが、これから自宅サーバーをやってみようかなという方や、とりあえず動かしているけれど実際のところどういう仕組みなのか理解したいな、というような<B>初心者</B>向けとなります。<BR><br />
+自宅サーバーはじめたいという方や、IT系社会人や学生さんで一年目の方など、ダイナミックDNSや自宅サーバーの仕組みや運用、またよく混乱してしまう点などを判りやすく解説したいと思います。<BR><br />
+<BR><br />
+<B>追加：Windows7を使った自宅サーバーの実演</B>(WAMP環境やメールサーバーなど)<BR><br />
+<BR><br />
+Windows7にApacheやPHP5、MySQL5などをいれてWAMP環境を構築しての実演や、メールサーバーソフトを入れて、Windows7でも自宅サーバーができますよ、という実演もしたいと思います。<br />
+<BR><br />
+<BR><br />
+<B>・参加申し込み方法</B><BR><br />
+<BR><br />
+参加を希望される方は、このページ右の「このイベントに参加登録する」からお申し込み下さい。<BR><br />
+<BR><br />
+<B>・参加費用</B><BR><br />
+<BR><br />
+勉強会参加費用は会場費などで<B>3,000円/人</B>とさせていただきます。<BR><br />
+当日会場にてお支払いいただきますので、なるべくお釣りがないようにお願いいたします。<BR><br />
+<BR><br />
+<B>・内容</B><BR><br />
+<BR><br />
+内容は以下の通りですが、適時書き加えていこうと思います。<BR><br />
+質問は各セクションの最後にまとめて行いたいと思います。<BR><br />
+一応勉強会なので、筆記用具とかがあるといいかもしれません。<BR><br />
+<BR><br />
+<B>・午前(10:00～12:00)　－初級者向け－</B><BR><br />
+<B>　～ダイナミックDNSの仕組みと自宅サーバーについて～</B><BR><br />
+　　MyDNS.JPを例にとり、DNSの仕組みからダイナミックDNSの実現方法、<BR><br />
+　　さらにDNSとホスト名やIPアドレスの関係など、TCP/IP全般について<BR><br />
+　　図や具体例を交えながら判りやすく解説したいと思います。<BR><br />
+<BR><br />
+<B>　～現在予定している内容～</B><Br><br />
+　　・MyDNS.JPってなに？<Br><br />
+　　・サーバーとクライアント<Br><br />
+　　・サーバー機器とサーバーソフト<Br><br />
+　　・プライベートIPとグローバルIP<Br><br />
+　　・ルーターを使うか否か？<Br><br />
+　　・ドメイン名とホスト名の関係<Br><br />
+　　・ドメインの所有者と管理と委託？<Br><br />
+　　・DNSサーバーって何？<Br><br />
+　　・んじゃダイナミックDNSって何？<Br><br />
+　　・ホスト名とIPアドレスとポート番号？<Br><br />
+　　・いろいろなサービスについて<Br><br />
+　　・外部からのアクセスを許すということ<Br><br />
+<Br><br />
+<B>・昼食(12:00～13:00)　－おなかすいた人向け－</B><BR><br />
+　　昼食は用意しませんので、皆さん任意にお願いいたします。<BR><br />
+<BR><br />
+<B>・午後パートⅠ(13:00～15:00)　－初級者・中級者向け－</B><BR><br />
+<B>　～自宅サーバーでWEBとメールサーバーを運用してみよう～</B><BR><br />
+　　Apacheを使ったWEBサーバーとPostfixを使ってメールサーバーの運用に<BR><br />
+　　挑戦される方のために、その設定方法を簡単にかつ具体例を交えながら<BR><br />
+　　判りやすく解説します。<BR><br />
+　　さらに、LAMPの実際例としてMySQLの設定と、WordPress(ブログ)の設定<Br><br />
+　　方法を解説します。<BR><br />
+<BR><br />
+<B>　～現在予定している内容～</B><Br><br />
+　　・MyDNS.JPの使い方<Br><br />
+　　・Apacheの設定(Vine5)<Br><br />
+　　・Postfixの設定(Vine5)<Br><br />
+　　・MySQLの設定(Vine5)<Br><br />
+　　・LAMPの例としてWordPressの設定<BR><br />
+<BR><br />
+<B>・午後パートⅡ(15:00～)　－全ユーザー向け－</B><BR><br />
+<B>　～私はこんな活用をしています、ユーザー事例紹介～</B><BR><br />
+　　MyDNS.JPを使っているユーザーの皆さんの具体的な活用事例を紹介しましょう!!<BR><br />
+　　5分でも30分でもOK!?皆さんの使い方をぜひ紹介して下さい。<br />
+<BR><br />
+<BR><br />
+<B>・夕方から(17:30？～)　－お酒飲める人向け－</B><BR><br />
+<B>　～ユーザー懇親会～　会場周辺で適当に入りたいと思います。</B><BR><br />
+　参加費用はみんなで割り勘4,000円前後にしたいなぁと思っています。<BR><br />
+　どこかいいお店がありましたら当日お教えください。<BR><br />
+<BR><br />
+<BR><br />
+<B>※皆さんの発表を募集します!!</B><BR><br />
+<BR><br />
+「私はMyDNS.JPを使ってこんなことやってます」的な紹介・発表を募集しています。準備から撤収までコミコミで20分前後の枠を用意しますので、この機会に皆さん自宅サーバー、システム、サービスの紹介・宣伝はいかがですか？<Br><br />
+<BR><br />
+発表に立候補していただける場合には『勉強会事例紹介立候補』である旨がわかるように、MyDNS.JPの「CONTACT US」(お問い合わせ)から以下の内容を<B>開催の一週間前</B>までにご連絡をお願い致します。<Br><br />
+<BR><br />
+　　・勉強会開催地<BR><br />
+　　・タイトル(70文字程度)<BR><br />
+　　・概要(200文字程度)<BR><br />
+　　・発表主体および発表者名(公表時はハンドルでも可)<BR><br />
+　　・必要時間(おおよその目安で、5分でも30分でも)<br />
+<BR><br />
+<BR><br />
+その他、この勉強会についてのご意見・ご質問などがございましたら、MyDNS.JPのお問い合わせからお願いいたします。<BR><br />
+<BR><br />
+MyDNS.JPの「CONTACT US」(お問い合わせ)ページ<BR><br />
+<A Href="http://www.mydns.jp/index.html?MENU=900" Target="_blank">http://www.mydns.jp/index.html?<span class="caps">MENU</span>=900</A><BR><br />
+<BR><br />
+<BR><br />
+※1 お知らせ当初と場所が変更になりましたのでご注意下さい。<br />
+<BR></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/4635" target="_blank">http://atnd.org/events/4635</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2010-08-21</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2010-08-21</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.sapporosansin.jp/" target="_blank">http://www.sapporosansin.jp/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>北海道札幌市白石区東札幌５条１丁目１－１</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>札幌市産業振興センター</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>43.0561666</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>141.3859688</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>20613</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kabu</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/disco_v8" target="_blank">@disco_v8</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2010-06-22</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

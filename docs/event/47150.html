@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第29回　IT勉強宴会in名古屋</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第29回　IT勉強宴会in名古屋</h2>
+
+            <div class="buttons">
+                <a href="../json/events/47150.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/47150.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>47150</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第29回　IT勉強宴会in名古屋</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>ジェネレーティブ・プログラミングの世界</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>ジェネレーティブ・プログラミングって何？</h1>
+<p><br>前回の <a href="http://kwansaiit.blogspot.com/2013/12/sdn-4040221-316162-127-httpwww.html">第28回関西IT勉強宴会</a> で、ドメイン駆動設計を教わりました。ドメイン駆動設計では業務分野の専門家である「ドメインエキスパート」と、技術者である「開発者」を明確に分けます。その間のコミュニケーションのためにユビキタス言語を用いました。そしてその先には、ジェネレーティブ・プログラミングがある事がわかりました。技術者でなくても実装が出来る。それが「 <strong>ジェネレーティブ・プログラミングの世界</strong> 」です。</p>
+<p>自動生成という仕掛けを実装する手法の説明として、翔泳社から2008年に <a href="http://goo.gl/jaKZF6">同名の本</a> が出ています。日本でも自動生成の歴史はありました。今回ご登壇頂く贄さんが、簡潔にブログにまとめて下さっています。参考になりますので是非お読みください。<br />
+<a href="http://yoshinorinie.hatenablog.com/entry/2013/09/04/090726">http://yoshinorinie.hatenablog.com/entry/2013/09/04/090726</a></p>
+<p>どういう業務システムを作るべきかを整理するためには、いわゆる上流工程のＳＥが必要です。上流ＳＥは、要求を整理して要件をまとめ、外部設計（どういう機能が欲しいか）を行います。外部設計にはデータモデルも含んでいます。この情報に多少の設計情報を追加するとノンプログラミングでシステムが稼働する。そう、それがジェネレーティブ・プログラミングです。</p>
+<p>名古屋経済大学の中西先生が帳票や画面の自動生成を研究されてます。業務システムを対象とした工学的アプローチを交えながら、自動生成について勉強しましょう。</p>
+<strong><span class="caps">RUBY</span></strong> 　や　 <strong><span class="caps">JAVA</span></strong> を使って自動生成のシステムを発表されている開発者にご登壇頂き、どうやって実現しているのかを説明して頂きます。わからなければ２次会で根掘り葉掘り尋ねましょう(笑)
+<p>rmenuとXEAD DriverはOSS（オープンソース）です。Wagbyは１年間の無料トライアルがあります。面白いと思われたらすぐにでも使ってみましょう。皆さんのキャリアアップのきっかけにして下さい。</p>
+<h1>ジェネレーティブ・プログラミングの世界</h1>
+<h2>理論ベース（総論）</h2>
+<h3>■■■　ジェネレーティブ・プログラミングの世界　■■■</h3>
+<ul>
+	<li><a href="http://iteman.jp/">株式会社アイテマン</a>  代表　久保 敦啓（あつひろ）さん*</li>
+</ul>
+<p>ジェネレーティブ (Generative)、つまり生成的なプログラミング手法とはプログラマの生産性を向上させるために、フレームワークを使ったり、ソースコードの再利用や自動生成などと矮小化してとらえる概念ではありません。<br />
+前回の勉強宴会で解説した内容をさらに深く説明します。</p>
+<h3>■■■　帳票・フォームの自動生成　■■■</h3>
+<strong>名古屋経済大学　経営学部教授　中西昌武先生</strong>
+<p>データモデル構造が決まれば、帳票の表示パターンが決まります。その特性を利用して「概念帳票モデル」を開発しました。これを用いると概念帳票を代数式で表す事ができ、さらに有限で管理可能なカタログ・パターンに類別する事が出来ます。<br />
+ここでは代表的な帳票を説明するとともに自動生成出来る事を示します。</p>
+<h2>自動生成ツール（各論）</h2>
+<h3>■■■　データマッピングフレームワーク　Ｒｍｅｎｕ　■■■</h3>
+<strong>下地忠史さん、 <a href="http://www.ergo.ne.jp/">ergo</a> 　下山吉洋（よしひろ）さん</strong>
+<p>皆さんが普段作成されているプログラムから、データとプロセスを完全に分離したのがRmenuです。データ部分をJsonで作成し、プロセス部分はRmenuが担当します。システム開発者は、ＤＢ⇔画面、ＤＢ⇒帳票、ＤＢ⇒ＤＢ間のデータの流れを中心に設計を進め、そのデータからJsonを作成することで開発を進めることができます。<br />
+今回はそのRmenuの全体像とＤＢ⇒帳票の具体例をご説明します。</p>
+<h3>■■■　超高速開発ツール-Wagby-のご紹介　■■■</h3>
+<ul>
+	<li><a href="http://www.jasminesoft.co.jp/">株式会社ジャスミンソフト</a> 　代表取締役　贄（にえ）　良則さん*</li>
+</ul>
+<p>JavaにおけるWebアプリケーションアーキテクチャのフレームワークとして著名なSpringとHibernateを核としたソースコード自動生成型の開発ツールです。特徴は生成されたコードのカスタマイズを前提とした仕組みの提供です。従来のCASEツールでは生成コードのカスタマイズは許容しないか限定的でしたが、この点が多くの開発者にとって採用をためらわせてしまう問題でした。カスタマイズ可能な自動生成ツールの可能性と現時点での限界をご説明します。</p>
+<h3>■■■　「仕様書駆動」のための開発基盤 <span class="caps">XEAD</span> Driver　■■■</h3>
+<ul>
+	<li><a href="http://homepage2.nifty.com/dbc/">有限会社ディービーコンセプト</a> 　渡辺幸三さん*</li>
+</ul>
+<p>業務システムには、仕様書をはじめとする包括的ドキュメントが必要です。なぜなら業務システムは複雑膨大なソフトウエアでありながら、第三者による保守性の高さが求められているからです。そこで求められるのが、仕様書にもとづいてシステムを動的制御するためのソフトウエア基盤です。「仕様書駆動アーキテクチャ」の解説とともに、その世界初の実装であるOSS基盤XEAD Driverと、その上で開発された生産管理システムを紹介します。</p>
+<h1>タイムテーブル</h1>
+<p>　　２０１４年２月１５日（土曜日）　１３：３０スタート</p>
+<table>
+	<tr>
+		<td style="text-align:center;">時刻</td>
+		<td style="text-align:center;">発表者</td>
+		<td style="text-align:center;">タイトル</td>
+	</tr>
+	<tr>
+		<td>13:30 &#8211; 13:40</td>
+		<td>(株)セールスフォース・ドットコム　佐野　初夫</td>
+		<td style="text-align:center;">関西IT勉強宴会　開催のご挨拶</td>
+	</tr>
+	<tr>
+		<td>13:40 &#8211; 14:10</td>
+		<td>(株)アイテマン 代表　久保 敦啓さん</td>
+		<td style="text-align:center;">ジェネレーティブ・プログラミングの世界</td>
+	</tr>
+	<tr>
+		<td>14:10 &#8211; 15:00</td>
+		<td>名古屋経済大学　経営学部教授　中西昌武先生</td>
+		<td style="text-align:center;">帳票・フォームの自動生成</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="2">15:00 &#8211; 15:50</td>
+		<td>下地忠史さん</td>
+		<td> データマッピングフレームワーク　Ｒｍｅｎｕ</td>
+	</tr>
+	<tr>
+		<td>ergo　下山吉洋さん</td>
+		<td> デモサイト、ソースコード他、構築方法のご案内</td>
+	</tr>
+	<tr>
+		<td>15:50 &#8211; 16:20</td>
+		<td>（休憩）</td>
+	</tr>
+	<tr>
+		<td>16:20 &#8211; 17:10</td>
+		<td>(株)ジャスミンソフト　代表　贄　良則さん</td>
+		<td style="text-align:center;">超高速開発ツール-Wagby-のご紹介</td>
+	</tr>
+	<tr>
+		<td>17:10 &#8211; 18:00</td>
+		<td>(有)ディービーコンセプト　渡辺幸三さん</td>
+		<td style="text-align:center;">「仕様書駆動」のための開発基盤 <span class="caps">XEAD</span> Driver</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td>18:30 &#8211; 20:30</td>
+		<td> <a href="http://atnd.org/events/47146">有志</a> </td>
+		<td style="text-align:center;">２次会</td>
+	</tr>
+</table>
+<p>　 <strong>★２次会は次のＵＲＬから別に申し込んで下さい</strong> <br>
+<a href="http://atnd.org/events/47146">★★http://atnd.org/events/47146★★</a></p>
+<h2>場所</h2>
+<p><a href="http://www.nagoya-ku.ac.jp/access/#meieki">名古屋経済大学　名駅サテライト・キャンパス　９階９３教室</a> <br />
+名古屋駅「ミヤコ地下街4番出入口」から東へすぐ<br />
+〒450-0002 名古屋市中村区名駅4-25-13<br />
+※無償でお貸しいただき、ありがとうございます</p>
+<h2>参加費用</h2>
+<p>　無料<br />
+　（ <a href="http://atnd.org/events/47146">２次会</a> は飲み放題３０００円。別に申し込んで下さい）</p>
+<h2>お願い</h2>
+<p>メーリングリストに参加すれば、この勉強宴会で学んだ内容を詳しくフィードバックします。次のアドレスに空メールを送って下さい。退会も簡単です。<br />
+<a href="mailto:KwansaiIt+subscribe@googlegroups.com">KwansaiIt＋subscribe@googlegroups.com</a><br />
+　※＋は１バイトのプラスの文字です</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/47150" target="_blank">http://atnd.org/events/47150</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-02-15</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-02-15</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.onas.asia/home/kwansaiit" target="_blank">http://www.onas.asia/home/kwansaiit</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>名古屋市中村区名駅4-25-13</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>名古屋経済大学　名駅サテライト・キャンパス　９階９３教室 </td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.1686114</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>136.8873166</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>55375</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>佐野初夫</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/hatsanhat" target="_blank">@hatsanhat</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-02-05</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

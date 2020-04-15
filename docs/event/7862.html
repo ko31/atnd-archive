@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">#MA6 Mashup Camp - Social Platform Day</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">#MA6 Mashup Camp - Social Platform Day</h2>
+
+            <div class="buttons">
+                <a href="../json/events/7862.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/7862.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>7862</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>#MA6 Mashup Camp - Social Platform Day</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>協力会社が思わず賞をあげたくなるゲームを作ろう。ガジェットを作ろう。</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>現在開催中のウェブアプリケーション開発コンテスト <a href="http://mashupaward.jp/" title="MA6">Mashup Awards 6</a> に連動して、<br />
+今年より実践形式の開発イベント <a href="http://mashupaward.jp/entry/70465/">MA6 Mashup Camp</a> (マッシュアップ・キャンプ) を開催します。</p>
+<ul>
+	<li><a href="http://mashupaward.jp/2010blog/event/5/">9/9(木) 第1弾 Mashup Caravan &#8211; Maps Talks の報告</a></li>
+	<li><a href="http://mashupaward.jp/2010blog/event/6/">9/11(土) 第2弾 Mashup Camp &#8211; Maps Day の報告</a></li>
+</ul>
+<h2>重要なお知らせ</h2>
+<ul>
+	<li>2010-09-11 イベントタイトルを Game Day から Social Platform Day に見直しさせて頂きました</li>
+</ul>
+<h2>Mashup Camp ってなに？</h2>
+<p>Mashup Camp は、参加者それぞれノートPC を持ち込んで、 みんなでわいわい開発しちゃおうっていうイベントです。<br />
+キャンプという名前ですが基本的に日帰りです。<br />
+MA5 では Hackathon という名前で1度だけ開催しました。</p>
+<p>MA6では、たくさんの人に気軽に参加してほしいという思いから Mashup Camp という名前にし、定期的に開催していきます。</p>
+<h2>推奨テーマ</h2>
+<p>本 Mashup Camp では、次のテーマを <strong>推奨</strong> します。</p>
+<ul>
+	<li>ゲームを作ろう
+	<ul>
+		<li>みんなで楽しいソーシャルゲーム(アプリ)を作ろう</li>
+		<li>スマートフォンや携帯電話ならではのゲーム(アプリ)を作ろう</li>
+	</ul></li>
+	<li>ガジェットを作ろう
+	<ul>
+		<li>生活を便利にするガジェットを作ろう</li>
+		<li>仕事に役立つガジェットを作ろう</li>
+	</ul></li>
+	<li>協力会社が賞をあげたくなる作品を作ろう</li>
+</ul>
+<p><strong>プラットフォームやウェブサイト、PC やモバイル(スマートフォンや携帯電話)などの動作環境や提供方法などは定めません。自由にアイディアを練って、自由に作品として表現してくださいね。</strong></p>
+<h2>推奨 <span class="caps">API</span></h2>
+<p>本 Mashup Camp では、次の <span class="caps">API</span> を <strong>推奨</strong> します。 <strong>これらの <span class="caps">API</span> を使わず、他の <span class="caps">API</span> を使ってもかまいません。</strong></p>
+<p><strong>モバゲーオープンプラットフォーム</strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70712/">http://ma6api.mashupaward.jp/entry/70712/</a><br />
+モバゲーオープンプラットフォームおよびモバゲーAPIは、DeNAがソーシャルゲーム開発・提供で培ってきたノウハウをもとに開発されました。OpenSocialに準拠しており、154社、350アプリが公開されています（7月27日時点）。</p>
+<p><strong>OpenSocial Host JavaScript <span class="caps">API</span></strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70576/">http://ma6api.mashupaward.jp/entry/70576/</a><br />
+mixi アプリ、モバゲーアプリ、CREYLE アプリ等、OpenSocial アプリケーションの開発／管理を支援する、多数の <span class="caps">API</span> を提供しています。</p>
+<p><strong>HeartRails Capture <span class="caps">API</span></strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70579/">http://ma6api.mashupaward.jp/entry/70579/</a><br />
+任意のウェブサイトのサムネイル画像を簡単に取得できる <span class="caps">API</span> です。サムネイル画像のサイズを自由に設定できる他、影付きや縁付き、角丸等の装飾を施すこともできます。</p>
+<p><strong>HeartRails Express <span class="caps">API</span></strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70578/">http://ma6api.mashupaward.jp/entry/70578/</a><br />
+線／駅名／最寄駅等の地理情報を XML、JSON （P） 形式で取得できる <span class="caps">API</span> です。Google Maps 等の地図サービスと組み合わせてご利用いただけます。</p>
+<p><strong>HeartRails Graph <span class="caps">API</span></strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70577/">http://ma6api.mashupaward.jp/entry/70577/</a><br />
+キュートな円グラフを簡単に作成できる <span class="caps">API</span> です。レビュー記事やアンケート結果にいかがでしょうか？</p>
+<p><strong>天気予報API</strong><br />
+<a href="http://ma6api.mashupaward.jp/category/up_frontier/">http://ma6api.mashupaward.jp/category/up_frontier/</a><br />
+「天気情報API」は、天気予報をはじめ、花粉情報や紫外線情報、洗濯指数、ビール指数など様々な指数情報を、ウィジェットやmixiアプリ、ブログパーツ、Flashなど様々なアプリケーションで利用するためのAPIを有償で提供するWEBサービスです。</p>
+<p><strong>mashmatrix OpenSocial Dashboard</strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70684/">http://ma6api.mashupaward.jp/entry/70684/</a><br />
+ブラウザ上で OpenSocial ガジェットを自由に配置し、互いに連携させることが可能なダッシュボードサービスです。開発者の方は、標準仕様にのっとったガジェットを開発するだけで、さまざまなWebサービスやガジェットと組み合わせてマッシュアップすることが可能です。</p>
+<p><strong>infoScoop OpenSource</strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70692/">http://ma6api.mashupaward.jp/entry/70692/</a><br />
+nfoScoop OpenSourceは大手企業で実績のあるオープンソースのOpenSocial対応パーソナライズドポータルです。ガジェットを組み合わせることで、様々なサービスを組み合わせることができます。特にMASHUP AWARDS向きの機能として、簡単にOAuth対応ガジェットを作ることができ、さらにpubsub APIによりガジェットとガジェットを簡単にマッシュアップすることができます。</p>
+<p><strong>OpenSocial Pages</strong><br />
+<a href="http://ma6api.mashupaward.jp/entry/70672/">http://ma6api.mashupaward.jp/entry/70672/</a><br />
+OpenSocial Pages は Google Apps と連携して動作する OpenSocial プラットフォームです。Google Apps のユーザとグループを活用して、同僚とコラボレーションするビジネス向けの OpenSocial アプリケーションを開発できます。開発したアプリケーションは、PC に加えて、iPhone や iPad、Android といったスマートフォンからも利用できます。</p>
+<h2>タイムテーブル</h2>
+<h3>Mashup Camp 事前ミーティング</h3>
+<p>日程： 9/22(水)</p>
+<table>
+	<tr>
+		<td>20:30 &#8211; 20:40</td>
+		<td>ガイダンス</td>
+	</tr>
+	<tr>
+		<td>20:40 &#8211; 20:50</td>
+		<td>チーム分け</td>
+	</tr>
+	<tr>
+		<td>20:50 &#8211; </td>
+		<td>ブレインストーミング</td>
+	</tr>
+	<tr>
+		<td>-</td>
+		<td>アイデアをスケッチブックに記入</td>
+	</tr>
+	<tr>
+		<td>-</td>
+		<td>チーム内ブラッシュアップ</td>
+	</tr>
+	<tr>
+		<td>-</td>
+		<td>発表準備</td>
+	</tr>
+	<tr>
+		<td>21:40 &#8211; 21:55</td>
+		<td>チーム単位で発表</td>
+	</tr>
+	<tr>
+		<td>21:55 &#8211; 22:00</td>
+		<td>事務連絡</td>
+	</tr>
+</table>
+<h3>Mashup Camp 当日</h3>
+<p>日程： 9/25(土)</p>
+<table>
+	<tr>
+		<td>09:30 &#8211; 10:00</td>
+		<td>集合</td>
+	</tr>
+	<tr>
+		<td>10:00 &#8211; 10:10</td>
+		<td>事務局より</td>
+	</tr>
+	<tr>
+		<td>10:10 &#8211; 10:40</td>
+		<td>ガイダンス</td>
+	</tr>
+	<tr>
+		<td>10:40 &#8211; 12:00</td>
+		<td>コーディング</td>
+	</tr>
+	<tr>
+		<td>12:00 &#8211; 13:00</td>
+		<td>ランチ</td>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:30</td>
+		<td>中間発表</td>
+	</tr>
+	<tr>
+		<td>13:30 &#8211; 17:00</td>
+		<td>コーディング</td>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 18:00</td>
+		<td>発表</td>
+	</tr>
+	<tr>
+		<td>18:00 -</td>
+		<td>懇親会</td>
+	</tr>
+</table>
+<p>Mashup Camp 当日に作る作品のネタ出しやチーム決め、顔合わせを兼ねた事前ミーティングを <strong>9/22(水)</strong> に開催します。<br />
+9/22(水) は、2部構成となっており、</p>
+<ul>
+	<li>第1部 18:30〜20:20 で API提供企業より講演を行っていただきます</li>
+	<li>第2部 20:30 より Mashup Camp の事前ミーティングを行ないます</li>
+</ul>
+<ol>
+	<li>9/22(水) 18:30 Mashup Caravan を聞いて構想を練る</li>
+	<li>9/22(水) 20:30 Mashup Camp 事前ミーティングで構想を企画にする</li>
+	<li>9/25(土) 10:00 Mashup Campで企画を実際に開発する</li>
+</ol>
+<p>という流れになりますので、ぜひ Mashup Caravan からご参加ください。</p>
+<p><strong>Mashup Caravan &#8211; Social Platform Talks の詳細・参加登録はこちら</strong> ⇒ <a href="http://atnd.org/events/7860/">http://atnd.org/events/7860</a></p>
+<h2>準備するもの</h2>
+<ul>
+	<li>無線LAN付きノートパソコン</li>
+</ul>
+<p><strong>※ランチはMA6事務局が用意します。</strong></p>
+<h2>【関連イベント】</h2>
+<p>イベント第3弾、第4弾のテーマは『女性視点ですてきなWebサービスを』です。<br />
+まだまだ残席があります。ご興味のある方はぜひご登録ください。</p>
+<ul>
+	<li><a href="http://atnd.org/events/7694">9/15(水) 第3弾 Mashup Caravan &#8211; Girls Talks</a></li>
+	<li><a href="http://atnd.org/events/7696">9/18(土) 第4弾 Mashup Camp &#8211; Girls Day</a></li>
+</ul>
+<h2>開催概要</h2>
+<ul>
+	<li>名称：　Mashup Camp &#8211; Social Platform Day</li>
+	<li>日時：　2010年9月22日(水) 20:30 開始 ～ 22:00 終了（事前ミーティング）<br />
+　　　　2010年9月25日(土) 10:00 開始 ～ 20:00 終了</li>
+	<li>場所：　リクルート メディアテクノロジーラボ</li>
+	<li>住所：　東京都中央区銀座7-2-6 リクルートアネックス1ビル B1F</li>
+	<li>地図：　http://www.doko.jp/search/shop/sc1141072/</li>
+	<li>交通：　東京メトロ 銀座駅(C3出口)、JR新橋駅(銀座口)</li>
+	<li>費用：　無料</li>
+	<li>主催：　Mashup Awards 実行委員会</li>
+	<li>協賛：　株式会社リクルート</li>
+	<li>参加申込フォーム：　http://atnd.org/events/7862</li>
+	<li>公式ハッシュタグ：　#MA6</li>
+</ul>
+<h2>会場補足</h2>
+<p>銀座７丁目の R25 カフェのある「リクルート GINZA7 ビル」の裏側のビル。<br />
+数寄屋橋通り沿いの「リクルート アネックス１ビル」の地下1階が会場です。<br />
+リクルート GINZA7ビルではありませんのでご注意ください。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/7862" target="_blank">http://atnd.org/events/7862</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2010-09-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2010-09-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://mashupaward.jp/" target="_blank">http://mashupaward.jp/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都中央区銀座7-2-6</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>リクルート メディアテクノロジーラボ MTL Cafe</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6708529</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7605315</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>40962</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Mashup Awards (MA)</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/mashupaward" target="_blank">@mashupaward</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2010-09-16</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

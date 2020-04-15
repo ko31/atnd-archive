@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第70回FreeBSD勉強会 sysctl(8)からカーネルの中身を追う＆AsiaBSDCon2018復習</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第70回FreeBSD勉強会 sysctl(8)からカーネルの中身を追う＆AsiaBSDCon2018復習</h2>
+
+            <div class="buttons">
+                <a href="../json/events/94666.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/94666.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>94666</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第70回FreeBSD勉強会 sysctl(8)からカーネルの中身を追う＆AsiaBSDCon2018復習</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>第70回FreeBSD勉強会</h1>
+<h2>sysctl(8)からカーネルの中身を追う</h2>
+<dl>
+ <dt>講師</dt>
+ <dd>ヴァル研究所 @valsitoh</dd>
+</dl>
+<p>*BSDに限らず、UNIX系OSではユーザランド側からsysctlコマンドを実行することで、カーネルが提供する機能のON/OFFやカーネルパラメータを設定することができます。<br />
+今回のFreeBSD勉強会では、sysctlによるカーネルパラメータの設定を題材にしてカーネルソースコードの読み方を解説しようと思います。</p>
+<p>また、ソースコードを読み解く際の当たりの付け方といった、カーネルに限らないコードリーディングのノウハウについても紹介できればと思いますので、カーネルソースコードをこれから読み始めてみようと思っている方はぜひご参加ください。</p>
+<h2>AsiaBSDCon2018復習</h2>
+<dl>
+ <dt>講師</dt>
+ <dd>BSDコンサルティング　後藤大地・佐々木宜文</dd>
+</dl>
+<p><a href="https://2018.asiabsdcon.org/">AsiaBSDCon 2018</a>で発表された内容を振り返ります。どんな発表内容だったかちょっと理解が追いつかなかった、といった場合の手助けとして利用できるように概要をお伝えできればと思います。振り返るセッションは次のとおりです。</p>
+<ul>
+ <li>Institutionalizing FreeBSD Isolated and Virtualized Hosts Using bsdinstall(8), zfs(8) and nfsd(8) / Michael Dexter</li>
+ <li>Tuning FreeBSD for routing and firewalling / Olivier Cochard-Labbe</li>
+ <li>Building a security appliance based on FreeBSD / Mariusz Zaborski</li>
+ <li>FreeBSD ARM32/ARM64 : Porting to a new board / Emmanuel Vadot</li>
+ <li>Profiling the FreeBSD kernel boot / Colin Percival</li>
+ <li>Design, Implementation and Operation of NetBSD Base System Packaging / Yuuki Enomoto</li>
+ <li>FreeBSD on <span class="caps">IBM</span> PowerNV / Wojciech Macek</li>
+ <li>Mininet on OpenBSD: Using rdomains for interactive <span class="caps">SDN</span> testing and development / Ayaka Koshibe</li>
+ <li>Improve the DragonFlyBSD network stack / Yanmin Qiao</li>
+ <li>Role-based Access Control in <span class="caps">BCHS</span> Web Applications / Kristaps Dzonsons</li>
+ <li>OpenBSD/x-ray &#8211; OpenBSD on medical x-ray machines Henning / Brauer<br />
+Improving netdump hardware support and performance with iflib / Sam Gwydir</li>
+ <li>Linux rumpkernel: yet another virtualization with a librarified kernel / Hajime Tazaki</li>
+ <li>Introducing FreeBSD <span class="caps">VPC</span> / Sean Chittenden</li>
+ <li>Virtualization on ARMv8-A: bhyvearm64 Current Status and the Porting Process / Alexandru Elise</li>
+ <li>Implementing a Virtual Generic Interrupt Controller for the FreeBSD Hypervisor / Mihai Carabas</li>
+ <li>FreeBSD VirtIO devices on <span class="caps">ARM</span> systems / Darius Mihai</li>
+ <li>FreeBSD Save &amp; Restore feature for bhyve for <span class="caps">AMD</span> CPUs / Maria-Elena Mihailescu</li>
+</ul>
+<p>AsiaBSDConに参加してみたいけど足踏みしている、という場合にも、どういったカンファレンスかお伝えできると思いますので、興味がある方はぜひともご参加ください。</p>
+<p>本勉強会への参加者には抽選か勝ち抜きかでデーモンTシャツなどのグッズをお渡しします😈　振るって具参加ください。</p>
+<hr/>
+<dl>
+ <dt>開催日時</dt>
+ <dd>2018年4月26日（木）19:00～21:00 (18:30開場)</dd>
+ <dt>場所</dt>
+ <dd>ヴァル研究所 セミナールーム<br/>
+東京都杉並区高円寺北2-3-17<br/>
+JR高円寺駅（北口）から徒歩3分</dd>
+ <dt>参加費</dt>
+ <dd>2,000円 当日現金払い</dd>
+</dl>
+<hr/>
+<dl>
+ <dt>協力</dt>
+ <dd>BSDコンサルティング株式会社<br/>
+株式会社技術評論社<br/>
+有限会社オングス<br/>
+ヴァル研究所</dd>
+</dl>
+<hr/>
+<dl>
+ <dt>実行委員</dt>
+ <dd>佐藤広生（東京工業大学／FreeBSD Foundation）<br/>
+後藤大地（BSDコンサルティング株式会社 取締役／FreeBSD committer）<br/>
+馮富久（技術評論社 クロスメディア事業部）<br/>
+佐々木宣文（有限会社オングス メディア担当）<br/>
+ヴァル研究所<br/>
+お問い合わせ freebsdstudy at bsdconsulting.co.jp</dd>
+</dl>
+<hr/></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/94666" target="_blank">http://atnd.org/events/94666</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2018-04-26</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2018-04-26</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.bsdconsulting.co.jp/" target="_blank">http://www.bsdconsulting.co.jp/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都杉並区高円寺北2-3-17</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ヴァル研究所 セミナールーム</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7060567</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6514863</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>124570</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>daichigoto</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/daichigoto" target="_blank">@daichigoto</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2018-03-11</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Vim Advent Calendar 2013</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Vim Advent Calendar 2013</h2>
+
+            <div class="buttons">
+                <a href="../json/events/45072.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/45072.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>45072</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Vim Advent Calendar 2013</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>なにやるか？Vim でしょ！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>TOP絵は <a href="https://twitter.com/orga_chem">@orga_chem</a> さんに書いていただきました。</p>
+<h4>Vim Advent Calendar を今年もやりたいと思います！！<br />
+去年の内容は <a href="http://atnd.org/events/33746">こちら</a> を参照して下さい。</h4>
+<h2>05/12(月)より Vim Advent Calendar 2013 を再開しました</h2>
+<p>しばらく中断していましたが『続けてほしい』という声が多かったので 05/12(月)より Vim Advent Calendar 2013 再開しました。<br />
+ただし、今後1日でも抜けた場合はその時点で終了するので書きたい人がいれば早めにお願いします。</p>
+<h2>2回目以降の参加を考えている方へ</h2>
+<p>去年に引き続き今回も2回目以降書きたい方を募集しています。</p>
+<h4>もちろん初めて参加される方も大歓迎です！！</h4>
+<p>2回目以降の申し込みを行いたい方は以下のどちらかの手段でお願いします。<br />
+片方だけで構いません。</p>
+<ul>
+	<li><a href="https://twitter.com/osyo_memo">@osyo_memo</a> まで記事を書きたい旨を連絡する
+	<ul>
+		<li>これは去年と同様の手段になります</li>
+	</ul></li>
+	<li>一度本 <span class="caps">ATND</span> の参加をキャンセルして、再度登録を行う
+	<ul>
+		<li>この場合は1回目と同様にわたしが確認してからスケジュールに追加します</li>
+		<li>できれば登録時のコメントに『n回目の参加』と記述してもらえると助かります</li>
+		<li>日程の指定があれば同様にコメントにてお願いします</li>
+	</ul></li>
+</ul>
+<h2>イベント参加への流れ</h2>
+<h4>1. 参加したい方は参加登録する<br />
+2. 参加した後にこちらで担当する日程を割り振るので後ほど確認する<br />
+3. 担当する日にちに Vim に関する記事をブログ等に投稿する<br />
+4. 投稿した記事へのURLをここのコメント欄に記載する</h4>
+<p>記事の内容は Vim の機能に関する事でもプラグインでも Vim script でも Vim の歌でも Vim に関する事ならなんでも構いません！<br />
+それぞれの Vim への愛情を確認しましょう！<br />
+また、日程は参加順に割り当てますが、日程を指定したい方は @osyo_memo までご連絡下さい。</p>
+<h2>去年と同様、特に終了期日は設けないのでどんどん参加しましょう！</h2>
+<table>
+	<tr>
+		<td>181</td>
+		<td>05/30(金)</td>
+		<td>@syngan</td>
+		<td><a href="http://d.hatena.ne.jp/syngan/20140530/1401453356">vital.vim を使うときはそれなりの覚悟が必要</a></td>
+	</tr>
+	<tr>
+		<td>182</td>
+		<td>05/31(土)</td>
+		<td>@tyru</td>
+		<td><a href="http://d.hatena.ne.jp/tyru/20140531/add_right_click_popup_menu_for_openbrowser">open-browser.vimに右クリック時のポップアップメニューを追加した</a></td>
+	</tr>
+	<tr>
+		<td>183</td>
+		<td>06/01(日)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140601/1401624616">unite-neobundle から github の Issues を開く</a></td>
+	</tr>
+	<tr>
+		<td>184</td>
+		<td>06/02(月)</td>
+		<td>@hujo</td>
+		<td><a href="http://hujo.hateblo.jp/entry/2014/06/02/052608">行の折りたたみfoldtextを設定をした</a></td>
+	</tr>
+	<tr>
+		<td>185</td>
+		<td>06/03(火)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/shaberu-vim-recursive.html">風邪で喉が終了したのでVimで会話していた</a></td>
+	</tr>
+	<tr>
+		<td>186</td>
+		<td>06/04(水)</td>
+		<td>@tgfjt</td>
+		<td><a href="http://qiita.com/tgfjt/items/758ae84878c618be2079">いつでもどこでも Hubot から :help する</a></td>
+	</tr>
+	<tr>
+		<td>187</td>
+		<td>06/05(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>188</td>
+		<td>06/06(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>189</td>
+		<td>06/07(土)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>190</td>
+		<td>06/08(日)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>191</td>
+		<td>06/09(月)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>192</td>
+		<td>06/10(火)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>193</td>
+		<td>06/11(水)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>194</td>
+		<td>06/12(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>195</td>
+		<td>06/13(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>196</td>
+		<td>06/14(土)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>197</td>
+		<td>06/15(日)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>198</td>
+		<td>06/16(月)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>199</td>
+		<td>06/17(火)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>200</td>
+		<td>06/18(水)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>201</td>
+		<td>06/19(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>202</td>
+		<td>06/20(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>203</td>
+		<td>06/21(土)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>204</td>
+		<td>06/22(日)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>205</td>
+		<td>06/23(月)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>206</td>
+		<td>06/24(火)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>207</td>
+		<td>06/25(水)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>208</td>
+		<td>06/26(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>209</td>
+		<td>06/27(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>210</td>
+		<td>06/28(土)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>211</td>
+		<td>06/29(日)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>212</td>
+		<td>06/30(月)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+</table>
+<h2>過去のスケジュール</h2>
+<table>
+	<tr>
+		<td>001</td>
+		<td>12/01(日)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20131201/1385823937">Vim を使っている/始めたいなら読んでおきたい Web の記事</a></td>
+	</tr>
+	<tr>
+		<td>002</td>
+		<td>12/02(月)</td>
+		<td>@25kei12</td>
+		<td><a href="http://jre655.com/2013/12/03/emacs%E3%81%84%E3%81%98%E3%82%81%E3%81%AE%E7%8F%BE%E5%A0%B4-cron%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/">Emacsいじめの現場 – cronでやってみる</a></td>
+	</tr>
+	<tr>
+		<td>003</td>
+		<td>12/03(火)</td>
+		<td>@rbtnn</td>
+		<td><a href="http://qiita.com/rbtnn/items/deb569ebc94d5172a5e5">vital.vimをどんどん使っていこう。</a></td>
+	</tr>
+	<tr>
+		<td>004</td>
+		<td>12/04(水)</td>
+		<td>@kefir_</td>
+		<td><a href="http://qiita.com/kefir_/items/78e64c545a70a0ebea8a">Vimで画像を見る（DRCSのSIXEL拡張の話）</a></td>
+	</tr>
+	<tr>
+		<td>005</td>
+		<td>12/05(木)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/thingspast-vim-released.html">Vimによる通知センター実装、ThingsPast.vimをリリースしました</a></td>
+	</tr>
+	<tr>
+		<td>006</td>
+		<td>12/06(金)</td>
+		<td>@kaoriya</td>
+		<td><a href="http://www.kaoriya.net/blog/2013/12/06/">正しいVimのロゴ</a></td>
+	</tr>
+	<tr>
+		<td>007</td>
+		<td>12/07(土)</td>
+		<td>@mattn</td>
+		<td><a href="http://mattn.kaoriya.net/software/vim/20131206144325.htm">Vim script は人々の生活を豊かにしなければならないッ！</a></td>
+	</tr>
+	<tr>
+		<td>008</td>
+		<td>12/08(日)</td>
+		<td>@dice_zu</td>
+		<td><a href="http://daisuzu.hatenablog.com/entry/2013/12/08/000610">Fabricで最新のVimをバラまく</a></td>
+	</tr>
+	<tr>
+		<td>009</td>
+		<td>12/09(月)</td>
+		<td>@Linda_pp</td>
+		<td><a href="http://rhysd.hatenablog.com/entry/2013/12/09/001219">無数のパッチを組み合わせて君だけの MacVim を作ろう！</a></td>
+	</tr>
+	<tr>
+		<td>010</td>
+		<td>12/10(火)</td>
+		<td>@alpaca_taichou</td>
+		<td><a href="http://alpaca-tc.github.io/blog/vim/neocomplete-vs-youcompleteme.html">NeoComplete vs YouCompleteMe</a></td>
+	</tr>
+	<tr>
+		<td>011</td>
+		<td>12/11(水)</td>
+		<td>@ne_sachirou</td>
+		<td><a href="http://c4se.hatenablog.com/entry/2013/12/11/215853" title="n度目">Vim でoutline editorを演じる</a></td>
+	</tr>
+	<tr>
+		<td>012</td>
+		<td>12/12(木)</td>
+		<td>@mopp_jp</td>
+		<td><a href="http://ac-mopp.blogspot.jp/2013/12/vim-pluginvim-script.html">つくったVim PluginとつかったVim scriptのはなし</a></td>
+	</tr>
+	<tr>
+		<td>013</td>
+		<td>12/13(金)</td>
+		<td>@kumack55</td>
+		<td><a href="http://blog.kumack.net/?eid=15">Vim on Android</a></td>
+	</tr>
+	<tr>
+		<td>014</td>
+		<td>12/14(土)</td>
+		<td>@joker1007</td>
+		<td><a href="http://d.hatena.ne.jp/joker1007/20131215/1387085776">webapi-vimとBufWriteCmdでWeb上のリソースをVimで編集する</a></td>
+	</tr>
+	<tr>
+		<td>015</td>
+		<td>12/15(日)</td>
+		<td>@deris0126</td>
+		<td><a href="http://deris.hatenablog.jp/entry/2013/12/15/235606">Vimmerなら2013年中に試しておきたい海外産Vim plugin 8選</a></td>
+	</tr>
+	<tr>
+		<td>016</td>
+		<td>12/16(月)</td>
+		<td>@c0hama</td>
+		<td><a href="http://cohama.hateblo.jp/entry/2013/12/17/003353">fugitive.vim をもっと使いこなす</a></td>
+	</tr>
+	<tr>
+		<td>017</td>
+		<td>12/17(火)</td>
+		<td>@cocopon</td>
+		<td><a href="http://cocopon.me/blog/?p=4059">オシャレ派Vimmerのあなたへ。こだわりのカラースキームギャラリーを贈ります。</a></td>
+	</tr>
+	<tr>
+		<td>018</td>
+		<td>12/18(水)</td>
+		<td>@yoshikaw</td>
+		<td><a href="http://yskwkzhr.blogspot.jp/2013/12/10-vim-tips-to-help-the-server-management.html">サーバ管理に役立つVim技10選</a></td>
+	</tr>
+	<tr>
+		<td>019</td>
+		<td>12/19(木)</td>
+		<td>@orga_chem</td>
+		<td><a href="http://orgachem.hatenablog.com/entry/2013/12/19/130701">vim-splashを使い倒してこそ真のVimmerですぞ</a></td>
+	</tr>
+	<tr>
+		<td>020</td>
+		<td>12/20(金)</td>
+		<td>@s_of_p</td>
+		<td><a href="http://qiita.com/s_of_p/items/b61e4c3a0c7ee279848a">おさらい autocmd/augroup</a></td>
+	</tr>
+	<tr>
+		<td>021</td>
+		<td>12/21(土)</td>
+		<td>@harukey2525</td>
+		<td><a href="http://qiita.com/harukey2525/items/0604c4f00b579d553956">C言語用の.vimrcをつくりたい</a></td>
+	</tr>
+	<tr>
+		<td>022</td>
+		<td>12/22(日)</td>
+		<td>@raa0121</td>
+		<td><a href="http://wp.raa0121.info/2013/12/neobundler.html">NeoBundlerを使ってライブラリをライブラリしよう！</a></td>
+	</tr>
+	<tr>
+		<td>023</td>
+		<td>12/23(月)</td>
+		<td>@thinca</td>
+		<td><a href="http://d.hatena.ne.jp/thinca/20131223/1387734151">submode.vim で特定の条件の時だけ submode に入る</a></td>
+	</tr>
+	<tr>
+		<td>024</td>
+		<td>12/24(火)</td>
+		<td>@auewe</td>
+		<td><a href="http://auewe.hatenablog.com/entry/2013/12/25/033416" title="LaTeXが捗る">quickrunで部分コンパイル</a></td>
+	</tr>
+	<tr>
+		<td>025</td>
+		<td>12/25(水)</td>
+		<td>@t9md</td>
+		<td><a href="http://d.hatena.ne.jp/t9md/20131227/1388140475">私の Vim 活記録</a></td>
+	</tr>
+	<tr>
+		<td>026</td>
+		<td>12/26(木)</td>
+		<td>@toyamarinyon</td>
+		<td><a href="http://toyamarinyon.hatenablog.jp/entry/2013/12/27/082910">わたしとvim</a></td>
+	</tr>
+	<tr>
+		<td>027</td>
+		<td>12/27(金)</td>
+		<td>@syui</td>
+		<td><a href="http://mba-hack.blogspot.jp/2013/12/vim-script-vol3.html">Vim script初心者講座 vol.3</a></td>
+	</tr>
+	<tr>
+		<td>028</td>
+		<td>12/28(土)</td>
+		<td>@kobadesu</td>
+		<td><a href="http://dev.logicspace.net/entry/2013/12/28/202227">はてなブログへVimからポストする</a></td>
+	</tr>
+	<tr>
+		<td>029</td>
+		<td>12/29(日)</td>
+		<td>@pebble8888</td>
+		<td><a href="http://pebble8888.hatenablog.com/entry/2013/12/28/223902">doxygen形式の関数コメントを生成するvim plugin（C、Objective-C対応）</a></td>
+	</tr>
+	<tr>
+		<td>030</td>
+		<td>12/30(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20131230/1388413632">来年も使いたい Vim プラグインランキング2013</a></td>
+	</tr>
+	<tr>
+		<td>031</td>
+		<td>12/31(火)</td>
+		<td>@kanno_kanno</td>
+		<td><a href="http://kannokanno.hatenablog.com/entry/2013/12/31/161123">Vim &#8211; プラグインまたはVim scriptを書く楽しさについて語りたい</a></td>
+	</tr>
+	<tr>
+		<td>032</td>
+		<td>01/01(水)</td>
+		<td>@ujihisa</td>
+		<td><a href="https://gist.github.com/ujihisa/8199581">VimConf2013</a></td>
+	</tr>
+	<tr>
+		<td>033</td>
+		<td>01/02(木)</td>
+		<td>@ne_sachirou</td>
+		<td><a href="http://c4se.hatenablog.com/entry/2014/01/02/010615">Vim で、文字数をstatuslineやlightline.vimに表示する</a></td>
+	</tr>
+	<tr>
+		<td>034</td>
+		<td>01/03(金)</td>
+		<td>@kamichidu</td>
+		<td><a href="http://qiita.com/kamichidu/items/057ce81a95d3e1cbd43a">uniteでfile_include的な挙動を実装する</a></td>
+	</tr>
+	<tr>
+		<td>035</td>
+		<td>01/04(土)</td>
+		<td>@cocopon</td>
+		<td><a href="http://cocopon.me/blog/?p=4423">南極からやってきたカラースキーム「Iceberg」</a></td>
+	</tr>
+	<tr>
+		<td>036</td>
+		<td>01/05(日)</td>
+		<td>@ujihisa</td>
+		<td><a href="https://gist.github.com/ujihisa/8292163">unite-include-reversed</a></td>
+	</tr>
+	<tr>
+		<td>037</td>
+		<td>01/06(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140106/1389018511">Vim のインサートモードで ＜C-c＞ を ＜Esc＞ の代替にしてはいけない</a></td>
+	</tr>
+	<tr>
+		<td>038</td>
+		<td>01/07(火)</td>
+		<td>@cocopon</td>
+		<td><a href="http://cocopon.me/blog/?p=4419">【Vimカッコイイ計画最終章】もしCSSでVimのカラースキームがつくれたら…？</a></td>
+	</tr>
+	<tr>
+		<td>039</td>
+		<td>01/08(水)</td>
+		<td>@kanno_kanno</td>
+		<td><a href="http://kannokanno.hatenablog.com/entry/2014/01/08/134706">Vim &#8211; Vim scriptなら関数呼び出しや関数名に変数展開を使える！</a></td>
+	</tr>
+	<tr>
+		<td>040</td>
+		<td>01/09(木)</td>
+		<td>@LeafCage</td>
+		<td><a href="http://leafcage.hateblo.jp/entry/2014/01/09/193222">statusline系プラグイン第4の刺客 vim-ezbar</a></td>
+	</tr>
+	<tr>
+		<td>041</td>
+		<td>01/10(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140110/1389342122">textobj の両端へ移動する operator つくった</a></td>
+	</tr>
+	<tr>
+		<td>042</td>
+		<td>01/11(土)</td>
+		<td>@alpaca_taichou</td>
+		<td><a href="http://alpaca.tc/blog/vim/file-include-by-neocomplete.html">neocomplete.vimのfile_includeを使いこなす</a></td>
+	</tr>
+	<tr>
+		<td>043</td>
+		<td>01/12(日)</td>
+		<td>@ikunikun</td>
+		<td><a href="http://d.hatena.ne.jp/ikunikun/20140110/1389382044">vimshell を初心者からレビューです</a></td>
+	</tr>
+	<tr>
+		<td>044</td>
+		<td>01/13(月)</td>
+		<td>@t9md</td>
+		<td><a href="http://d.hatena.ne.jp/t9md/20140112/1389542181">choosewin.vim をつくりました</a></td>
+	</tr>
+	<tr>
+		<td>045</td>
+		<td>01/14(火)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140114/1389711504">unite-choosewin-actions つくった</a></td>
+	</tr>
+	<tr>
+		<td>046</td>
+		<td>01/15(水)</td>
+		<td>@zoncoen</td>
+		<td><a href="http://blog.zoncoen.net/blog/2014/01/15/unite-autojump/">Unite-autojumpをつくった</a></td>
+	</tr>
+	<tr>
+		<td>047</td>
+		<td>01/16(木)</td>
+		<td>@s_of_p</td>
+		<td><a href="http://qiita.com/s_of_p/items/70955aaa080102c5fd57">Virtual-Replace</a></td>
+	</tr>
+	<tr>
+		<td>048</td>
+		<td>01/17(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140117/1389966242">Vim で libclang を使用した C++ の便利プラグインをつくった</a></td>
+	</tr>
+	<tr>
+		<td>049</td>
+		<td>01/18(土)</td>
+		<td>@thinca</td>
+		<td><a href="http://d.hatena.ne.jp/thinca/20140118/1390050203">本当にキモい Vim script &#8211; 行継続編</a></td>
+	</tr>
+	<tr>
+		<td>050</td>
+		<td>01/19(日)</td>
+		<td>@lisia</td>
+		<td><a href="http://lisia.hatenadiary.jp/entry/2014/01/19/171926">私とVim</a></td>
+	</tr>
+	<tr>
+		<td>051</td>
+		<td>01/20(月)</td>
+		<td>@toyamarinyon</td>
+		<td><a href="http://toyamarinyon.hatenablog.jp/entry/2014/01/21/161139">node.jsのためのvimのプラグイン・設定まとめ（2014年1月）</a></td>
+	</tr>
+	<tr>
+		<td>052</td>
+		<td>01/21(火)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140121/1390309901">Vim でカーソル下の単語を移動するたびにハイライトする</a></td>
+	</tr>
+	<tr>
+		<td>053</td>
+		<td>01/22(水)</td>
+		<td>@kozo2</td>
+		<td><a href="http://kozo2.hatenablog.com/entry/2014/01/22/050714">jedi-vimとneocomplete.vimを併用する際に行っておきたい設定</a></td>
+	</tr>
+	<tr>
+		<td>054</td>
+		<td>01/23(木)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140123/1390485537">C++ 関連の vim 逆引きリファレンスのページをつくっている</a></td>
+	</tr>
+	<tr>
+		<td>055</td>
+		<td>01/24(金)</td>
+		<td>@lisia</td>
+		<td><a href="http://lisia.hatenadiary.jp/entries/2014/01/25">インデントを可視化するプラグイン</a></td>
+	</tr>
+	<tr>
+		<td>056</td>
+		<td>01/25(土)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140125/1390658740">:substitute をプレビューする over.vim にスクロール機能を実装した</a></td>
+	</tr>
+	<tr>
+		<td>057</td>
+		<td>01/26(日)</td>
+		<td>@deris0126</td>
+		<td><a href="http://deris.hatenablog.jp/entry/2014/01/26/124336">Vimのタブで開いているバッファのdiffを簡単に表示するpluginを書いた</a></td>
+	</tr>
+	<tr>
+		<td>058</td>
+		<td>01/27(月)</td>
+		<td>@haya14busa</td>
+		<td><a href="http://haya14busa.com/reading-vim-help/">Vimのhelpを快適に引こう</a></td>
+	</tr>
+	<tr>
+		<td>059</td>
+		<td>01/28(火)</td>
+		<td>@deton_kih</td>
+		<td><a href="http://qiita.com/deton/items/61466d630edbac6734ae"><span class="caps">GNU</span> screenからVimへのペーストを、インデント崩れを回避しつつ簡潔な操作で行う</a></td>
+	</tr>
+	<tr>
+		<td>060</td>
+		<td>01/29(水)</td>
+		<td>@rcmdnk</td>
+		<td><a href="http://rcmdnk.github.io/blog/2014/01/29/computer-bash-vim/">二つのディレクトリのdiffをvimで順にチェック/較正していく</a></td>
+	</tr>
+	<tr>
+		<td>061</td>
+		<td>01/30(木)</td>
+		<td>@tyru</td>
+		<td><a href="http://d.hatena.ne.jp/tyru/20140129/localize_search_options">直前の検索パターンと&#8217;hlsearch&#8217;をバッファローカルにする</a></td>
+	</tr>
+	<tr>
+		<td>062</td>
+		<td>01/31(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140131/1391180483">バッファの任意の位置がコメントかどうかを判定する</a></td>
+	</tr>
+	<tr>
+		<td>063</td>
+		<td>02/01(土)</td>
+		<td>@tyru</td>
+		<td><a href="http://d.hatena.ne.jp/tyru/20140201/passing_args_to_a_program_on_windows_from_vim">Windows上でVimからプログラムに引数を渡したい時の注意点</a></td>
+	</tr>
+	<tr>
+		<td>064</td>
+		<td>02/02(日)</td>
+		<td>@thinca</td>
+		<td><a href="http://d.hatena.ne.jp/thinca/20140202/1391266973">本当にキモい Vim script &#8211; 型チェック編</a></td>
+	</tr>
+	<tr>
+		<td>065</td>
+		<td>02/03(月)</td>
+		<td>@tyru</td>
+		<td><a href="http://d.hatena.ne.jp/tyru/20140203/buffer_cmdline_completion">:bufferはバッファ名で補完できる</a></td>
+	</tr>
+	<tr>
+		<td>066</td>
+		<td>02/04(火)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/projectlocal-vim-released.html">プロジェクトのハンドリングを効率化するプラグイン、ProjectLocal.vimをリリースしました。</a></td>
+	</tr>
+	<tr>
+		<td>067</td>
+		<td>02/05(水)</td>
+		<td>@termoshtt</td>
+		<td><a href="http://termoshtt.hatenablog.com/entry/2014/02/05/193817">vimでひかえめな自動保存</a></td>
+	</tr>
+	<tr>
+		<td>068</td>
+		<td>02/06(木)</td>
+		<td>@AmaiSaeta</td>
+		<td><a href="http://amaisaeta.seesaa.net/article/387322833.html">closesomewindow.vim &#8211; 条件に合うウィンドウを閉じる Vim plugin</a></td>
+	</tr>
+	<tr>
+		<td>069</td>
+		<td>02/07(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140207/1391785259">Vim で Haml を書くときに quickrun.vim を利用したらちょー捗った話</a></td>
+	</tr>
+	<tr>
+		<td>070</td>
+		<td>02/08(土)</td>
+		<td>@yukimemi</td>
+		<td><a href="http://yukimemi.bitbucket.org/blog/html/2014/02/08/powershell_make_cmd.html">vim で powershell を書く！</a></td>
+	</tr>
+	<tr>
+		<td>071</td>
+		<td>02/09(日)</td>
+		<td>@CD01_</td>
+		<td><a href="http://cd01.hatenablog.jp/entry/2014/02/09/poshcomplete-vim">Vim で PowerShell のコマンドレットを補完する poshcomplete-vim を作ってみた</a></td>
+	</tr>
+	<tr>
+		<td>072</td>
+		<td>02/10(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140210/1392036881">コマンドラインウィンドウで表示される履歴の行数を減らす</a></td>
+	</tr>
+	<tr>
+		<td>073</td>
+		<td>02/11(火)</td>
+		<td>@haya14busa</td>
+		<td><a href="http://haya14busa.com/vim_highlight_search/">Vimの検索ハイライト,hlsearch,:nohlsearch,v:hlsearchがややこしい</a></td>
+	</tr>
+	<tr>
+		<td>074</td>
+		<td>02/12(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140212/1392216949">:NeoBundleLazy したプラグインをフォーカスが外れている時に自動的に読み込む</a></td>
+	</tr>
+	<tr>
+		<td>075</td>
+		<td>02/13(木)</td>
+		<td>@haya14busa</td>
+		<td><a href="http://haya14busa.com/vim_migemo_search/">Vimでmigemoを使って日本語でもローマ字のまま検索がしたい</a></td>
+	</tr>
+	<tr>
+		<td>076</td>
+		<td>02/14(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140214/1392387766">KaoriYa 版 Vim の +migemo を試してみた</a></td>
+	</tr>
+	<tr>
+		<td>077</td>
+		<td>02/15(土)</td>
+		<td>@AmaiSaeta</td>
+		<td><a href="http://agpg.seesaa.net/article/388606908.html">やったー！Vimでヒアドキュメント実装出来たよー！</a></td>
+	</tr>
+	<tr>
+		<td>078</td>
+		<td>02/16(日)</td>
+		<td>@haya14busa</td>
+		<td><a href="http://haya14busa.com/vim_driven_learning/">1年間『Vim駆動学習』してきて最高に楽しかったのでオススメしたい</a></td>
+	</tr>
+	<tr>
+		<td>079</td>
+		<td>02/17(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140217/1392644472">Vim の○○○の機能がいつ実装されたかを手軽に調べる方法</a></td>
+	</tr>
+	<tr>
+		<td>080</td>
+		<td>02/18(火)</td>
+		<td>@mopp_jp</td>
+		<td><a href="http://ac-mopp.blogspot.jp/2014/02/vimmakemake.html">Vimの:makeの引数補完機能付き:Makeを作った。</a></td>
+	</tr>
+	<tr>
+		<td>081</td>
+		<td>02/19(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140219/1392821957">vimfiler.vim でバッファ上でファイル名を編集する</a></td>
+	</tr>
+	<tr>
+		<td>082</td>
+		<td>02/20(木)</td>
+		<td>@mopp_jp</td>
+		<td><a href="http://ac-mopp.blogspot.jp/2014/02/vimrc.html">.vimrcでありがちなミスとかおすすめとか</a></td>
+	</tr>
+	<tr>
+		<td>083</td>
+		<td>02/21(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140221/1392991765">switch.vim で文字列リテラルを切り替える</a></td>
+	</tr>
+	<tr>
+		<td>084</td>
+		<td>02/22(土)</td>
+		<td>@cocopon</td>
+		<td><a href="http://cocopon.me/blog/?p=4719">vimrc読書会で読まれてきました！細マッチョなvimrcへの道</a></td>
+	</tr>
+	<tr>
+		<td>085</td>
+		<td>02/23(日)</td>
+		<td>@koara_local</td>
+		<td><a href="http://qiita.com/koara-local/items/a435836e48a8a1ed4797">VimでいつでもMakeしたい</a></td>
+	</tr>
+	<tr>
+		<td>086</td>
+		<td>02/24(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140227/1393506975">neovim に関する記事をまとめてみた</a></td>
+	</tr>
+	<tr>
+		<td>087</td>
+		<td>02/25(火)</td>
+		<td>@saihoooooooo</td>
+		<td><a href="http://saihoooooooo.hatenablog.com/entry/2014/02/25/005205">vim-localvimrcで編集するファイルパスごとに異なる設定を保持する</a></td>
+	</tr>
+	<tr>
+		<td>088</td>
+		<td>02/26(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140226/1393427342">誤った goto 文で到達しないコード箇所を直ちに検知する方法</a></td>
+	</tr>
+	<tr>
+		<td>089</td>
+		<td>02/27(木)</td>
+		<td>@kanno_kanno</td>
+		<td><a href="http://kannokanno.hatenablog.com/entry/2014/02/28/055315">Vim &#8211; agやackの検索結果を表示するctrlsfプラグイン</a></td>
+	</tr>
+	<tr>
+		<td>090</td>
+		<td>02/28(金)</td>
+		<td>@mopp_jp</td>
+		<td><a href="http://ac-mopp.blogspot.jp/2014/03/vim.html">君の知らないVimレジスター</a></td>
+	</tr>
+	<tr>
+		<td>091</td>
+		<td>03/01(土)</td>
+		<td>@syngan</td>
+		<td><a href="http://d.hatena.ne.jp/syngan/20140301/1393676442">hoge() で囲みたい症候群</a></td>
+	</tr>
+	<tr>
+		<td>092</td>
+		<td>03/02(日)</td>
+		<td>@deton_kih</td>
+		<td><a href="http://qiita.com/deton/items/ce21f80265753134e7e9">`c`,`s`,`r`コマンドで、書き換え前の文字列に応じてIMオン/オフを切り替えるVimプラグインを作りました</a></td>
+	</tr>
+	<tr>
+		<td>093</td>
+		<td>03/03(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140303/1393854617">Vim で行番号の左側に余白を追加する</a></td>
+	</tr>
+	<tr>
+		<td>094</td>
+		<td>03/04(火)</td>
+		<td>@mopp_jp</td>
+		<td><a href="http://ac-mopp.blogspot.jp/2014/03/vim-ccpp-hhpp-plugin.html">Vim で .c/.cpp と.h/.hpp とかを相互に開くPluginをつくったじゃんよ</a></td>
+	</tr>
+	<tr>
+		<td>095</td>
+		<td>03/05(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140305/1394032093">unite.vim のアクションを起動するときに start-insert して開く方法</a></td>
+	</tr>
+	<tr>
+		<td>096</td>
+		<td>03/06(木)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/momongavim-3.html">3/21日に東京でVim勉強会を開催します</a></td>
+	</tr>
+	<tr>
+		<td>097</td>
+		<td>03/07(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140307/1394204974">モモンガでもわかるテキストオブジェクトとオペレータ</a></td>
+	</tr>
+	<tr>
+		<td>098</td>
+		<td>03/08(土)</td>
+		<td>@vimtaku</td>
+		<td><a href="http://vimtaku.github.io/blog/2014/03/08/vim-operator-mdurl/">Vim-operator-mdurl という Vim Plugin 書いた</a></td>
+	</tr>
+	<tr>
+		<td>099</td>
+		<td>03/09(日)</td>
+		<td>@tek_koc</td>
+		<td><a href="http://qiita.com/tekkoc/items/98adcadfa4bdc8b5a6ca">Vimの便利な画面分割＆タブページと、それを更に便利にする方法</a></td>
+	</tr>
+	<tr>
+		<td>100</td>
+		<td>03/10(月)</td>
+		<td>@anekos</td>
+		<td><a href="http://d.hatena.ne.jp/nokturnalmortum/20140310/1394452613">XMonad の NamedScratchPad と restart.vim のアギャーーーー！</a></td>
+	</tr>
+	<tr>
+		<td>101</td>
+		<td>03/11(火)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/beta-flowchart.html">ベータ版 ビムの選び方フローチャート</a></td>
+	</tr>
+	<tr>
+		<td>102</td>
+		<td>03/12(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140312/1394633425">ヤンクした <span class="caps">URL</span> を貼り付けて neosnippet を展開する</a></td>
+	</tr>
+	<tr>
+		<td>103</td>
+		<td>03/13(木)</td>
+		<td>@mopp_jp</td>
+		<td><a href="http://ac-mopp.blogspot.jp/2014/03/lightlinevim.html">lightline.vimのバッファ履歴表示コンポーネントをかいた</a></td>
+	</tr>
+	<tr>
+		<td>104</td>
+		<td>03/14(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140314/1394805395">over.vim 2.0 をリリースしました</a></td>
+	</tr>
+	<tr>
+		<td>105</td>
+		<td>03/15(土)</td>
+		<td>@deton_kih</td>
+		<td><a href="http://qiita.com/deton/items/a3cb60ae014276aeb4d9">Vimでの日本語入力・編集用に別コマンドを割り当てる</a></td>
+	</tr>
+	<tr>
+		<td>106</td>
+		<td>03/16(日)</td>
+		<td>@h0k0r0bi</td>
+		<td><a href="http://qiita.com/hokorobi/items/71b930abdeb6edb342c7">Vim で tags ファイル生成を補助するプラグインを作ってみた</a></td>
+	</tr>
+	<tr>
+		<td>107</td>
+		<td>03/17(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140317/1395066378">Vim で矩形なオブジェクトを対象とする為の textobj を書いた</a></td>
+	</tr>
+	<tr>
+		<td>108</td>
+		<td>03/18(火)</td>
+		<td>@haya14busa</td>
+		<td><a href="http://haya14busa.com/improve-x-with-vim-submode/">かゆいところに手が届く、vim-submodeでxの挙動をカイゼンする</a></td>
+	</tr>
+	<tr>
+		<td>109</td>
+		<td>03/19(水)</td>
+		<td>@okuramasafumi</td>
+		<td><a href="http://qiita.com/okuramasafumi/items/50c64825cf365e8f6e78">Vimを体系的に学ぶつもりのない人のためのVim講座</a></td>
+	</tr>
+	<tr>
+		<td>110</td>
+		<td>03/20(木)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140320/1395327444">Vim script からキー入力を呼び出す</a></td>
+	</tr>
+	<tr>
+		<td>111</td>
+		<td>03/21(金)</td>
+		<td>@syngan</td>
+		<td><a href="http://d.hatena.ne.jp/syngan/20140321/1395411106">vim-vimlint で Travis-CI 連携</a></td>
+	</tr>
+	<tr>
+		<td>112</td>
+		<td>03/22(土)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140322/1395500795">Vim script でいろいろな関数の定義方法</a></td>
+	</tr>
+	<tr>
+		<td>113</td>
+		<td>03/23(日)</td>
+		<td>@haya14busa</td>
+		<td><a href="http://haya14busa.com/mastering-vim-easymotion/">Vim-EasyMotionでカーソル移動を爆速にして生産性をもっと向上させる</a></td>
+	</tr>
+	<tr>
+		<td>114</td>
+		<td>03/24(月)</td>
+		<td>@thinca</td>
+		<td><a href="http://d.hatena.ne.jp/thinca/20140324/1395590910">gf-user で gf の動作を拡張する</a></td>
+	</tr>
+	<tr>
+		<td>115</td>
+		<td>03/25(火)</td>
+		<td>@deton_kih</td>
+		<td><a href="http://qiita.com/deton/items/08262f19efb9bd61e4cb">WindowsでUWSCやAutoHotkeyを使って外部エディタとしてgvimを起動する</a></td>
+	</tr>
+	<tr>
+		<td>116</td>
+		<td>03/26(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140326/1395836297">neobundle.vim で Vim のフォーカスが外れた時に自動でプラグインを読み込む</a></td>
+	</tr>
+	<tr>
+		<td>117</td>
+		<td>03/27(木)</td>
+		<td>@msmhrt</td>
+		<td><a href="http://qiita.com/msmhrt/items/3e67aca71a43e8acfbd3">sudoedit で Vim の多重起動を避ける</a></td>
+	</tr>
+	<tr>
+		<td>118</td>
+		<td>03/28(金)</td>
+		<td>@mfumi2</td>
+		<td><a href="http://d.hatena.ne.jp/mFumi/20140328/1395946070">vimのconcealを使ってJavadocを奇麗に表示</a></td>
+	</tr>
+	<tr>
+		<td>119</td>
+		<td>03/29(土)</td>
+		<td>@tgfjt</td>
+		<td><a href="http://qiita.com/tgfjt/items/4a739e6a1d10327e6d1e">vim-gal-character を作ってみた。</a></td>
+	</tr>
+	<tr>
+		<td>120</td>
+		<td>03/30(日)</td>
+		<td>@raa0121</td>
+		<td><a href="http://wp.raa0121.info/2014/03/2-sapporovim.html">第2回 Sapporo.vim を行います</a></td>
+	</tr>
+	<tr>
+		<td>121</td>
+		<td>03/31(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140331/1396276259">Vim のパッチ一覧を出力する unite-vimpatches をつくった</a></td>
+	</tr>
+	<tr>
+		<td>122</td>
+		<td>04/01(火)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/momongavim-3-report.html">momonga.vim #3 に行ってきた</a></td>
+	</tr>
+	<tr>
+		<td>123</td>
+		<td>04/02(水)</td>
+		<td>@ShougoMatsu</td>
+		<td><a href="http://vinarian.blogspot.jp/2014/04/web-sublime-text.html">Web 製作者のための Sublime Text の教科書レビュー</a></td>
+	</tr>
+	<tr>
+		<td>124</td>
+		<td>04/03(木)</td>
+		<td>@AmaiSaeta</td>
+		<td><a href="http://amaisaeta.seesaa.net/article/393335326.html">hermitcrab.vim ―― シェル関係の設定を一括変更、或いは好みのシェルでコマンドを実行するVimプラグイン</a></td>
+	</tr>
+	<tr>
+		<td>125</td>
+		<td>04/04(金)</td>
+		<td>@gu4</td>
+		<td><a href="http://d.hatena.ne.jp/guyon/20140403/1396542505">最近のvim界隈の出来事をキャッチアップするには</a></td>
+	</tr>
+	<tr>
+		<td>126</td>
+		<td>04/05(土)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140405/1396706216">Vim で一時的に変更したオプションの値を安全に戻す</a></td>
+	</tr>
+	<tr>
+		<td>127</td>
+		<td>04/06(日)</td>
+		<td>@dictav_</td>
+		<td><a href="http://www.dictav.info/2014/04/06/vac.html">VACが死んでしまう</a></td>
+	</tr>
+	<tr>
+		<td>128</td>
+		<td>04/07(月)</td>
+		<td>@thinca</td>
+		<td><a href="http://d.hatena.ne.jp/thinca/20140407/1396882767">Vim でバイナリデータを扱う</a></td>
+	</tr>
+	<tr>
+		<td>129</td>
+		<td>04/08(火)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140408/1396966239">C＋＋ の Vim でのコーディング風景をキャプチャしてみた</a></td>
+	</tr>
+	<tr>
+		<td>130</td>
+		<td>04/09(水)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/jazzradio-vim-released.html">ジャズだって聴ける。そう、Vimならね。</a></td>
+	</tr>
+	<tr>
+		<td>131</td>
+		<td>04/10(木)</td>
+		<td>@keizo_bookman</td>
+		<td><a href="http://keizobookman.hatenablog.com/entry/2014/04/10/193041">とあるvim宣教師の手記</a></td>
+	</tr>
+	<tr>
+		<td>132</td>
+		<td>04/11(金)</td>
+		<td>@s_of_p</td>
+		<td><a href="http://qiita.com/s_of_p/items/b7ab2e4a9e484ceb9ee7">Windows でのステータスライン用フォント</a></td>
+	</tr>
+	<tr>
+		<td>133</td>
+		<td>04/12(土)</td>
+		<td>@dice_zu</td>
+		<td><a href="http://daisuzu.hatenablog.com/entry/2014/04/12/212321">Vimでマウスを使った矩形選択がしたい</a></td>
+	</tr>
+	<tr>
+		<td>134</td>
+		<td>04/13(日)</td>
+		<td>@tyru</td>
+		<td><a href="http://d.hatena.ne.jp/tyru/20140413/delete_entire_command_line_history">Vimでコマンドライン履歴を消す方法</a></td>
+	</tr>
+	<tr>
+		<td>135</td>
+		<td>04/14(月)</td>
+		<td>@s_of_p</td>
+		<td><a href="http://qiita.com/s_of_p/items/9d2726d31eb294fb2502">Togglable な option を便利にする</a></td>
+	</tr>
+	<tr>
+		<td>136</td>
+		<td>04/15(火)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140415/1397571244">Vim script で関数のデフォルト引数を設定したい</a></td>
+	</tr>
+	<tr>
+		<td>137</td>
+		<td>04/16(水)</td>
+		<td>@s_of_p</td>
+		<td><a href="http://qiita.com/s_of_p/items/a5649b4010684d8b24aa">colorscheme にマッチした highlight 設定を追加する</a></td>
+	</tr>
+	<tr>
+		<td>138</td>
+		<td>04/17(木)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140417/1397747117">neobundle.vim でリポジトリ内の任意のディレクトリをプラグインとして読み込む</a></td>
+	</tr>
+	<tr>
+		<td>139</td>
+		<td>04/18(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>140</td>
+		<td>04/19(土)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140419/1397919267">gtk 環境だと remote_foreground() がうまく動作しない</a></td>
+	</tr>
+	<tr>
+		<td>141</td>
+		<td>04/20(日)</td>
+		<td>@aiya_000</td>
+		<td><a href="http://gcc0aiya000.blog.fc2.com/blog-entry-24.html">Vimで安心する編集生活</a></td>
+	</tr>
+	<tr>
+		<td>142</td>
+		<td>04/21(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140421/1398095903">Vim 初心者を脱出するために行う6つのこと</a></td>
+	</tr>
+	<tr>
+		<td>143</td>
+		<td>04/22(火)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>144</td>
+		<td>04/23(水)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>145</td>
+		<td>04/24(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>146</td>
+		<td>04/25(金)</td>
+		<td>@sh4869sh</td>
+		<td><a href="http://sh4869.hatenablog.com/entry/2014/04/26/002312">Vim初心者が覚えておいて得したコマンド</a></td>
+	</tr>
+	<tr>
+		<td>147</td>
+		<td>04/26(土)</td>
+		<td>@sbwyhs</td>
+		<td><a href="http://rinx.tk/blog/2014/04/26/vac2013-147/#.U10cP2t_ukA">Vimで女子力を高める</a></td>
+	</tr>
+	<tr>
+		<td>148</td>
+		<td>04/27(日)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140427/1398610934">Vim 7.4.260 から g: から始まる関数名がエラーになるようになりました</a></td>
+	</tr>
+	<tr>
+		<td>149</td>
+		<td>04/28(月)</td>
+		<td>@tek_koc</td>
+		<td><a href="http://qiita.com/tekkoc/items/8897cdf378305c4e547d">VimでPHPの補完にスニペットを使ったら捗った件</a></td>
+	</tr>
+	<tr>
+		<td>150</td>
+		<td>04/29(火)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140429/1398782989">Vim で任意の列をハイライトする</a></td>
+	</tr>
+	<tr>
+		<td>151</td>
+		<td>04/30(水)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>152</td>
+		<td>05/01(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>153</td>
+		<td>05/02(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>154</td>
+		<td>05/03(土)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>155</td>
+		<td>05/04(日)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>156</td>
+		<td>05/05(月)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>157</td>
+		<td>05/06(火)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>158</td>
+		<td>05/07(水)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>159</td>
+		<td>05/08(木)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>160</td>
+		<td>05/09(金)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>161</td>
+		<td>05/10(土)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>162</td>
+		<td>05/11(日)</td>
+		<td>@</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>163</td>
+		<td>05/12(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140512/1399901014">:NeoBundle &#8216;Shougo/neobundle.vim&#8217; してはいけない</a></td>
+	</tr>
+	<tr>
+		<td>164</td>
+		<td>05/13(火)</td>
+		<td>@lisia</td>
+		<td><a href="http://lisia.hatenadiary.jp/entry/2014/05/13/203612">Vimでカラーコードをインクリメントする</a></td>
+	</tr>
+	<tr>
+		<td>165</td>
+		<td>05/14(水)</td>
+		<td>@supermomonga</td>
+		<td><a href="https://gist.github.com/supermomonga/8887bbac7cdb22ff0027">Vimで離れた複数の行に対する一括操作を行う</a></td>
+	</tr>
+	<tr>
+		<td>166</td>
+		<td>05/15(木)</td>
+		<td>@syui</td>
+		<td><a href="http://qiita.com/syui/items/442fd0905a1f2005c10e">Vimのマーク機能、使い方まとめ</a></td>
+	</tr>
+	<tr>
+		<td>167</td>
+		<td>05/16(金)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140516/1400251726">任意の正規表現パターンにマッチする textobj を書いた</a></td>
+	</tr>
+	<tr>
+		<td>168</td>
+		<td>05/17(土)</td>
+		<td>@rksz</td>
+		<td><a href="http://www.rickynews.com/blog/2014/05/14/vim-speedup-strategy/">Vimの生産性を一撃で高めるシンプルなテクニック</a></td>
+	</tr>
+	<tr>
+		<td>169</td>
+		<td>05/18(日)</td>
+		<td>@KSuzukiii</td>
+		<td><a href="http://ksuzukiii.hatenablog.com/entry/2014/05/18/000522">Vim Advent Calendarで見つめなおす .vimrc</a></td>
+	</tr>
+	<tr>
+		<td>170</td>
+		<td>05/19(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140519/1400511628">vim-operator-alignta つくった</a></td>
+	</tr>
+	<tr>
+		<td>171</td>
+		<td>05/20(火)</td>
+		<td>@deris0126</td>
+		<td><a href="http://deris.hatenablog.jp/entry/2014/05/20/235807">ぼくのかんがえたさいしょうのvimrc</a></td>
+	</tr>
+	<tr>
+		<td>172</td>
+		<td>05/21(水)</td>
+		<td>@iyuuya</td>
+		<td><a href="http://d.hatena.ne.jp/iyuuya/20140521/1400667042">Osaka.vim &#8211; 第一話 始動 -</a></td>
+	</tr>
+	<tr>
+		<td>173</td>
+		<td>05/22(木)</td>
+		<td>@supermomonga</td>
+		<td><a href="http://blog.supermomonga.com/articles/vim/tokyovim-19-report.html">TokyoVim #19 に行ってきた</a></td>
+	</tr>
+	<tr>
+		<td>174</td>
+		<td>05/23(金)</td>
+		<td>@lisia</td>
+		<td><a href="http://lisia.hatenadiary.jp/entry/2014/05/23/231418">listcharsでドキッとした話</a></td>
+	</tr>
+	<tr>
+		<td>175</td>
+		<td>05/24(土)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140524/1400943249">横幅が統一ではない矩形をヤンクしたり削除したりするプラグインをつくった</a></td>
+	</tr>
+	<tr>
+		<td>176</td>
+		<td>05/25(日)</td>
+		<td>@p_ck_</td>
+		<td><a href="http://pocke.hatenablog.com/entry/2014/05/25/202957">:help する Vim の operator かいた</a></td>
+	</tr>
+	<tr>
+		<td>177</td>
+		<td>05/26(月)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140526/1401115510">Web から素早く :help するサイトつくった</a></td>
+	</tr>
+	<tr>
+		<td>178</td>
+		<td>05/27(火)</td>
+		<td>@s_of_p</td>
+		<td><a href="http://qiita.com/s_of_p/items/36b43a721cce67bb69b7">vimrc 読書会の学習効率を上げるある 1 つの Tips</a></td>
+	</tr>
+	<tr>
+		<td>179</td>
+		<td>05/28(水)</td>
+		<td>@manga_osyo</td>
+		<td><a href="http://d.hatena.ne.jp/osyo-manga/20140528/1401287116">任意のコマンドを実行する operator をつくった</a></td>
+	</tr>
+	<tr>
+		<td>180</td>
+		<td>05/29(木)</td>
+		<td>@pebble8888</td>
+		<td><a href="http://pebble8888.hatenablog.com/entry/2014/05/29/000412">VimでVisualLine選択したテキスト内から/**/,//のコメント部分のみを削除する</a></td>
+	</tr>
+</table>
+<h1>コメントのテンプレです。</h1>
+【n日目】&lt;a href=&quot;記事のURL&quot;&gt;記事タイトル&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/45072" target="_blank">http://atnd.org/events/45072</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-07-31</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>365</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>Vim</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>57809</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>manga_osyo</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/manga_osyo" target="_blank">@manga_osyo</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>69</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-06-04</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

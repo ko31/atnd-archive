@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">appengine ja night #24</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">appengine ja night #24</h2>
+
+            <div class="buttons">
+                <a href="../json/events/37983.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/37983.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>37983</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>appengine ja night #24</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Google App Engine勉強会 利用者による実践的ノウハウの共有</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>内容</h1>
+<p>Google App Engine （Python/Java）の勉強会です。利用者同士で実践的ノウハウを共有しましょう！</p>
+<h2>セッション1：「Google Cloud Endpointsを使って作るJS/Android/iOS対応Webバックエンド」「BigQueryの大規模JOINとGROUP BY」</h2>
+<ul>
+	<li>発表者：Ryo Yamasaki @vierjpさん</li>
+	<li>内容：Google App Engine 1.7.5 から利用可能になったGoogle Cloud Endpointsの紹介。Cloud EndpointsはJavaScript/Android/iOSの3つのクライアントから簡単に利用できるWebバックエンドを作るための仕組み。<br />
+・Endpointsを使ってできる事、開発がどう楽になるか<br />
+・サーバーサイドとクライアントサイドの実装例(JS・Android)<br />
+・ハマりやすいポイント<br />
+について、スライドとデモを通して紹介します。<br />
+・最後に、BigQueryに追加された大規模JOIN・GROUP BYの簡単なデモも紹介します。</li>
+</ul>
+<h2>セッション2 「Datastoreへのアクセスを楽してMemcacheアクセスに置き換えるライブラリ作った in <span class="caps">GAE</span>/J」</h2>
+<ul>
+	<li>発表者：@vvakameさん</li>
+	<li>参考URL: <a href="https://github.com/vvakame/memvache/wiki">https://github.com/vvakame/memvache/wiki</a></li>
+	<li>内容：DatastoreへのアクセスをMemcacheを使ってなるべく行わないようにして課金額を抑える。GAEであれば非常によくあるコードだと思います。毎回毎回そんなコードを書いたりしていたのですが、いい加減めんどくさくなってきたのでやり方を考えました。DatastoreへのアクセスをApiProxy#setDelegate を使って処理し、自動的にMemcacheを利用するようにします。</li>
+	<li>脇道：実際に弊社プロジェクトでも使っていますよ。とか、効果とか測定したいけどめんどくさくてやってない。とか、リリース後に適用した事例はないけど大丈夫かなー。とか、聞くにPython+Djangoは自動でそういうのやってくれるらしくてずるい。とか、識者に相談したいこと(datastore_v3#Nextうざい)みたいな話。<br />
+<br></li>
+</ul>
+<h1>BeerTalk（懇親会）</h1>
+<p>後半は、ピザとビールをいただきながらBeerTalkタイムです。</p>
+<h2>BeerTalk1：「Google Cloud Platformの紹介」</h2>
+<ul>
+	<li>発表者：@shin1ogawaさん</li>
+</ul>
+<h2>BeerTalk2：「Google App Engineを使って仕事をするということ」</h2>
+<ul>
+	<li>発表者：塩瀬悠樹さん（吉積情報）</li>
+	<li>内容：Google App Engineを使って仕事をすると、一般的な開発現場とどれだけ違うかを弊社内の実例を交えてご紹介します。</li>
+</ul>
+<h2>BeerTalk3：「」</h2>
+<ul>
+	<li>発表者：@kazunori_279</li>
+	<li>内容：この時期に出てるかもしれないApp Engineを使った新しい何かを紹介するかもしないかもです。</li>
+</ul>
+<h2>BeerTalk4：「Dig・基幹系でAppEngineを掘る」</h2>
+<ul>
+	<li>発表者：清野克行さん</li>
+	<li>内容：基幹系でのGoogle Cloud SQLとHTML5連携、オフラインファーストによる完全待ち時間なしの仕訳入力の実現</li>
+	<li>参考URL：<a href="https://t.co/quZjvtvWjE">https://t.co/quZjvtvWjE</a><br />
+<br></li>
+</ul>
+<h1>参加方法</h1>
+<ul>
+	<li>セッション1+2のみ
+	<ul>
+		<li>参加費：無料</li>
+	</ul></li>
+	<li>BeerTalkも参加
+	<ul>
+		<li>参加費：1000円前後</li>
+		<li>登録時に <strong>BeerTalkも参加</strong> を選択してください。<br />
+<br></li>
+	</ul></li>
+</ul>
+<h1>場所について</h1>
+<ul>
+	<li>会場： リクルート　メディアテクノロジーラボ</li>
+	<li>住所： 東京都中央区銀座7-2-6 リクルートアネックス1ビル B1F</li>
+	<li>交通： 東京メトロ 銀座駅（C3出口）or JR 新橋駅（銀座口）</li>
+	<li>補足： 銀座７丁目の R25 カフェのある「リクルート GINZA7 ビル」の裏側のビル。数寄屋橋通り沿いの「リクルート<br />
+アネックス１ビル」の地下1階が会場です。<br />
+<br></li>
+</ul>
+<h1>その他</h1>
+<ul>
+	<li>ハッシュタグ： #ajn24</li>
+	<li>その他、当日のご連絡はtwitterにて@kazunori_279までつぶやきください</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/37983" target="_blank">http://atnd.org/events/37983</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-04-10</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-04-10</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都中央区銀座7-2-6</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>リクルート　メディアテクノロジーラボ</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6708529</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7605315</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>6049</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kazunori_279</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kazunori_279" target="_blank">@kazunori_279</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-04-10</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

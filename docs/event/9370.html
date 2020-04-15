@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">“テーブルルックアップ+PID制御”の問題解決のための逆モデルを併用した適応比例制御</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">“テーブルルックアップ+PID制御”の問題解決のための逆モデルを併用した適応比例制御</h2>
+
+            <div class="buttons">
+                <a href="../json/events/9370.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/9370.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>9370</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>“テーブルルックアップ+PID制御”の問題解決のための逆モデルを併用した適応比例制御</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p><span style="color:#FF0000">★★お申込・詳細確認は上記ＵＲＬ（販売会社の正式ホームページ）からご覧いただけます↑★★</span></p>
+<p>【講　師】　愛知工科大学　機械システム工学科　教授 梶谷満信　氏</p>
+<p><span style="color:#FF00FF">詳細確認またはお申込をご検討されている方は下記ＵＲＬをご覧ください ▼</span><br />
+<a href="http://ec.techzone.jp/products/detail.php?product_id=1249" target="_blank" title="http://ec.techzone.jp/products/detail.php?product_id=1249">http://ec.techzone.jp/products/detail.php?product_id=1249</a></p>
+<hr size="1" />
+<hr />
+<p>　現場では、“テーブルルックアップ+PID制御”が多用されていると思う。その訳は、試行錯誤で適合でき、且つそれなりの性能も得られるためと考える。しかし、様々な運転条件に合わせたテーブルやPIDゲインの適合に多くの時間を要し、時として不具合も起こすという問題があるのも事実である。この問題を難しい制御数学を使わずに解決する、実用的な方法について紹介する。理解を深めて頂くために、DCモータを対象として、数式証明ではなく、専らMATLAB/SIMULINKを用いたシミュレーションで説明する。</p>
+<hr />
+<p>1　制御数学…これだけは<br />
+　・今回紹介する制御は伝達関数の知識だけで設計できる。</p>
+<p>2　制御対象の同定<br />
+　・DCモータの伝達関数を実験で求める。<br />
+　　　※予測しない外乱の影響を持つ同定についても紹介。<br />
+　</p>
+<p>3　PID制御<br />
+　3.1　モデルマッチング法によるPIDゲイン適正化<br />
+　・PIDの性能を見極めるため、所望の閉ループ応答になるゲインを試行錯誤でなく計算で求める。<br />
+　3.2　PID制御の問題<br />
+　・モデルマッチング法でゲインを適正化しても、PID制御には実用上の大きな問題(①、②)が残る。<br />
+　　　　①外乱応答を重視すると、目標値応答で過応答<br />
+　　　　②運転条件が変わると、過応答(オーバシュートやアンダーシュート発生</p>
+<p>4　PID制御<br />
+　4.1　計算によるPID制御のゲイン適合<br />
+　・DCモータの伝達関数を用いて、所望の閉ループ応答になるゲインを計算<br />
+　4.2　PID制御の課題<br />
+　</p>
+<p>5　PID制御の問題①への対応<br />
+　・フィルタ型2自由度PID制御の適用で解決可能。でも、問題②は残存。<br />
+　</p>
+<p>6　PID制御の問題①&amp;②への対応<br />
+　・逆モデルと可変構造を有するPI制御の適用で、問題①も②解決。これが、“テーブルルックアップ+PID”の問題解決の指針。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/9370" target="_blank">http://atnd.org/events/9370</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2010-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2010-12-01</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://ec.techzone.jp/products/detail.php?product_id=1249" target="_blank">http://ec.techzone.jp/products/detail.php?product_id=1249</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区神田錦町3-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>オーム　ビル</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6927559</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7617613</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>29340</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Tech-Zone</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/AndTechCorp" target="_blank">@AndTechCorp</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2010-10-28</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

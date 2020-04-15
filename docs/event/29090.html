@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第17回 IT基礎技術勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第17回 IT基礎技術勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/29090.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/29090.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>29090</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第17回 IT基礎技術勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Assembler, Kernel, Binary 勉強会</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>セミナー中心の、IT基礎技術の勉強会です。気楽な感じでご参加ください。</p>
+<p>第17回のテーマは以下です。</p>
+<p>「Assembler, Kernel, Binary 勉強会」</p>
+<p>■ 内容</p>
+<p>文字列を出力するだけのプログラム、いわゆる「Hello World」はＣ言語の入門書の導入部分での定番ですが、その処理内容を深く追いかけると、Ａ４用紙で何枚ものレポートが書けるとよく言われます。</p>
+<p>PC-UNIXの環境で「Hello World」の実行バイナリを作成し，逆アセンブルしてどのようなことが行われているのかを解析してみましょう．アセンブラでのシステムコール呼び出しやカーネルのソースコードも追います．</p>
+<p>逆アセンブラ・デバッガ・バイナリエディタなどを利用します．実際に手を動かす勉強会です。</p>
+<p>※以前の内容については以下を参照してください。<br />
+http://kozos.jp/group/ITbeginner.html</p>
+<p>■ 対象</p>
+<p>・アセンブラ，カーネル，バイナリに興味のあるかた<br />
+・以下の「やること」を見て「面白そう！」と思うかた</p>
+<p>■ やること</p>
+<p>・FreeBSD/i386の環境で実行バイナリをコンパイル・逆アセンブルして解析してみる．<br />
+　関数呼び出し時のスタックの使い方とかを見る。</p>
+<p>・write()の呼び出しを探す．引数の扱いとかを見る．</p>
+<p>・int 0&#215;80によるシステムコールの呼び出しを見る．</p>
+<p>・FreeBSDカーネル内部でのシステムコール処理を見る．<br />
+　・引数の渡しかた<br />
+　・処理関数の呼び出し<br />
+　・エラーの返しかた</p>
+<p>・システムコール呼び出し後のerrnoの処理を見る．</p>
+<p>・Linuxカーネルではどうなのか見てみて比較してみる．</p>
+<p>■ 環境について</p>
+<p>今回は逆アセンブルやバイナリ解析など，参加者のかたに実際に手を動かしてもらう勉強会になります．</p>
+<p>なのでなるべくなら，各自，ＰＣを持参してください。（持参できるＰＣが無かったり手作業に自信が無い場合には，ＰＣ無しで聞くだけの参加でもＯＫです）</p>
+<p>作業環境は以下の２通りが選べます．</p>
+<p>(1)自前で環境を用意する場合</p>
+<p>今回利用するのはFreeBSD-8.3の環境です．自前のＰＣ上に環境構築したい場合はFreeBSD-8.3をインストールしてきてください．難しい場合は以下(2)のサーバ利用でも構いませんが，インターネット接続が不要なため，安定して操作できると思います．また事前に操作に馴染んでおくこともできます．</p>
+<p>ＶＭを利用すればさほどの危険(HDDのデータ消しちゃうとか)は無く，楽に構築できると思います．インストール時にはカーネルのソースコードもインストールしてください．(セミナー中で参照するため)</p>
+<p>バージョンが異なるとカーネルのソースコードやインストールされているgccのバージョンが異なったりするため，「FreeBSD-8.3」をインストールして来てください．あとはエディタとかがひととおり入っていればOKです．説明者はシェルにtcsh，テキストエディタにemacs，バイナリエディタにhexeditを利用します．</p>
+<p>(注)リンクするライブラリやシステムコール体系，gccのバージョン等が異なるため，UbuntuやOpenSUSEなどのGNU/Linuxディストリビューションでは代用できません．Mac OS X でもたぶん代用できません．</p>
+<p>Linuxカーネルコードも参照します．最新のソースコードを入れてきてください．これはたぶん参照するだけなので，ＶＭ利用の場合はWindowsなどのホストＯＳ側に置いておくだけでいいです．</p>
+<p>(2)サーバを利用する場合</p>
+<p>今回はFreeBSDのサーバをこちらで用意します．自前で開発環境を構築するのが面倒な場合，サーバを利用することもできます．</p>
+<p>各自が自分のＰＣからサーバにログインして，ツール操作をしてもらう感じになります．各自、インターネットに接続できるＰＣを持参してください。</p>
+<p>無線LANによるインターネット接続環境はこちらでも用意しますがたぶん細いのと接続数が限られるので，なるべく各自用意してください．無線LANのＡＰを立ててくれるかたがいれば大歓迎しますのでお願いします。(誰かお願い！)</p>
+<p>GUIでなくUNIX上でシェルを使っての操作になります．SSHでのログイン、bash or tcsh, vi or emacs, more or less, hexedit などの操作に慣れておいたほうがいいです．本題の説明に集中するため，これらについては最低限しか説明しません．各自で調べておいてください．不安なかたは早めに来て慣れてください．</p>
+<p>ＰＣにはTeraTermなど，SSHでログインできるツールをインストールしてきてください．TeraTermとWinSCPか，もしくはCygwinがおすすめです．当日は本題の方に集中したいので，このへんの準備もあらかじめ各自でお願いします．(当日はすぐに本題の説明に入るので，現地でインストールなどしている時間はあまり無いと思います)</p>
+<p>■ おおまかなスケジュール</p>
+<p>18:45　集合<br />
+18:50～19:00　オープニング<br />
+19:00～21:00　セミナー(途中でてきとうに休憩を入れます)</p>
+<p>■ 資料</p>
+<p>今回はプロジェクタによる説明と板書がメインになります。配布資料はありません。</p>
+<p>■ その他</p>
+<p>雰囲気的には、セミナーなので、まあ授業みたいな感じになります。説明するのは、主催者の坂井です。</p>
+<p>場所は神奈川県川崎市の武蔵小杉駅から徒歩10分程度の公民館です。<br />
+(注)場所がわかりにくいです(毎回迷子者が出ています)。地図をご確認ください．また，以下の案内も参考にしてください。</p>
+<p>http://kozos.jp/group/ITbeginner.html</p>
+<p>ひとり数百円程度の会場費＋電気代(￥100)がかかります。(会場費を割勘します)<br />
+学生は無料です。<br />
+コンセントを利用しなければ電気代は不要です．なのでなるべくならばＰＣのバッテリーを充電してきてください．コンセントの数が少ないので(会議室内に３箇所程度しかありません！)，なるべく電源タップを持参してください．</p>
+<p>開始時間は一応19時としてありますが、平日開催なので、開始時間は多くの参加者が来れる時間に合わせて調整します。会場は入退室自由なので、遅れて来たり早めに帰ったりしてもかまいません。</p>
+<p>会場は18:00には開場しておくので、早めに来てぐだぐだと待っていても構いません。今回は各自の準備やセッティングなどに時間もかかりますので、来れるならばなるべく早めに来てください。</p>
+<p>本勉強会は主催者が個人活動として行っているものなので，手が回りきらず当日はなにか不備があるかもしれません(とくにサーバ環境など)．ご了承ください．</p>
+<p>応募者少数の場合には、状況を見て中止にするかもしれません。そのときはごめんなさい。</p>
+<p>のんびり気楽な感じでやりましょう。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/29090" target="_blank">http://atnd.org/events/29090</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-06-08</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-06-08</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://kozos.jp/group/ITbeginner.html" target="_blank">http://kozos.jp/group/ITbeginner.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>神奈川県川崎市中原区小杉町3-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>川崎市 総合自治会館 第１会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.5751102</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6552815</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>25080</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kozos</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kozossakai" target="_blank">@kozossakai</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-05-23</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">【本日開催】※好評につき増席中！【 ヒカ☆ラボ 】キッ！レガシーだらけのAWS移行大会（後日談もあるよ）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">【本日開催】※好評につき増席中！【 ヒカ☆ラボ 】キッ！レガシーだらけのAWS移行大会（後日談もあるよ）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/93585.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/93585.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>93585</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>【本日開催】※好評につき増席中！【 ヒカ☆ラボ 】キッ！レガシーだらけのAWS移行大会（後日談もあるよ）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>ヒカ☆ラボ一覧は <a href="http://atnd.org/users/122618">こちら！！</a></h1>
+<h2>★講演内容</h2>
+<p><span class="caps">SEEDS</span> COMPANYではこの春、長年オンプレで稼働していたサービスを<br />
+AWSに全面移行しました。<br />
+このセッションではAWS移行時に行った技術転換、<br />
+各種施策と移行後の運用を通じて行った各種改善策について紹介します。</p>
+<p><strong>＜AWS移行時の技術転換＞</strong></p>
+<ul>
+	<li>ハードウェアのロードバランサーをalb + nginxに</li>
+	<li>ハードウェア上のMySQLをAuroraに</li>
+	<li>監視ツールを集約(mackerel, fluentd, slack)</li>
+	<li>SVNからGitHubEnterpriseに移行</li>
+	<li>NFSサーバーからgoofysを経由してS3に</li>
+	<li>インフラは非コードからterraformでコード化</li>
+</ul>
+<p><strong>＜AWS移行後の技術投入＞</strong></p>
+<ul>
+	<li>CVEチェックのためにvuls導入</li>
+	<li>AWS設定を日々チェック(cloud automator)</li>
+	<li>re:Invent 2017 で発表されたawsのセキュリティツールの導入</li>
+</ul>
+<p><ins><strong>【何を学べるか】</strong></ins></p>
+<ul>
+	<li>オンプレからAWSへ移行する際の留意点</li>
+	<li>AWSを活用したサービス運営</li>
+	<li>terraform, docker, mackerel, fluentd, goofys等ツールのメリット/デメリット把握</li>
+</ul>
+<p><br>
+※ 内容は変更になる可能性があります。</p>
+<p><br></p>
+<h2>★講演者プロフィール</h2>
+<h3>■小野島 昇吾 氏</h3>
+<p>パーソルキャリア株式会社<br />
+Innovation Lab. <span class="caps">SEEDS</span> <span class="caps">COMPANY</span><br />
+DevOpsチーム</p>
+<p>アルバイト・パート採用支援サービス『HITO-Manager』でDevOpsを回している。<br />
+程々にフルスタックなエンジニア。<br />
+AWSやGCPの新しい技術を触ってみたいが、<br />
+最近はマネージメント業務にも関心を持ちつつある。<br />
+<br></p>
+<h3>■浅野 潤 氏</h3>
+<p>パーソルキャリア株式会社<br />
+Innovation Lab. <span class="caps">SEEDS</span> <span class="caps">COMPANY</span><br />
+Xプロジェクトチーム</p>
+<p>市場調査・マーケティングリサーチ会社のエンジニアを経て、<br />
+2016年にパーソルキャリア株式会社SEEDS COMPANY入社。<br />
+新規サービスの基盤構築や既存サービスのAWS移行を担当。<br />
+自分探しを続けていたらいつの間にかインフラ担当になっていた。<br />
+オンプレからAWSへの移行事例としてAWS Summit Tokyo 2017に登壇<br />
+(<a href="http://www.awssummit.tokyo/summit/index.html#D3T5-6">http://www.awssummit.tokyo/summit/index.html#D3T5-6</a>)<br />
+好きなものはhashicorp, coreos, docker。嫌いなものはssh。</p>
+<p>他<br />
+<br></p>
+<h2>★タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>講演内容</th>
+	</tr>
+	<tr>
+		<td>19:30 ~ 19:40</td>
+		<td> 弊社から挨拶</td>
+	</tr>
+	<tr>
+		<td>19:40 ~ 20:10</td>
+		<td> AWS移行時の技術転換 </td>
+	</tr>
+	<tr>
+		<td>20:10 ~ 20:40</td>
+		<td> AWS移行後の技術投入</td>
+	</tr>
+	<tr>
+		<td>20:40 ~ 21:00</td>
+		<td> 質疑応答</td>
+	</tr>
+	<tr>
+		<td>21:00 ~ 21:30</td>
+		<td> 懇親会（ドリンクとお菓子をご用意しています）</td>
+	</tr>
+</table>
+<p>※講演プログラムは、変更する可能性、前後する可能性もございますので、<br />
+　予めご了承くださいますようお願い致します。<br />
+※受付時間は19時から20時頃とさせていただきます。<br />
+　当日遅れる場合は03-5774-1762のヒカラボチーム宛にご連絡下さい。<br />
+※懇親会からの参加はご遠慮いただいております。</p>
+<h2>★持ち物</h2>
+<p>・筆記用具<br />
+・名刺<br />
+※ただし、【ヒカラボのステッカー】を貼って頂いている方は、名刺無しでOKです。</p>
+<h2>★対象</h2>
+<ul>
+	<li>オンプレからAWSへ移行したいエンジニア，<br />
+また移行後どのようにAWSの各種サービスを活用するかを知りたいエンジニア</li>
+	<li>オンプレからAWSへ移行し運用を行いたい・行なっているエンジニア</li>
+	<li>オンプレから今日的な運用方法への移行を考えているエンジニア</li>
+</ul>
+<h2>★費用</h2>
+<h1>無料！！</h1>
+<h2>★場所</h2>
+<p><a href="https://levtech.jp/company/">レバテック株式会社</a></p>
+<h3><strong>※インターネットをご利用いただけます。 <br />
+　ご自身のWi-Fiを使用されると、回線が混雑する場合がございますので、<br />
+　ご使用はお控えください。</strong></h3>
+<h2>★レバテック運営サイト</h2>
+<p>フリーエンジニア参画支援サービス： <a href="https://freelance.levtech.jp">レバテックフリーランス</a><br />
+エンジニア専門転職エージェント： <a href="https://career.levtech.jp">レバテックキャリア</a><br />
+Webクリエイター専門サービス： <a href="https://creator.levtech.jp">レバテッククリエイター</a><br />
+フリーランスの案件提案： <a href="http://at-agent.jp">@Agent</a><br />
+エンジニア向けQ&amp;Aサイト： <a href="https://teratail.com">teratail</a><br />
+<br></p></p>
+※案件提案等のサポートのご相談は下記からどうぞ！
+<p><a href="https://freelance.levtech.jp/lp/709aa/input/"><img src="http://time.levtech.jp/wp-content/uploads/2014/11/atBnr.png" style="opacity: 1;"></a>　　　　<a href="http://career.levtech.jp/lp/102aa/"><img src="http://time.levtech.jp/wp-content/uploads/2014/11/atBnr2.png"></a><br>
+<br></p>
+<h2>★その他</h2>
+<p>※ヒカラボにお越しの際はお名刺を1枚お持ちください。<br />
+※お名刺をお持ちでない方は、写真付きの身分証明証（運転免許証・パスポート・学生証）をお持ちください。<br />
+※学生の方、個人の方も是非ご参加ください！<br />
+※参加が難しくなった場合は、お早めにキャンセルいただけますようよろしくお願い致します。<br />
+※イベントは、止むを得ず中止させていただく場合がございます。<br />
+　その際はTwitterとFacebookメッセージでご連絡させていただきますので、ご確認をお願い致します。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/93585" target="_blank">http://atnd.org/events/93585</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2018-01-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2018-01-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.facebook.com/groups/1449858751965885/" target="_blank">https://www.facebook.com/groups/1449858751965885/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都渋谷区渋谷2-21-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>レバテック株式会社（ 渋谷ヒカリエ 17F ）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6590249</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.703473</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>122618</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>＠levtech_inc</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/levtech_inc" target="_blank">@levtech_inc</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2018-01-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

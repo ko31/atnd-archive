@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第四回 カーネル／VM探検隊</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第四回 カーネル／VM探検隊</h2>
+
+            <div class="buttons">
+                <a href="../json/events/3984.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/3984.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>3984</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第四回 カーネル／VM探検隊</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>逆襲のYUREX</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>カーネルや仮想マシンなど、低レイヤー話でわいわい盛り上がるマニアックな会です。<br />
+Linux・*BSDのデベロッパーの方々にご参加頂いています。<br />
+そのうちPlan9のデベロッパーも…！</p>
+<p><h3>今回のみどころ</h3>
+<ul><li>面白法人KAYACの中の人が語るYUREX開発秘話！中の人の目の前で繰り広げられる想定外な使い方のLT群！<br />
+<li>会場にてLinux、FreeBSD、NetBSD、OpenBSD、Plan9のハッカー達と握手出来るよ！</ul>
+</p>
+<p><h3>タイムテーブル</h3>
+<p>13:00-13:15     開会・当日の流れの説明・その他諸注意<br />
+13:15-14:45     Session1: (30min発表、10min質疑)<br />
+　　kozos「秋月のＨ８ボードで動く組込みＯＳを作ってみよう！」<br />
+　　yojiro「ブラックボックス解析 &#8211; デバイスドライバの作成」<br />
+14:45-16:15     Session2 招待講演: (30min発表、10min質疑)<br />
+　　koba「qemu+chrootのお話」<br />
+　　honma「YUREX開発秘話」<br />
+16:15-16:45     おやつ・休憩 30分<br />
+16:45-18:05     Lightning Talk(1) LT1-LT8 (8min発表/1min質疑)<br />
+　　・YUREX hack<br />
+　　go_vm 「Plan 9 <span class="caps">MEETS</span> &#8220;<span class="caps">YUREX</span>&#8221; 発動篇」<br />
+　　noztos 「NetBSD <span class="caps">MEETS</span> &#8220;<span class="caps">YUREX</span>&#8221; via OpenBSD ～ つぶやく <span class="caps">YUREX</span> ～」<br />
+　　・Kernel hack<br />
+　　syuu1228 「OpenBSD/sgi <span class="caps">SMP</span> implementation for Origin 350 発動篇」<br />
+　　xylnao 「UNIX/32V on <span class="caps">SIMH</span> 発動編」<br />
+　　masami256 「デバドラを書いてみよう！」<br />
+　　oza_x86 「あのプロジェクトは今 &#8211; Dynamick Ticks in FreeBSD &#8211; 発動篇」<br />
+　　kosaki55tea 「未定（多分Linuxカーネルネタ）」<br />
+　　siritori 「H8SXマイコン上で動作するOSを作ってみよう ～まだできてないよ！～」<br />
+18:05-18:15     ビール・休憩 10分<br />
+18:15-19:45     Lightning Talk(2) LT9-17<br />
+　　・ Binary hack<br />
+　　yumano・murachue「韓国探検記」<br />
+　　ucq 「バイナリエディタで始めるプログラミング入門」<br />
+　　shudo 「いまどきのBinary Hacks」<br />
+　　・VM hack<br />
+　　d_kami 「x86エミュレータ実装中 ～まだできてないよ！〜」<br />
+　　ddk50 「WinKVM：KVMをWindows上に移植してみました」<br />
+　　ShougoMatsu 「Vim=VM」<br />
+　　・Network hack<br />
+　　paina 「社宅内ネットワーク準備編　～チキン共の戦い～」<br />
+　　oraccha 「IL: 失われたプロトコル」<br />
+19:45-19:55     閉会<br />
+19:55-20:15     撤収・移動<br />
+20:15-             懇親会<br />
+<br />
+印刷用：<a href="http://zawa.s18.xrea.com/Program/kernel_vm_4_timetable.pdf">http://zawa.s18.xrea.com/Program/kernel_vm_4_timetable.pdf</a></p>
+</p>
+<p><h3>YUREX販売会</h3>
+<p>会場にてYUREX販売会が行われる予定です。<br />
+未だ持ってない方は奮ってご参加下さい。</p>
+</p>
+<p><h3>懇談会</h3>
+<p><a href="http://r.gnavi.co.jp/b628601/">ベルギービール専門店 Frigo-Est</a>にて開催します。<br />
+参加費は学生 4500円、一般 5500円を予定しています。<br />
+<strong>参加希望の方は5/1までに申し込んで下さい。</strong></p><br />
+<p><h3>注意点</h3><br />
+<ul><li>参加者全員のPCのコンセントは提供出来ませんので、使いたい方は電源タップをご持参下さい。<br />
+<li>ビルエレベータホールが施錠されているので、できるだけ12:30〜13:00までに来てください。<br />
+遅刻した場合は、張り紙に書いてある電話番号へ電話をかけるかTwitterでハッシュタグ「#kernelvm」をつけて呟けばお迎えにあがります。</p>
+</ul>
+</p>
+<p><h3>Twitter</h3>
+<p>ハッシュタグは「#kernelvm」です。</p>
+</p>
+<p><h3>ストリーミングURL</h3>
+<p><a href="http://www.ustream.tv/channel/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB-vm%E6%8E%A2%E6%A4%9C%E9%9A%8A/v3">http://www.ustream.tv/channel/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB-vm%E6%8E%A2%E6%A4%9C%E9%9A%8A/v3</a></p>
+</p>
+<p><h3>協力</h3>
+<p>会場提供：株式会社インターネットイニシアティブ<br />
+インターネット中継：株式会社インターネットイニシアティブ<br />
+スポンサード：IIJイノベーションインスティチュート</p></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/3984" target="_blank">http://atnd.org/events/3984</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2010-05-08</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2010-05-08</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://groups.google.com/group/kernelvm?hl=ja" target="_blank">http://groups.google.com/group/kernelvm?hl=ja</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区神田神保町1-105</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>神保町三井ビル 17F 株式会社インターネットイニシアティブ(IIJ) 大会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6942723</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7607447</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>8057</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>syuu1228</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/syuu1228" target="_blank">@syuu1228</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>112</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2010-05-07</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

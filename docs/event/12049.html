@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PE勉強会 (2)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PE勉強会 (2)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/12049.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/12049.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>12049</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PE勉強会 (2)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>EXEを解析しよう</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><a href="http://d.hatena.ne.jp/n7shi/20110226">※資料を公開しています。</a></h1>
+<hr/>
+<p>※ 使用するソフトを変更しました。Excel/OOoの使用は取り下げます。64bit Windowsの方は追加ソフトがありますので、「準備する物」をご確認ください。</p>
+<p>※ 定員増強のため会場を変更しました：ルノアール池袋パルコ横店 → アットビジネスセンター池袋駅前別館</p>
+<p>※ この勉強会は <a href="http://atnd.org/events/11721">PE勉強会（１）</a> と同じ内容です。(1)でのご意見を参考に内容は多少修正します。</p>
+<h1>イベントの概要</h1>
+<p>初心者を対象とした、Windowsの実行ファイル (<span class="caps">EXE</span>/<span class="caps">DLL</span>) で使われているPE (Portable Executable) 形式についての勉強会です。バイナリいじりの基礎から始めて、EXEファイルやDLLファイルをコンパイラなしで作って動かすことを目標にします。PEをきっかけにして、x86のマシンコードやOSのメモリ管理について理解を深めるのが狙いです。特に前提知識は必要としませんので、バイナリいじりは初めてという方でもお気軽にご参加ください。</p>
+<p>第1回目はgccで出力したEXEファイルをバイナリエディタで眺めながら、中身を読み取ります。詳しい内容は <a href="http://bit.ly/g6NKs6">PE勉強会ネタ帳</a> をご覧ください。この内容は叩き台です。ご意見・ご要望は <a href="http://twitter.com/7shi">@7shi</a> までお寄せください。</p>
+<p>※ 一般的なアプリケーション開発とは異なる使い方をするためgccを使用します。Visual Studioは対象外とします。</p>
+<p>※ PE勉強会関係の告知はTwitterにてハッシュタグ <a href="http://twitter.com/search?q=%23peben">#peben</a> で行います。</p>
+<h2>参加費用</h2>
+<p>勉強会の参加費用は1,000円です。内訳は会場代です。ドリンク代は含まれませんので、各自ご用意ください。</p>
+<p>勉強会終了後、懇親会を予定しています。懇親会に参加される方は2,000円（学生さんは1,000円）のお支払いをお願いします。懇親会の参加有無につきましては、参加登録時に表示されるアンケートにご記入をお願いします。</p>
+<p>懇親会会場: <a href="http://www.sankofoods.com/shop/kinjr/kinjr_shop95.html">東方見聞録 池袋東口駅前店</a> (コースなし・自由注文）</p>
+<h2>準備する物</h2>
+<p>実際に解析を体験して頂きますので、ノートパソコンをご用意ください。必要な環境やソフトは以下の通りです。</p>
+<ol>
+	<li>OS: 説明にはWindowsを使用します。EXEが動かせる環境であれば、Windowsでなくても構いません。UNIX系OSではWineが利用できます。エミュレータ上でゲストとしてWindowsを動かしても構いません。</li>
+	<li>gcc: 説明には <a href="http://bit.ly/h9K2ws">MSYS＋MinGW</a> を使用します。Windows以外のOSではMinGWのクロスコンパイラが利用できます。</li>
+	<li>テキストエディタ: 説明には <a href="http://notepad-plus-plus.org/">Notepad＋＋</a> を使用します。特に指定ではないため、他のテキストエディタでも構いません。</li>
+	<li>バイナリエディタ: 説明には <a href="http://www.vector.co.jp/soft/win95/util/se032859.html">BZ</a> を使用します。特に指定ではないため、他のバイナリエディタでも構いません。</li>
+	<li>DOSのdebug: 32bit Windowsでは標準で付属するため準備不要です。64bit Windowsの方は <a href="http://homepage3.nifty.com/takeda-toshiya/msdos/index.html">MS-<span class="caps">DOS</span> Player for Win32-x64</a> と <a href="http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/distributions/1.0/pkgs/debugx.zip">FreeDOSのdebug.com</a> をダウンロードしておいてください。</li>
+</ol>
+<p>※ これらの使用方法は勉強会で解説します。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:10</td>
+		<td>入室</td>
+	</tr>
+	<tr>
+		<td>13:10 &#8211; 13:20</td>
+		<td>環境チェック</td>
+	</tr>
+	<tr>
+		<td>13:20 &#8211; 13:30</td>
+		<td>16進数</td>
+	</tr>
+	<tr>
+		<td>13:30 &#8211; 13:40</td>
+		<td>バイナリエディタ</td>
+	</tr>
+	<tr>
+		<td>13:40 &#8211; 13:50</td>
+		<td>gcc</td>
+	</tr>
+	<tr>
+		<td>13:50 &#8211; 14:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>14:00 &#8211; 14:10</td>
+		<td>エンディアンと整数型</td>
+	</tr>
+	<tr>
+		<td>14:10 &#8211; 14:30</td>
+		<td>DOSスタブ</td>
+	</tr>
+	<tr>
+		<td>14:30 &#8211; 14:50</td>
+		<td>ヘッダの確認 (1)</td>
+	</tr>
+	<tr>
+		<td>14:50 &#8211; 15:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>15:00 &#8211; 15:20</td>
+		<td>ヘッダの確認 (2)</td>
+	</tr>
+	<tr>
+		<td>15:20 &#8211; 15:30</td>
+		<td>objdump</td>
+	</tr>
+	<tr>
+		<td>15:30 &#8211; 15:35</td>
+		<td>メモリ</td>
+	</tr>
+	<tr>
+		<td>15:35 &#8211; 15:50</td>
+		<td>セクション</td>
+	</tr>
+	<tr>
+		<td>15:50 &#8211; 16:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>16:00 &#8211; 16:10</td>
+		<td>逆アセンブル</td>
+	</tr>
+	<tr>
+		<td>16:10 &#8211; 16:40</td>
+		<td>バイナリエディタでPE作成</td>
+	</tr>
+	<tr>
+		<td>16:40 &#8211; 16:50</td>
+		<td>インポートセクション</td>
+	</tr>
+	<tr>
+		<td>16:50 &#8211; 17:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 17:30</td>
+		<td>手書きハローワールド</td>
+	</tr>
+	<tr>
+		<td>17:30 &#8211; 17:35</td>
+		<td>資料説明</td>
+	</tr>
+	<tr>
+		<td>17:35 &#8211; 17:40</td>
+		<td>次回予告</td>
+	</tr>
+	<tr>
+		<td>17:40 &#8211; 18:00</td>
+		<td>片付け・退室</td>
+	</tr>
+	<tr>
+		<td>18:00 &#8211; 20:00</td>
+		<td>懇親会（希望者のみ）</td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/12049" target="_blank">http://atnd.org/events/12049</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-02-26</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-02-26</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://abc-kaigishitsu.com/ikebukuro/annex404.html" target="_blank">http://abc-kaigishitsu.com/ikebukuro/annex404.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都豊島区東池袋1-6-4 伊藤ビル4階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>アットビジネスセンター池袋駅前別館404号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7313782</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7133884</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>14213</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>7shi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/7shi" target="_blank">@7shi</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-11-27</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PowerShell Advent Calendar 2014</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PowerShell Advent Calendar 2014</h2>
+
+            <div class="buttons">
+                <a href="../json/events/59220.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/59220.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>59220</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PowerShell Advent Calendar 2014</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>今年もPowerShell Advent Calendarをやりましょう！</p>
+<p>Advent Calendarとは技術系コミュニティで行われるイベントの一つで、ある特定技術分野をテーマに、12/1から12/25までの25日間、参加者が交代で毎日ブログ記事を書いてクリスマスを迎えるイベントです。</p>
+<p>2014年度の他のAdvent Calendarはこちら：<br />
+<a href="http://www.adventar.org/calendars/579">PowerShell <span class="caps">DSC</span> Advent Calendar 2014 &#8211; Adventar</a><br />
+<a href="http://gihyo.jp/news/info/2014/12/0101">本日12月1日より，プログラマ有志による2014年の技術系Advent Calendarが各所ではじまる：インフォメーション｜gihyo.jp … 技術評論社</a></p>
+<p>過去のPowerShell Advent Calendar<br />
+<a href="http://atnd.org/events/45107">PowerShell Advent Calendar 2013</a><br />
+<a href="http://atnd.org/events/34319">PowerShell Advent Calendar 2012</a><br />
+<a href="http://atnd.org/events/22073">PowerShell Advent Calendar 2011</a></p>
+<p>PowerShell Advent Calendar 2014ではその名の通り、Windows PowerShellに関する記事を参加者みんなで書いていきます。Tips、コード、等々、PowerShellに関する内容であれば何でもOKです。</p>
+<p>参加される方は、 <strong>希望の執筆担当日</strong> を書いてください。<br />
+特に希望がない場合は、日付順でカレンダーで空いている日に割り当てさせていただきます。</p>
+<p>参加者が25人に達した時点で締切りです。逆に期日までに参加者が現れない場合は、すでに執筆した参加者が再度執筆しても良いこととします（その場合はコメント欄で宣言を）。</p>
+<p>担当日には記事をご自分のブログに書いていただき、そのURLをコメント欄に書いてください。</p>
+<table>
+	<tr>
+		<td>日付</td>
+		<td>担当者　()内は回数</td>
+		<td>記事</td>
+	</tr>
+	<tr>
+		<td>12/01(月)</td>
+		<td>mutaguchi(1)</td>
+		<td><a href="http://winscript.jp/powershell/285">[v5] Auto-Generated Example-Driven Parsing について &#8211; PowerShell Scripting Weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/02(火)</td>
+		<td>ちゅき</td>
+		<td><a href="http://blogs.wankuma.com/chuki/archive/2014/12/02/498842.aspx">Hey, Scripting Guy!でActive Directory Week!</a></td>
+	</tr>
+	<tr>
+		<td>12/03(水)</td>
+		<td>kkamegawa(1)</td>
+		<td><a href="http://kkamegawa.hatenablog.jp/entry/2014/12/03/003000">PowerShellでHW-NICをリセットする(改) &#8211; kkamegawa&#8217;s weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/04(木)</td>
+		<td>tanaka733</td>
+		<td><a href="http://tech.tanaka733.net/entry/using-Rx-in-powershell-cmdlet">PowerShell Cmdlet の中でRxを使いたい &#8211; 銀の光と碧い空</a></td>
+	</tr>
+	<tr>
+		<td>12/05(金)</td>
+		<td>ichiohta</td>
+		<td><a href="http://blogs.msdn.com/b/frontier_at_work/archive/2014/12/04/powershell-f.aspx">PowerShellのバイナリモジュールをF#で書こう！ &#8211; Frontier at Work &#8211; Site Home &#8211; <span class="caps">MSDN</span> Blogs</a></td>
+	</tr>
+	<tr>
+		<td>12/06(土)</td>
+		<td>kkamegawa(2)</td>
+		<td><a href="http://kkamegawa.hatenablog.jp/entry/2014/12/06/003000">Windows Server 2008 R2のHyper-V VHDをコピーする &#8211; kkamegawa&#8217;s weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/07(日)</td>
+		<td>threecourse</td>
+		<td><a href="http://threeprogramming.lolipop.jp/blog/?p=812">PowerShellからC#, <span class="caps">SQL</span> Serverのコードをとっても便利に呼び出す   threecourse&#8217;s memo</a></td>
+	</tr>
+	<tr>
+		<td>12/08(月)</td>
+		<td>zhuky7(1)</td>
+		<td><a href="http://operationslab.wordpress.com/2014/12/08/winrm%E3%81%A8proxy/">WinRMとProxy  Operations Lab.</a></td>
+	</tr>
+	<tr>
+		<td>12/09(火)</td>
+		<td>arumumu</td>
+		<td><a href="http://arumumu.hatenablog.com/entry/create-foresttrust-with-powershell">PowerShell でフォレストの信頼を作成する &#8211; 備考欄に感想を書くタイプのエンジニア</a></td>
+	</tr>
+	<tr>
+		<td>12/10(水)</td>
+		<td>stknohg</td>
+		<td><a href="http://stknohg.hatenablog.jp/entry/2014/12/10/001351">PowerShellからグループポリシーを扱う方法について &#8211; 素敵なおひげですね</a></td>
+	</tr>
+	<tr>
+		<td>12/11(木)</td>
+		<td>mutaguchi(2)</td>
+		<td><a href="http://winscript.jp/powershell/286">PowerShellでMMLシーケンサーを作ってみた（その1） &#8211; PowerShell Scripting Weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/12(金)</td>
+		<td>pierre3(1)</td>
+		<td><a href="http://pierre3.hatenablog.com/entry/2014/12/12/075527">PowerShell で ToDo 管理 &#8211; pierre3のブログ</a></td>
+	</tr>
+	<tr>
+		<td>12/13(土)</td>
+		<td>pierre3(2)</td>
+		<td><a href="http://pierre3.hatenablog.com/entry/2014/12/13/001743">gooラボ 形態素解析APIを試してみる &#8211; pierre3のブログ</a></td>
+	</tr>
+	<tr>
+		<td>12/14(日)</td>
+		<td>kkamegawa(3)</td>
+		<td><a href="http://kkamegawa.hatenablog.jp/entry/2014/12/14/003000">PowerShellで実行予定のタスクを列挙する &#8211; kkamegawa&#8217;s weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/15(月)</td>
+		<td>teruya</td>
+		<td><a href="http://masashiteruya.blogspot.jp/2014/12/powershellopenstack-api.html">Masashi Teruya&#8217;s Log: PowerShellで潜るOpenStack APIの海 &#8211; 素潜り編</a></td>
+	</tr>
+	<tr>
+		<td>12/16(火)</td>
+		<td>zhuky7(2)</td>
+		<td><a href="http://operationslab.wordpress.com/2014/12/16/powershell-%e3%81%a7%e3%82%b3%e3%83%bc%e3%83%89%e7%bd%b2%e5%90%8d%e7%94%a8%e3%81%ae%e8%a8%bc%e6%98%8e%e6%9b%b8%e3%82%92%e4%bd%9c%e6%88%90%e3%81%99%e3%82%8b/">PowerShell でコード署名用の証明書を作成する &#8211; Operations Lab.</a></td>
+	</tr>
+	<tr>
+		<td>12/17(水)</td>
+		<td>tsuda_ahr</td>
+		<td><a href="http://ooltcloud.expressweb.jp/201412/article_17010423.html">[PS1] Powershell で <span class="caps">CSV</span> ファイルを読み込む &#8211; オールトの雲</a></td>
+	</tr>
+	<tr>
+		<td>12/18(木)</td>
+		<td>Keizo</td>
+		<td><a href="http://4sps.wordpress.com/2014/12/18/client-side-object-model-csom-sharepoint/">Client Side Object Model (<span class="caps">CSOM</span>) を使った SharePoint の操作 &#8211; SharePoint と DocAve の覚書</a></td>
+	</tr>
+	<tr>
+		<td>12/19(金)</td>
+		<td>やじゅ</td>
+		<td><a href="http://blogs.wankuma.com/yaju/archive/2014/12/19/500036.aspx">PowerShellにてタスクスケジューラーのタスク一覧を取得する</a></td>
+	</tr>
+	<tr>
+		<td>12/20(土)</td>
+		<td>oota_ken</td>
+		<td><a href="http://ootaken.wordpress.com/2014/12/20/chocolatey%E3%81%AEapproved-package%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/">ChocolateyのApproved Packageを作成する手順 &#8211; テスト自動化他何かのメモ</a></td>
+	</tr>
+	<tr>
+		<td>12/21(日)</td>
+		<td>kazuakix</td>
+		<td><a href="http://kazuakix.hatenablog.jp/entry/2014/12/21/000427">Power Shell を使って Office 365 のデータセンターを調べる &#8211; kazuakix の日記</a></td>
+	</tr>
+	<tr>
+		<td>12/22(月)</td>
+		<td>mutaguchi(3)</td>
+		<td><a href="http://winscript.jp/powershell/287">PowerShellでMMLシーケンサーを作ってみた（その2） &#8211; PowerShell Scripting Weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/23(火)</td>
+		<td>Masaya Sawada</td>
+		<td><a href="http://wsbs.wordpress.com/2014/12/23/windows-server-2012-r2-essentials-%e3%81%aepowershell/">Windows Server 2012 R2 Essentials のPowershell &#8211; Windows Server Essentials を中心とした雑記</a></td>
+	</tr>
+	<tr>
+		<td>12/24(水)</td>
+		<td>mutaguchi(4)</td>
+		<td><a href="http://winscript.jp/powershell/288">PowerShellで位置情報を取得する &#8211; PowerShell Scripting Weblog</a></td>
+	</tr>
+	<tr>
+		<td>12/25(木)</td>
+		<td>kkamegawa(4)</td>
+		<td><a href="http://kkamegawa.hatenablog.jp/entry/2014/12/25/053334">PowerShellでSQL Serverの古いログ関係を削除する &#8211; kkamegawa&#8217;s weblog</a></td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/59220" target="_blank">http://atnd.org/events/59220</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-12-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>55293</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>mutaguchi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/mutaguchi" target="_blank">@mutaguchi</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

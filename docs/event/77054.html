@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">すぐに役立つOracle DBA実務勉強会＃2 『クラスターとは？高可用性（HA）とは？』（テーマは毎回、1回で完結します）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">すぐに役立つOracle DBA実務勉強会＃2 『クラスターとは？高可用性（HA）とは？』（テーマは毎回、1回で完結します）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/77054.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/77054.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>77054</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>すぐに役立つOracle DBA実務勉強会＃2 『クラスターとは？高可用性（HA）とは？』（テーマは毎回、1回で完結します）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>【勉強会概要】<br />
+当社では、昨年からこの勉強会をスタートさせ、すでに半年間で20名のオラクル技術者を世に送り出しました。<br />
+（「お申し込み時の注意、持ち物、対象者」もご確認ください）</p>
+<p>今回のテーマは、「クラスタリング（高可用性）」についてです。<br />
+これを受講すればどなたでも「ORACLE RACをはじめとする“クラスター”の概念<br />
+について理解できる」ようになります。</p>
+<p>　オラクルRAC（Oracle Real Application Clusters）は、その名のとおりクラスタリング<br />
+技術の粋を集めて実現されています。その特徴は、何と言っても、その「高い連続稼動性能」<br />
+です。連続化動性が高いことを“可用性が高い“と表現しますが、それは英語で<br />
+High Availability（HA）と言います。世の中に24h365 日のサービス（連続稼動）が<br />
+増えてきたことを反映して、Oracle <span class="caps">RAC</span> は、非常によく使われています。</p>
+<p>　RACが登場する前までは、「アクティブ/スタンバイ構成のHA Cluster」が主力でした。<br />
+とはいえ、このHA Cluster は、現在も使われている息の長いソリューションですから、<br />
+<span class="caps">DBA</span> やDB 基盤技術者なら、ぜひ理解しておいて頂きたい技術です。</p>
+<p>　一方、冗長性についてはいかがでしょうか。冗長性は、例えばRAID1で組まれたハード<br />
+ディスク装置のように、ハードウェアの仕組みで実現している場合もあれば、「保護したい<br />
+データを“異なる場所に2 重、3 重に配置する” など、ソフトウェア上の仕組みで<br />
+実現する場合もあります。</p>
+<p>　皆さんは、冗長性・可用性の違いをしっかり説明できますか？例えば、「レプリケーション」は<br />
+どちらに該当しますか？RAC はどちらですか？（RAC は冗長性・可用性の両方<br />
+を兼ね備えています。・・お客様へ正しく説明できますか？）<br />
+こうした概念の理解により、先々、DB サーバの設計フェーズにおける「DB可用性設計」<br />
+や「冗長性設計」に携わっていくための基礎力を醸成します。</p>
+<p>キーワード：<br />
+<span class="caps">ORACLE</span> RAC、インターコネクト、ハートビート、冗長性、可用性（HA）、<br />
+Oracle Dataguard、Oracle GoldenGate、レプリケーション、<br />
+HA Cluster、Lifekeeper、Veritas Cluster、MSFC、<br />
+アクティブスタンバイ、相互スタンバイ、フェールオーバー、スイッチオーバー</p>
+<p>【お申し込み時の注意】</p>
+<p>・勉強以外の目的で参加される方はご遠慮ください。</p>
+<p>・座席数が限られているため、参加の予定が難しくなった場合は、なるべく早めにご連絡をください。</p>
+<p>・とりあえずのエントリー（申込み）は固くお断りします。エントリーなさる前に、<br />
+　当日のご予定をよくご確認頂き、実際に出席が可能な方のみ応募くださいますようお願い致します。</p>
+<p>・複数回当日出席キャンセルした方については、今後エントリーをお断りする場合があります。</p>
+<p>【対象者】</p>
+<p>・オラクルをもっと理解してみたいという”ソフト開発者”の方</p>
+<p>・オラクルをこれまであまり意識したことのなかった”基盤系技術者”の方</p>
+<p>・オラクルマスターを持っているが、実務で使ったことがほとんどない方</p>
+<p>・もっと上のオラクルの資格を取っていきたいと思っている方</p>
+<p>【開催日時】</p>
+<p>5月7日（土）</p>
+<p>9：00 ～ 9：15　受付開始</p>
+<p>9：15 ～ 12:50　勉強会</p>
+<p>途中小休憩、質疑応答あり</p>
+<p>【持ち物】</p>
+<p>今回は講義形式となりますので、筆記用具持参でお願いいたします。</p>
+<p>「20160507すぐに役立つオラクル勉強会＃2」<br />
+https://proself.ventury.jp/public/4AeQAA5ABAAAHJgBMrVUBRwo5FRrI5m942NiKZ9iG3KH</p>
+<p>【会場のお知らせ】</p>
+<p>ザ・サードラウンジ五番町</p>
+<p>東京都千代田区12-6 五番町マンションB1F</p>
+<p>http://www.thirdlounge.jp <br />
+03‐5362‐7053（受付専用番号）<br />
+※当日のご連絡は、実施責任者のベンチュリーコンサルティング三井（ミツイ）宛でお願いします。</p>
+<p>「ザ・サードラウンジ」は、建物のB1Fにあります。</p>
+<p>JR総武線 市ヶ谷駅　徒歩5分 地下鉄（都営新宿線・東京メトロ南北線・有楽町線）の市ヶ谷駅　徒歩5分</p>
+<p>※上記施設のカフェラウンジを貸切りにして開催しています。会員制有料サロンの一角 となります。<br />
+（費用は当社が負担）</p>
+<p>当日の着席位置に指定はありませんので、ご来場順にご自由にご着席ください。</p>
+<p>【その他】</p>
+<p>・参加費は無料です。</p>
+<p>・お飲み物などは、各自お持込みください。<br />
+　飲食自由で持込みも可ですが、ごみは各自持ち帰りでお願いします。</p>
+<p>・会場では、無料のＷＩＦＩがご利用頂けます。<br />
+　アクセス用のＩＤ・パスワードは、会場内でご案内していますので、どうぞご利用ください。</p>
+<p>・パソコン持ち込みの方は、コンセントがご利用可能です。</p>
+<p>＝講師の紹介＝</p>
+<p>衞藤重豪<br />
+富士通オラクルサポートセンター特別対応チームを経て、Oracle platinum取得。 <br />
+オラクルソリューションビジネス２０年の経験を有す。 <br />
+平成14年よりOracle専門の技術サービスを提供するベンチュリーコンサルティング株式会社を設立し、<br />
+代表を務める。（現在第13期目）</p>
+<p>ライフワークとして、社内外に関係なく、オラクル勉強会講師をつとめ、<br />
+データベース基盤技術を目指すエンジニアの育成に注力している。<br />
+『出逢った方が、データベース基盤のプロとして食べていけるところまで』をゴールと定めて指導を行っている。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/77054" target="_blank">http://atnd.org/events/77054</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2016-05-07</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2016-05-07</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.thirdlounge.jp " target="_blank">http://www.thirdlounge.jp </a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区12-6 五番町マンションB1F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ザ・サードラウンジ五番町</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6848966</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7316333</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>243764</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>ベンチュリーコンサルティング株式会社</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/venturyco" target="_blank">@venturyco</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2016-04-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

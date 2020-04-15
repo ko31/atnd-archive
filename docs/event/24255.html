@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">東京 OpenSolaris 勉強会 2012.02</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">東京 OpenSolaris 勉強会 2012.02</h2>
+
+            <div class="buttons">
+                <a href="../json/events/24255.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/24255.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>24255</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>東京 OpenSolaris 勉強会 2012.02</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>静岡キャンプ 熱海伊豆山</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h4>毎年恒例になりました静岡キャンプですが、今年は場所を熱海に設定しました。</h4>
+<p>勉強会のテーマ/内容が確定・訂正されました。<cite>2月8日更新</cite></p>
+<h4>テーマと内容</h4>
+<p>今回のキャンプでの勉強会のテーマは、参加有志による Solaris 11 や OpenIndiana ユーザ向けのパッケージレポジトリサーバの立ち上げとレポジトリに載せるパッケージを作成することにあります。</p>
+<p>内容は、レポジトリサーバとパッケージ構築のためのハッカソンとなります。(温泉でリフレッシュしながらの２日間　強行突貫工事となりそうです）</p>
+<p>開発経験がなく、build は難しいという方も参加できます。構築したリポジトリからのインストール/確認してくださる担当も募集しています。</p>
+<p><cite>キャンプでレポジトリ立ち上げプロジェクトの初期作業を行いますが、キャンプ以降もユーザ会の有志で開発と運営を継続していきます!!</cite></p>
+<h4>キャンプ参加のBenefit(利点/成果)</h4>
+<ul>
+	<li>OpenSolaris ユーザによるユーザのための世界初?のレポジトリサーバの立ち上げに貢献できます。</li>
+	<li>Solaris 用のレポジトリサーバ、IPS パッケージ作成のノウハウを習得することができます。</li>
+	<li>自作の <span class="caps">OSS</span> (OpenSource Software) をリポジトリに載せることができます。</li>
+	<li>Solaris 11 のパッケージ buildでお悩みの方、経験者/エキスパートからでアドバイスを得られます。</li>
+	<li>Solairs 開発未経験者、初心者の参加も歓迎します。キャンプの間、経験や知識が豊富な他の参加者が Solaris の「いろは」から親切にアドバイス致します。</li>
+	<li>自分がメンテナーになりたいソフトウェアを持ち込めば <span class="caps">IPS</span> パッケージに build してもらえます。</li>
+</ul>
+<h4>参加者が用意する物</h4>
+<p>必須</p>
+<ul>
+	<li><span class="caps">SSH</span> できる端末 (Windows, Mac, Linux, Solaris なんでもOK)<br />
+    ネットワーク (有線/Ether, 無線/WiFi どちらか必須) <br />
+　　各自にハッカソンの時に利用する「開発用Zone」を割り当てます。<br />
+    Solaris/OI環境を用意する必要はありません。</li>
+</ul>
+<p>推奨</p>
+<ul>
+	<li>Solaris 11 or OpenIndiana 151a がインストールされた PC/Note</li>
+</ul>
+<p>事前準備</p>
+<ul>
+	<li>予習/復習 <br />
+<a href="http://www.slideshare.net/takiyasushi/solaris11openindiana">瀧さんの１月の勉強会の資料</a></li>
+	<li>Build に参加する方は、<br />
+<a href="https://sourceforge.jp/account/register.php">SourceForge.JP</a><br />
+でアカウントを作成して、jposug プロジェクトに参加申請をしてください。</li>
+	<li>秘密鍵を登録しておくことで、 commit ができようになります</li>
+	<li>自分がメンテナーになりたいと思うソフトウェアを tar ball, gz で用意</li>
+	<li>RedHat でパッケージ作成の経験がある方は、RPM の spec ファイルもあるといいそうです。</li>
+</ul>
+<p><cite>尚、現地のインターネット/ネットワークの状況によりますが、インターネットからのリモート参加も計画しております。twitter ハッシュタグ  #osoljp で当日の状況（可能かどうか）を確認してください。リモートで参加される方も上記の事前準備をお願い致します。</cite></p>
+<h3>場所</h3>
+<p><a href="http://www.tabiplan.co.jp/20_soh/SOH-67_izusankensyu.htm">伊豆山研修センター</a></p>
+<h3>日程</h3>
+<h4>2/25(土)</h4>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>イベント</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:30</td>
+		<td>現地集合</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>13:30 &#8211; 17:30</td>
+		<td><strong>昼の部</strong></td>
+		<td>開発環境構築/役割分担/各作業ガイダンス</td>
+	</tr>
+	<tr>
+		<td>17:30 &#8211; 20:00</td>
+		<td>休息</td>
+		<td>温泉、食事</td>
+	</tr>
+	<tr>
+		<td>20:00 &#8211; 22:00</td>
+		<td><strong>夜の部</strong></td>
+		<td>作業継続/フリートーク</td>
+	</tr>
+</table>
+<h4>2/26(日)</h4>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>イベント</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>07:00 &#8211; 09:00</td>
+		<td>休息</td>
+		<td>散歩など、温泉、朝食</td>
+	</tr>
+	<tr>
+		<td>09:00 &#8211; 12:00</td>
+		<td><strong>朝の部</strong></td>
+		<td>まとめ作業とレポジトリ公開のための準備</td>
+	</tr>
+	<tr>
+		<td>12:00 &#8211; </td>
+		<td>現地解散</td>
+		<td></td>
+	</tr>
+</table>
+<h3>募集内容</h3>
+<ul>
+	<li>定員 16 名（宿泊者)<br />
+宿泊者 和室４人部屋のみ（全室禁煙）</li>
+</ul>
+<ul>
+	<li>参加費<br />
+宿泊希望者: 11,000 円 (施設利用費、一泊２食込み) * 宴会費別<br />
+日帰り参加者: 2,000 円 (施設利用費) 温泉施設を利用するには +1,500円　夕食/宴会には参加できません。</li>
+</ul>
+<p><cite>参加コメント時に、(宿) か (日) 宿泊希望が日帰り希望かを明記してください。</cite></p>
+<p>連絡係(原口)</p>
+<ul>
+	<li>mail: shoji.haraguchi@gmail.com</li>
+	<li>twitter: shojih</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/24255" target="_blank">http://atnd.org/events/24255</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-02-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.tabiplan.co.jp/20_soh/SOH-67_izusankensyu.htm" target="_blank">http://www.tabiplan.co.jp/20_soh/SOH-67_izusankensyu.htm</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>静岡県熱海市伊豆山１０６５−１</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>静岡県熱海 伊豆山研修センター</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.1169269</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.0734931</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>81068</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Japan OpenSolaris User Group</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/osoljp" target="_blank">@osoljp</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-02-09</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">OWASP Night 8th</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">OWASP Night 8th</h2>
+
+            <div class="buttons">
+                <a href="../json/events/45172.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/45172.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>45172</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>OWASP Night 8th</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>秋の夜長のOWASP Nightは「やられる前に倍返し」しておかナイト。</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>(English follows)<br />
+紅葉の候、皆様お元気でいらっしゃいますか。</p>
+<p>このたび、11月14日19時より、日本Hewlett-Packardカフェテリア(某報復系ドラマロケ地)にてOWASP Japan定期ミーティングを行うことを計画しています。<br />
+<span class="caps">OWASP</span> Meeting/Night &#8211; <span class="caps">OWASP</span> Japanローカルチャプターミーティングは、セミナーや持ち込みのライトニングトークの形で行われる、Webセキュリティに関心のある方が集う、楽しくカジュアルな勉強会です。時にビアバッシュ形式のこともあります。スキル、役職、業種、国籍、性別、年齢関係なく、遠慮なくお越しください。</p>
+<p>We are planning to have a regular meeting, <span class="caps">OWASP</span> Night at 7pm, on Nov 14th at Hewlett-Packard Japan Cafeteria. <br />
+<span class="caps">OWASP</span> Meeting/Night – The <span class="caps">OWASP</span> Japan Local Chapter Meeting (<span class="caps">OWASP</span> Night will be at night) is held in the form of seminars and lightning talks. It’s an opportunity for people interested in web security to get together and exchange information and opinions in a casual and fun environment. There are no requirements in terms of skills, profession, nationality, gender or age. Anyone interested in web security is free to participate.</p>
+<h3>今回のトピック</h3>
+<p>今秋の夜長は、「HTML5セキュリティ Part2 Open redirect and CSRF」「ログイン前セッションフィクセイションの脅威と対策」、また、HP Enterprise Security ServicesのRichie Tan氏をお迎えし、&quot;PCI <span class="caps">DSS</span> &#8211; Road To Compliance&quot;というお話をお聞きします。また、今回は、会場提供スポンサーの日本HP様のご厚意により、会場のカフェテリアを<strong>倍</strong>満喫できるネットワーキングタイムをお楽しみ頂ける予定です！（拍手）</p>
+<h3>主催<br />
+<a href="https://www.owasp.org/index.php/Japan"><span class="caps">OWASP</span> Japan</a></h3>
+<ul>
+	<li>会場提供スポンサー: <a href="http://www8.hp.com/jp/ja/business-solutions/top.html">日本HP</a></li>
+</ul>
+<h3>日時と場所</h3>
+<ul>
+	<li>11月14日 18:30受付開始、19時00分スタート</li>
+	<li>会場 日本HP 8F カフェテリア</li>
+	<li>入場無料(要事前登録、お名前等登録)</li>
+	<li>このたびは、社内会場であるため、ご所属とお名前の事前登録が必要となっています。フォームでは、ご所属記載欄が手違いによりだぶっておりますが、ひとつ目に正確に記載ください。</li>
+</ul>
+<h3>タイムテーブル</h3>
+<table>
+	<tr>
+		<th>time</th>
+		<th>presenter</th>
+		<th>contents *1</th>
+	</tr>
+	<tr>
+		<td>18:30 </td>
+		<td>*</td>
+		<td>Open/受付:早くお越しいただけますと助かります</td>
+	</tr>
+	<tr>
+		<td>19:00 </td>
+		<td>*</td>
+		<td>Start</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>Sen Ueno, Riotaro <span class="caps">OKADA</span> <span class="caps">OWASP</span> Japan</td>
+		<td>Opening〜最近のプロジェクトのはなし</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>Special Speaker: Richie Tan (HP)</td>
+		<td>&#8220;<span class="caps">PCI</span> <span class="caps">DSS</span> &#8211; Road To Compliance&#8221; *2</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>はせがわようすけ(<span class="caps">OWASP</span> Japan Advisory)</td>
+		<td>「HTML5 and Security Part 2 : Open redirect and CSRF」</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>(break)</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>谷口 隼祐</td>
+		<td>「スマホアプリのSSLサーバ証明書の検証不備について」</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>徳丸浩(<span class="caps">OWASP</span> Japan Advisory)</td>
+		<td>「ログイン前セッションフィク<br />
+セイションの脅威と対策」</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td>Special Speaker: Brian Gorenc (HP)</td>
+		<td>&#8220;Predicting Java Vulnerability&#8221; *2</td>
+	</tr>
+	<tr>
+		<td> </td>
+		<td><span class="caps">OWASP</span> Japan</td>
+		<td>「AppSec Apac2014開催のためのコーナー」</td>
+	</tr>
+	<tr>
+		<td>21:xx </td>
+		<td></td>
+		<td>プログラムの終了(予定)</td>
+	</tr>
+</table>
+<p>*1 プログラムや順序は予告なく変更されます。<br />
+*2 プロによる通訳をご用意いただく予定です。</p>
+<p>すいません、今日は<del>Ustreamないです</del>帯域少なめですがあります！ http://www.ustream.tv/channel/owasp-japan1</p>
+<h3><span class="caps">OWASP</span> Nightスピーカーにチャレンジしませんか</h3>
+<p><span class="caps">OWASP</span> JapanではOWASP Meetingのスピーチを広く募集しています。テーマは、ウェブセキュリティ向上のための技術的方策についての解説、また、ウェブのサービスを運営するご経験についてなど、ウェブアプリケーションに関するテーマなら幅広く受け入れています。スピーカーの応募者は、<a href="https://www.owasp.org/index.php/Speaker_Agreement"><span class="caps">OWASP</span> Speaker Agreement</a>に則り、公開用プレゼンテーションをご提供頂けること、ベンダーニュートラルな情報に限ることが最低限の条件となります。基本的には、10〜15分くらいの時間でスピーチ可能なテーマのご提案をお願いしています。</p>
+<h3>他の地域でのパブリックビューイング・サテライト</h3>
+<p>※ 東京都外の地域の方々でご関心のある方には、UstreamあるいはSkypeなどで配信を検討します。よろしければご一報下さい。</p>
+<h3>ボランティア募集</h3>
+<p>当日、撮影、通訳、会場係など、運営サイドとしてお手伝いいただける方はコメントに書いていただくか、あるいは@okdtまでお知らせください。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/45172" target="_blank">http://atnd.org/events/45172</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-11-14</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-11-14</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.owasp.org/index.php/Japan#tab=OWASP_Night__2F__E3_82_AA_E3_83_AF_E3_82_B9_E3_83_97_E3_83_8A_E3_82_A4_E3_83_88" target="_blank">https://www.owasp.org/index.php/Japan#tab=OWASP_Night__2F__E3_82_AA_E3_83_AF_E3_82_B9_E3_83_97_E3_83_8A_E3_82_A4_E3_83_88</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都江東区大島2丁目2番1号</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>日本HP 8Fカフェテリア</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6908625</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.8209482</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>23098</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>riotaro</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/okdt" target="_blank">@okdt</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-11-14</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

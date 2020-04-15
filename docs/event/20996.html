@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">NCStudy　#02</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">NCStudy　#02</h2>
+
+            <div class="buttons">
+                <a href="../json/events/20996.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/20996.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>20996</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>NCStudy　#02</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>～　オートスケールするアプリケーションを作ってみよう　～</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>■　この会について</h1>
+<p>この会は、ニフティさんとこでやっている、クラウドが使える勉強会、略してNCStudyです。<br />
+ブログや技術書で書かれていた、あんなことやこんなこと、口伝で伝わる禁じ手などを実際触って、確かめてみたいやってみたいを実現するそんな勉強会です。みなさんの聞いただけ、読んだだけじゃわからん、触ってみたいという欲求に応えられればいいなぁと思っています。</p>
+<p>毎回テーマが異なりますが、実際に手を動かしてやってみる、やったことをみんなで考えてみるってのは、固定化しています。</p>
+<h1>■　オートスケールするアプリケーションを作ってみよう</h1>
+<p>場所：フューチャーアーキテクトさん　（注意）<br />
+　　　スクール形式の会場 <br />
+日時：10月29日(土)<br />
+時間：開場15:00　開始15:30</p>
+<h2>場所がニフティさんじゃないので注意！！<br />
+（　いつもニフティさんをご利用頂きありがとうございます。orz　）<br />
+開始に遅れてしまった人は、　ハッシュタグ　#ncstudy　をつけて<br />
+「着いた～」とつぶやいてください。</h2>
+<p>今回はIaaS型クラウドの特徴とも言われている、オートスケールの機能に触ってみて、オートスケールをさせる際の勘所や、ノウハウをみんなで共有できたらいいな。<br />
+　STEP１　とりあえず、オートスケール<br />
+　STEP２　効果を考える　どれくらいよくなるんだろう？　コスト的なもんは？<br />
+　STEP３　オートスケールの勘所をみんなで考える</p>
+<p>　「形式としては、ニフティクラウドでオートスケールさせるための方法を <del>スクール形式でお話しします。</del> 実際にみんなで手を動かしながら、やってみます。<br />
+　その後、グループまたは個人でWPをオートスケールさせて、効果を測定してみましょう。うまくできなくてもいいと思います。<br />
+　終わったら、オートスケールさせるための方法であるとか、ノウハウなどをみんなでグループディスカッションしたいと思います。どうしてもWPは嫌って方はご相談に応じます。」</p>
+<h2>オートスケールさせるものは何よ？</h2>
+アンケートで現時点で一番多いWordPressにします。
+自分自身って回答した人も多かったのですが、現在のニフティクラウドでは対応していないため、今後のエンハンスの参考にさせていただきます。
+<h2>●　持ってくるもの！！！</h2>
+<h4>　名刺：　今回はフューチャーアーキテクトさんなので不要です。<br />
+　PC　：　インターネットに <strong>基本wifiで</strong> 接続可能な状態にしておいてください。<br />
+　　　　　※有線しかないけど参加したいんだ！！！という人は、お声掛けください。<br />
+　　　　　当日はSSH接続が可能なツールがインストールされていること<br />
+　　　　　macでもwinでも良いです。<br />
+　　　　　macの場合<br />
+　　　　　 ssh -i 秘密鍵 -l root ipアドレス<br />
+　　　　　winの場合<br />
+　　　　　 <a href="http://www.forest.impress.co.jp/lib/inet/servernt/remote/utf8teraterm.html">Teraterm</a> をインストールしておいてください。</h4>
+<h2>●　場所について</h2>
+<p>　今回は <a href="https://sites.google.com/site/qpportal/conference-room/fu-yuchaakitekuto-zhu-shi-hui-she-semina-shi"><strong>フューチャーアーキテクト</strong></a> さん１４階で行われます！！！</p>
+<h2>●　費用について</h2>
+<h3>会場費無料　フューチャーアーキテクトさんありがとうございます。<br />
+　 ニフティさんからアルコールおよびお菓子の提供があります。</h3>
+<p>　 ※　終わった後懇親会を予定しています。<br />
+　　　 フューチャーアーキテクトさんの会場近くの居酒屋さんを予定<br />
+　　　 居酒屋 <a href="http://r.gnavi.co.jp/g220029/">「彩」</a><br />
+ 　　　料金は２,０００円を予定　飲み食い放題！！！</p>
+<h2>『　タイムテーブル　』</h2>
+<table>
+	<tr>
+		<td> <strong>時間</strong> </td>
+		<td> <strong>項目</strong> </td>
+		<td> <strong>詳細</strong> </td>
+	</tr>
+	<tr>
+		<td>15:00-15:20</td>
+		<td>開場</td>
+		<td>於：フューチャーアーキテクトさん、受付時にニフティクラウドのIDとパスワードをお渡しします。フューチャーアーキテクトさんが迎えに来ないと入れないシステムなので、なるべく時間通りでお願いいたします。</td>
+	</tr>
+	<tr>
+		<td>15:20-15:25</td>
+		<td>開演の挨拶＆諸説明</td>
+		<td>開演のご挨拶と会場からの諸説明をします。</td>
+	</tr>
+	<tr>
+		<td>15:25-15:35</td>
+		<td>クラウドの情報共有</td>
+		<td>「さくらのクラウド」さくらインターネット横田さん</td>
+	</tr>
+	<tr>
+		<td>15:35-16:40</td>
+		<td>スクール形式のハンズオン</td>
+		<td>ニフティクラウドとオートスケールの設定について実際に設定しながらお話を進めます。</td>
+	</tr>
+	<tr>
+		<td>16:40-16:55</td>
+		<td>休憩とワークショップ準備</td>
+		<td>アルコールとお菓子をお渡しします。</td>
+	</tr>
+	<tr>
+		<td>16:55-18:25</td>
+		<td>ワークショップ</td>
+		<td>実際やってみてください。わからないところは講師が対応します。人数が多い場合はグループになってもらいます。</td>
+	</tr>
+	<tr>
+		<td>18:25-18:55</td>
+		<td>発表準備</td>
+		<td>個人の人は、個人でグループの人は代表者の人に集めて発表してもらいます。ものはパワポでもGoogleDocs構いません。後程公開させてもらえればと思います。論点は効果とオートスケールの勘所</td>
+	</tr>
+	<tr>
+		<td>18:55-19:00</td>
+		<td>休憩</td>
+		<td>トイレ休憩or発表の追い込み</td>
+	</tr>
+	<tr>
+		<td>19:00-19:30</td>
+		<td>発表</td>
+		<td>実際やってみてどうだったのか？情報共有（効果・勘所）</td>
+	</tr>
+	<tr>
+		<td>19:40</td>
+		<td>片づけ</td>
+		<td>クロージング～撤退完了</td>
+	</tr>
+	<tr>
+		<td>19：50</td>
+		<td>移動</td>
+		<td>懇親会へ</td>
+	</tr>
+</table>
+<h3>講師について</h3>
+<p>　@ichikk<br />
+　ニフティクラウドのコントロールパネルの中の人</p>
+<h3>参考</h3>
+<p>以下のURLを参考にして、 <a href="http://ncloud.cocolog-nifty.com/blog/2011/02/post-c1f9.html">オートスケール</a> のやり方を見ておくと良いかもです。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/20996" target="_blank">http://atnd.org/events/20996</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-10-29</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-10-29</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://sites.google.com/site/qpportal/conference-room/fu-yuchaakitekuto-zhu-shi-hui-she-semina-shi" target="_blank">https://sites.google.com/site/qpportal/conference-room/fu-yuchaakitekuto-zhu-shi-hui-she-semina-shi</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>35.6223078,139.7273303(東京都品川区大崎1-2-2)</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>フューチャーアーキテクト さん（東京都品川区大崎1-2-2　アートヴィレッジ大崎セントラルタワー 14F） （東京都品川区大崎1-2-2）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6223078</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7273303</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>51283</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>meryo2000</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/meryo2000" target="_blank">@meryo2000</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-10-28</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

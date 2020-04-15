@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>500 Internal Server Error : イベント開催支援ツール ATND(アテンド)</title>
+  	<link href="/stylesheets/import.css" media="screen" rel="stylesheet" type="text/css" />
+  	<img alt="t(&#39;messages.atnd.logo&#39;)" src="/images/logo_OR.png" />
+	<style type="text/css">
+		body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
+		div.dialog {
+			width: 25em;
+			padding: 0 4em;
+			margin: 4em auto 0 auto;
+			border: 1px solid #ccc;
+			border-right-color: #999;
+			border-bottom-color: #999;
+			font-size:1.2em;
+		}
+		h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
+	</style>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header" name="header">
+
+<a href="/beta"><img src="/images/header_atnd_off.gif" alt="ATND" width="47" height="19" /></a>
+
+</div>
+  <!-- This file lives in public/500.html -->
+  <div class="dialog">
+    <h1>500 Internal Server Error</h1>
+    <p>大変申し訳ございません、内部エラーが発生しました。<br/>この問題の解決に向けて善処いたします。</p>
+  </div>
+</div>
+</body>
+</html>

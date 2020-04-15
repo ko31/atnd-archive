@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">OpenFlow勉強会その２ #sdnstudy</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">OpenFlow勉強会その２ #sdnstudy</h2>
+
+            <div class="buttons">
+                <a href="../json/events/27757.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/27757.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>27757</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>OpenFlow勉強会その２ #sdnstudy</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>テクニカルセッション中心に</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>タイムテーブル<br />
+※12:30開場です。13:00になったらはじめまーす。</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>タイトル</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:20</td>
+		<td>不肖石光</td>
+		<td>はじめに＆sdnstudyについて</td>
+		<td>開始／諸注意／勉強会説明</td>
+	</tr>
+	<tr>
+		<td>13:20 &#8211; 13:40</td>
+		<td>中村さん</td>
+		<td>OpenFlowを活用した製品の実装例</td>
+		<td>プログラマブルフロー製品に関する簡単なご紹介と実装例を含めたご紹介を行います。</td>
+	</tr>
+	<tr>
+		<td>13:40 &#8211; 14:00</td>
+		<td>鈴木さん</td>
+		<td>Trema の紹介とネットワーク仮想化への応用</td>
+		<td>Trema 自体の簡単な紹介と、ネットワーク仮想化を実現する Trema 上のアプリ sliceable switch の紹介を行います。</td>
+	</tr>
+	<tr>
+		<td>14:00 &#8211; 14:15</td>
+		<td>休憩</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>14:15 &#8211; 14:45</td>
+		<td>高宮さん</td>
+		<td>Trema コミッタになるには?</td>
+		<td>英語ができなくても大丈夫! Ruby ができなくても大丈夫! チーム Trema に参加して <span class="caps">SDN</span>/OpenFlow 界にハプニングを引き起こそう!</td>
+	</tr>
+	<tr>
+		<td>14:45 &#8211; 15:15</td>
+		<td>中嶋さん</td>
+		<td>open vswitchのKVMでつかってみた</td>
+		<td>KVM環境へのインストール方法、ポートの割り当て、QoSやOpenflow機能について</td>
+	</tr>
+	<tr>
+		<td>15:15 &#8211; 15:35</td>
+		<td>清水さん</td>
+		<td>Floodlightのモジュール機構</td>
+		<td>リリース当初にはFloodlightに含まれていなかったモジュール機構が最近追加されました、どのような仕組みなのか、モジュールをどのように作成するのかを説明します。</td>
+	</tr>
+	<tr>
+		<td>15:35 &#8211; 15:50</td>
+		<td>休憩</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>15:50 &#8211; 16:10</td>
+		<td>宮下さん</td>
+		<td>自作OpenFlowコントローラ(lily)のアップデート情報</td>
+		<td>個人的に自作しているOpenFlowコントローラ(lily)をOpenStack Quantumに対応させたので、その技術情報を共有します。また、lilyの今後のロードマップについても合わせてご紹介させていただきます。</td>
+	</tr>
+	<tr>
+		<td>16:10 &#8211; 16:25</td>
+		<td>休憩</td>
+		<td></td>
+		<td>次のセッションに参加されない方はここで終了です。</td>
+	</tr>
+	<tr>
+		<td>16:25 &#8211; 17:40</td>
+		<td>宮下さん</td>
+		<td>OpenFlowコントローラを自作してみよう！</td>
+		<td>niftyクラウドを利用して簡単なtremaアプリを作成します。60分のセッションを予定しています（環境準備等の予備含めて75分にしています）。希望者のみ。ruby言語を使用するため、ruby言語経験者だとよい。フォローはします。</td>
+	</tr>
+	<tr>
+		<td>17:40 &#8211; 18:00</td>
+		<td>終了</td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<h2>場所</h2>
+<p><a href="http://www.nifty.co.jp/company/outline/access.htm">ニフティ株式会社 セミナールーム</a><br />
+参加費は無料です（ニフティさんのご好意により会場を無料でお借りしております)。</p>
+<p>また、今回の勉強会の模様はUstreamにて中継予定となります。<br />
+Ustream : http://www.ustream.tv/channel/sdnstudy</p>
+<p>こちら読んでおいてください。</p>
+<p><a href="https://sites.google.com/site/qpportal/conference-room/nifuti-zhu-shi-hui-she-seminarumu">ニフティ株式会社　セミナールーム</a></p>
+<h2>集合場所</h2>
+<p>東京都新宿区北新宿2-21-1　新宿フロントタワー1階<br />
+※ニフティさん移転されたので場所を間違えないようにお願いします！<br />
+1階に集合とします。その後、ニフティ社員の方のアテンドにてセミナールームまで上がります。<br />
+12:30から開場します。順次アテンドいたします。</p>
+<h2>大切なお約束</h2>
+<p>受付時に名刺もしくは連絡先を書いたカードを提出していただきます。<br />
+受付前に、あらかじめ参加登録したときのお名前(アカウント名)を名刺にご記入ください。<br />
+名刺がない方は、名刺大の紙に参加登録したときのお名前(アカウント名)・氏名(本名)・連絡先(電話番号)をご記入ください。<br />
+参加者の氏名と連絡先は入退室管理の観点、機器破損・怪我等トラブル発生時のためにお伺いします。その他の目的には使いません。<br />
+受付時にいただいた名刺や個人情報はすべてニフティ様に提出し、本勉強会には残しません。<br />
+また、勉強会で発生した事故やトラブル、紛失等に関しては、主宰およびスタッフ、ニフティ株式会社様含め、一切の責任を負いかねますので、あらかじめご了承ください。</p>
+<p>勉強会情報に関して、変更等があった場合は<br />
+<a href="https://groups.google.com/group/sdnstudy/">GoogleGroups</a> および <a href="https://twitter.com/sdnstudy">Twitter</a> にてお知らせいたします。ぜひこの機会にご登録／フォローよろしくお願いします。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/27757" target="_blank">http://atnd.org/events/27757</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-04-29</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-04-29</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.nifty.co.jp/company/outline/access.htm" target="_blank">http://www.nifty.co.jp/company/outline/access.htm</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区北新宿2-21-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ニフティ株式会社 セミナールーム @ 新宿フロントタワー18階（1階集合） </td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6963282</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6871761</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>119013</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>@sdnstudy</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/sdnstudy" target="_blank">@sdnstudy</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-04-28</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

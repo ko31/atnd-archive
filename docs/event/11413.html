@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第２回 12ステップ組込みOS自作本もくもく会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第２回 12ステップ組込みOS自作本もくもく会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/11413.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/11413.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>11413</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第２回 12ステップ組込みOS自作本もくもく会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>書籍「１２ステップで作る 組込みＯＳ自作入門」をテーマにした、筆者主催のもくもく会です。成人の日の祝日に、もくもくと組込みＯＳを作りましょう。</p>
+<p>※参加者多数の場合には、隣の会議室も借りてくっつけて使います。人数予測のため、参加希望者は早めに登録してください。<br />
+※今回は時間内にセミナーも行います。今回のテーマは「割込み処理とタスク切り替え」です。</p>
+<p>第１回のレポートはこちら<br />
+http://ameblo.jp/kozos/entry-10748408779.html</p>
+<p>「もくもく会」というのは、何人かが同じ場所に集まってもくもくと自分の作業をひたすらやる、というものです。 家でひとりでやるよりもモチベーションが続きやすいのと、周りに誘惑が無いので集中できるという利点があります。</p>
+<p>「１２ステップ本」のような実習系の書籍はどうしても最後までモチベーションが続かなかったりしがちなので、モチベーションＵＰのきっかけになればいいかなと思い、もくもく会を企画してみました。最近作業が止まってしまっている方、やってみたいがいまいち一歩が出ない方、もちろんゴリゴリ進めている方、誰でも歓迎いたします。みんなで組込みＯＳ作りましょう！みんなで作れば楽しいよ！</p>
+<p>(スケジュール)<br />
+・各自、好きな時間に集合。<br />
+・昼休み後(13時くらい？)にぼちぼち集合したら、自己紹介タイムを設けます。<br />
+・14時くらいから会場の隅でセミナーを行います。詳細は以下を参照してください。<br />
+・17時終了、その後懇親会。</p>
+<p>(概要)<br />
+・組込みＯＳ自作のもくもく会です。１２ステップ本をベースにして、各自もくもくと自分の作業を自分のペースで進めてください。もちろん教えあったり、和気あいあいとやるのもＯＫです。<br />
+・筆者も参加してますので、書籍について疑問点などあれば、その場で質問していただいてかまいません。<br />
+・いちおう１２ステップ本をテーマとしますが、組込み関連の作業ならばなんでも可です。<br />
+・人数少なかった場合には状況を見て中止にするかもしれません。そのときはごめんなさい。<br />
+・のんびり楽しくやりましょう。</p>
+<p>(セミナー)<br />
+・ただ作業するだけというのももったいないので、せっかくですので今回は、組込みＯＳについてのセミナーを行ってみます。<br />
+・今回のテーマは「割込み処理とタスク切り替え」です(筆者が説明します)。ＯＳのタスク切り替えの方法について、KOZOSをベースに平易に説明します。<br />
+・12ステップ本では、７th～８thステップの話題になります。そろそろこの付近にさしかかる方もいるかと思い、テーマに選びました。<br />
+・聴講は自由です。聴講希望者のみ聞いてください。</p>
+<p>(会場について)<br />
+・場所は武蔵小杉駅(神奈川県川崎市)から徒歩10分程度です。最近開通した横須賀線の武蔵小杉駅からも、徒歩10分程度です。新宿方面からは湘南新宿ライン、東京駅方面からはエアポート成田が速くて便利です。<br />
+・会場はいちおう午前中から予約してありますが、午後から参加でもＯＫです。好きな時間に来てください。また、途中で帰っても構いません。<br />
+・会場は入退室自由です。直接会場に来てください。食事などは各自で適当にとりにいってください。<br />
+・会場費＋電源代がかかります。参加者で頭割りにします(ひとり数百円くらい)。計算が面倒なので時間割りでなく、単純に頭割りします。</p>
+<p>(持ちものについて)<br />
+・ＰＣ、書籍、マイコンボードなどは各自で持参してください。いちおう主催者のほうでも予備を持っていきますので、忘れた方は行っていただければ早い者勝ちでお貸しします。USBシリアルアダプタも予備をいくつか持っていきます。<br />
+・主催者のほうで、イベント出展時の販売用のマイコンボードがあります(新品未開封)。前もって連絡いただければ当日持っていってお渡しします(マイコンボード、電源アダプタ、シリアルケーブル)。<br />
+・会場に電源はありますがコンセントの数は多くありません。各自、タップを持参してください。<br />
+・会場にはプロジェクタはありません。<br />
+・会場にはネットワーク環境はありません。ネットワークにつなぎたいかたは、各自でてきとうにお願いします。<br />
+・会議室内は電波の入りは悪いです(私のPHSは会議室から出たら大丈夫でした)。<br />
+・会場は照明がちょい暗いです。ＬＥＤランプなど持参するといいかもしれません。<br />
+・あと会場はちょい寒いかな？暖かい服装がいいです。携帯カイロなどあるといいかも。</p>
+<p>(懇親会について)<br />
+・前回同様、武蔵小杉の私のよく行く居酒屋に行きますかね。それとも、こちらもよく行くサワー100円の店がいいですかね。<br />
+・作業後に、パッと飲みましょう！</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/11413" target="_blank">http://atnd.org/events/11413</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-01-10</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-01-10</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://groups.google.com/group/kozos_tomonokai" target="_blank">http://groups.google.com/group/kozos_tomonokai</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>神奈川県川崎市中原区木月住吉町33-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>川崎市 平和館 第２会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.5687724</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6590067</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>25080</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kozos</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kozossakai" target="_blank">@kozossakai</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-01-07</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

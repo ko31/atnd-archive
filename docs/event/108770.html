@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">『LINE Clova × Chatbot 』によるコミュニケーション・テクノロジー開発ハンズオン - VOT MEETUP! #11 with LINE Developer Community-</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">『LINE Clova × Chatbot 』によるコミュニケーション・テクノロジー開発ハンズオン - VOT MEETUP! #11 with LINE Developer Community-</h2>
+
+            <div class="buttons">
+                <a href="../json/events/108770.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/108770.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>108770</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>『LINE Clova × Chatbot 』によるコミュニケーション・テクノロジー開発ハンズオン - VOT MEETUP! #11 with LINE Developer Community-</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>概要</h1>
+
+<p>音声/チャットボットといったコミュニケーションインターフェースを心から愛する人達が集まり、LTやトークセッション、懇親会などを行っての交流を目的としたMeetupです！</p>
+
+<p>今回LINEのAPIである <strong>『Clova』</strong> や <strong>『Messaging API』</strong> を用いた”VUI”や”チャットボット”のコミュニケーション・テクノロジーを開発する <strong>【ハンズオン】</strong> を実施いたします。
+当日は『Clova』と『MessagingAPI』に詳しい方々にご登壇頂き、ハンズオンをリード、サポートさせて頂きます。</p>
+
+<p>開発ナレッジや活用事例について知見を共有し合い、学びの多い場にできれば幸いです！<br>
+エンジニアの方はもちろん、エンジニアを目指している人、起業家・学生の方など、音声/チャットボットを愛する方であれば、どなたでもご参加ください！</p>
+
+<ul>
+<li><p>過去のMeetUpの模様をイベントレポートとしてまとめています！<br>
+<a href="https://vot.hatenablog.com/">https://vot.hatenablog.com/</a></p></li>
+<li><p>過去のMeetUpの盛り上がりをTogetterでまとめています！<br>
+<a href="https://togetter.com/id/JapanVot">https://togetter.com/id/JapanVot</a></p></li>
+</ul>
+
+<h1>申し込み方法</h1>
+
+<p>以下のTechPlayのイベントページよりお申し込みください。<br>
+（<a href="https://techplay.jp/event/749806">https://techplay.jp/event/749806</a>）</p>
+
+<h1>事前準備</h1>
+
+<h2>当日の持ち物</h2>
+
+<ul>
+<li>公衆 WiFi が利用可能なノート PC: Windows、macOS のいずれか<br></li>
+<li>LINEがインストールされたスマートフォン</li>
+<li>Clova デバイス（※任意）</li>
+</ul>
+
+<h2>事前準備</h2>
+
+<ul>
+<li><p>スキル開発にご自身のLINEアカウント（メールアドレス・パスワード）が必要になりますので、<a href="https://developers.line.me/console/">こちらのサイト</a>でログインできるかどうかを確認ください</p></li>
+<li><p>一応gitコマンドがあるか確認しておいてください。もしgitコマンドが入っていなければ、こちらの<a href="https://git-scm.com/downloads">公式サイト</a>からダウンロードしてインストールしておいてください。</p></li>
+<li><p>当日作業するノートPCに<a href="https://nodejs.org/ja/download/">Node.jsのLTS（最新安定版）</a>をインストールしておいてください。</p></li>
+<li><p>何かしら開発用のエディタを入れておいてください。おすすめは<a href="https://code.visualstudio.com/">Visual Studio Code</a>です。</p></li>
+</ul>
+
+<h1>アジェンダ</h1>
+
+<h2>タイムテーブル(暫定)</h2>
+
+<table><thead>
+<tr>
+<th>時間</th>
+<th>内容</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>18:30 ~</td>
+<td>開場・受付開始</td>
+</tr>
+<tr>
+<td>19:00~19:10</td>
+<td>開始 &amp; オープニング</td>
+</tr>
+<tr>
+<td>19:10~20:10</td>
+<td>ハンズオン実施（前半）</td>
+</tr>
+<tr>
+<td>20:10~20:20</td>
+<td>休憩</td>
+</tr>
+<tr>
+<td>20:20~21:20</td>
+<td>ハンズオン実施（前半）</td>
+</tr>
+<tr>
+<td>21:20~21:30</td>
+<td>写真撮影</td>
+</tr>
+</tbody></table>
+
+<h2>Twitterについて</h2>
+
+<p>ハッシュタグ『<a href="https://twitter.com/hashtag/vot?src=hash">#vot</a>』で、ご参加頂けなかった方にもイベントの盛り上がりをお届けしたいと思います！また、登壇者への質問などもTwitter上で受け付けておりますので、当日は運営も含め、みなさんで日本の音声/チャットボットの業界を盛り上げていきましょう！</p>
+
+<ul>
+<li>VOT公式Twitter（ <a href="https://twitter.com/JapanVot">@JapanVot</a>）</li>
+</ul>
+
+<h1>内容</h1>
+
+<p>毎月恒例のVOT MeetUpですが、今回は【ビジネス】や【マネタイズ】に特化した会として開催いたします！<br>
+音声やチャットボットのビジネス活用について、知見を持たれている方にLT登壇をして頂きます！LTの後には登壇者全員への質疑応答を含めたディスカッションも行いますので、L音声/チャットボットに関する知見を得られる場にできると考えております。</p>
+
+<h1>運営</h1>
+
+<h2>クラスメソッド株式会社 河本貴史</h2>
+
+<p>通称「もっちゃん」。とある機械学習系エンジニア。外国の方にも「もっちゃん」って呼んでもらおうとしてなんか言いにくいから明日からMr.Moって呼ぶわぁってなった黒歴史を持つ...
+普段は子育てに積極的なＰＡ・ＰＡ♪</p>
+
+<h2>田中みそさん</h2>
+
+<p>オッス！オラ田中！！スマートスピーカー購入を機にITに目覚めた初心者/非エンジニアだ！好きな食べ物はRaspberry Piとバナナ。いっちょやってみっか！？</p>
+
+<p>・スマートスピーカーを遊びたおす会 主催
+・LINE API Expert</p>
+
+<h2>VoiceApp Lab 捧 隆二</h2>
+
+<p>1988年大阪府出身。大学院在学中の起業を経て、外資系コンサル企業とフィンテックベンチャーを経験。2018年より本業のかたわら、ボイスアップラボのメンバーとしてスマートスピーカースキルの開発に取り組む。2019年8月、ボイスアップラボは法人化し、CTOに就任。Botとスマスピが大好き。</p>
+
+<h2>株式会社ZEALS VPoE&amp;エンジニア 福本晃之</h2>
+
+<p>1992年兵庫県出身。富士通グループでITシステム導入の法人セールスに従事。テクノロジーへの思いを捨てられず、2018年4月に株式会社ZEALSへエンジニアとしてジョイン。PythonとRubyのエンジニアとしてチャットボット開発に携わる。2018年8月より、同社のチャットボットサービス「会話広告 fanp」のプロダクトマネージャーに就任。2019年3月からは同社のVPoEに就任し、エンジニア組織全体のマネジメント責任を負う。VOT設立・運営者の一人。</p>
+
+<h1>場所について</h1>
+
+<h2>会場</h2>
+
+<ul>
+<li>会場名：TechPlay SHIBUYA</li>
+<li>住所：〒150-0042 東京都渋谷区２０ 東京都渋谷区宇田川町20-17 NMF渋谷公園通りビル8F</li>
+</ul>
+
+<h2>アクセス</h2>
+
+<ul>
+<li>JR線、東京メトロ、東急線「渋谷」駅 ハチ公口から徒歩3分</li>
+</ul>
+
+<h1>持ち物</h1>
+
+<ul>
+<li>受付票（connpassの本イベントページ右側「受付票を見る」より発行できます）</li>
+<li>名刺2枚（あれば）</li>
+</ul>
+
+<p>（※Wi-Fiおよび電源は会場にてご用意いたします）</p>
+
+<h1>コミュニティ</h1>
+
+<p>色々と情報を発信しております！<br>
+どなたでも参加できますので、ぜひご参加ください！</p>
+
+<ul>
+<li>Facebookグループ : <a href="https://www.facebook.com/groups/1805710136402828/">VOT</a></li>
+<li>Twitter : <a href="https://twitter.com/JapanVot">@JapanVot</a></li>
+</ul>
+
+<h1>さいごに..VOTについて</h1>
+
+<p>当コミュニティ「VOT」の立ち上げには、管理者がシリコンバレーでのFacebookイベント「F8」や「WORLD BOT meetup」に参加した際に感じた、“日本の存在がパッシングされている“という事実が背景にあります。</p>
+
+<p>既に海外では「Bots」というチャットボットについての一大コミュニティが形成されており、Facebook本社やグローバルスタートアップ企業が様々な情報の発信・共有をしております。</p>
+
+<p>一方で、日本の企業がそういった場に姿を表わすことは滅多にありません。 そのために、「チャットボットや音声インターフェースに関する多くの情報が日本に入ってこない」という状況になりつつあります。</p>
+
+<p>この状況は、日本にとって明らかに損害です。 日本に対するAPIの提供や、NLPといった新技術のサポートの優先度を下げられているからです。</p>
+
+<p>そのような状況を変えて、日本のプレゼンスを上げるために私たちは「VOT」を立ち上げました。コミュニケーション・テクノロジーが花開くためにも、この業界をオールジャパンで盛り上げていけるよう頑張ります。</p>
+
+<p>チャットボットにご興味のある方、Amazon Echoなどスマートスピーカーの最新情報を知りたい方、音声認識に触れてみたい方は、勉強会やミーツアップ、カンファレンスなどを企画・実施してまいりますので、お気軽にご参加ください！</p>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/108770" target="_blank">http://atnd.org/events/108770</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2019-09-27</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2019-09-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://techplay.jp/event/749806" target="_blank">https://techplay.jp/event/749806</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>〒150-0042 東京都渋谷区２０ 東京都渋谷区宇田川町20-17</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>TechPlay SHIBUYA（NMF渋谷公園通りビル8F）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.66097</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7004224</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>323321</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>teruhisa</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2019-09-13</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

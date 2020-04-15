@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Force.com Advent Calendar 2012</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Force.com Advent Calendar 2012</h2>
+
+            <div class="buttons">
+                <a href="../json/events/33649.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/33649.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>33649</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Force.com Advent Calendar 2012</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>躊躇してはいけない。いますぐ参加するんだ！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>今年も Advent Calendar の季節がやってきました。</p>
+<p>昨年はJapan Force.com Developer Groupが立ち上がる前だったので、書き手を集めるのも一苦労で2周してしまいましたが、今年はもう大丈夫でしょう！ということで、今年は12月1日からはじめたいと思います。<br />
+もちろん人数が集まるようなら前倒しで！コメントでお知らせいただければ更新します。</p>
+<p>Salesforce.comの提供するCRMの基盤部分を切り出した形で2007年に発表されたForce.comですが、いわゆる十八番であるコーディングレスでの画面自動生成やワークフロー、数式項目などは有名ですが、意外にもApexやVisualforceを利用すればゴリゴリにカスタマイズでき、 コードアーティスト達の活躍の場は多い 、と一部ではもっぱらの噂です。</p>
+<p>ということで、ブログのネタはForce.com上で動作するApexのTipsでもいいし、ライブラリの使い方でもいい、自作のツールの紹介、小説など、Force.comに関していれば何でも構いません。</p>
+<p><big>みんなでAdvent Calendarを完成させましょう！</big></p>
+<p><strong>クリスマスを過ぎたとしても全然 OK。正月を過ぎてしまっても、全然かまいません！！</strong></p>
+<p>ちなみに、昨年のForce.com Advent Calendarはこちらです<del>（電子書籍化の話はどうなった！？）</del>。<br />
+<a href="http://atnd.org/events/22909">Force.com Advent Calendar 2011</a><br />
+<a href="https://gihyo.jp/dp/sp/advent2011/G11C44">待望の電子書籍！</a><br />
+技術評論社ご担当者さま、ありがとうございます！</p>
+<h2>カレンダー</h2>
+<table>
+<tr>
+<th>日</th>
+<th>タイトル</th>
+<th>執筆者</th>
+</tr>
+<tr>
+<td>1</td>
+<td><a href="http://d.hatena.ne.jp/a-kura/20121201">[Force.com] Force.com Advent Calendar 2012、はじめました！</a><br />
+<a href="http://d.hatena.ne.jp/a-kura/20121201/1354344849">[Force.com] 業務系システムといえば、承認申請！</a></td>
+<td><a href="http://twitter.com/a_kuratani">a-kura</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="http://tyoshikawa1106.hatenablog.com/entry/2012/12/02/012536">Force.com Discussion Boards を活用しよう</a></td>
+<td><a href="http://twitter.com/tyoshikawa1106">@tyoshikawa1106</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>　<br />
+<a href="http://d.hatena.ne.jp/a-kura/20121203/1354461483">[Force.com] 業務系システムといえば、承認申請！(ディアイエス編)</a></td>
+<td><del><a href="http://twitter.com/mitsuhiro">mitsuhiro</a></del><br />
+<a href="http://twitter.com/a_kuratani">a-kura</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="http://pomu0325.blogspot.com/2012/12/forcecom-csv.html">[force.com] CSV添付のメールをスケジューリングして送る</a></td>
+<td><a href="http://twitter.com/pomu0325">@pomu0325</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="http://mukuu110.hatenablog.com/entry/2012/12/05/115756 ">四捨五入（round）の罠</a></td>
+<td><a href="http://twitter.com/mukuu02">mukuu02</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="http://d.hatena.ne.jp/shinichitomita/20121206/1354784563">[salesforce][facebook] 忘年会・二次会向け「Party Roulette」というソーシャルアプリを作りました</a></td>
+<td><a href="http://twitter.com/stomita">shinichitomita</a></td>
+</tr>
+<tr>
+<td rowspan="2">7</td>
+<td><a href="http://d.hatena.ne.jp/a-kura/20121207/1354903083">[Force.com] Cloudforce Japan 2012 でLTしてきました！</a></td>
+<td><a href="http://twitter.com/a_kuratani">a-kura</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="http://vaindespair.blogspot.jp/2012/12/blog-post.html">Force.com ： 大規模ポータルユーザにレコードのアクセス権を設定したい </a></td>
+<td><a href="https://twitter.com/pgf2">pgf2</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="http://blog.livedoor.jp/minoaw/archives/6794912.html">Force.com Canvasで使用されているAPI</a></td>
+<td><a href="http://twitter.com/mino0123">minoaw</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="http://yonet77.hatenablog.com/entry/2012/12/11/105020">Cloudforce2012 Mini Hackに参加したよ (1)</a></td>
+<td><a href="http://twitter.com/yonet77">yonet77</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="http://d.hatena.ne.jp/uoki/20121211/1355186115">Visualforce Chartingで動的なグラフを作ってみる</a></td>
+<td><a href="http://twitter.com/i_sanuki">ikou</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="http://d.hatena.ne.jp/tasuku_papa0109/20121211/1355238134">Force.comで車のオイル交換日を予測しちゃおう！</a></td>
+<td><a href="http://twitter.com/tasuku_papa0109">tasuku_papa0109</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="http://mukuu110.hatenablog.com/entry/2012/12/13/152819">XXX年後の世界</a></td>
+<td><a href="http://twitter.com/mukuu02">mukuu02</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="http://tumblr.uchibe.net/post/37835310287/ruby-restforce-salesforce">[Ruby]restforceを使ってSalesforceのデータにアクセス</a></td>
+<td><a href="http://twitter.com/Takashi_U">Takashi_U</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="http://blogjp.sforce.com/2012/12/post-1889.html">HTML5でCTIを実現 ～ Open <span class="caps">CTI</span> Adapter ～</a></td>
+<td><a href="http://twitter.com/mitsuhiro">mitsuhiro</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="http://blog.livedoor.jp/minoaw/archives/6809955.html">[Visualforce]カスタムコンポーネントでレコードのモーダル編集</a></td>
+<td><a href="http://twitter.com/mino0123">minoaw</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="http://junojisan.blogspot.jp/2012/12/salesforce_17.html">Salesforceで提供されない排他ロックを少し補う</a></td>
+<td><a href="https://twitter.com/junojisan">junojisan</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="http://tyoshikawa1106.hatenablog.com/entry/2012/12/18/020517">Force.com Security Source Code Scannerを活用しよう</a></td>
+<td><a href="http://twitter.com/tyoshikawa1106">@tyoshikawa1106</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><a href="http://d.hatena.ne.jp/tasuku_papa0109/20121218/1355843502">イケてる！？マニュアル作成講座 for Force.com案件</a><br />
+<a href="http://d.hatena.ne.jp/tasuku_papa0109/20121218/1355843456">Force.comと他社のクラウドプラットフォームを比較してみよう</a></td>
+<td><a href="http://twitter.com/tasuku_papa0109">tasuku_papa0109</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><a href="http://ameblo.jp/hayapu/entry-11431469756.html">[Salesforce][Force.com]外部サイトにHTTPアクセス（Callout）する</a></td>
+<td><a href="http://twitter.com/hayapu">hayapu</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><a href="http://yonet77.hatenablog.com/entry/2012/12/21/001312">Cloudforce2012 Mini Hackに参加したよ (2) </a></td>
+<td><a href="http://twitter.com/yonet77">yonet77</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><a href="http://d.hatena.ne.jp/uoki/20121222/1356189071">項目セットを使ってみよう</a></td>
+<td><a href="http://twitter.com/i_sanuki">ikou</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><a href="http://o-ochiaki.hatenablog.com/entry/2012/12/23/230434">初めてのSalesforce開発で感じたこと。</a></td>
+<td>chiaking</td>
+</tr>
+<tr>
+<td>24</td>
+<td><a href="http://blogjp.sforce.com/2012/12/htmloutputpanel-f137.html">VisualforceでHTML5(JQuery Mobileとか)のData-*属性を使う方法</a></td>
+<td><a href="http://twitter.com/mitsuhiro">mitsuhiro</a></td>
+</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/33649" target="_blank">http://atnd.org/events/33649</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.facebook.com/groups/234943236617295/" target="_blank">https://www.facebook.com/groups/234943236617295/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>94095</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>a-kura</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/a_kuratani" target="_blank">@a_kuratani</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

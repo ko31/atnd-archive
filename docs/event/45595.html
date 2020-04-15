@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">CloudStack Advent Calendar jp: 2013</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">CloudStack Advent Calendar jp: 2013</h2>
+
+            <div class="buttons">
+                <a href="../json/events/45595.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/45595.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>45595</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>CloudStack Advent Calendar jp: 2013</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>構築、運用にまつわるTips、トラブル関連情報、デバッグ情報など、なんでもあり。</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>【追記】 <a href="http://cloudstackday.jp">CloudStack Day Japan 2014</a> 事前登録開始しました。</h2>
+<h1>CloudStack Advent Calendarの季節になりました!</h1>
+<h2>Advent Calendar とは</h2>
+<p>クリスマスまでの日数を数えるために、1日に1つ、穴が空けられるようになっているカレンダーです。<br />
+転じて、技術系コミュニティで、クリスマスまでの25日間にTipsを1つずつ、Blog等で公開するイベントを<br />
+ <strong>Advent Calendar</strong> と呼ぶそうです。</p>
+<p>CloudStack Advent Calendarでは、 <strong>大晦日</strong> までやります。</p>
+<p>参考までに昨年の <a href="http://atnd.org/events/34309">CloudStack Advent Calendar jp 2012</a></p>
+<h2>仕様:</h2>
+<ul>
+	<li>参加される方は、 <a href="https://docs.google.com/spreadsheet/ccc?key=0Aj1dT2DhhoZ3dFV4M2NFaFUydERhSnRhNm04UHRQUVE#gid=3">管理票</a> を確認し、 <strong>いつ書くか</strong> を <a href="https://docs.google.com/spreadsheet/ccc?key=0Aj1dT2DhhoZ3dFV4M2NFaFUydERhSnRhNm04UHRQUVE#gid=3">管理表</a> と <strong><span class="caps">ATND</span></strong> にコメントすること。</li>
+	<li>イベントに参加した順で <strong>12/1</strong> から 1 日ずつお持ちの blog, Web 日記, slideshare等に記事を上げる。<br />
+※入門編でも、上級編でも、イベントレポートでも、トラブル情報共有でも、ビジネス関連でも、CloudStack関連のことであれば <strong>なんでもOK</strong> !</li>
+	<li>12/1 が1 人目、12/2 は 2 人目、… 12/n は n 人目 … 12/31 は 31 人目、のように。</li>
+	<li>記事を書いたら <strong>コメント欄</strong> にタイトルとURLを貼ること。</li>
+</ul>
+<h2>テーマ:</h2>
+<p>CloudStackに関することならなんでも（オープンソース、商用版問わず）</p>
+<ul>
+	<li><a href="http://www.cloudstackcollab.org/">アムステルダムのCloudStack国際カンファレンス</a> でこんなセッションやってたぜ!</li>
+	<li>このツールがお勧めだぜ！</li>
+	<li>こんなトラブル情報知っているかい?</li>
+	<li>ここがはまりどころだぜ!</li>
+	<li>自宅ラックでクラウドつくったぜ!</li>
+	<li>こんなおまじない知ってるかい?</li>
+	<li>Ceph RBD、OpenStack Swift、Riak CS等の分散ストレージを使ってるぜ！</li>
+	<li>VMware <span class="caps">NSX</span> (Nicira <span class="caps">NVP</span>)、Stratosphere SSP、NetScaler、Juniper SRX、F5 BigIP、OpenContrail、Palo Alto Networks、Cisco Nexus、ASA 1000v連携してるぜ!</li>
+	<li>enStratius、RigthScale、Scalr、UShareSoftと連携できたぜ!</li>
+	<li>LXC連携、Cisco UCS連携、ベアメタルプロビジョニング試してみたぜ</li>
+	<li>Munin、Zabbix、Zenoss、Nagiosで監視してるぜ！</li>
+	<li>XenServer、KVM、vSphere使った時のはまりどころ</li>
+	<li>CloudStack APIつかってるぜ！</li>
+	<li><span class="caps">AWS</span> API互換つかってるぜ!</li>
+	<li>こんな Scriptつくったぜ！</li>
+	<li>テストツール <a href="http://pypi.python.org/pypi/cloudmonkey">cloudmonkey</a> うごかしたぜ!</li>
+	<li>パッチつくったぜ!</li>
+	<li>知っているようでみんな知らない tips<br />
+などなど</li>
+</ul>
+<h2>管理票:</h2>
+<p><a href="https://docs.google.com/spreadsheet/ccc?key=0Aj1dT2DhhoZ3dFV4M2NFaFUydERhSnRhNm04UHRQUVE#gid=3">こちら</a> で管理していきたいとおもいます。</p>
+<h2>Blogエントリー:</h2>
+<table>
+	<tr>
+		<th>Date </th>
+		<th>Author </th>
+		<th>Title</th>
+	</tr>
+	<tr>
+		<td>2013/12/01</td>
+		<td>@kkitase</td>
+		<td><a href="http://cloudstack.jp/archives/440">Cloudstack collaboration conference &#8211; 1日目</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/02</td>
+		<td>@u1</td>
+		<td><a href="http://blog.udcp.net/2013/12/02/fluent-plugin-cloudstack-tutorial/">fluent-plugin-cloudstackを使ってのCloudStack使いこなし</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/03</td>
+		<td>@adachi68</td>
+		<td><a href="http://adachi68.github.io/pocketstack/">CloudStack on a Raspberry PI</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/04</td>
+		<td>@shiroica</td>
+		<td><a href="http://blog.sharplab.net/blog/2013/12/04/cloudstack開発ことはじめ-1開発環境のセットアップ-intellij-idea-co/">CloudStack開発ことはじめ (1)開発環境のセットアップ –IntelliJ <span class="caps">IDEA</span> Community Editionのススメ -</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/05</td>
+		<td>@ka4geru</td>
+		<td><a href="http://kashigeru.hatenablog.com/entry/2013/12/05/085450">CloudStackインストールしたら何やる？</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/06</td>
+		<td>@shiroica</td>
+		<td><a href="http://blog.sharplab.net/blog/2013/12/06/cloudstack%E9%96%8B%E7%99%BA%E3%81%93%E3%81%A8%E3%81%AF%E3%81%98%E3%82%81-2%E3%83%93%E3%83%AB%E3%83%89%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83/">CloudStack開発ことはじめ (2)ビルドサーバーのセットアップ –JenkinsでCloudStackのdebパッケージをビルドしてみよう–</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/07</td>
+		<td>@kkitase</td>
+		<td><a href="http://cloudstack.jp/archives/464">Splunkを使ったCloudStackのログ解析入門</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/08</td>
+		<td>@opt_hohenheim</td>
+		<td><a href="http://d.hatena.ne.jp/yukutomi/20131208/1386477644">CloudStack4のAPIを使用していて気づいた事</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/09</td>
+		<td>@kkitase</td>
+		<td><a href="http://cloudstack.jp/archives/510">Cloudstack collaboration conference &#8211; 2日目</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/10</td>
+		<td>@s_kaiga</td>
+		<td><a href="http://cloud-n.blog.ocn.ne.jp/blog/2013/09/cloudnwordpress.html">CloudStack（Cloudn）上にブログサイト（WordPress）を30分で立ち上げる！</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/11</td>
+		<td>@tontontonton</td>
+		<td><a href="http://fight-tsk.blogspot.jp/2013/10/cloudstack420ui.html?m=1">CloudStack4.2.0用の簡単なUIプラグインを作ってみる</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/12</td>
+		<td>@MayumiK0</td>
+		<td><a href="http://www.slideshare.net/samemoon/20131212-advent-calender">2013年CloudStackユーザー会活動記録</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/13</td>
+		<td>@nslope</td>
+		<td><a href="http://www.creationline.com/lab/3520">CloudStackの簡単なパラメータシートの作り方</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/14</td>
+		<td>@smzksts</td>
+		<td><a href="http://cloudstack.jp/archives/540">オープンソースカンファレンス 2013 .Enterprise</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/15</td>
+		<td>@giraffeforestg</td>
+		<td><a href="http://giraffeforestg.blog.fc2.com/blog-entry-114.html">CloudStack Network Throttling を調べてみた</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/16</td>
+		<td>@hsato</td>
+		<td><a href="http://www.slideshare.net/bqw05274/cloud-stack-adventcalendarjp20131216-29215992">CloudStack with Riak</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/17</td>
+		<td>@shiroica</td>
+		<td><a href="http://blog.sharplab.net/blog/2013/12/16/cloudstack%E9%96%8B%E7%99%BA%E3%81%93%E3%81%A8%E3%81%AF%E3%81%98%E3%82%813%E8%A9%A6%E9%A8%93%E7%92%B0%E5%A2%83%E3%81%AE%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97-cloudstack/">CloudStack開発ことはじめ(3)試験環境のセットアップ –CloudStackをIntelliJ IDEAでリモートデバッグしてみよう–</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/18</td>
+		<td>@masayukihayashi</td>
+		<td><a href="http://blogs.itmedia.co.jp/business20/2013/12/apache-cloudsta-29b9.html">あらためて Apache CloudStackとは？</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/19</td>
+		<td>@atsaki</td>
+		<td><a href="http://www.idcf.jp/blog/etc/vagrant-cloudstack/">Vagrantを使ってCloudStack上の環境構築をしてみよう</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/20</td>
+		<td>@moomindani</td>
+		<td><a href="http://d.hatena.ne.jp/hinemos_dev/20131220/1387549703">HinemosでCloudStackを管理する</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/21</td>
+		<td>@ttsujimura</td>
+		<td><a href="http://cloudstack.jp/archives/578">CloudStackお役立ち情報まとめ</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/22</td>
+		<td>@penguin2716</td>
+		<td><a href="http://d.hatena.ne.jp/penguin2716/20131223/1387756726">研究室におけるCloudStackの運用や障害対応に関する話</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/23</td>
+		<td>@smzksts</td>
+		<td><a href="http://smzksts.hateblo.jp/entry/2013/12/23/231034">CloudStackがDaaSの基盤になる？</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/24</td>
+		<td>@flogofrein</td>
+		<td><a href="http://kyoheiii.tumblr.com/post/70903390906/contribute-for-cloud-stack">Contribute for CloudStack</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/25</td>
+		<td>@penguin2716</td>
+		<td><a href="http://d.hatena.ne.jp/penguin2716/20131226/1388016025">自宅CloudStackを構築してみたメモ</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/26</td>
+		<td>@tadashimishima</td>
+		<td><a href="http://www.slideshare.net/t_missy5/cloudstack-advent-calendar20131226">CloudStackのAlert機能を使ってみよう</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/27</td>
+		<td>@nfurukawa</td>
+		<td><a href="http://vtechnical.hatenablog.com/entry/2013/12/27/004449">Nexentastor Community EditionでFCストレージ</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/28</td>
+		<td>@abeautifulwave</td>
+		<td><a href="http://peauxbear.blogspot.jp/2013/12/cloudstack.html">物理サーバからCloudStackへ移行させよう!</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/29</td>
+		<td>@zero_root</td>
+		<td><a href="https://sites.google.com/site/zacksnest/cumulus">Cumulus for CloudStack 4.2への道</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/30</td>
+		<td>@star76popin</td>
+		<td><a href="http://www.slideshare.net/star76/20131230cloudstack-advent-calendarvpc">VPCを作ってみよう</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/31</td>
+		<td>@kimotuki</td>
+		<td><a href="http://www.slideshare.net/YasuhiroArai/cloud-stack-29608345">CloudStackを自分流に振り返る</a> </td>
+	</tr>
+</table>
+<hr />
+<p>アドカレ期間中に見つけたBlog</p>
+<table>
+	<tr>
+		<th>Date </th>
+		<th>Author </th>
+		<th>Title</th>
+	</tr>
+	<tr>
+		<td>2013/12/15</td>
+		<td>@momijiame</td>
+		<td><a href="http://momijiame.tumblr.com/post/70068352402/apache-cloudstack-cmonkey-0-0-1">Apache CloudStack の操作を自動化するためのマイクロフレームワーク cmonkey 0.0.1 をリリースした</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/15</td>
+		<td>@kkitase</td>
+		<td><a href="http://cloudstack.jp/archives/555">CloudStack Collaboration Conference Summary Information</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/16</td>
+		<td>@shugonumano</td>
+		<td><a href="http://nushu123.blogspot.jp/2013/12/vagrant-cloudstack.html">vagrant-cloudstackを試してみた</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/17</td>
+		<td>@buta9999</td>
+		<td><a href="http://d.hatena.ne.jp/buta9999/touch/20131216/1387206366">VagrantでIDCフロンティアのcloudstackと遊ぶ</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/27</td>
+		<td>@kkitase</td>
+		<td><a href="http://cloudstack.jp/archives/637">CloudStack on XenServer on VMWare Fusion on MacBook Air</a> </td>
+	</tr>
+	<tr>
+		<td>2013/12/30</td>
+		<td>@opt_Hohenheim</td>
+		<td><a href="http://www.cir-ins.com/index.php/2-uncategorised/6-cloudstack4-openstack" title="Cloud on Cloud">CloudStack4のインスタンスにOpenStackを入れてみる</a></td>
+	</tr>
+</table>
+<hr />
+<p>コメント欄に <span class="caps">URL</span> が投稿されることで、<br />
+コメント欄の <span class="caps">RSS</span> フィードを用いて Advent Calendar への post をお好きな <span class="caps">RSS</span> リーダーで追えます!<br />
+<a href="http://atnd.org/comments/45595.rss">http://atnd.org/comments/45595.rss</a></p>
+<hr />
+<p>参考: <a href="http://atnd.org/events/34309">CloudStack Advent Calendar jp 2012</a> <br />
+参考: <a href="http://atnd.org/events/45763">OpenStack Advent Calendar jp 2013</a><br />
+参考: <a href="http://www.zusaar.com/event/1117005"><span class="caps">AWS</span> Advent Calendar jp 2013</a><br />
+参考: <a href="http://www.adventar.org/calendars/322">Adventar &#8211; CloudStack Advent Calendar 2013</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/45595" target="_blank">http://atnd.org/events/45595</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-12-31</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://cloudstack.jp" target="_blank">http://cloudstack.jp</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>あなたのブログなど</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>73568</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kitase</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kkitase" target="_blank">@kkitase</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-02-05</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

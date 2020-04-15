@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">スタートAlloy</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">スタートAlloy</h2>
+
+            <div class="buttons">
+                <a href="../json/events/27160.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/27160.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>27160</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>スタートAlloy</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Alloyハンズオン</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h3>注：午後から開催になりました。ご注意！</h3>
+<h2>概要</h2>
+<p>Alloyの使い方をイチから学ぶ会です。</p>
+<p>※ （株）豆蔵さんのご好意で、場所を貸していただけることになりました。（@kencobaさん、ありがとうございます）</p>
+<ul>
+	<li>当日使った資料はこちら（ <a href="https://docs.google.com/file/d/0BzmwV-bnsTo4SjdNYTdON3d4TWM/edit">Google Docs</a> ）
+	<ul>
+		<li>アジェンダと演習課題しかありません。講義資料的なものはないのでご注意。</li>
+	</ul></li>
+</ul>
+<h2>アジェンダ</h2>
+<p>※ 時間はあくまで目安です．</p>
+<ul>
+	<li><strong>13:00-14:30</strong> Alloyでのモデリング実演
+	<ul>
+		<li>ダウンロード・インストールから，一通りAlloyでモデルを書くまでを実演します．</li>
+		<li>お題は，Alloy本（下記参照）の第2章の例題（メールクライアント）です．
+		<ul>
+			<li>基本的に，Alloy本に沿って進めますが，当日アドリブでいろいろ変更するかもしれません．</li>
+		</ul></li>
+	</ul></li>
+</ul>
+<ul>
+	<li><strong>14:50-18:00</strong> 演習
+	<ul>
+		<li>実際に，参加者の皆さんでモデリングをしてもらいます．
+		<ul>
+			<li>参加者同士でペアになってもらい， <strong>ペアモデリング</strong> で進めることを現在考えています．</li>
+		</ul></li>
+		<li>お題は <del>当日発表します．</del> しました。下記参照。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li><strong>18:00-19:00</strong> Wrap Up
+	<ul>
+		<li>演習の結果発表 など．</li>
+	</ul></li>
+</ul>
+<h2>演習課題: バージョン管理システムのモデリング</h2>
+<ol>
+	<li>（全員）1人だけで使う状況を考える
+	<ul>
+		<li>コミット と 更新 ができる</li>
+		<li>ヒント：シグネチャ「リポジトリ」「ローカル」「ファイル」</li>
+	</ul></li>
+	<li>（初級以上）複数人で使う状況を考える
+	<ul>
+		<li>1つのリポジトリを複数の開発者で共有する
+		<ol>
+			<li>コンフリクトが起こる状況をモデル化する</li>
+			<li>コンフリクト解消の機能をモデル化し、それで正しく動作することを確かめる</li>
+		</ol></li>
+	</ul></li>
+	<li>（スタート詐欺な方対象）発展的課題
+	<ul>
+		<li>既存のバージョン管理システムが持つ他の機能をモデル化する
+		<ul>
+			<li>ブランチ作成、マージ</li>
+			<li>リポジトリが複数ある状況（分散バージョン管理）</li>
+		</ul></li>
+		<li>既存のバージョン管理システムの気になるところを検証してみる</li>
+		<li>最強のオレオレバージョン管理ツールを考える（自由課題）</li>
+	</ul></li>
+</ol>
+<h2>参考図書</h2>
+<ul>
+	<li>D. Jackson, 『抽象によるソフトウェア設計－Alloyではじめる形式手法－』（ <strong>Alloy本</strong> ）
+	<ul>
+		<li><a href="http://www.amazon.co.jp/dp/4274068587">Amazon.co.jp</a></li>
+		<li><a href="http://estore.ohmsha.co.jp/titles/978427406858P">オーム社eStore(β) （電子書籍）</a></li>
+	</ul></li>
+</ul>
+<p>当日、一部この本にある題材を使います。<br />
+持っていなくても大丈夫なように進めるつもりですが、持っていた方が色々お役に立つと思います。</p>
+<h2>事前準備</h2>
+<ul>
+	<li>ノートPCに，下記のものをダウンロードして持参してください．
+	<ul>
+		<li>Alloy Analyzer 4.2 release candidate
+		<ul>
+			<li><a href="http://alloy.mit.edu/alloy/download.html">本家サイト</a> からダウンロード可能</li>
+		</ul></li>
+		<li>Alloy Cheet Sheet ( <a href="https://docs.google.com/open?id=0BzmwV-bnsTo4cEFIM1Fodkc4dVU">Google docs</a> )
+		<ul>
+			<li>Alloy言語のチートシートです．</li>
+			<li>thanx to @osiireさん</li>
+		</ul></li>
+	</ul></li>
+	<li>ネット環境は各自ご用意ください。</li>
+	<li>タップ持参推奨です。</li>
+</ul>
+<h2>その他</h2>
+<p>今回，初めての試みがいくつかあります．なので，もしかすると（こちらの）思惑通り進まないかもしれません．そのへん臨機応変に対応しますので，どうぞご容赦を．</p>
+<p>ハプニング前提で（^^； 皆さんで楽しみましょう！</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/27160" target="_blank">http://atnd.org/events/27160</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-05-13</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-05-13</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://groups.google.com/group/alloy-jp/browse_thread/thread/93070b705c920d05" target="_blank">http://groups.google.com/group/alloy-jp/browse_thread/thread/93070b705c920d05</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区西新宿2-1-1 </td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>豆蔵トレーニングルームA,B （新宿三井ビル34F）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6919012</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6939116</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>3452</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>bonotake</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/bonotake" target="_blank">@bonotake</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-05-13</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

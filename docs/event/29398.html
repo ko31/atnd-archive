@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">KLab勉強会#6</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">KLab勉強会#6</h2>
+
+            <div class="buttons">
+                <a href="../json/events/29398.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/29398.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>29398</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>KLab勉強会#6</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>ソーシャルゲーム開発者の夕べ</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>(6/27追記)<br />
+お陰様で無事に開催することができました。<br />
+ありがとうございました。<br />
+ブログに当日の資料を公開しました。<br />
+http://dsas.blog.klab.org/archives/52067268.html</p>
+<p>(6/13追記)<br />
+当日はUSTで配信します。<br />
+http://www.ustream.tv/channel/KLab</p>
+<p>懇親会費は5000円となりました。<br />
+会費は受付時に集金させて頂きます。<br />
+懇親会場は勉強会終了後にご案内します。</p>
+<p>あと、今更気づいたんですが、懇親会の参加可否をアンケートにしてしまうと、後で変更できなくなるんですね。ごめんなさい、「参加する」と回答していただいていて、都合が悪くなったかたや、「参加しない」と回答して頂いて参加できるようになった方は、メッセージでお知らせ下さい。6/19(火)の18:00の時点での参加者数で懇親会場を押さえますので、よろしくお願いします。<br />
+<HR></p>
+<p>ソーシャルゲーム開発者向けの勉強会を開催します。<br />
+開発者同士の交流が目的で、さほど堅苦しくなく、ゆる〜い感じの集いにしたいと<br />
+思っていますので、興味のある方は気軽にご参加ください。<br />
+今回は、KLabの開発者が普段の業務を題材にしたセッションをお送りする予定です。</p>
+<H3>■対象者</H3>
+<ul>
+	<li>ソーシャルゲームの開発に携わっている方</li>
+	<li>いろんな会社のエンジニアの方々と話をしたい方</li>
+	<li>技術ネタをつまみにして酒を飲みたい方</li>
+	<li>などなど</li>
+</ul>
+<p>というわけで、終了後、会費5000円で懇親会を予定しています。<br />
+懇親会に参加していただける方は、アンケートで「懇親会に参加する」を選択し<br />
+てください。（もちろん勉強会のみの参加も大歓迎です）</p>
+<H3>■タイムテーブル</H3>
+<table>
+	<tr>
+		<td>18:30-</td>
+		<td> 受付開始 </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td>19:00-</td>
+		<td> 名状し難きDBアンチパターン </td>
+		<td> 牧内 大輔 </td>
+	</tr>
+	<tr>
+		<td>19:40-</td>
+		<td> ソーシャルゲームのデータマイニング的な話 </td>
+		<td> 高田 敦史 </td>
+	</tr>
+	<tr>
+		<td>20:10-</td>
+		<td> 圧縮されたログファイルの活用ツール </td>
+		<td> 於保 俊 </td>
+	</tr>
+	<tr>
+		<td>21:00-</td>
+		<td> 懇親会 </td>
+		<td> </td>
+	</tr>
+</table>
+<H3>■概要</H3>
+<DL>
+<DT>名状し難きDBアンチパターン</DT>
+<DD>
+<p>ソーシャルゲームでは多くのページでユーザデータの更新が発生するため、<br />
+スキーマやインデックス、クエリのチューニングが必須となります。<br />
+良い実装をするためには悪い実装を知っているに越したことはありません。<br />
+ここでは自社案件の中で実際に遭遇した混沌と、如何に回避したかを紹介<br />
+したいと思います。なおSANチェックはありませんのでご安心ください。</p>
+</DD>
+<DT>ソーシャルゲームのデータマイニング的な話</DT>
+<DD>
+<p>ソーシャルゲームの日々の運用を支えるデータの蓄積・レポート・分析。<br />
+AWSを活用したデータ解析の実践について説明します。<br />
+Elastic MapReduceの利用法やデータの可視化についてもお話したいと思います。</p>
+</DD>
+<DT>
+<p>圧縮されたログファイルの活用ツール<br />
+ ~ お前は今までに解凍したログファイルの数をおぼえているのか？~</p>
+</DT>
+<DD>
+<p>あなたの現場ではアクセスログの保存先をどうしていますか？<br />
+もしドキュメント指向DBとかその他の洗練された方法で蓄積されているなら・・・<br />
+この話はこんなこともできるんだ～と聞いてください。<br />
+もし、弊社のように過去からの負の遺産でbzip2で固めてとっていて、<br />
+活用するのが大変と思っているのなら、いくつかのログのユースケースでの<br />
+ソリューションがこれかなと思います。</p>
+<p>すなわち、圧縮されたログを途中から解凍してみせます。</p>
+</DD>
+</DL></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/29398" target="_blank">http://atnd.org/events/29398</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-06-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-06-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.klab.jp/comp/access.html" target="_blank">http://www.klab.jp/comp/access.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都港区六本木6-10-1 六本木ヒルズ森タワー22F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>KLabミーティングルーム</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6639973</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7291205</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>5348</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>yasui0906</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/yasui0906" target="_blank">@yasui0906</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-06-27</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

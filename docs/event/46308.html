@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">ぺちぱな。Rock 〜今年もお世話になりました、来年へ向けてドーンです〜</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">ぺちぱな。Rock 〜今年もお世話になりました、来年へ向けてドーンです〜</h2>
+
+            <div class="buttons">
+                <a href="../json/events/46308.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/46308.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>46308</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>ぺちぱな。Rock 〜今年もお世話になりました、来年へ向けてドーンです〜</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>ながさきでPHPerな人を逃しません！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>ぺちぱな。</h1>
+<p>　ぺちぱな。（PHPer-na）は長崎のPHPを使っている人の意です、一応。別に長崎に限りませんがPHPを使っている人、興味がある人、使っていない人、興味がない人、とりあえず一緒にお話をしてお話を聞いて学んでいきませんか。</p>
+<p>　と言う事を主旨にやっておりますが、前回ついに「NO PHP」を達成してしまったので、今回は <del>一応</del> ちゃんとPHPを扱います、プログラミング的な事をやります、やらせてください、お願いします。</p>
+<p>　PHPerの方も、そうでない方も、是非お気軽に遊びに来てください。待ってます！ こわくないよー、ほんとほんとー、しんじてー</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>12:00</td>
+		<td>開場</td>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 16:00</td>
+		<td>twitter を bot 的に操作した気分になるヤツ<br />
+（詳細後述）</td>
+	</tr>
+	<tr>
+		<td>16:00 &#8211; </td>
+		<td>時間が余ったら飛び入り的にLTやりましょー。</td>
+	</tr>
+	<tr>
+		<td>17:00</td>
+		<td>閉場</td>
+	</tr>
+</table>
+<p>　※ 時間配分は願望であり事実と即する事は多分ありません。<br />
+　※ タイムテーブルには入っておりませんが、適宜休憩を入れます。<br />
+　※ LTは持ち時間5分から10分程度、ですけどもなんだったらもっと長くてもいいです。事前に言っていただければ調整しますよ。言いたいだけのネタ、歓迎します！<br />
+　※ 内容は当日までに変更になる可能性があります。というか変更されます。</p>
+<h3>詳細</h3>
+<ul>
+	<li>その0.今日はこんなことやります
+	<ul>
+		<li>Twitterって知ってる？</li>
+		<li>世の中にはこんなに沢山の連携サービスが</li>
+		<li>今日はTwitterのbot開発をやっていきます</li>
+		<li>早速やっていきましょう！</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>その1.開発の準備を進める
+	<ul>
+		<li>アプリケーション開発の準備を整える</li>
+		<li>Twitter アプリケーションの登録</li>
+		<li>トークンをセットする</li>
+		<li>Twitter API実行のイメージ</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>その2.設定したアカウントでツイートする
+	<ul>
+		<li>ツイートするための準備</li>
+		<li>statuses/update</li>
+		<li>APIを実行してツイートする</li>
+		<li>ツイートに幅を持たせる</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>その3.リプライをあつめて、リプライを返す
+	<ul>
+		<li>よりbotらしさを出すために</li>
+		<li>キーワードとそれに対する返信内容を登録する</li>
+		<li>ぺちぱな。Rock！参加者リストを取得する</li>
+		<li>正規表現を使って、リプライに対してリプライをする</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>その4.これから先に出来ること
+	<ul>
+		<li>今日やったことを、自動で実行するようにする</li>
+		<li>いろんな人に使ってもらうために</li>
+		<li>さいごに</li>
+	</ul></li>
+</ul>
+<h2>会場</h2>
+<p>　長崎市立図書館新興善メモリアル会議室2（洋）。</p>
+<p>　会場の場所が少しわかりにくいです。 <a href="http://lib.city.nagasaki.nagasaki.jp/tosyokan/sisetu/sisetu.html">長崎市立図書館 Nagasaki City Library 図書館について</a> に図がありますが、正面入り口から入場後、1階図書室へ入らずそのまま右へ折れその奥にもある出口から一旦外に出て左へ少し進むと入り口があります。そこで靴をスリッパに履き替えて右奥の方に会議室の入り口があります。</p>
+<p>　館内飲食禁止との事で食べ物の持ち込みはできませんが、水分補給のためのペットボトル入り飲料の持ち込みは可能です。</p>
+<h2>備考</h2>
+<p>　ノートPCなどをお持ちの方は是非持参ください。無線LANアダプタなどがあるとインターネット接続が可能ですし、実際にハンズオン形式で楽しんでいただけます。</p>
+<p>　PHPでちょっとしたアプリケーションの作成を行って頂きます。PHP 5.4.xが動く環境を事前に用意してください。また、できれば twitter のアカウントも作成してきてください。早めに会場へお越しいただければ私どもで支援いたします！</p>
+<p>　あ、もちろん見てるだけでもOKです :-)</p>
+<p>　インターネット接続回線としてWiMAXを用意していますが、ご自分でどうにかできる方にはそうしていただけると助かります。一回線しか用意できないので、あまりに多くなると接続できなかったり極端に遅くなる可能性があります。</p>
+<p>　電源タップをお持ちの方も持参していただけると嬉しいです。今回の会場は部屋が広い上に四隅にしかコンセントがなく延長して分け合うのが必須となります。こちらでも何本か準備しておりますが、何とぞご協力ください。</p>
+<p>　終了後、この為のというわけではないですが、懇親会を開きたいと思っています。参加は自由ですし、逆に懇親会だけ参加でもOKです。<br />
+　ただし、酒乱の気のある方はご遠慮ください :-)</p>
+<p>　懇親会の会場は「誠」という居酒屋さんのお世話になります。住所は 長崎市興善町７−２ です。費用は3000円程度を予定しています。当日割り勘でお願いします……。<br />
+　時間は午後5時過ぎくらいから、終わって移動してすぐ開始です。そこから延々と呑みます、楽しみます！<br />
+　懇親会のみ直接お越しくださっても結構です。唐揚げが嫉妬するくらい大人気です！呑み会勢のみなさまをお待ちしておりますよ。</p>
+<p>　ご質問等ありましたらお気軽にお尋ねください。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/46308" target="_blank">http://atnd.org/events/46308</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-12-21</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://reiare.net/blog/2013/12/11/phper-na-6th-announce/" target="_blank">http://reiare.net/blog/2013/12/11/phper-na-6th-announce/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>長崎県長崎市興善町１−１</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>長崎市立図書館新興善メモリアル会議室2（洋）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>32.7486774</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>129.8755866</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>64959</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>しもだ たくろう</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/tactactad" target="_blank">@tactactad</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-12-13</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

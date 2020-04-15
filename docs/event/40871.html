@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Chef ＋ Vagrant入門（ハンズオン）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Chef ＋ Vagrant入門（ハンズオン）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/40871.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/40871.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>40871</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Chef ＋ Vagrant入門（ハンズオン）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>Chef ＋ Vagrant入門（ハンズオン）</h1>
+<h2>セミナー概要</h2>
+<p>主催　　　　　　：株式会社OSS <span class="caps">ONE</span> （担当：竹原　俊広）<br />
+講師　　　　　　：森　怜峰<br />
+セミナータイトル：Chef ＋ Vagrant入門（ハンズオン）<br />
+参加費用　　　　：5,000円／1名（当日、受付にてお支払い下さい）<br />
+必要なもの　　　：Mac（MacBook Air、MacBook Pro）</p>
+<p>※ 今回は持ち込みのマシンで実機演習を行なっていただくのですが、動作を検証している環境がMacのため、持ち込めるMacのノートにてご参加頂きたいと思います。Windows環境でのハンズオンは今後準備する予定です。</p>
+<h2>セミナープログラム</h2>
+<p>※ 本プログラムは、より理解を深めていただくために予告なく変更となる場合があります。ご了承ください。</p>
+<ul>
+	<li>Chefって何だろう?</li>
+	<li>何がどういいの?</li>
+	<li>プロビジョニング</li>
+	<li>いろんなメリット</li>
+	<li>概要</li>
+	<li>Puppetとかの違い</li>
+	<li>冪等性（べきとうせい）</li>
+	<li>レシピとは？</li>
+	<li>リソースとは？</li>
+	<li>Vagrantについて</li>
+	<li>Hello Chef</li>
+	<li>vagrant up</li>
+	<li>sandbox plugin</li>
+	<li>実際にレシピ書いてみる</li>
+	<li>PHPとかMySQLをインストールするレシピを書いてみる</li>
+	<li>Chefでレシピを実行 &#8594;vagrant up</li>
+	<li>AWS連携</li>
+</ul>
+<h2>セミナーの趣旨</h2>
+<p><span class="caps">URL</span>: <a href="http://openstandia.jp/site/mailmagazine.html">（6/26配信のNRI OpenStandiaさんのメルマガコラムから抜粋させて頂きました）</a></p>
+<p>最近ちまたで「Chef」という言葉をよく見かけるようになりました。<br />
+Chefと検索しても料理のことばかり出てきてよくわかりませんね…。</p>
+<p>Chefとは、サーバの構成情報(Provisioning)をDSLで定義し、<br />
+サーバをしかるべき状態に収束させるRubyで書かれたツールです。</p>
+<p>Chefを使う前は、サーバ構築手順書などを書いて、人間がその手順書をみて<br />
+サーバに対して逐一操作を行なってサーバを構築していました。</p>
+<p>人間は機械と違い、繰り返し同じことをすると、間違えたり、勘違いします。<br />
+疲れている時などはさらに間違いが多くなり、同じ手順で操作しているつもりでも、<br />
+間違っていたりします。</p>
+<p>Chefは機械ですから、同じ事を繰り返しやらせても間違えることはありませんし、確実に<br />
+実行してくれます。</p>
+<p>サーバ一台程度の構築なら手作業でやってしまいたくなりますよね…。しかし！ちょっと待った！<br />
+そのサーバーが故障したらもう一度構築しなければなりませんよ！<br />
+利用者が多くなってきたら、負荷分散などで同じ環境をもう一度用意しないとなりません！</p>
+<p>Chefでは、この手順書をレシピという簡単なRubyファイルで定義します。<br />
+レシピをある程度時間をかけて書けば、同じようなサーバ構築にはレシピを適応するだけです。</p>
+<p>構築手順をレシピにしておけば、開発環境・ステージング環境・本番環境などを全く同じ状態にすることができます。<br />
+これによって、「開発者のマシンでは動作するけど、本番環境だと不具合になる」ような状況を<br />
+回避することができます。煩わしい不具合対応には時間がかかるので、なるべく回避したいですよね。</p>
+<p>実際にレシピを書く手順などをご紹介したいのですが、文字数の都合上ご紹介できません、<br />
+近日中に「Chef・Vagrant勉強会（仮）」をハンズオン形式で開催しますので、ご興味ある方は<br />
+ご参加下さい！</p>
+<p>森 怜峰 / <code>reoring / reoring</code>gmail.com</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/40871" target="_blank">http://atnd.org/events/40871</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-08-10</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-08-10</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.mitaka.ne.jp/corporate/kigyo/access.html" target="_blank">http://www.mitaka.ne.jp/corporate/kigyo/access.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都三鷹市下連雀3－38－4</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>三鷹産業プラザ 3F ITルーム（ミタカフェ隣り）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6987862</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.5602253</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>60637</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>nouphet</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/nouphet" target="_blank">@nouphet</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-06-29</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

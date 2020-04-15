@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">「Code for 青空文庫」アイデアソン #1</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">「Code for 青空文庫」アイデアソン #1</h2>
+
+            <div class="buttons">
+                <a href="../json/events/66230.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/66230.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>66230</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>「Code for 青空文庫」アイデアソン #1</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h3>2015.5.29 19:48追記</h3>
+
+<p>とうとうアイデアソンが明日に迫りました。当日の注意事項を下記のURLに書きましたので、参加者の皆様は必ずお目通しをお願い致します。</p>
+
+<p><a href="http://keisukekatsuki.hatenablog.com/entry/2015/05/29/182706">「Code for 青空文庫」アイデアソン #1 当日注意事項 </a></p>
+
+<h3>2015.5.28 0:20追記</h3>
+
+<p>直前となりましたが、多くの参加希望を頂きましたので、なんとか調整して80名まで定員を増員いたしました。またそれにあわせて少しプログラムを変更する予定です。本当は声を上げてくださったみなさま全員に来ていただきたかったのですが、会場と運営サイドのキャパシティ的にこれが今回限界でした。ご参加いただけなかった方にはお詫び申し上げます。時期をおかず第2回を開催するとともに、今回のレポートを時間を置かずに公開できるよう努力します。</p>
+
+<h3>2015.5.14 20:55追記</h3>
+
+<p>おかげさまで募集開始から6時間足らずで増員した定員60名を超えました。なるべく多くの方にご参加いただきたく、また都合によりキャンセルされる方はキャンセル手続きをお願いします。みなさま本当にありがとうございます！</p>
+
+<h3>2015.5.14 19:55追記</h3>
+
+<p>おかげさまで募集開始から5時間足らずで当初の定員（50名）に達しました。運営サイドとしてもここまでのスピードと注目度を予測できていませんでした。そこで検討の結果、10名の増員を行いました。これ以上の増員はオペレーション的に無理なので、参加をご検討の方はぜひお早めに参加表明ください。また都合によりキャンセルされる方はキャンセル手続きをお願いします。みなさまのご協力に心より感謝いたします。</p>
+
+<h2>アイデアソンの目的</h2>
+
+<p>オンライン電子図書館「<a href="http://www.aozora.gr.jp/">青空文庫</a>」、そして青空文庫をサポートする「<a href="http://honnomirai.net/">本の未来基金</a>」では、青空文庫をテクノロジーで支え、発展させるお手伝いに興味をもっていただけるエンジニアの方を探しています。興味のある方はぜひご参加ください。</p>
+
+<h3>青空文庫サーバの現状</h3>
+
+<p>青空文庫は現在エンジニアなしで5台のサーバを運用しています。またサーバの老朽化も問題となっています。そこで青空文庫が今後も発展を続けることができるよう、エンジニアの皆さんの力をお借りしたいと考えています。「Code for 青空文庫」の当面の大きなテーマはデータベースですが、今後も青空文庫を技術面でバックアップする活動を続けていく予定です。</p>
+
+<p>参考：<a href="http://www.slideshare.net/KeisukeKatsuki/ss-47994544">青空文庫の今と今後</a>（slideshare）</p>
+
+<h3>アイデアソンでやること</h3>
+
+<ul>
+<li>青空文庫の<strong>技術的な</strong>現状について説明</li>
+<li>特に移行の必要があるデータベースサーバについてエンジニアより説明</li>
+<li>「インフラ」「アプリ」「マネジメント・広報」の3つの分科会にわけてアイデアソンを実施、今後の方針を話し合う。</li>
+</ul>
+
+<h3>対象者</h3>
+
+<ul>
+<li>青空文庫をテクノロジーで支えることに興味のあるエンジニア
+
+<ul>
+<li>現状はCentOS, Apache, PHP, PostgreSQLで動いていますが、それ以外の技術をお持ちの方も大歓迎です。</li>
+<li>サーバインフラの問題が本ハッカソンのきっかけですが、「青空文庫にこんな機能を実装したい！」というエンジニアの方もぜひ！</li>
+</ul></li>
+</ul>
+
+<p>もちろん「エンジニアではないけど青空文庫の未来を考えたい！」という方の参加も歓迎しますが、今回は会の性質上、希望者が定員に達した場合はエンジニアの方の参加を優先させていただきます。予めどうかご了承ください。</p>
+
+<h2>タイムテーブル</h2>
+
+<h3>前半</h3>
+
+<table><thead>
+<tr>
+<th style="text-align: center">時間</th>
+<th style="text-align: left">セッション</th>
+<th style="text-align: left">担当者</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: center">10:45 - 11:00</td>
+<td style="text-align: left">開場</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: center">11:00 - 11:15</td>
+<td style="text-align: left">青空文庫からご挨拶、諸注意</td>
+<td style="text-align: left"><a href="https://twitter.com/bsbakery">大久保ゆう</a>（青空文庫）</td>
+</tr>
+<tr>
+<td style="text-align: center">11:15 - 11:35</td>
+<td style="text-align: left">説明：青空文庫の技術的な今と将来</td>
+<td style="text-align: left"><a href="https://twitter.com/kskktk">香月啓佑</a>（本の未来基金）</td>
+</tr>
+<tr>
+<td style="text-align: center">11:35 - 11:55</td>
+<td style="text-align: left">報告：データベースサーバの現状</td>
+<td style="text-align: left"><a href="https://twitter.com/gennei">宇谷有史</a></td>
+</tr>
+<tr>
+<td style="text-align: center">11:55 - 12:30</td>
+<td style="text-align: left">質疑応答、アイデアソン説明</td>
+<td style="text-align: left">香月啓佑（本の未来基金）</td>
+</tr>
+</tbody></table>
+
+<p>前半の説明を聞いていただいて「これは協力できないな」と思われた方は、後半にご参加いただく必要はありません。</p>
+
+<h3>後半</h3>
+
+<p>昼食後、13:30をめどに適宜アイデアソンに入ります。「インフラ」「アプリ」「マネジメント・広報」の3つの分科会に分かれ、16:00くらいから成果発表をしていただいて、適宜解散となります。</p>
+
+<h2>場所</h2>
+
+<p><a href="http://yours.gmo.jp/rent/">シナジーカフェ GMO Yours</a><br>
+住所: 東京都渋谷区桜丘町26番1号 セルリアンタワー11F GMOインターネット オフィス内</p>
+
+<h2>参加にあたっての注意事項</h2>
+
+<ul>
+<li>入館手続きの都合上、10:45〜11:00の間にご来場ください。遅れてご来場の場合は入場までお時間をいただくことがございます。</li>
+<li>飲み物と茶菓子は準備いたしますが、昼食は各自でご準備ください。入館管理の都合上、可能なら昼食はご持参いただけますと幸いです。</li>
+<li>午後のセッションのどれに興味があるかをお申込みフォームでご指定ください。これはあくまでも事前の参考にするためで、当日話を聞いた上で変更されてもかまいません。</li>
+<li>当日の運営をお手伝いいただけるボランティアも募集しています。お願いできる方はお申込みフォームでお知らせください。</li>
+</ul>
+
+<h2>運営</h2>
+
+<h3>主催</h3>
+
+<p><a href="http://honnomirai.net/">本の未来基金 </a></p>
+
+<h3>共催</h3>
+
+<p><a href="http://www.aozora.gr.jp/">青空文庫</a></p>
+
+<h3>協力</h3>
+
+<p><a href="http://booklog.co.jp/">株式会社ブクログ</a></p>
+
+<h3>各種お問い合わせ先</h3>
+
+<p>香月啓佑（本の未来基金、MIAU）  </p>
+
+<ul>
+<li>katsuki@miau.jp</li>
+<li><a href="https://twitter.com/kskktk">Twitter</a></li>
+<li><a href="https://www.facebook.com/keisukekatsuki">Facebook</a></li>
+</ul>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/66230" target="_blank">http://atnd.org/events/66230</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-05-30</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-05-30</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都渋谷区桜丘町26番1号 セルリアンタワー11F GMOインターネット オフィス内</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>シナジーカフェ GMO Yours</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.65647</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.69947</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>44372</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kskktk</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kskktk" target="_blank">@kskktk</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-05-29</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

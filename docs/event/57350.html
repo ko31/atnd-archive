@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第1回 Blenderソースコードリーディング</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第1回 Blenderソースコードリーディング</h2>
+
+            <div class="buttons">
+                <a href="../json/events/57350.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/57350.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>57350</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第1回 Blenderソースコードリーディング</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Blenderのソースコードを覗いてみよう</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>「Blenderのソースコードを覗いてみよう」</p>
+<h2>開催情報</h2>
+<p>開催日時: 11/1 14:00-17:00<br />
+開催場所: 喫茶室ルノアール　神田南口駅前店マイ・スペース 2号室<br />
+参加資格:Blenderのソースコードに興味のある方(実際にソースコードをコンパイルしたことがない人でもokです。)<br />
+参加費: 会議室使用料を人数で割ったもの(400円)+一杯分の注文 (合わせてだいたい1000円いかないくらい?)</p>
+<p>今回はBlenderのソースコードにはじめて触る、ということになりますので、基本的な部分から、以下のような内容を参加者全員で話し合っていく形式にしたいと思います。</p>
+<h2>会の流れ</h2>
+<table>
+	<tr>
+		<th>担当</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td> <a href="http://twitter.com/lab1092">@lab1092</a></td>
+		<td>* 「自分が見たいファイルはどこですか？」- 見たいファイルの探し方<br />
+* 「Blender2.5からBlender2.7の変更点で見るBlenderのソースコード」<br />
+(コードリーディングを始める前段階くらいの話題を中心に)</td>
+	</tr>
+	<tr>
+		<td> <a href="http://twitter.com/chiyama">@chyama</a> </td>
+		<td>まずドキュメントのある段階のコードでビルド・実行できる環境を用意しておいて、そこからドキュメントとコミットログを眺めながら最近のBlenderのコードの状態を確認できるような流れにしたいと考えています<br />
+(ビルドの対象となるバージョンについては確認中ですが、可能であれば当日までにBlenderのビルドに必要な環境の構築及び実際のビルドに挑戦しておいていただけたら)</td>
+	</tr>
+	<tr>
+		<td><a href="http://twitter.com/tsurumaru">@tsurumaru</a></td>
+		<td>* ビルド環境を整える際やデバッグ時に気になった点 <br />
+* コードリーディング:Python <span class="caps">API</span> 、Blenderゲームエンジン周りを予定</td>
+	</tr>
+	<tr>
+		<td>他</td>
+		<td>お茶しながら(?)ソースコードネタ(参加される人で何かありましたらその話題でも)</td>
+	</tr>
+</table>
+<p>(事前に交渉していた <a href="http://twitter.com/tsurumaru">@tsurumaru</a> さんが参加できることになりましたので、「特別枠」として参加いただきます。)</p>
+<h2>必要な事項</h2>
+<p><strong>当日までの準備</strong></p>
+<ul>
+	<li>Blender のビルドにチャレンジしてみてください。Windowsのビルド手順は <a href="http://twitter.com/chiyama">@chyama</a> さんのBlog記事 <a href="http://philosy.com/blog/2014/10/15/%E7%AC%AC1%E5%9B%9E-blender%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0-%E6%BA%96%E5%82%99%EF%BC%9Ablender%E3%82%92%E3%83%93%E3%83%AB/">第1回 Blenderソースコードリーディング 準備：Blenderをビルドする</a> を参照してください。</li>
+	<li>gitリポジトリのチェックアウトは時間がかかるため、済ませておくと捗る、そうです。</li>
+</ul>
+<p><strong>当日</strong></p>
+<ul>
+	<li>一応XGAサイズを映せるプロジェクター持って行こうかと思いますが部屋の大きさがそんなに大きくないので、期待しない方がいいと思います。</li>
+	<li>各自、Blenderのgitリポジトリのチェックアウトを済ませたPCがあると良いです。チェックアウトする対象のリビジョンは最新のもので構いません。
+	<ul>
+		<li>よくわからない場合は、 http://www.blender.org/download/ にいって、Source Code タブから、ソースコード(blender-2.72b.tar.gz)をダウンロードの上、展開しておいてください（実際にコンパイルしない場合はこちらでok）</li>
+	</ul></li>
+	<li>多分電源は確保できるはず。延長ケーブルは持っていきます。</li>
+	<li>なお、当日会場にて飲み物を一杯、個々に注文していただく必要があります。</li>
+</ul>
+<p>ハッシュタグは #blendstudy です。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/57350" target="_blank">http://atnd.org/events/57350</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-11-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-11-01</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区鍛冶町2-1-4　東和ビル2階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>喫茶室ルノアール　神田南口駅前店マイ・スペース 2号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6911807</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7712183</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>7850</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>lab1092</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/lab1092" target="_blank">@lab1092</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-10-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

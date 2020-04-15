@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">【賞金15万円!!】ツイキャスハッカソン 〜 IoT, VR, 人工知能 なんでもアリ!! 〜</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">【賞金15万円!!】ツイキャスハッカソン 〜 IoT, VR, 人工知能 なんでもアリ!! 〜</h2>
+
+            <div class="buttons">
+                <a href="../json/events/85186.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/85186.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>85186</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>【賞金15万円!!】ツイキャスハッカソン 〜 IoT, VR, 人工知能 なんでもアリ!! 〜</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>1600万ユーザー・3億配信のデータで何を作る？</h1>
+
+<h2>ツイキャスの新しいAPIを使おう</h2>
+
+<p>ツイキャス(<a href="http://twitcasting.tv">TwitCasting</a>) は、<strong>現在1600万ユーザー</strong>を越え、サービス開始からこれまでの累計配信回数では<strong>日本最大</strong>の<strong>3億回以上</strong>を誇るライブ配信サービスです。</p>
+
+<p>そんなツイキャスの新しいAPIを使い、オリジナルのアプリケーションを作りませんか？</p>
+
+<p><strong>Twitter</strong>や<strong>Slack</strong>と組み合わせたり、人工知能を用いた<strong>コメントbot</strong>を作ってみたり、<strong>IoT</strong>を活用したアイディアもあるかもしれません。<br>
+ツイキャスのインフラを活用したオリジナルのライブ配信サービスだって出来てしまいます！</p>
+
+<p>もちろん、Webアプリ・スマホネイティブアプリ 他 自由な形式で作成いただけます。<br>
+プログラミング初心者の方から上級者まで、更には弊社のエンジニアとの交流に興味がある方も(！) 奮ってご参加下さい :pray:</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/4360656/21917080/6fedfff8-d988-11e6-969c-5c7ddb3aba76.png" width="160">    <img src="https://cloud.githubusercontent.com/assets/4360656/21917081/6fee8d10-d988-11e6-9ea4-21a1c6c43a74.png" width="160"></p>
+
+<h2>API利用の流れ</h2>
+
+<p>APIのご利用にあたっては、[<a href="http://twitcasting.tv/indexapiv2.php">開発API » 新しいAPI</a>] 及び、[<a href="http://apiv2-doc.twitcasting.tv/">APIv2 Document</a>] をご覧ください。</p>
+
+<p><strong>新たに以下のAPIが追加されました</strong></p>
+
+<ul>
+<li><a href="http://apiv2-doc.twitcasting.tv/#supporter">サポーター関連API</a></li>
+<li><a href="http://apiv2-doc.twitcasting.tv/#get-movies-by-user">録画一覧取得API</a></li>
+<li><a href="http://apiv2-doc.twitcasting.tv/#implicit">サーバレスアプリ向け認可フロー解放</a>
+
+<ul>
+<li>ImplicitフローによりサーバレスアプリケーションでスムーズにOAuth認可を行えます</li>
+<li>また、コールバックURLにカスタムURLスキームを使用できるようになりました</li>
+</ul></li>
+<li><a href="http://apiv2-doc.twitcasting.tv/#broadcasting">配信用 RTMP URL取得API</a>
+
+<ul>
+<li>配信のための条件などは <a href="http://twitcasting.tv/indexannounce.php?title=ANNOUNCE_JA_HELP_GAME_TOOL">こちら</a> と同様です
+
+<ul>
+<li>開発のために招待が必要な場合はお申し出下さい</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p><strong>Webhookに関して</strong></p>
+
+<p>ハッカソンでは、<a href="http://twitcasting.tv/indexapiwebhook.php">こちら</a> をご利用下さい。<br>
+Webhookへの追加・削除を行うためのAPIは現在開発中です。</p>
+
+<h2>テーマ</h2>
+
+<p>テーマは、<strong>『コミュニケーション』</strong> です。<br>
+ツイキャスは2010年のリリース以来、コミュニケーションプラットフォームとしてここまで成長してきました。<br>
+素敵なアイディアで、ツイキャスをもっと盛り上げるアプリケーションを開発していただければと思います！！</p>
+
+<h1>主催</h1>
+
+<p>モイ株式会社(<a href="http://about.moi.st/ja/">http://about.moi.st/ja/</a>)</p>
+
+<h1>日程</h1>
+
+<p>2017年1月28日(土)</p>
+
+<h1>タイムテーブル</h1>
+
+<p>09:45 開場</p>
+
+<p>10:00 主催者挨拶・説明等</p>
+
+<p>10:15 開発開始</p>
+
+<p>(12:00 軽食提供)</p>
+
+<p>19:00 開発終了</p>
+
+<p>19:05 チームごとにプレゼン発表</p>
+
+<p>20:00 表彰・懇親会(:pizza:)</p>
+
+<p>21:00 解散</p>
+
+<p>(※ 当日の状況によりタイムテーブルに変更が生じる場合があります)</p>
+
+<h1>参加条件</h1>
+
+<ul>
+<li>原則18歳以上
+
+<ul>
+<li>ただし、18歳未満の方も保護者の同意書をお持ちいただくことでご参加頂けます</li>
+<li><a href="https://github.com/shucream0117/dotfiles/files/710022/default.pdf">こちら</a> から同意書をダウンロードし、印刷して記入した上で当日受け付けまでお持ち下さい</li>
+</ul></li>
+<li>1~5名 までのチームで参加可能です。
+
+<ul>
+<li>2名以上のチームでエントリーする場合、<strong>チームメンバー全員がATND上で参加登録</strong>していただきますようお願いします。</li>
+</ul></li>
+</ul>
+
+<h1>参加費</h1>
+
+<p>無料</p>
+
+<h1>賞金・商品</h1>
+
+<h2>最優秀賞</h2>
+
+<p>賞金15万円</p>
+
+<h2>特別賞</h2>
+
+<h4>FreakOut賞</h4>
+
+<p>Amazonギフト券 5万円分</p>
+
+<h4>COMP賞</h4>
+
+<p>COMP 400kcal × 12 packs × 2箱 + Amazonギフト券</p>
+
+<h4>Pedia賞</h4>
+
+<p>Amazonギフト券 3万円分</p>
+
+<p>随時追加予定</p>
+
+<p>(※ 特別賞については協賛企業様の都合により変更になる場合があります。)</p>
+
+<h1>発表・審査について</h1>
+
+<h2>発表形式</h2>
+
+<p>各チーム、代表者1~2名で発表をしていただきます。<br>
+発表時間は5~10分程度を想定していますが、参加チーム数により多少調整させていただく場合がありますのでご了承下さい。<br>
+発表形式は自由です。発表用のプロジェクターは、HDMI, Thunderbolt 2, Thunderbolt 3 が利用可能です。</p>
+
+<h2>審査基準</h2>
+
+<p>おもしろさ・独創性・技術的要素</p>
+
+<h2>審査員紹介(敬称略)</h2>
+
+<ul>
+<li>相原隆二 (株式会社コンプ 取締役COO)</li>
+<li>坂上聖奈 (Pedia News)</li>
+<li>赤松洋介 (モイ株式会社 代表取締役社長)</li>
+</ul>
+
+<p>随時追加予定</p>
+
+<h1>会場</h1>
+
+<p>〒106-0032　東京都港区六本木 6-3-1
+六本木ヒルズクロスポイント 5F (株式会社フリークアウト オフィス内)</p>
+
+<h1>ハッシュタグ・問い合わせ先</h1>
+
+<p>Twitterのハッシュタグ『 <a href="https://twitter.com/search?f=tweets&amp;q=%23%E3%83%84%E3%82%A4%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3&amp;src=typd">#ツイキャスハッカソン</a> 』を質問・交流等にご活用ください。
+その他、事前のお問い合わせに関しては hackathon@twitcasting.tv までご連絡ください。</p>
+
+<h1>電源・Wi-Fi</h1>
+
+<p>コンセントとWi-Fiについては会場にて用意しています。
+(モバイルWiFiルーターによる回線提供となることが想定されるため、大容量ファイルのダウンロード等は<strong>事前に行っておく</strong>ことをお勧め致します)</p>
+
+<p>なお、有線LANの提供はありませんのでご注意ください。</p>
+
+<h1>持ち物</h1>
+
+<ul>
+<li>PC(Wi-Fiが利用可能なもの)</li>
+<li>電源アダプタ</li>
+<li>身分証明書(免許証・保険証などの公的なもの)</li>
+<li>名刺(お持ちであれば)</li>
+</ul>
+
+<h1>食事等</h1>
+
+<p>お昼時には軽食をご用意します(ご自身でお持ちいただいても問題ありません)。
+また、開発終了後にはピザと飲み物をご用意します。</p>
+
+<h1>留意事項</h1>
+
+<ul>
+<li>ソースコードの提出は必要ありません</li>
+<li>制作物の権利は全て制作者に帰属します</li>
+<li>会場内禁煙</li>
+<li>当日取材等のために写真と動画を撮影する予定です
+
+<ul>
+<li>撮影NGの方は受付時にお申し出ください</li>
+</ul></li>
+<li>ハッカソン当日より前の開発環境の構築やプロトタイプの作成など、事前準備を可とします</li>
+<li>入賞したチームの方へ、メディア様からのインタビューが行われます</li>
+</ul>
+
+<h1>協賛企業様</h1>
+
+<ul>
+<li><a href="https://www.fout.co.jp/">株式会社フリークアウト</a></li>
+<li><a href="http://www.comp.jp/">株式会社COMP</a></li>
+</ul>
+
+<p>随時追加予定</p>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/85186" target="_blank">http://atnd.org/events/85186</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-01-28</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-01-28</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://about.moi.st/ja/2017/01/13/newapi/" target="_blank">http://about.moi.st/ja/2017/01/13/newapi/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都港区六本木 6-3-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>六本木ヒルズクロスポイント 5F (FreakOutオフィス内)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6608504</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7282957</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>270715</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>ツイキャス（モイ株式会社）</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/twitcasting_jp" target="_blank">@twitcasting_jp</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-01-26</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

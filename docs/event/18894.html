@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">東京 OpenSolaris 勉強会 2011.08</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">東京 OpenSolaris 勉強会 2011.08</h2>
+
+            <div class="buttons">
+                <a href="../json/events/18894.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/18894.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>18894</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>東京 OpenSolaris 勉強会 2011.08</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>Solaris に関するテーマをみんなで勉強していきましょう。</p>
+<p>テーマについてスピーカーが話をしますが、参加メンバーも情報を出し合ってワイワイと進めていきます。<br />
+とりあえず「この話だけでも聞きたい」という方も大歓迎です。</p>
+<p>今回の勉強会は「びぎなーず」、「SysAdmin」&amp;「Developer」のセッションが平行してあります。適度に移動してもかまいませんが、目安として申込時にどちらに参加する予定か、アンケートにて事前に回答頂けると会場準備がスムーズに捗りますのでよろしくお願いいたします。</p>
+<h2>アジェンダ</h2>
+<p>13:15頃に受付。</p>
+<h3>びぎなーず ※内容は一部変更する可能性があります。</h3>
+<p><b>13:30 &#8211; 14:00 自己紹介等</b><br />
+<b>14:00 &#8211; 14:45 Network 設定のファイルとかサービスとかコマンドとか（@tsukaman）</b><br />
+<dd>「Solarisのネットワーク設定ってどうやんの？ていうか自動設定でしゃばり過ぎてて困る！＞＜」とお困りの方に最適！Solarisにおけるネットワーク設定関連ファイルの使い方や、OpenIndiana / Solaris 11 Express で新導入のネットワーク設定コマンド等（ipadmとかdladmとか）について紹介します～♪</dd></p>
+<p><b>14:45 &#8211; 14:55 休憩</b><br />
+<b>14:55 &#8211; 15:40 Solaris Container（Zone）を使ったインターネットサーバシステム構築（初級～中級編）（@kohjuさん）</b><br />
+<dd>インターネットサーバシステムの設計方法から構築まで、Solaris Containerの機能を使った場合の話をします。仮想化時代のインフラエンジニアが考えるべきこととして、今の時代のサーバの定義から、サーバの隔離性、リソース配分とチューニング方法、ベンチマーク、監視やバックアップなどを話します。</dd><br />
+<b>15:40 &#8211; 15:50 休憩</b><br />
+<b>15:50 &#8211; 16:35 Solaris で作る自宅用 PPPoE ルータ（仮）（@12i さん）</b><br />
+<dd>FreeBSDやNetBSDでできるのはわかった。やったことないけど、Linuxでも同じだろう。では、Solarisではどうだ? …というわけで、自宅ルータを、ありきたりのNetBSD/i386から、どこのご家庭にもあるOracle Solaris 11 Expressに交換してみました。</dd></p>
+<p><b>16:35 &#8211; 17:00 LT （発表者募集中！！希望する人はコメントください）</b><br />
+<dd>今回、初めての試みでLT枠を設けました！現在、SolarisクイズなるLTがエントリ中です。時間の許す限り発表者を募集しますので、我こそは！というお方は是非 @tsukaman までご連絡ください！</dd></p>
+<h3>SysAdmin ＆ デベロッパー（無印）</h3>
+<p><b>13:30 &#8211; 14:00 自己紹介等</b><br />
+<b>14:00 &#8211; 15:00 OpenIndiana で iSCSI ～Powered by COMSTAR～ (@tokuhy)</b></p>
+  <dd>Target Group など、ちょっとはまりそうな部分を解説しつつ、OpenIndiana で iSCSI target 構築のノウハウやってみます！</dd>
+<p><b>15:00 &#8211; 15:10 休憩</b><br />
+<b>15:10 &#8211; 15:40 「Solaris 10 こんな感じで使ってます」</b></p>
+  <dd>もう、Solarisコンテナ(zone)と <span class="caps">ZFS</span> が無いシステムには戻れない！Solaris10 コンテナ + <span class="caps">ZFS</span> で作ったシステムの一例をご紹介します。</dd>
+<p><b>15:40 &#8211; 15:50 休憩</b><br />
+<b>15:50 &#8211; 17:00 Solaris Internal の “Part Four Memory”(fujiwara.katsunoriさん)</b></p>
+<p>勉強会後には交流会も開催いたします。アンケートに予定を答えてくださると、運営が助かります。当日も、会場にて参加人数を確認させてください。</p>
+<h2>注意事項</h2>
+<p>Oracleのセミナーではありませんので、ご注意ください。<br />
+開場は13時からとなります。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/18894" target="_blank">http://atnd.org/events/18894</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-08-27</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-08-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://hub.opensolaris.org/bin/view/User+Group+tsug/osol_study_2011_08" target="_blank">http://hub.opensolaris.org/bin/view/User+Group+tsug/osol_study_2011_08</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都港区北青山2-5-8</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>日本オラクル 青山オフィス１３F会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6712183</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7186712</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>81068</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Japan OpenSolaris User Group</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/osoljp" target="_blank">@osoljp</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-08-19</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

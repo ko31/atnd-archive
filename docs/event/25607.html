@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">レーザービーム光学系の基礎知識とビーム整形の設計ポイント</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">レーザービーム光学系の基礎知識とビーム整形の設計ポイント</h2>
+
+            <div class="buttons">
+                <a href="../json/events/25607.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/25607.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>25607</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>レーザービーム光学系の基礎知識とビーム整形の設計ポイント</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>レーザー光学系の設計に用いる、ガウスビームの伝播やビーム径の拡大縮小法を教示！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>【講座の趣旨、ポイント】<br />
+　マックスウエル電磁方程式から、横方向の電界分布であるガウスビームの電界分布を導出し、ガウスビームの特性の基礎知識を教示します。また、光子エネルギーの増幅装置であるレーザーの原理とレーザーシステムを紹介する。特に、光システムに用いる半導体レーザーの特性について説明する。その後レーザー光学系の設計に用いる、ガウスビームの伝播やビーム径の拡大縮小法を教示します。半導体レーザーの楕円強度分布を円形強度分布に変換する手法やガウスビーム強度をフラットトップ強度分布へ変換するビーム整形の手法を説明する。</p>
+<p>【プログラム】<br />
+１．はじめに<br />
+２．レーザー光の特性<br />
+　　2-1 光子エネルギーの増幅装置であるレーザーの原理<br />
+　　2-2 誘導放射を起こすためのレーザー共振器、ブリュスター窓構造<br />
+　　2-3 レーザー装置、通常の光とレーザー光との違い<br />
+　　2-4 レーザー光の縦モード(発振周波数)と短パルスレーザー<br />
+３．電磁波としての光の性質<br />
+　　3-1 マックスウェルの電磁方程式、電磁波の波長と周波数<br />
+　　3-2 横方向の電界を導出する近軸ヘルムホルツ波動方程式<br />
+　　3-3 エルミート・ガウシアンビームの横方向電界分布<br />
+４．ガウシアン・ビームの基礎知識<br />
+　　4-1 ガウシアンビームの波面の曲率半径、ビームウエストの半径<br />
+　　4-2 ビームウエストの波面は平面波<br />
+　　4-3 光学系によるビームの伝播<br />
+　　4-3 ビームウエストの拡大、縮小とビーム径の測定法<br />
+５．半導体レーザーの楕円強度分布から円形強度分布への変換法<br />
+　　5-1 半導体レーザーの構造と発振強度分布<br />
+　　5-2 プリズムペアーを用いる楕円強度分布から円形強度への変換<br />
+６．ガウシアン・ビーム強度分布から平坦強度分布への変換技術<br />
+　　6-1 任意の伝播距離によるビーム整形の設計ポイント<br />
+　　　6-1-1 位相の制御によるガウシアン強度分布の整形法<br />
+　　　6-1-2 停留位相法による位相分布の導出法<br />
+　　　6-2-3 計算機ホログラムによるガウシアン強度分布から平坦強度分布への変換<br />
+　　　6-2-4 実際の実験方法、結果<br />
+　　　6-2-5 高回折効率な計算機ホログラムの作成法<br />
+　　　6-2-6 デフォーマブル・ミラーによるビーム整形<br />
+　　　6-2-7 ビーム整形技術の光ディスク光学系への応用<br />
+　　6-2 集光レンズの焦点面におけるガウスビームから平坦強度分布への変換技術<br />
+　　　6-2-1 凸レンズのフーリエ変換作用<br />
+　　　6-2-3 反復フーリエ変換計算によるビーム整形技術<br />
+　　　6-2-4 レンズの焦点面において平坦強度分布になる位相分布の設計法<br />
+　　　6-2-5 ビーム整形後の平坦強度分布<br />
+７．おわりに<br />
+（質疑応答・名刺交換・個別相談）</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/25607" target="_blank">http://atnd.org/events/25607</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-04-18</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-04-18</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.rdsc.co.jp/seminar/120412.html" target="_blank">http://www.rdsc.co.jp/seminar/120412.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都江東区亀戸2-19-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>商工情報センター　カメリアプラザ　9F　第2研修室　【東京・江東区】</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6976451</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.8245201</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>89384</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>R&amp;D支援センター</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-02-21</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

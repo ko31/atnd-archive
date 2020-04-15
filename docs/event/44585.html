@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PowerShell勉強会(仮)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PowerShell勉強会(仮)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/44585.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/44585.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>44585</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PowerShell勉強会(仮)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>PowerShell 勉強会って需要あるの？</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>参加/意見を下さった方へ</h2>
+<p>ありがとうございます！これにつきます。<br />
+お言葉に甘えて、勉強会の開催をしたいと考えていますので、ブログで告知します。</p>
+<p><a href="http://tech.guitarrapc.com/entry/2013/10/31/103249">tech.guitarrapc.com &#8211; PowerShell勉強会(仮) の結果を受けての勉強会仮予告</a></p>
+<p>具体的な日取りは確定ではありませんが年内に都内を予定しています。<br />
+決定時にはATNDでお知らせいたします！</p>
+<h2>目的：</h2>
+<p>本ATND は、「PowerShell勉強会があったら参加したいなと思っている人数」の確認だけです。</p>
+<p>ある程度、勉強会の需要があると判断できた場合、後日開催を検討します。</p>
+<ul>
+	<li>開催することになったら主催は @guitarrapc_tech がやります。</li>
+	<li>このATNDに参加表明したからといって、強制的に参加になるわけではありません</li>
+</ul>
+<h2>お願い:</h2>
+<p>PowerShell勉強会でやってほしい内容も確認したいです。</p>
+<ul>
+	<li>コメントで1,2 あるいは両方、あるいは別案 などを挙げていただけると嬉しいです。
+	<ul>
+		<li>1, 2の数字であるとうれしいのですよ (文もいいけど判断難しいことあるので)</li>
+	</ul></li>
+	<li>初心者向け と こなれてる は同時に行わず別開催の予定です。</li>
+</ul>
+<table>
+<tr>
+    <td>1</td><td>初心者向けセッション</td>
+</tr>
+<tr>
+    <td>2</td><td>PowerShellをこなれて使っている人向け</td>
+</tr>
+</table>
+<h4>初心者向けセッションの例:まとめてじゃないですけどこんな内容的な？</h4>
+<p>PowerShell とか ぜんぜんわかんない！ <br />
+cmd とか vbs でもいいじゃない！何が違うの！どういいわけ？<br />
+どういうときに使うの！え、どうやって？</p>
+<ul>
+	<li>PowerShell ってなにというなの歴史と経緯と目的</li>
+	<li>使うといい場面と例</li>
+	<li>構文を押さえておこう (if とか foreach とか 配列 とか)</li>
+	<li>Pipeline でCmdletをつなげる</li>
+	<li>cmd/vbs と PowerShell の違いと対応例、使い分け</li>
+	<li>Linuxユーザーのための PowerShell(zshellは扱いません)</li>
+</ul>
+<h4>PowerShellをこなれて使っている人向けの例:全部いきなりやらないよ！</h4>
+<p>もっと細かい動作とか、便利に使ったりとかどんな風に作るといいのみたいな。<br />
+あるいは、もっとPowerShell Deepdive 一緒にやりたい人とか</p>
+<ul>
+	<li>Profileでスタートアップ呼び出し</li>
+	<li>Module で自作スクリプトを呼び出す</li>
+	<li>PowerShellをexe実行する方法例</li>
+	<li>PowerShellでのPSDrive操作</li>
+	<li>PowerShellでの.NETクラス呼び出しと操作</li>
+	<li>PSBoundParameter解説</li>
+	<li>begin{}process{}end{} の利用シーン</li>
+	<li>CmdletBinding()とParameter</li>
+	<li>ScriptBlockを利用した匿名コンストラクタとClosure</li>
+	<li>C# で CmdletやModuleを作成する</li>
+	<li>C# からの PowerShell 呼び出しと連携</li>
+	<li>PowerShell Workflow Foundation と functionの違いと利用シーン</li>
+	<li>PowerShell の 非同期操作トレンド</li>
+	<li>PowerShell を GUIから使う</li>
+	<li>PowerShell リモーティンング Deep Dive</li>
+	<li>PowerShell Tab Expansion の実装</li>
+	<li>PowerShell ISEではなく Visual Studioで書く (LT)</li>
+	<li>PowerShell による DevOpsなデプロイ事例</li>
+	<li><span class="caps">DSC</span> を用いた Pull/Push</li>
+</ul>
+<h2>付記</h2>
+<p>日程や場所はまだ全然決めてません。</p>
+<p>ちなみに</p>
+<ul>
+	<li>会場は、個人的に都内開催を考えています。が、他にいいところがあれば教えていただけるとうれしいです。</li>
+	<li>参加条件は特にありません。
+	<ul>
+		<li>が、セッション内容によって「管理者が利用するレベル」だったり「開発者が自分でCmdletやModuleを書くレベル」だったりすると思います。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li><b>締め切りは10/21 0:00まで</b></li>
+</ul>
+<p>よろしくお願いします。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/44585" target="_blank">http://atnd.org/events/44585</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-10-21</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-10-21</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>都内どこか</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>160273</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>@guitarrapc_tech</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/guitarrapc_tech" target="_blank">@guitarrapc_tech</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-11-01</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

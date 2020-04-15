@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Perl-Intermediate＜中級者向けPerl勉強会＞＃１</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Perl-Intermediate＜中級者向けPerl勉強会＞＃１</h2>
+
+            <div class="buttons">
+                <a href="../json/events/57196.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/57196.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>57196</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Perl-Intermediate＜中級者向けPerl勉強会＞＃１</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>２０１４年のモダンＰｅｒｌ＜モダパー輪講会＞</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>中級者向けのＰｅｒｌ勉強会です。</p>
+<p>技術書モダンＰｅｒｌの読書会を開催します。</p>
+<p>進め方としては、輪講形式をとります。<br />
+発表形式の従来の勉強会とは異なる勉強会にしたいという思いからです。<br />
+初心者に近い中級者の方も気軽に質問をぶつけて、お互い学んでいこうというイメージです。<br />
+経験豊富な上級者や上級者に近い中級者でサポートしていただける方も大歓迎です。</p>
+<p>初心者でも、参加できるとは思いますが、全くプログラミングやったことないです、など、Ｐｅｒｌ入学式で扱う程度の最低限の知識はあったほうがいいと思います。</p>
+<p>初めてのＰｅｒｌやラクダ本を見てちんぷんかんぷんで何言っているか全く分からないっていう人はＰｅｒlの基礎を勉強してから参加することをオススメしますが、参加して、雰囲気を味わいたい、質問をしたいっていう人も問題なく参加頂けます。</p>
+<p>1回で全ての内容を扱うことは難しいため、何回かにわけて、開催することを検討しています。</p>
+<p>なお、主催者が勉強会の運営に、不慣れな人間なため、サポートしていただけると助かります。</p>
+<p>内容としては、</p>
+<p>・オブジェクト指向（Ｍｏｏｓｅ，Class::Accessor::Lite)<br />
+・データベース（ＯＲＭマッパ―、ＤＢＩなど）全般<br />
+・ＫＶＳ(memcached,redis）などをWebアプリケーションでどう活用するか？<br />
+・ＷＡＦ（Mojolicious,Amon2,etc)※Catalystは複雑なため、扱うのを今回は避けようと思います。<br />
+・テスト<br />
+・テンプレートエンジン<br />
+・Plack,<span class="caps">PSGI</span><br />
+・Gearman,Qudo,Q4M,JobQueueなどの非同期の概念（AnyEventとかも扱う？同じ枠か？）<br />
+・その他中級者が知るべき全般的な知識</p>
+<p>※提案歓迎です。今回はこの中から、時間のゆるす範囲でやります。</p>
+<p>押さえておきたい技術書<br />
+・初めてのＰｅｒｌ<br />
+・続初めてのＰｅｒｌ<br />
+・ラクダ本<br />
+・EffectivePerl</p>
+<p>などの初心者知識（データ構造やリファレンスは楽々扱える程度）<br />
+全て完璧に理解してなくても、ある程度知っているなら、吸収できると思います。</p>
+<p>対象技術書<br />
+・Ｐｅｒｌ徹底攻略（ピンクのＷｅｂDBＰＲＥＳＳ）<br />
+・モダンＰｅｒｌ<br />
+・オブジェクト指向Ｐｅｒｌマスターコース（※こちらは全て理解している必要は全くなし）</p>
+<p>レベル６～対象（それ以下でも、やる気があれば可能）<br />
+サポートしてくれる中級者、上級者（レベル７-,7+,8-,8+程度まで）<br />
+の協力もあると非常に助かります。（レベル９以上だと、内容に物足りなく感じるかも）</p>
+<p>定員がよめないため、１５人までとします。<br />
+それ以上になると、グループ分けしたほうがスムーズかなと想定します。<br />
+イメージとしては、１グループ３～１０人くらいをイメージ。</p>
+<p>時間は2時間程度。途中で休憩も考えています。<br />
+始めてなので、臨機応変に運営します。<br />
+途中参加、退出も自由とします。<br />
+持ち物：モダパー、ＰＣ（個人の判断で）<br />
+懇親会は当日決めましょう。</p>
+<p>会場をお貸ししていただく、株式会社Gaiax担当者Papix様には、協力を深く感謝いたします。</p>
+<p>よろしくお願いします。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/57196" target="_blank">http://atnd.org/events/57196</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-10-06</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-10-06</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都品川区西五反田1-21-8 KSS五反田ビル8階（総合受付：6階）</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社Gaiax</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>183951</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>sue7ga</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-10-03</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

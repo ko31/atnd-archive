@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第1回Androidテスト祭り</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第1回Androidテスト祭り</h2>
+
+            <div class="buttons">
+                <a href="../json/events/18042.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/18042.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>18042</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第1回Androidテスト祭り</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>スマートフォンでテストを楽しむための技術 - from ATEC</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>【重要】入場方法について</h2>
+<p>本日の会場ですが、12:20～13:30の間は正面のエントランスからそのまま入れますが、それ以降は裏口からの入場となります。<br />
+裏口は施錠されているため、#android_tecで到着した旨をつぶやいていただければ係りの者が開錠します。<br />
+また、正面と裏口に張り紙をしますので、わからなくなったらそちらをご覧ください。<br />
+お手数ですが、よろしくお願いします。</p>
+<h2>概要</h2>
+<p>来たる8月6日(土)にAndroidのテストノウハウの共有を目的として、Androidテスト祭り を開催します。</p>
+<p>2011年6月現在、日本では既に50機種あまりのAndroid端末が発売されています。年内の発売予定の端末を含めると日本国内で発売されるAndroid端末は75種類にものぼります(*1)。端末の普及に伴い、Android対応アプリケーションも目覚しい勢いで増加しています。</p>
+<p>しかし、その一方で、公開されているアプリケーションの品質低下やAndroid特有の機能のため、これまでのJavaのテスト手法が使えないといった悩みを多く聞くようになりました。</p>
+<p>そのような悩みを持った、Androidアプリの開発・評価に携わるみなさまの手助けになるよう、<br />
+Androidテスト祭りを開催します。</p>
+<p>Androidテスト祭りでは、これらの問題を皆様と共有するとともに、これまで<br />
+ATECの活動で得てきたノウハウも公開します。</p>
+<p>是非、皆様ご参加ください！</p>
+<h2>プログラム</h2>
+<table>
+<tr>
+     <td>時間</td>
+     <td>タイトル</td>
+     <td>登壇者</td>
+</tr>
+<tr>
+     <td>13:00-13:15</td>
+     <td>開祭のご挨拶</td>
+     <td>松木 晋祐(Androidテスト部副部長/株式会社ACCESS)</td>
+</tr>
+<tr>
+     <td>13:15-13:55</td>
+     <td>より効率的に開発するために <br />
+～スマートフォン時代のソフトウェアテスト・アプローチ</td>
+     <td>井芹 洋輝(TDD研究会)　太田 健一郎(TDD研究会)</td>
+</tr>
+<tr>
+     <td>13:55-14:25</td>
+     <td>Android製品テストマップ</td>
+     <td>鈴木 利彦(株式会社ベリサーブ)</td>
+</tr>
+<tr>
+     <td>14:35-15:05</td>
+     <td>Android受け入れテストガイドライン</td>
+     <td>生路 茂太(株式会社ACCESS)</td>
+</tr>
+<tr>
+     <td>15:05-15:50</td>
+     <td>Android向けUIテスト自動化ツール「Scirocco」のご紹介</td>
+     <td>立花 優人(株式会社ソニックス/ファウンダー スマートデバイスソリューション事業部　アーキテクト)</td>
+</tr>
+<tr>
+     <td>16:05-16:25</td>
+     <td>SQLite 周りのテストをしよう</td>
+     <td>@ussy00 (Androidテスト部/株式会社ヌーラボ)</td>
+</tr>
+<tr>
+     <td>16:25-16:45</td>
+     <td>開発者向け基本テストテクニック</td>
+     <td>@mike_neck (Androidテスト部)</td>
+</tr>
+<tr>
+     <td>16:45-17:25</td>
+     <td>テスト可能なUI設計パターン</td>
+     <td>尾上 雅則</td>
+</tr>
+<tr>
+     <td>17:25-17:45</td>
+     <td>これからのアンドロイドテストの話をしよう</td>
+     <td>宮田 友美 (Androidテスト部部長/株式会社オープンストリーム)</td>
+</tr>
+</table>
+<h2>懇親会について</h2>
+<p><b>セッション終了後、同会場にて懇親会を開催します！</b><br />
+参加される方は<a href="http://atnd.org/events/18119">こちら</a>のATNDに参加登録をお願いします。<br />
+また、懇親会中にLT大会を開催します！<br />
+LTされる方も募集していますので、詳細は懇親会のATNDをご覧ください。</p>
+<h2>会場の設備について</h2>
+<p>一般の参加者の皆様には電源・Wifiの提供は行いません。<br />
+各自でご用意ください。<br />
+登壇者のみなさまには電源のみご提供させていただきます。</p>
+<h2>Ustream配信</h2>
+<p>以下のURLで配信予定です。<br />
+<a href="http://www.ustream.tv/channel/android-tec">http://www.ustream.tv/channel/android-tec</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/18042" target="_blank">http://atnd.org/events/18042</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-08-06</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-08-06</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://sites.google.com/site/atecfes/home" target="_blank">https://sites.google.com/site/atecfes/home</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都北区王子2-30-2</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>日本ノーベル株式会社</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7565761</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7376134</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>6843</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>yumi.miyata</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/miyatay" target="_blank">@miyatay</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-08-06</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">車載システム向け機能安全規格ISO 26262の基礎と対応方法</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">車載システム向け機能安全規格ISO 26262の基礎と対応方法</h2>
+
+            <div class="buttons">
+                <a href="../json/events/47457.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/47457.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>47457</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>車載システム向け機能安全規格ISO 26262の基礎と対応方法</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>本セミナーでは、ISO 26262の基本的な考え方について、その周辺規格や安全規格の経緯を踏まえて解説した上で、ISO 26262の各パートの要求事項をご紹介いたします。また、ISO 26262対応を進める上での勘所や注意点についても例を挙げてご紹介いたします。<br />
+　本セミナーは、「 <span class="caps">ISO</span> 26262 実践ガイドブック 入門編 」に準ずる内容となっております。</p>
+<p>１．ISO 26262の概要とこれまでの経緯<br />
+　　1-1　ISO 26262とは<br />
+　　1-2　ISO 26262の必要性<br />
+　　1-3　ISO 26262に基づく要求事項<br />
+　　1-4　ISO 26262策定の経緯<br />
+　　　1-4-1 <span class="caps">ISO</span> 26262 策定の背景<br />
+　　　1-4-2 車載システムに関する国際規格の推移<br />
+２．安全の基本アプローチ<br />
+　　2-1　安全に関する国際規格の体系<br />
+　　2-2　国際規格における安全の定義<br />
+　　2-3　国際規格におけるリスクの定義<br />
+　　　2-3-1 許容可能なリスク<br />
+　　　2-3-2 ALARPとは<br />
+　　　2-3-3 <span class="caps">ISO</span>/<span class="caps">IEC</span> Guide51でのリスクの定義<br />
+　　2-4　ISO/<span class="caps">IEC</span> Guide51に基づく安全の基本アプローチ<br />
+　　　2-4-1 リスクアセスメント<br />
+　　　2-4-2 リスクの低減<br />
+　　2-5　ASILの考え方<br />
+　　　2-5-1 セーフティインテグリティレベル<br />
+　　　2-5-2 <span class="caps">ISO</span> 26262におけるASIL<br />
+３．ISO 26262の章構成<br />
+　　3-1　ISO 26262-1：用語<br />
+　　3-2　ISO 26262-2：機能安全の管理<br />
+　　　3-2-1 全体安全管理<br />
+　　　3-2-2 コンセプトフェーズと製品開発における安全管理<br />
+　　　3-2-3 製品リリース後（開発完了後：生産、運用、メンテナンス、廃棄）の安全管理<br />
+　　3-3　ISO 26262-3：コンセプトフェーズ<br />
+　　　3-3-1 アイテムの定義<br />
+　　　3-3-2 安全ライフサイクルの開始<br />
+　　　3-3-3 ハザード分析とリスクアセスメント<br />
+　　　3-3-4 機能安全コンセプト<br />
+　　3-4　ISO 26262-4：システムレベルの製品開発<br />
+　　　3-4-1 システムレベルでの製品開発の開始<br />
+　　　3-4-2 技術的安全要求仕様<br />
+　　　3-4-3 システム設計<br />
+　　　3-4-4 アイテムの統合とテスト<br />
+　　　3-4-5 安全妥当性確認<br />
+　　　3-4-6 機能安全アセスメント<br />
+　　　3-4-7 生産のためのリリース<br />
+　　3-5　ISO 26262-5：ハードウエアレベルの製品開発<br />
+　　　3-5-1 ハードウエアレベルでの製品開発の開始<br />
+　　　3-5-2 ハードウエア安全要求仕様<br />
+　　　3-5-3 ハードウエア設計<br />
+　　　3-5-4 ハードウエアアーキテクチャーメトリクスの評価<br />
+　　　3-5-5 偶発的ハードウエア故障によるセーフティゴール逸脱の評価<br />
+　　　3-5-6 ハードウエア統合とテスト<br />
+　　3-6　ISO 26262-6：ソフトウエアレベルの製品開発<br />
+　　　3-6-1 ソフトウエアレベルでの製品開発の開始<br />
+　　　3-6-2 ソフトウエア安全要件の仕様<br />
+　　　3-6-3 ソフトウエアアーキテクチャー設計<br />
+　　　3-6-4 ソフトウエアユニット設計と実装<br />
+　　　3-6-5 ソフトウエアユニットテスト<br />
+　　　3-6-6 ソフトウエア統合とテスト<br />
+　　　3-6-7 ソフトウエア安全要件の検証<br />
+　　3-7　ISO 26262-7：生産と運用<br />
+　　　3-7-1 生産 <br />
+　　　3-7-2 運用、サービス（メンテナンスおよび修理）および廃棄<br />
+　　3-8　ISO 26262-8：支援プロセス<br />
+　　　3-8-1 開発委託における要求事項<br />
+　　　3-8-2 安全要件の仕様化と管理<br />
+　　　3-8-3 構成管理<br />
+　　　3-8-4 変更管理<br />
+　　　3-8-5 検証<br />
+　　　3-8-6 文書化<br />
+　　　3-8-7 ツールの認定（ツールに対する信頼度の証明）<br />
+　　　3-8-8 ソフトウエアコンポーネントの認定<br />
+　　　3-8-9 ハードウエアコンポーネントの認定<br />
+　　　3-8-10 使用実績による主張<br />
+　　3-9　コンファメーションメジャーの実施<br />
+４．機能安全における安全設計の考慮点<br />
+　　4-1　ソフトウエア開発に求められる安全技法<br />
+　　　4-1-1 ソフトウエア開発におけるガイドライン<br />
+　　　4-1-2 ソフトウエアアーキテクチャー設計と検証<br />
+　　　4-1-3 ソフトウエアユニット設計と実装<br />
+　　　4-1-4 ソフトウエア統合とソフトウエア統合テスト<br />
+　　　4-1-5 ソフトウエア安全要件の検証<br />
+　　4-2　機能安全における検証と妥当性確認の考慮点<br />
+　　　4-2-1 検証と妥当性確認の位置づけ<br />
+　　　4-2-2 検証<br />
+　　　4-2-3 テスト<br />
+　　4-3　安全設計アプローチに対するコンファメーションメジャーの適用<br />
+　　　4-3-1 コンファメーションレビュー<br />
+　　　4-3-2 機能安全アセスメント<br />
+５．安全設計のためのプロセスアプローチ<br />
+　　5-1　ISO 26262が要求する安全文化の意味<br />
+　　5-2　安全文化定着のためのプロセスアプローチ<br />
+　　5-3　組織方針と組織標準プロセスの重要性<br />
+　　5-4　プロセスアプローチの勘所<br />
+　　5-5　持続的なプロセス改善のために<br />
+　　5-6　プロセスアプローチに対するコンファメーションメジャーの適用</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/47457" target="_blank">http://atnd.org/events/47457</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-03-28</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-03-28</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.rdsc.co.jp/seminar/140369" target="_blank">https://www.rdsc.co.jp/seminar/140369</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都江東区亀戸2-19-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>商工情報センター（カメリアプラザ）  9F　会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6976451</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.8245201</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>40917</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>rdsc0805</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/rdscseminar" target="_blank">@rdscseminar</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-01-31</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

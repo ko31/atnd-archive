@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">RxTstudy</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">RxTstudy</h2>
+
+            <div class="buttons">
+                <a href="../json/events/17268.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/17268.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>17268</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>RxTstudy</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Redmineでのタスク管理を考える勉強会＠大阪</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>プロジェクト管理ツール「Redmine」でのタスク管理にフィーチャーした勉強会を開催します。</p>
+<p>Redmine を触ったことがない方も、チケット駆動バリバリという方も<br />
+プロジェクト、タスク遂行をより良くするための情報共有の場としてふるってご参加ください。</p>
+<h2>■タイムスケジュール</h2>
+<p>13:15 開場<br />
+13:30 開始<br />
+17:45 終了</p>
+<p>※詳細は決まり次第追加いたします。</p>
+<h2>■セッション内容</h2>
+<h3>◆「<a href="http://www.amazon.co.jp/Redmine%E3%81%AB%E3%82%88%E3%82%8B%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88%E5%AE%9F%E8%B7%B5%E6%8A%80%E6%B3%95-%E5%B0%8F%E5%B7%9D-%E6%98%8E%E5%BD%A6/dp/4798121622">Redmineによるタスクマネジメント実践技法</a>」著者のお二人による講演</h3>
+<h4>講演1 「チケット駆動開発入門」<br />
+株式会社ＳＲＡ 阪井誠氏(<a href="http://twitter.com/sakaba37/">@sakaba37</a>)</h4>
+<p>デベロッパーズサミット2011でベストスピーカー賞第3位の講演(阪井担当分)をします。<br />
+チケット駆動開発(TiDD)とはどのようなものであるかを、注目される理由、歴史、そして従来プロセスの課題課題をTiDDがどのように解決するか、などを踏まえて解説します。</p>
+<h4>講演2 「RedmineのFAQ、アンチパターン集」<br />
+あきぴー氏(<a href="http://twitter.com/akipii/">@akipii</a>)</h4>
+<p>昨今、Redmineのように高機能化した課題管理システムをソフトウェア開発のプロジェクト管理に適用して、Agileに開発するチケット駆動開発(TiDD)が静かに広まっています。<br />
+しかし、Redmineを導入したものの、思ったよりも効果が出ない事例もよく聞きます。<br />
+本講演では、Redmine初心者がよく発する質問やRedmineを運用した時のアンチパターンの事例について話します。<br />
+Redmineが使いづらいと思う人、Redmineの使い方が分からない人は参考になさって下さい。</p>
+<h3>◆Redmineの実業務における活用事例紹介</h3>
+<h4><a href="http://twitter.com/yohhatu">@yohhatu</a> 氏</h4>
+<p>これまでいくつかのPJでRedmineをチームで使ってきました。Redmineはあくまでツールで、それぞれのPJやチームに特徴があり、それに合わせた工夫が必要になってきます。今回は実際のPJ、チームで使う際に工夫したこと、得た成果や課題をお話します。</p>
+<h3>◆ライトニングトークセッション</h3>
+<h5>発表者</h5>
+<ul>
+<li>特別ゲスト<a href="http://twitter.com/kuranuki/">@kuranuki</a>氏（「<a href="http://www.amazon.co.jp/Redmine-%E3%82%82%E3%81%A3%E3%81%A8%E6%89%8B%E8%BB%BD%E3%81%AB%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E7%AE%A1%E7%90%86-%E5%80%89%E8%B2%AB-%E7%BE%A9%E4%BA%BA/dp/4844327305/ref=cm_cr_pr_sims_t">Redmine -もっと手軽にプロジェクト管理!</a>」著者）</li>
+<li>@ahyari氏</li>
+</ul>
+<h3>◆全員参加ディスカッション</h3>
+<h2>□LT発表者募集中!!</h2>
+<p>テーマ　：「Redmineでのタスク管理、私はこうしている」<br />
+発表時間：1人5分<br />
+募集枠　：8～10名</p>
+<p>・発表して下さる方は、コメント欄にLT希望の旨記入ください。<br />
+・発表時の動画配信の可否についても併せてお知らせください。</p>
+<h2>□懇親会</h2>
+<p>本編終了後に会場にてビアバッシュを開催します。<br />
+Redmineを肴にビールとピザを楽しみましょう。</p>
+<p>参加希望の方は、コメントにその旨ご記入ください。</p>
+<p>時間：17:45～<br />
+場所：本編と同一会場<br />
+会費：2,000円</p>
+<h2>■動画配信について</h2>
+<p>当日はUstreamにて動画配信を予定しております。<br />
+ご参加いただけない方はぜひこちらにてご覧ください。</p>
+<p>Ustream: <a href="http://www.ustream.tv/channel/RxTstudy">http://www.ustream.tv/channel/RxTstudy</a></p>
+<p>※ネットワークの関係上配信できない可能性がございます。<br />
+　その場合は録画し、後日公開いたします。</p>
+<hr/>
+<h4>運営スタッフ</h4>
+<p><a href="http://twitter.com/hiroe316/">@hiroe316</a> , <a href="http://twitter.com/yohhatu/">@yohhatu</a>, <a href="http://twitter.com/kiy0taka/">@kiy0taka</a> , <a href="http://twitter.com/serimasa/">@serimasa</a> , <a href="http://twitter.com/pinkmac/">@pinkmac</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/17268" target="_blank">http://atnd.org/events/17268</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-07-30</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-07-30</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.rxtstudy.net/" target="_blank">http://www.rxtstudy.net/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>大阪市淀川区西中島4丁目13-22　大拓ビル17 7F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社クロノス 研修ルーム</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.7274475</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>135.4950127</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>1559</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>pinkmac</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/pinkmac" target="_blank">@pinkmac</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-07-20</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

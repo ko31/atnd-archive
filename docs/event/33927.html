@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">F# Advent Calendar 2012</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">F# Advent Calendar 2012</h2>
+
+            <div class="buttons">
+                <a href="../json/events/33927.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/33927.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>33927</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>F# Advent Calendar 2012</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>私だ。</p>
+<p>例の件をやってもらいたい。そう、例年のことだが、12月1日から24日までのクリスマスを待つ24日間、諸君には F# の記事を書いてもらいたい。1日1人1記事、24日間を24人の記事で埋め尽くそうというわけだ。</p>
+<ul>
+	<li><a href="http://atnd.org/events/10685">F# Advent Calendar jp 2010 : <span class="caps">ATND</span></a></li>
+	<li><a href="http://partake.in/events/1c24993a-c475-4fc2-bca4-7a1cd2f81869">F# Advent Calendar 2011 &#8211; [<span class="caps">PARTAKE</span>]</a></li>
+</ul>
+<p>しかし、いつものアレでは代わり映えしないから、今年はすこし趣向を凝らし、実用なものに絞って書いてもらいたい。実用的な F# の記事だ。もちろん、実用の意味は人それぞれ違うだろうからその解釈は各自に任せるところであるし、おいおい、これが実用的に見えないなんてアンタの目は節穴かい？　というスタンスでも構わない。</p>
+<p>加えて、今年は、本来の Advent Calendar の趣意に則って24日間ちょうどで行ってもらう。追加要望や突発事象の調整でダラダラといつ終わるかしれない仕事なんてうんざりだろう。スマートにやろうじゃないか、F# のコードと同じように。</p>
+<p>誰が何日の記事を担当するかの最終的な決定については、私に任せてもらいたい。諸君が選べるのは、前半、中盤、後半の3種類の大雑把な時期か、あるいは、いつでも用意はできているという4つ目の選択肢だ。スケジュールは決まり次第、適宜、追ってここに連絡することとしよう。</p>
+<p>ともあれ、クリスマスまで、たのしくやろうじゃないか。</p>
+<p>F# Advent Calendar 2012 では、初心者から変態まで幅広い F#-er 諸君の参加を受け付けている。</p>
+<p>健闘を祈る。</p>
+<hr />
+<h3 style="vertical-align:middle;">スケジュール</h3>
+<table>
+	<tr>
+		<th>日付 </th>
+		<th>担当者       </th>
+		<th>記事（リンクなしは仮タイトル）  </th>
+	</tr>
+	<tr>
+		<td>01（土）</td>
+		<td>bleis           </td>
+		<td><a href="http://d.hatena.ne.jp/bleis-tift/20121201/1354362376">C# から使いやすい F# コードの書き方 &#8211; ぐるぐる～</a></td>
+	</tr>
+	<tr>
+		<td>02（日）</td>
+		<td>Gab_km          </td>
+		<td><a href="http://blog.livedoor.jp/gab_km/archives/1502605.html">NaturalSpec 実践入門 &laquo; F# &laquo; <span class="caps">TDD</span> &laquo; Gab_kmのブログ</a></td>
+	</tr>
+	<tr>
+		<td>03（月）</td>
+		<td>eozw            </td>
+		<td><a href="http://eozw.github.com/misc/FsAdventCalender2012.html">F# + ExcelDna + R.<span class="caps">NET</span></a></td>
+	</tr>
+	<tr>
+		<td>04（火）</td>
+		<td>kos59125        </td>
+		<td><a href="http://blog.recyclebin.jp/archives/3093">F# のための乱数生成フレームワーク &#8211; 捨てられたブログ</a></td>
+	</tr>
+	<tr>
+		<td>05（水）</td>
+		<td>nakamura_to     </td>
+		<td><a href="http://d.hatena.ne.jp/taedium/touch/20121205/p1">ライブラリを作ってみて感じたF#の良いところや悩みどころ &#8211; taediumの日記</a></td>
+	</tr>
+	<tr>
+		<td>06（木）</td>
+		<td>pocketberserker </td>
+		<td><a href="http://d.hatena.ne.jp/pocketberserker/20121206/1354796031">名状し難きFsCheck入門のようなもの &#8211; pocketberserkerの爆走</a></td>
+	</tr>
+	<tr>
+		<td>07（金）</td>
+		<td>posaunehm       </td>
+		<td><a href="http://posaune.hatenablog.com/entry/2012/12/08/001052">NaturalSpecを使ってC#のテストコードを書いてみた。 &#8211; 亀岡的プログラマ日記</a></td>
+	</tr>
+	<tr>
+		<td>08（土）</td>
+		<td>smallgeek       </td>
+		<td><a href="http://smallgeek.hatenablog.com/entry/FsAdventJP2012">Mono for Android と F# &#8211; FsNinja</a></td>
+	</tr>
+	<tr>
+		<td>09（日）</td>
+		<td>yukitos         </td>
+		<td><a href="http://d.hatena.ne.jp/yukitos22/20121209">Type Provider for <span class="caps">INI</span> file (draft) &#8211; yukitos22の日記</a></td>
+	</tr>
+	<tr>
+		<td>10（月）</td>
+		<td>                </td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>11（火）</td>
+		<td>katayama_k      </td>
+		<td><a href="http://www4.atwiki.jp/fsharpmaster/pages/35.html">F#マスターへの道 &#8211; イメージPDFファイルの処理</a></td>
+	</tr>
+	<tr>
+		<td>12（水）</td>
+		<td>zecl            </td>
+		<td><a href="http://d.hatena.ne.jp/zecl/20121212/p1">Ｍが如くF#ive　夢、叶えしMono &#8211; Bug Catharsis</a></td>
+	</tr>
+	<tr>
+		<td>13（木）</td>
+		<td>otf             </td>
+		<td><a href="http://otf.hateblo.jp/entry/2012/12/13/231809">Functional <span class="caps">HTTP</span> Programming &#8211; otf&#8217;s diary</a></td>
+	</tr>
+	<tr>
+		<td>14（金）</td>
+		<td>htid46          </td>
+		<td><a href="http://d.hatena.ne.jp/htid46/20121214">恐ろしい standalone オプション &#8211; 2つのアンコール</a></td>
+	</tr>
+	<tr>
+		<td>15（土）</td>
+		<td>kyon_mm         </td>
+		<td><a href="http://d.hatena.ne.jp/kyon_mm/20121215/1355610061">SpecFlowについて &#8211; うさぎ組</a></td>
+	</tr>
+	<tr>
+		<td>16（日）</td>
+		<td>7shi            </td>
+		<td><a href="http://7shi.hateblo.jp/entry/2012/12/16/010942">アクティブ パターンをどう捉えるか &#8211; 七誌の開発日記</a></td>
+	</tr>
+	<tr>
+		<td>17（月）</td>
+		<td>linerlock       </td>
+		<td><a href="http://linerlock.github.com/articles/2012-12-17.html">F#製のビルドツール, FAKEで遊ぶ</a></td>
+	</tr>
+	<tr>
+		<td>18（火）</td>
+		<td>nomurabbit      </td>
+		<td><a href="http://d.hatena.ne.jp/nomurabbit/20121217/1355749867">F# で熱伝導の数値解析を頑張ってみた &#8211; nomurabbitの日記</a></td>
+	</tr>
+	<tr>
+		<td>19（水）</td>
+		<td>igeta           </td>
+		<td><a href="http://igeta-diary.blogspot.jp/2012/12/day-19-of-fsharp-advent-calendar-2012.html">F# Interactive を独自ビルドしてプロンプトにカレント ディレクトリを表示する</a></td>
+	</tr>
+	<tr>
+		<td>20（木）</td>
+		<td>Arigata         </td>
+		<td><a href="http://d.hatena.ne.jp/arigata3/20121220/1355941084">F#での生育予測とSolver Foundationによる非線形関数のパラメータ最適化 &#8211; Arigataの日記</a></td>
+	</tr>
+	<tr>
+		<td>21（金）</td>
+		<td>jsakamoto       </td>
+		<td><a href="http://devadjust.exblog.jp/17472376/">F# スクリプトで GanttProject の .gan ファイルを加工する : Developer @ <span class="caps">ADJUST</span></a></td>
+	</tr>
+	<tr>
+		<td>22（土）</td>
+		<td>masakitk        </td>
+		<td><a href="http://d.hatena.ne.jp/masakitk/20121222/1356164855">NaturalSpecでSeq確認NG時のメッセージをわかりやすくする &#8211; an SE diary</a></td>
+	</tr>
+	<tr>
+		<td>23（日）</td>
+		<td>                </td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>24（月）</td>
+		<td>のぶひさ        </td>
+		<td><a href="http://d.hatena.ne.jp/Nobuhisa/20121224/p1" title="hatena (diary &#39;Nobuhisa)">F#サンタからの贈り物 -</a></td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/33927" target="_blank">http://atnd.org/events/33927</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-12-24</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://groups.google.co.jp/group/fsug-jp" target="_blank">http://groups.google.co.jp/group/fsug-jp</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>anywhere</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>138831</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>igeta</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/igeta" target="_blank">@igeta</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

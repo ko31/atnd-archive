@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">SappoRo.R #1</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">SappoRo.R #1</h2>
+
+            <div class="buttons">
+                <a href="../json/events/27750.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/27750.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>27750</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>SappoRo.R #1</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>北海道を中心とした統計解析環境「R」の第1回勉強会 </td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>SappoRo.R #1 を、以下のとおり開催します。分野も年齢も職業も問わず、「R」について一緒に学びましょう。</h2>
+<h3>★参加登録時に，差し支えなければ，連絡用メールアドレスの入力もお願いします。</h3>
+<h2><b>【プログラム】ほぼ確定版（7/4追記）</b></h2>
+<table>
+	<tr>
+		<td>部</td>
+		<td>時間</td>
+		<td>発表者</td>
+		<td>タイトルおよび概要</td>
+	</tr>
+	<tr>
+		<td>第0部</td>
+		<td>13:00-13:05</td>
+		<td> <a href="http://twitter.com/sakaue">@sakaue</a> </td>
+		<td>開会のご挨拶</td>
+	</tr>
+	<tr>
+		<td>第1部</td>
+		<td>13:05-13:25</td>
+		<td>参加者全員</td>
+		<td>【自己紹介】<br>・お一人30秒ほどで，参加理由や R の利用歴などを添えて一言お願いします。</td>
+	</tr>
+	<tr>
+		<td>第2部</td>
+		<td>13:30-15:00</td>
+		<td> <a href="http://twitter.com/sakaue">@sakaue</a> </td>
+		<td>【R ことはじめ】<br>・R のインストール方法に始まり，実際にどのようなデータ解析が可能になるのか，基本的な内容をおさえつつ，実践的な利用方法について，ハンズオン形式で学びます。<br>・R や統計に関する事前知識は不要です。</td>
+	</tr>
+	<tr>
+		<td>第3部</td>
+		<td>15:10-16:50</td>
+		<td>7名の発表者</td>
+		<td>【Lightning Talks】（最短5分，最長30分で R に関する話題を提供，3件目の後で小休憩の予定）<br />
+<ol><br />
+<li>阪上 辰也（ <a href="http://twitter.com/sakaue">@sakaue</a> ）「<a href="http://www.kyoritsu-pub.co.jp/series/23/">『Rで学ぶデータサイエンス』シリーズ</a> のスクリプトを片っ端から実行してみました」：具体的に R で何ができるのか，どの分野でどう利用されているかを説明します。どんな業務・研究に利用できそうかを考えるキッカケにしてもらえれば幸いです。（5分）<br />
+<li>住 政二郎 氏（ <a href="http://twitter.com/seisumi">@seisumi</a> ）「Rを使った次元数の縮約化」：Rを使った主成分分析と、ちょっとだけ多次元尺度法の使い方をご紹介します。<del>「Rで主成分分析－その２」：主成分分析とカーネル主成分分析の違いと方法についてあれこれ考えます</del>（30分）<br />
+<li>阪上 辰也（ <a href="http://twitter.com/sakaue">@sakaue</a> ）「R で言語研究をはじめよう」：R を使っての言語研究の方法を説明します。具体的には，&quot;languageR&quot; や &#8220;RMeCab&#8221; といったパッケージを利用したデータ処理の基本についてお話しします。（予定）（10分）<br />
+<li>久保 拓弥 氏（ <a href="http://twitter.com/KuboBook">@KuboBook</a> ）「R で統計モデルと作図」：生態学という分野での R の使われかた，とくに統計モデリングと作図について簡単に，「統計モデリング入門」(著書) と「R グラフィックス」(訳書) を紹介しつつ (15 分?)<br />
+<li>中村 良幸 氏（ <a href="http://twitter.com/nakayoshix">@nakayoshix</a> ）「仕事で使うR」：納期二週間で某パッケージソフトSと全く同じ出力の重回帰分析を行うという案件があり、R初心者がPythonによるGUI付きWindows用簡単統計パッケージを作って納品するまでの物語（10分）<br />
+<li><a href="http://twitter.com/havanaclub_">＠havanaclub_</a> 氏 「R@プログラミング環境マニヤ視点から」：年々増え行くRのユーザ数の広がりっぷりを世界のプログラミング言語作者がうらやましがっています。いちプログラミング環境マニヤの視点から、Rの何が良かったんじゃろうか…というのを悶々してみます。（参考：<a href="http://lambda-the-ultimate.org/node/4507">Evaluating the Design of the R Language &#8211; <span class="caps">ECOOP</span> 12 by Floreal Morandat, Brandon Hill, Leo Osvald, and Jan Vitek</a>）（10分）<br />
+<li>中西 大輔 氏（ <a href="http://twitter.com/daihiko">@daihiko</a> ）「SASだと簡単なのにRでやると面倒だと思ってしまうところ」：SASユーザーがRを使い始めると不便に感じるポイントについてお話させてください(ついでに、解決方法を教えてください)。5分程度でお話をして、5分程度でアドバイスを頂ければ嬉しいです。（10分）<br />
+<li>高見 敏子 氏「クラスター分析のWard法で指定すべき距離」：クラスター分析のWard法で指定すべき距離がRの解説書によって異なっていることを御紹介し、どれが正しいのかという疑問を（できれば）この機会に解決したいと思っています。この件について御教示いただる方がいらっしゃいましたら大変有り難いです。（10分）<br />
+<li>時間に余りがあれば，飛び入り LT も（5分×2件）。<br />
+</ol><br />
+<li>入門者講習に組み入れます（06/21 追記）→<del>阪上 辰也（ <a href="http://twitter.com/sakaue">@sakaue</a> ）「いや，だから，Excel や <span class="caps">SPSS</span> で作ったグラフ等をそのまま貼り付けるのはやめてくださいってお願いしている件について」：作図後のデータ形式について一言言わせてください。（5分）</del></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>16:55-17:00</td>
+		<td> <a href="http://twitter.com/sakaue">@sakaue</a> </td>
+		<td>閉会のご挨拶（と懇親会のご案内＜予定＞）</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>18:00-</td>
+		<td>希望の方々</td>
+		<td>懇親会＠<a href="http://www.shichifuku-tanuki.com/">居酒屋さかなや七福神商店狸小路本店</a>（会費: 4,500円）</td>
+	</tr>
+</table>
+<h2>会場について</h2>
+<ul>
+<li>全ての机にコンセントがありますが，不測の事態に備え，PC はフル充電した上でお越しください。<br />
+<li>インターネット接続サービスはございません。各自でご用意ください。<br />
+<li>会場内でのトラブル（持参品の紛失等）については，運営関係者・大学側が責任を負うことはできませんので，各自で管理願います。</ul>
+<h2>参加費</h2>
+<ul>
+<li>無料です</ul>
+<h2>★発表者を募集しています</h2>
+<p>Lightning Talks をはじめとして、各部における発表者を絶賛募集中です。</p>
+<p>Lightning Talks は，R に関わる話であればどのようなことでも（10分で詳しい自己紹介でも！）結構です。</p>
+<p>発表者していただける方は、t.sakaue＋sapporor [at] gmail.com（プラス記号は半角にしてください）まで、1) 発表題目、2) 希望発表時間、3) 発表概要の3点をご連絡ください。どうぞお気軽にお申込ください。<br></p>
+<p>なお，申込が多くなり，ご希望の発表時間や発表枠をご用意できない場合もございますので，予めご了承ください。<br></p>
+<h2>懇親会について</h2>
+<p>勉強会の後に，懇親会を予定しています。<del>参加希望の方は，下のコメント欄に，参加希望の旨を書き込んでください。なお，場所や予算は検討中です。</del></p>
+<p>申込の締切は，<del>7/2（月）</del>7/5（木）までとさせていただきます。<del>当日参加の可否などは，勉強会の途中でお知らせする予定です。</del>（当日申込はできません）</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/27750" target="_blank">http://atnd.org/events/27750</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-07-07</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-07-07</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>札幌市豊平区旭町4-1-40</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>北海学園大学</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>43.0450258</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>141.3687873</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>21084</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>SakaueTatsuya</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/sakaue" target="_blank">@sakaue</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-07-04</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">EAWebKit勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">EAWebKit勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/16823.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/16823.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>16823</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>EAWebKit勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>趣旨</h2>
+<p>　EAWebKitとは、Electronic Arts社が諸々の事情でオープンソース化した社内ライブラリです。LGPLライセンスで公開されています。<br />
+　Electronic Arts社とはアメリカに拠点を置く大手ゲーム販売会社です。メダル・オブ・オナーやバトル・フィールド、Need for Speed、Simsなど世界的に有名なゲームを多く開発・販売を手掛けています。<br />
+　その中でEAWebKitはSims 3やSkate 3、Monopoly Streets、Need for Speed World、Darksporeなどに採用されています。また、公開される以前にもEAWebKitは社内ライブラリとして活用されていました。</p>
+<p>　EAWebKitではDirtySDK、EASTL、EAIO、UTFXml、EAText、PPMalloc、coreallocatorがパッケージとして含まれていますが、その中でもDirtySDK、EASTL、EAIO、UTFXml、EATextはライブラリの中核を成しています。<br />
+　DirtySDKはHTTP、SSL、ソケット通信の他に、各種ハッシュ関数・暗号化をまとめたAPIを提供し、EASTLはStandard Template LibraryをPS3やXbox360などの実機での環境に耐えられるよう改良したクラス群を提供しています。また、EAIOはファイル操作だけでなく、文字エンコードの変更や正規表現などをまとめたAPIを提供し、UTFXmlではXMLを入出力するためのAPIを提供しています。最後にEATextですがこれは文字を描画するためのAPIです。スクリプトによるフォントの自動生成や3Dフォントなどの生成など、高度な文字描画APIを提供しています。<br />
+　これらパッケージはElectronic Artsが開発し、LGPLで公開しているため誰でも利用することができます。</p>
+<p>　ただ、EAWebKitがなぜかGoogle八分になっているため極端に知名度がありません。このままではEAが培ってきた上で公開している技術が無駄になってしまいます。<br />
+　この勉強会の趣旨は、有用なライブラリであるEAWebKitをドキュメント制作を経て大まかに使い方を学ぶことと、その成果物であるドキュメントをWikiやUStreamなどで配信することによって、知名度を上げることにあります。<br />
+　勉強会はワークショップ形式です。以下のような手順で行います。</p>
+<ol>
+	<li>コードを読む</li>
+	<li>サンプルを作成する</li>
+	<li>利用した関数などの解説をドキュメントとしてまとめる</li>
+</ol>
+<p>作成したドキュメントは全てWikiに掲載します。また、作業内容は随時UStreamで配信される予定です。</p>
+<h2>開催概要</h2>
+<table>
+	<tr>
+		<td>日程</td>
+		<td>2011年6月25日(土)</td>
+	</tr>
+	<tr>
+		<td>時間</td>
+		<td>10:30～17:30</td>
+	</tr>
+	<tr>
+		<td>勉強会費</td>
+		<td>無料</td>
+	</tr>
+	<tr>
+		<td>場所</td>
+		<td>神奈川工科大学　（神奈川県厚木市下荻野1030）　情報学部棟　K1-303教室</td>
+	</tr>
+	<tr>
+		<td>定員</td>
+		<td>30人</td>
+	</tr>
+</table>
+<p>USTチャンネル<br />
+<a href="http://ustre.am/AfoI">http://ustre.am/AfoI</a></p>
+<h2>参加に必要な物</h2>
+<ul>
+	<li>ノートPC必須</li>
+	<li>C++をビルドできる開発環境</li>
+	<li>LANケーブルがあるとネットに繋げますので持参して頂けると助かります<br />
+	（何本か予備は用意しています）</li>
+</ul>
+<h2>当日使用スライド</h2>
+<p>EAWebKitについて<br />
+<a href="http://www.slideshare.net/TakebuchiEiichi/eawebkit">http://www.slideshare.net/TakebuchiEiichi/eawebkit</a></p>
+<p>GPLとの付き合い方<br />
+<a href="http://www.slideshare.net/TakebuchiEiichi/gpl-8414458">http://www.slideshare.net/TakebuchiEiichi/gpl-8414458</a></p>
+<p>勉強会の進め方<br />
+<a href="http://www.slideshare.net/TakebuchiEiichi/ss-8414453">http://www.slideshare.net/TakebuchiEiichi/ss-8414453</a></p>
+<h2>代表者連絡先</h2>
+<p>竹渕 瑛一<br />
+mail: nanashi4129 (at_mk) gmail.com<br />
+twitter: <a href="http://twitter.com/#!/GRGSIBERIA">grgsiberia</a></p>
+<h2>プログラム</h2>
+<p>司会：竹渕瑛一</p>
+<table>
+	<tr>
+		<td>10:30～10:45</td>
+		<td>EAWebKitについて（スピーカ：竹渕）</td>
+	</tr>
+	<tr>
+		<td>10:45～11:00</td>
+		<td><span class="caps">GPL</span>/LGPLライセンスとの向き合い方（スピーカ：竹渕）</td>
+	</tr>
+	<tr>
+		<td>11:00～11:30</td>
+		<td>おおまかな進め方（スピーカ：竹渕）</td>
+	</tr>
+	<tr>
+		<td>11:30～13:00</td>
+		<td>昼休憩</td>
+	</tr>
+	<tr>
+		<td>13:00～16:30</td>
+		<td>ドキュメント制作開始</td>
+	</tr>
+	<tr>
+		<td>16:30～17:30</td>
+		<td>完成したドキュメントの発表</td>
+	</tr>
+	<tr>
+		<td>17:30～</td>
+		<td>片づけ・撤収</td>
+	</tr>
+</table>
+<p>※　現在スピーカー募集中です。ちょっとやってみたい、話してみたいことがあるなど、軽い気持ちでもOKです。</p>
+<h2>成果物</h2>
+<p>以下三点は <a href="https://sites.google.com/site/eawebkitwiki">Wiki</a> に掲載されます</p>
+<ul>
+	<li>サンプルプログラム</li>
+	<li>ドキュメント</li>
+	<li>発表用スライド</li>
+</ul>
+<h2>懇親会</h2>
+<p>勉強会後に町田で行う予定です。<br />
+いいお店を知っていたら知らせて頂けると助かります。<br />
+予算は3000～4000円程度です。</p>
+<h2>アクセス</h2>
+<p><a href="http://www.kait.jp/directions/">http://www.kait.jp/directions/</a><br />
+小田急小田原線本厚木駅　北口徒歩3分　本厚木駅バス停</p>
+<p>①<br />
+神奈川工科大前経由　鳶尾団地行・青年の家行<br />
+神奈川工科大学前下車</p>
+<p><a href="http://circle.kanagawa-it.ac.jp/~tetudou/zikoku/bus-goto-kait-2.html">神奈川工科大前経由時刻表</a></p>
+<p>②<br />
+半原行・まつかげ台行・鳶尾団地行<br />
+荻野新宿下車<br />
+交差点右折、徒歩10分</p>
+<p><a href="http://dia.kanachu.jp/bus/timetable?busstop=19014&amp;pole=1&amp;pole_seq=1&amp;apply=2011/05/23&amp;day=2">半原行時刻表</a><br />
+<a href="http://dia.kanachu.jp/bus/timetable?busstop=19002&amp;pole=1&amp;pole_seq=3&amp;apply=2011/05/23&amp;day=2">まつかげ台行時刻表</a><br />
+<a href="http://dia.kanachu.jp/bus/timetable?busstop=19014&amp;pole=1&amp;pole_seq=4&amp;apply=2011/05/23&amp;day=2">鳶尾団地行時刻表</a></p>
+<p>大きなビルが情報棟です。</p>
+<h2>参考URL</h2>
+<p>EAWebKit Wiki<br />
+<a href="https://sites.google.com/site/eawebkitwiki/home">https://sites.google.com/site/eawebkitwiki/home</a></p>
+<p>GitHUB EAWebKit<br />
+<a href="https://github.com/GRGSIBERIA/EAWebKit">https://github.com/<span class="caps">GRGSIBERIA</span>/EAWebKit</a></p>
+<p>Electronic Arts Open Sorce<br />
+ <a href="http://gpl.ea.com/">http://gpl.ea.com/</a></p>
+<p>GitHub <span class="caps">EASTL</span><br />
+ <a href="https://github.com/paulhodge/EASTL">https://github.com/paulhodge/<span class="caps">EASTL</span></a></p>
+<p><span class="caps">EASTL</span> から垣間見るゲームソフトウェア開発現場の現状 その 1<br />
+ <a href="http://d.hatena.ne.jp/i-saint/20101012">http://d.hatena.ne.jp/i-saint/20101012</a></p>
+<h2>主催</h2>
+<p><span class="caps">IGDA</span> Japan <span class="caps">SIG</span>-indie</p>
+<h2>後援</h2>
+<p>神奈川工科大学</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/16823" target="_blank">http://atnd.org/events/16823</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-06-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-06-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://sites.google.com/site/eawebkitwiki/" target="_blank">https://sites.google.com/site/eawebkitwiki/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>神奈川県厚木市下荻野1030</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>神奈川工科大学　情報学部棟　K1-303</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.4864735</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.3411739</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>78029</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>竹渕 瑛一</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/GRGSIBERIA" target="_blank">@GRGSIBERIA</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-06-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

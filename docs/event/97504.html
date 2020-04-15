@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">電子工作ワークショップ「Arduino Nano ラジコンカーの組立て」</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">電子工作ワークショップ「Arduino Nano ラジコンカーの組立て」</h2>
+
+            <div class="buttons">
+                <a href="../json/events/97504.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/97504.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>97504</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>電子工作ワークショップ「Arduino Nano ラジコンカーの組立て」</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><div class="section">
+<h2 class="title_h2">Arduino Nano ラジコンカーの組立て</h2>
+<p>はんだ付けは、誰でも行えるように既に配線済みのPCB 基板を使います。はんだ付けをする点数が多いので、はんだ付けの練習にも最適です。</p>
+<p></p>
+<h3 class="title_h3">【内容】</h3>
+<p>今回は、「Arduino Nano ライントレースロボットの組立て」です。<br/><br/>
+当プログラミング教室では、PIC マイコンを搭載した P-ROBO2 を教材やArudino Nano を使ったライントレースロボットなどを使用しております。その次のテーマとして、ラジコンカーを作ることにしました。<br />
+ラジコンカーですので、有線ではなく無線通信を行います。その無線通信には、TWELITE を使用しています。操作部は、二つのジョイスティックと、４つのボタンを用意しおります。ラジコンカーは、タミヤ社のダブルギアボックスを利用しており、左右のタイヤが独立して回転するようになっております。そのため、２つのジョイスティックは、左右それぞれのタイヤの操作と連動するようにプログラムしております。ボタンの方は、初期のプログラムでは１つのボタン（ラジコンカーの制御部に搭載されているブザーが発音します。）しか機能を割り当てていません。プログラミングによって、自分独自の操作形態をもったラジコンカーを作ることができます。</p>
+<p>はんだ付けは、初心者でも安心して組めるように、すでに配線済みの基板に部品をはんだ付けしていただきます。<br />
+下図の基板は、操作部の基板になります。</p>
+<p><img src="https://coworking-nagaokakyo.jp/wp-content/uploads/2018/06/DSC_0812-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-2223" /></p>
+<p>部品をはんだ付けをするとこんな感じになります。</p>
+<p><img src="https://coworking-nagaokakyo.jp/wp-content/uploads/2018/06/DSC_0810-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-2221" /></p>
+<p>続いて、制御部の基板になります。</p>
+<p><img src="https://coworking-nagaokakyo.jp/wp-content/uploads/2018/06/DSC_0811-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-2222" /></p>
+<p>すこし、はんだ付けする箇所が多いです。制御部を基板にはんだ付けができたら、ラジコンカーの組立です。タミヤ社のダブルギアボックスやタイヤの組立をして、数か所ねじ止めをして完成です。</p>
+<p><img src="https://coworking-nagaokakyo.jp/wp-content/uploads/2018/06/DSC_0809-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-2220" /></p>
+<h4 class="title_h4">TWELITEとは</h4>
+<p>モノをつなぐ無線マイコンとして、<a href="https://mono-wireless.com/" rel="noopener" target="_blank">モノワイヤレス株式会社</a>が販売している無線の送受信機器です。最近、さまざまプログラミング教材としてよく用いられる通信規格の Bluetooth とは異なり、日常にあるものを無線化して、モノのインターネットとしてつなぐための機器になります。</p>
+<h4 class="title_h4">駆動部</h4>
+<p>
+<p>駆動部には DC モーターを左右の車輪と連動させることにより、前後左右を自由に移動させることができます。今回、タミヤ社のダブルギアボックスを使用しています。このギアボックスは、ギア比の組み方が4種類あり、組み方によっては、トルクを優先にしたり、速度を優先にしたりすることができます。本工作では、受講者が好きなギア比を選択して、自分だけのラジコンカーを製作することができます。</p></p>
+<table class="box">
+<tr>
+   <th>ギア比</th>
+   <th>回転トルク[gf・cm]</th>
+   <th>回転数[rpm]</th>
+</tr>
+<tr>
+   <td>12.7:1</td>
+   <td>94</td>
+   <td>1039</td>
+</tr>
+<tr>
+   <td>38.2:1</td>
+   <td>278</td>
+   <td>345</td>
+</tr>
+<tr>
+   <td>114.7:1</td>
+   <td>809</td>
+   <td>115</td>
+</tr>
+<tr>
+   <td>344.2:1</td>
+   <td>2276</td>
+   <td>38</td>
+</tr>
+</table>
+<p>
+<p><img src="http://coworking-nagaokakyo.jp/wp-content/uploads/2017/05/DSC_0638-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-1947" /><br></p>
+</p>
+<h4 class="title_h4">マイコン部</h4>
+<p>ロボットを制御するマイコンには、イタリアのArduino SRL社が開発した Arduino Nano を使用しています。ATMEL 社の ATmega328 という型番の <span class="caps">RISC</span> ベースの8ビット <span class="caps">MPU</span> が搭載されています。パソコンとは、USB で接続することができます。</p>
+<h4 class="title_h4">プログラミング</h4>
+<p>サンプルのプログラムコードは、当日実装します。ソースコードも一式お渡しするので、プログラムで動作をカスタマイズすることも可能です。プログラミングをする場合は、<a href="https://www.arduino.cc/en/Main/Software" title="Arduino IDE">Arduino <span class="caps">IDE</span></a>を用いて、C言語でプログラミングをすることができます。</p>
+<h3 class="title_h3">【時間割】</h3>
+<ul class="list">
+<li>12時00分～  会場受付</li>
+<li>13時00分～  諸注意事項の説明</li>
+<li>13時10分～  制作開始</li>
+<li>～17時00分  終了</li>
+</ul>
+<p>組立が完了した段階で終了となります。作業の時間によっては、当日中には完成しない可能性もございます。あらかじめご承知おきをお願いいたします。</p>
+<h3 class="title_h3">【参加資格】</h3>
+<p>・小学生5年生～(大人も参加可能。小学校5年生以下は、保護者の方が補助していただければ参加可能)<br/>
+<a href="https://www.arduino.cc/en/Main/Software" title="Arduino IDE">Arduino <span class="caps">IDE</span></a>でプログラムできることができます。サンプルのプログラムコードは、当日実装します。ソースコードも一式お渡しするので、プログラムで動作をカスタマイズすることも可能です。<br/>
+※ はんだ付けやドライバーなど工具を使っての作業になります。必ず、免責事項をお読みください。</p>
+<h3 class="title_h3">【参加費】</h3>
+<p>・部品代込で22,000円(税込み)<br/>
+参加費につきましては、当日ワークショップ開始前にお願いいたします。<br/>
+作成したライントレースは、お持ち帰りできます。<br/>
+作業開始前に、作業にあたりの諸注意を指導担当から話がございます。必ず順守するようにお願いいたします。<br/>
+※ Arudino Nano をすでにお持ちの方は、-1,000円引きの21,000円(税込み)</p>
+<p>
+<p>※ 部材などの手配の関係上、ご希望の日時の2週間前までにお申し込みをお願いいたします。<br/>
+※ なお、先着順になりますので、定員オーバーの場合、お断りすることがございますので、予めご了承をお願いいたします。</p></p>
+<h3 class="title_h3">【免責事項】</h3>
+<p>・細心の注意をしながら指示および作業をいたしますが、怪我をする恐れがありますので、あらかじめご了承の程よろしくお願いいたします。</p>
+<p>このワークショップに関するお申し込みお問い合わせは、<a href="https://coworking-nagaokakyo.jp/contact/">お問い合わせページ</a>から<strong>メール</strong>にてお願いいたします。<br/>
+なお、先着順になりますので、定員オーバーの場合、お断りすることがございますので、予めご了承をお願いいたします。</p></div></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/97504" target="_blank">http://atnd.org/events/97504</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2018-07-27</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2018-07-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://coworking-nagaokakyo.jp/electronic/arudino_rc/" target="_blank">http://coworking-nagaokakyo.jp/electronic/arudino_rc/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>京都府長岡京市開田４丁目２－９ヘルプビル３Ｆ</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>長岡京コワーキングスペース</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.92197130000001</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>135.6916297</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>87886</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>hk_okumura</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/hk_okumura" target="_blank">@hk_okumura</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2018-06-24</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Hokuriku.NET vol.12</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Hokuriku.NET vol.12</h2>
+
+            <div class="buttons">
+                <a href="../json/events/40509.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/40509.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>40509</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Hokuriku.NET vol.12</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>今年の夏も福井で</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>アンケート</h2>
+<p>参加された方はアンケートにご協力ください！<br />
+〆 : 2013年8月9日(金) いっぱい</p>
+<p><a href="http://sdrv.ms/12LRtoV">http://sdrv.ms/12LRtoV</a><br />
+<br/></p>
+<h2>タイムスケジュール</h2>
+<table>
+<tr><th>時間</th><th>内容<br></th><th>発表者 [敬称略]</th></tr>
+<tr><td>10:30 &#8211; 10:50</td><td>受付</td><td></td></tr>
+<tr><td>10:50 &#8211; 11:00</td><td>あいさつ ＆ 連絡事項</td><td></td></tr>
+<tr><td>11:00 &#8211; 11:40</td><td>Android Binding Before/After</td><td>大場 知悟</td></tr>
+<tr><td>11:40 &#8211; 11:45</td><td>LT</td><td>miso_soup3</td></tr>
+<tr><td>11:50 &#8211; 13:00</td><td>昼食</td><td></td></tr>
+<tr><td>13:00 &#8211; 13:50</td><td>OSのフラットデザインを考えてみる</td><td>春日井 良隆</td></tr>
+<tr><td>14:00 &#8211; 15:00</td><td>知らないでも済まされる!? 今そこにない危機!?ある危機!?<br/>～誰のためのセキュリティ対策?～</td><td>辻 伸弘</td></tr>
+<tr><td>15:10 &#8211; 15:40</td><td>WebMatrix 3で、Webプログラミングへのスピード入門</td><td>小高 知也</td></tr>
+<tr><td>15:50 &#8211; 16:30</td><td>WindowsストアアプリをC++/CXで作る</td><td>遥佐保</td></tr>
+<tr><td>16:40 &#8211; 17:45</td><td><span class="caps">ADO</span>.<span class="caps">NET</span> Entity Framework Deep Dive</td><td>福井 厚</td></tr>
+<tr><td>17:45 &#8211; 18:00</td><td>後片付け</td><td></td></tr>
+<tr><td>19:00 &#8211; xx:00</td><td>懇親会</td><td></td></tr>
+</table>
+<p><br/></p>
+<h2>参加費</h2>
+<p>500円 (会場費とさせていただきます)<br />
+<br/></p>
+<h2>準備物</h2>
+<p>ノートパソコンなどを持ち込まれる方は、電源タップや延長コードをご持参ください。<br />
+<br/></p>
+<h2>懇親会</h2>
+<p>開催します！参加を希望される方は、以下から参加登録をお願いします。<br />
+<a href="http://atnd.org/events/41231">Hokuriku.<span class="caps">NET</span> vol.12 懇親会</a><br />
+<br/></p>
+<hr>
+<h3>Android Binding Before/After</h3>
+<h4>
+<p>大場 知悟（おおば とものり）<br />
+PFUアプリケーションズ株式会社<br />
+@tworks</p>
+</h4>
+<p><br/></p>
+<h5>プロフィール</h5>
+<blockquote>
+<p>昔和菓子職人、今プログラマ。WPF/Windowsストアアプリ/iOS/Androidなど、ネイティブアプリの開発に従事しています。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション概要</h5>
+<blockquote>
+<p>Androidアプリ開発で、View層とModel層を分離する「Android Binding」についてお話します。</p>
+<p>（Andorid Bindingとは？）<br />
+Android Bindingは、Binding機構を提供してくれるライブラリです。Android標準SDKでは、Viewに名前を付けてロジック層からView操作を行うのがスタンダートとなっています。多くの場合、View操作コードとロジックコードが混在しがちになり、とても不味いスパゲッティが出来上がってしまいます。ここにAndroid BindnigのBinding機構を使うことで、View操作コードとロジックコードが分離でき、美味しいパスタが出来上がります。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション資料</h5>
+<p><a href="http://www.slideshare.net/tworks/androidbinding-hokunet">http://www.slideshare.net/tworks/androidbinding-hokunet</a><br />
+<br/></p>
+<hr>
+<h3>OSのフラットデザインを考えてみる</h3>
+<h4>
+<p>春日井 良隆（かすがい よしたか）<br />
+日本マイクロソフト株式会社　UXエバンジェリスト<br />
+@ykasugai</p>
+</h4>
+<p><br/></p>
+<h5>プロフィール</h5>
+<blockquote>
+<p>岐阜大学を卒業後、大沢商会を経て、アドビ システムズに入社。After EffectsやPremiereといったビデオ編集ツールのマーケティング一筋の10年を過ごす。</p>
+<p>2007年にMS初のデザインツールと銘打ったExpressionのプロダクトマネージャーとして、マイクロソフトに入社。その後、Silverlightのプロダクトマネージャーを兼務し、両製品のマーケティングを統括する。2009年にエバンジェリスト部門に異動。ユーザーエクスペリエンス (UX) とHTML5、Internet Explorer、Windowsを担当。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション概要</h5>
+<blockquote>
+<p>iOS7の発表を機に”フラットデザイン”への注目が集まっています。この動きに呼応するかのようにGoogleがGoogle PlayのUIを刷新、Yahoo! Japanはトップページのアイコンを平面的なデザインに変更しました。</p>
+<p>いまなぜフラットデザインなのか？</p>
+<p>実はこの原稿を書いている現時点では自分の中での結論が出ていませんので、どのように伝えればいいのかシナリオも決まっていません。社内外、国内外の情報を集めて、咀嚼し、うまくアウトプットできればと思っています。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション資料</h5>
+<p><a href="http://www.slideshare.net/ykasugai/os-hokurikunet12">http://www.slideshare.net/ykasugai/os-hokurikunet12</a><br />
+<br/></p>
+<h2>講演概要</h2>
+<h3>知らないでも済まされる!? 今そこにない危機!?ある危機!?<br/>～誰のためのセキュリティ対策?～</h3>
+<h4>辻 伸弘</h4>
+<p><br/></p>
+<h5>プロフィール</h5>
+<blockquote>
+<p>セキュリティ分野にペネトレーションテスト（侵入テスト）といアプローチで携わって11年。常に攻撃目線でのセキュリティに取り組んできました。現在はそれに加えアノニマスの一面にも見られるハクティビストなどの動向をチェックしています。1人でも多くの人にセキュリティへの関心を高めていただきたい、そう思っています。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション概要</h5>
+<blockquote>
+<p>24時間365日セキュリティの話題に事欠かない昨今。正直、何をとりあげてよいものか。ということで、標的型が攻撃、ハクティビスト、匿名化技術などなどからパスワードの定期変更まで。オムニバス形式でお送りするボクの独断と偏見による懐疑的セキュリティ小ネタ集。</p>
+</blockquote>
+<p><br/></p>
+<hr>
+<h3>WebMatrix 3で、Webプログラミングへのスピード入門</h3>
+<h4>
+<p>小高 知也（こだか ともや）<br />
+PFUソフトウェア株式会社</p>
+</h4>
+<p><br/></p>
+<h5>プロフィール</h5>
+<blockquote>
+<p>1980年生まれ。いわゆる松坂世代。<br />
+石川県にあるPFUソフトウェアという会社で、ソフトウェア開発をやっています。<br />
+(なお、本セッションの内容は、お仕事とは関係ありません。)</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション概要</h5>
+<blockquote>
+<p>Webアプリ開発を行う場合、Webサーバ/DBサーバなどの準備が必要であったり、技術的にも幅広い知識が必要になったりと、なにかと面倒に感じがちです。本セッションでは、手軽にWebプログラミング入門する1つの手段として、Microsoftの「WebMatrix 3」を取り上げたいと思います。一緒にWebプログラミングの世界へスピード入門してみましょう。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション資料</h5>
+<p><a href="http://www.slideshare.net/kodapon/webmatrix3web20130803">http://www.slideshare.net/kodapon/webmatrix3web20130803</a><br />
+<br/></p>
+<hr>
+<h3>WindowsストアアプリをC++/CXで作る</h3>
+<h4>
+<p>遥佐保 (はるか・さお)<br />
+Microsoft <span class="caps">MVP</span> for Client App Dev<br />
+@hr_sao</p>
+</h4>
+<p><br/></p>
+<h5>プロフィール</h5>
+<blockquote>
+<p>Room metro大阪/ExceptionalC++読書会を主催しています。元ゲームプログラマ、現在はSIer勤務の何でも屋さんです。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション概要</h5>
+<blockquote>
+<p>WinRTの世界とネイティブの世界は混ぜるな危険！なのですよ。最初に陥りやすいC++ユーザのためのC++/CX開発講座です。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション資料</h5>
+<p><span class="caps">PDF</span> : <a href="http://j.mp/13CPMF4">http://j.mp/13CPMF4</a><br />
+<span class="caps">PPTX</span> : <a href="http://j.mp/13CPJZT">http://j.mp/13CPJZT</a><br />
+<br/></p>
+<hr>
+<h3><span class="caps">ADO</span>.<span class="caps">NET</span> Entity Framework Deep Dive</h3>
+<h4>
+<p>福井 厚<br />
+@afukui</p>
+</h4>
+<p><br/></p>
+<h5>プロフィール</h5>
+<blockquote>
+<p>株式会社アークウェイ プリンシパル コンサルタント<br />
+Microsoft Certified Architect &#8211; Solusions Certification<br />
+Microsoft <span class="caps">MVP</span> for Windows Azure</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション概要</h5>
+<blockquote>
+<p>.<span class="caps">NET</span> が提供する O/R マッパーである <span class="caps">ADO</span>.<span class="caps">NET</span> Entity Framework について業務アプリケーションでの活用を中心に少し掘り下げて解説します。</p>
+</blockquote>
+<p><br/></p>
+<h5>セッション資料</h5>
+<p>サンプル : <a href="https://github.com/afukui/EF5DemoSpike">EF5DemoSpike</a><br />
+スライド : <a href="http://www.slideshare.net/afukui/entity-framework-deep-dive-afukui">http://www.slideshare.net/afukui/entity-framework-deep-dive-afukui</a><br />
+<br/></p>
+<h2>昨年の開催の様子</h2>
+<p><a href="http://www.forest.impress.co.jp/docs/special/20121004_563502.html">“IT 勉強会スタンプラリー”で行く、全国コミュニティ探訪 第3回<br />
+Hokuriku.NET（福井県・福井市）</a><br />
+<br/></p>
+<h2>運営コミュニティ/団体</h2>
+<p>主催 : <a href="http://www.facebook.com/HokurikuNET">Hokuriku.<span class="caps">NET</span></a><br />
+共催 : <a href="http://fitea.org/">福井情報技術者協会 [<span class="caps">FITEA</span>]</a><br />
+<br/></p>
+<h2>問い合わせ</h2>
+<p>質問やその他お問い合わせがあれば、下記のコメントにご連絡ください。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/40509" target="_blank">http://atnd.org/events/40509</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-08-03</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-08-03</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.facebook.com/HokurikuNET" target="_blank">http://www.facebook.com/HokurikuNET</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>福井県福井市手寄1-4-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>福井市地域交流プラザ 研修室603 (AOSSA 6階)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>36.0605786</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>136.2234798</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>73175</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>xin9le</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/xin9le" target="_blank">@xin9le</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-08-07</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

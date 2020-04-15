@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">SNS ビッグデータ俯瞰分析による価値創造</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">SNS ビッグデータ俯瞰分析による価値創造</h2>
+
+            <div class="buttons">
+                <a href="../json/events/42361.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/42361.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>42361</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>SNS ビッグデータ俯瞰分析による価値創造</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>ビッグデータ俯瞰分析の簡単な説明（概要や変遷など）を行い、ビッグデータ俯瞰分析技術<br />
+の事例をいくつか紹介した後で、下記(下記はあくまで予定です)に示すようなSNSビッグデータ俯瞰分析技術を<br />
+演習していただき、受講者にビッグデータ俯瞰分析技（一部）等を体得いただく。</p>
+<ol>
+	<li>Twitter APIを用いたツイート情報及び位置情報の取得</li>
+	<li>形態素解析及び係り受け解析を応用したツイート情報分析</li>
+	<li>引用分析及びクラスタリングを応用したツイート情報及び位置情報の分析</li>
+	<li>力指向アルゴリズムを用いた可視化</li>
+</ol>
+<p>本演習には、PC（Windws7以降やmac OS X）と<br />
+以下（RとPython）の環境が必要ですので、事前に準備しておいてください。<br />
+なお、この事前準備が出来ていなくても、演習はできませんが<br />
+受講すること自体は可能です。</p>
+<ul>
+	<li>R2.15 ダウンロードサイト
+	<ul>
+		<li>Windows <a href="http://cran.r-project.org/bin/windows/base/old/2.15.3/">http://cran.r-project.org/bin/windows/base/old/2.15.3/</a></li>
+		<li>mac <a href="http://cran.r-project.org/bin/macosx/old/R-2.15.3.pkg/">http://cran.r-project.org/bin/macosx/old/R-2.15.3.pkg/</a></li>
+	</ul></li>
+	<li>Python ダウンロードサイト
+	<ul>
+		<li><a href="http://www.python.org/download/">http://www.python.org/download/</a></li>
+	</ul></li>
+</ul>
+<ul>
+	<li>講師： 大槻 明氏 (東工大)  <a href="http://bigdata55.web.fc2.com/">http://bigdata55.web.fc2.com/</a></li>
+	<li>主催：香川大学工学部</li>
+	<li>共催：情報処理学会四国支部</li>
+	<li>連絡先：香川大学 総合情報センター 堀 幸雄</li>
+	<li>EMail: horiyuki@itc.kagawa-u.ac.jp</li>
+	<li><a href="http://www.itc.kagawa-u.ac.jp/%7ehoriyuki/">http://www.itc.kagawa-u.ac.jp/%7ehoriyuki/</a></li>
+	<li>日時: 2013/10/11 (Fri) 16:20-17:50</li>
+	<li>場所：香川大学工学部 講義棟 4301 (高松市林町2217-20)</li>
+	<li><a href="http://maps.google.co.jp/maps?q=%E9%AB%98%E6%9D%BE%E5%B8%82%E6%9E%97%E7%94%BA2217-20&amp;oe=utf-8&amp;rls=org.mozilla:ja:official&amp;hl=ja&amp;client=firefox-a&amp;um=1&amp;ie=UTF-8&amp;hq=&amp;hnear=0x3553eaf34da4349d:0x83b585c35f19bb98,%E9%A6%99%E5%B7%9D%E7%9C%8C%E9%AB%98%E6%9D%BE%E5%B8%82%E6%9E%97%E7%94%BA%EF%BC%92%EF%BC%92%EF%BC%91%EF%BC%97%E2%88%92%EF%BC%92%EF%BC%90&amp;gl=jp&amp;ei=v0HcTtu6FPCVmQX_pPVD&amp;sa=X&amp;oi=geocode_result&amp;ct=title&amp;resnum=1&amp;ved=0CB4Q8gEwAA">map</a></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/42361" target="_blank">http://atnd.org/events/42361</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-10-11</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-10-11</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>高松市林町2217-20</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>香川大学工学部 講義棟 4301</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>22066</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>horiyuki</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/horiyuki22" target="_blank">@horiyuki22</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-10-03</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

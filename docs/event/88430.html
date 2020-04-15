@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">電子工作ワークショップ「Arduino Nano ライントレースロボットの組立て」</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">電子工作ワークショップ「Arduino Nano ライントレースロボットの組立て」</h2>
+
+            <div class="buttons">
+                <a href="../json/events/88430.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/88430.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>88430</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>電子工作ワークショップ「Arduino Nano ライントレースロボットの組立て」</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><div class="section">
+<h2 class="title_h2">Arduino Nano ライントレースロボットの組立て</h2>
+<p>はんだごてを使って、電子回路と、ライントレースロボットを作ってみませんか？</p>
+<p></p>
+<h3 class="title_h3">【内容】</h3>
+<p>今回は、「Arduino Nano ライントレースロボットの組立て」です。<br/><br/>
+当プログラミング教室では、PIC マイコンを搭載した P-ROBO2 を教材として使用しております。また、PIC マイコンの代わりに、Raspberry Pi3 を搭載したバージョンがおります。それらを動かすには、アセンブラ言語や、Python 、JavaScript などのコンピュータ言語を使っております。<br />
+他にも、<a href="http://coworking-nagaokakyo.jp/note/post-1815/">mBot </a>のような、Scratch で動かす教材もあります。<br/>
+<img src="http://coworking-nagaokakyo.jp/wp-content/uploads/2017/05/DSC_0634-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-1948" /><br/>
+mBot の場合、外部センサーに超音波センサーと、赤外線リフレクタがあります。赤外線リフレクタは、4つの状態を取得することができます。P-ROBO2 の場合、外部センサーが赤外線リフレクタのみで、8つの状態を取得することができます。センサーから得られる情報が多いほど、外部から得られる情報が多くなります。</p>
+<h4 class="title_h4">ライントレースロボットとは</h4>
+<p>ライントレースロボットは、古くからロボットコンテストなどの種目として用いられており、路面に張られた白線（コース）に沿って走行するロボットです。<br/>ロボットに取り付けられた光学センサーで、白線を読み取りロボットを操作します。光学センサーには、CCDイメージセンサや赤外線リフレクタが使われます。安定してラインを読み取れるようにセンサーを工夫しています。</p>
+<h4 class="title_h4">駆動部</h4>
+<p>
+<p>駆動部には DC モーターを左右の車輪と連動させることにより、前後左右を自由に移動させることができます。今回、タミヤ社のダブルギアボックスを使用しています。このギアボックスは、ギア比の組み方が4種類あり、組み方によっては、トルクを優先にしたり、速度を優先にしたりすることができます。本工作では、受講者が好きなギア比を選択して、自分だけのライントレースロボットを製作することができます。</p></p>
+<table class="box">
+<tr>
+   <th>ギア比</th>
+   <th>回転トルク[gf・cm]</th>
+   <th>回転数[rpm]</th>
+</tr>
+<tr>
+   <td>12.7:1</td>
+   <td>94</td>
+   <td>1039</td>
+</tr>
+<tr>
+   <td>38.2:1</td>
+   <td>278</td>
+   <td>345</td>
+</tr>
+<tr>
+   <td>114.7:1</td>
+   <td>809</td>
+   <td>115</td>
+</tr>
+<tr>
+   <td>344.2:1</td>
+   <td>2276</td>
+   <td>38</td>
+</tr>
+</table>
+<p>
+<p><img src="http://coworking-nagaokakyo.jp/wp-content/uploads/2017/05/DSC_0638-500x281.jpg" alt="" width="500" height="281" class="alignnone size-large wp-image-1947" /><br></p>
+</p>
+<h4 class="title_h4">マイコン部</h4>
+<p>ロボットを制御するマイコンには、イタリアのArduino SRL社が開発した Arduino Nano を使用しています。ATMEL 社の ATmega328 という型番の <span class="caps">RISC</span> ベースの8ビット <span class="caps">MPU</span> が搭載されています。パソコンとは、USB で接続することができます。</p>
+<h4 class="title_h4">プログラミング</h4>
+<p>初心者が、簡単にロボットプログラミングできるように、Scratch でプログラミングすることができます。もっと本格的に、ロボットのプログラミングをしたい場合は、<a href="https://www.arduino.cc/en/Main/Software" title="Arduino IDE">Arduino <span class="caps">IDE</span></a>を用いて、C言語でプログラミングをすることができます。</p>
+<h3 class="title_h3">【工程】</h3>
+<p>今回のワークショップでは、工作工程とプログラミング工程を行うので、１日の作業時間は、3時間程度で全行程が３日かかります。</p>
+<ul class="list">
+  <li>1日目 11日(金) 14時～17時<br />
+     <ul class="list"><br />
+         <li>ライントレースロボットの基板製作<br>はんだ付けを行います。</li>
+         <li>ライントレースロボットの組立て<br>ねじと接着剤で組立ます。</li>
+</ul>
+</li>
+  <li>2日目 12日(土) 14時～17時<br />
+     <ul class="list"><br />
+     <ul class="list"><br />
+         <li>ライントレースロボットの組立て<br>ねじと接着剤で組立ます。</li>
+         <li>ライントレースロボットのプログラミング</li>
+</ul>
+</li>
+  <li>3日目 13日(日) 14時～17時<br />
+     <ul class="list"><br />
+         <li>ライントレースロボットのプログラミング</li>
+</ul>
+</li>
+</ul>
+<h3 class="title_h3">【参加資格】</h3>
+<p>・小学生5年生～(大人も参加可能。小学校5年生以下は、保護者の方が補助していただければ参加可能)<br/>
+<a href="https://www.arduino.cc/en/Main/Software" title="Arduino IDE">Arduino <span class="caps">IDE</span></a>でプログラムできることができます。もしくは <a href="http://www.mblock.cc/download" title="mBlock">mBlock</a>を使って、プログラミングをします。<br/>
+※ はんだ付けやドライバーなど工具を使っての作業になります。必ず、免責事項をお読みください。</p>
+<h3 class="title_h3">【参加費】</h3>
+<p>・部品代込で38,000円(税込み)<br/>
+参加費につきましては、当日ワークショップ開始前にお願いいたします。<br/>
+作成したライントレースは、お持ち帰りできます。<br/>
+作業開始前に、作業にあたりの諸注意を指導担当から話がございます。必ず順守するようにお願いいたします。<br/>
+※ 部材などの手配の関係上、ご希望の日時の2週間前までにお申し込みをお願いいたします。<br/>
+※ なお、先着順になりますので、定員オーバーの場合、お断りすることがございますので、予めご了承をお願いいたします。</p>
+<h3 class="title_h3">【免責事項】</h3>
+<p>・細心の注意をしながら指示および作業をいたしますが、怪我をする恐れがありますので、あらかじめご了承の程よろしくお願いいたします。</p>
+</div></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/88430" target="_blank">http://atnd.org/events/88430</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-08-11</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-08-13</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://coworking-nagaokakyo.jp/electronic/page-1931/" target="_blank">http://coworking-nagaokakyo.jp/electronic/page-1931/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>京都府長岡京市開田４丁目２－９ヘルプビル３Ｆ</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>長岡京コワーキングスペース</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.9219713</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>135.6916297</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>87886</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>hk_okumura</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/hk_okumura" target="_blank">@hk_okumura</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-06-07</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

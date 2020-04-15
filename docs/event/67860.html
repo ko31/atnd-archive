@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">CAOS 2015 Summer - 開発効率のツール開発とオープンソース活動</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">CAOS 2015 Summer - 開発効率のツール開発とオープンソース活動</h2>
+
+            <div class="buttons">
+                <a href="../json/events/67860.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/67860.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>67860</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>CAOS 2015 Summer - 開発効率のツール開発とオープンソース活動</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><span class="caps">CAOS</span> 2015 Summer<br />
+〜開発効率のツール開発とオープンソース活動〜</h1>
+<p>CyberAgent で取り組んでいるオープンソース活動について<br />
+これまでオープンソースで公開された開発ツールをはじめ<br />
+今回公開された、テスト支援ツール「STF &#8211; Smartphone Test Farm」について<br />
+開発者から、活動の概要や仕様についてご紹介します。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>タイトル</th>
+		<th>登壇者</th>
+	</tr>
+	<tr>
+		<td>19:30 &#8211; 19:40</td>
+		<td>イベント概要および会場説明</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>19:40 &#8211; 19:45</td>
+		<td>LT: <a href="https://webponize.github.io/">画像をWebPに変換するWebPonize</a></td>
+		<td>泉水 翔吾</td>
+	</tr>
+	<tr>
+		<td>19:45 &#8211; 20:15</td>
+		<td>Android端末の動作検証：STFオープンソース公開</td>
+		<td>Simo Kinnunen<br>Gunther Brunner</td>
+	</tr>
+	<tr>
+		<td>20:20 &#8211; 20:40</td>
+		<td>リアルタイム通信基盤：duck</td>
+		<td>Mario Freitas</td>
+	</tr>
+	<tr>
+		<td>20:45 &#8211; 21:05</td>
+		<td>デザイン作業効率化：ImageHayabusa</td>
+		<td>Gunther Brunner</td>
+	</tr>
+	<tr>
+		<td>21:05 &#8211; 21:10</td>
+		<td>LT: <a href="https://github.com/CyberAgent/patriot-workflow-scheduler">patriot-workflow-schedulerの紹介</a></td>
+		<td>善明 晃由</td>
+	</tr>
+	<tr>
+		<td>21:10 &#8211; 21:20</td>
+		<td>休憩</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>21:30 &#8211; 22:00</td>
+		<td>懇親会</td>
+		<td>-</td>
+	</tr>
+</table>
+セッションは日本語でお送り致します。<h2>場所</h2>
+<p><a href="http://frontrend.github.io/blog/shibuya-markcity/">スッキリわかる渋谷マークシティ入門！</a><br />
+住所:  東京都渋谷区道玄坂1-12-1 渋谷マークシティウェスト 13F<br />
+マークシティオフィスエントランスへの入り方については<br />
+上記リンクをご覧ください。</p>
+<h2>講演概要</h2>
+<h3>Android端末の動作検証：STFオープンソース公開</h3>
+<ul>
+	<li>登壇者
+	<ul>
+		<li>Simo Kinnunen</li>
+		<li>Gunther Brunner</li>
+	</ul></li>
+	<li>概要
+	<ul>
+		<li>サイバーエージェントでは現在数多くのAndroid対応のアプリを提供していますが、<br />
+問題となるのはそれぞれのAndroid端末を個別に検証しなければならないこと。<br><br>
+この課題を解決するべく立ち上がった、<br />
+STFという社内プロジェクトの概念を紹介し、<br />
+それぞれの機能を細かく説明していきます。<br><br>
+今回はオープンソース公開ということで、<br />
+使い方だけではなく、使っている技術も解説します。</li>
+	</ul></li>
+</ul>
+<h3>リアルタイム通信基盤：duck</h3>
+<ul>
+	<li>登壇者
+	<ul>
+		<li>Mario Freitas</li>
+	</ul></li>
+	<li>概要
+	<ul>
+		<li>昨今のスマートフォンのゲーム市場では、協力・対戦通信プレイなどリアルタイム通信によって表現された機能を前面に押し出したタイトルが続々と登場しています。<br />
+スマートフォンにおける通信プレイ機能開発では端末の性能・機能差異や、通信量のキャリア制限、不安定なネットワーク環境など多くの条件を考慮しつつ、ゲームタイトル自体のオリジナリティも表現していかなければなりません。<br />
+これらのリアルタイム通信における難所をクリアしつつ、通信プレイを搭載したゲームタイトルを多く提供していくためにはどうしたらいいでしょうか？<br><br>
+我々の答えは「リアルタイム通信基盤を作る」ことでした。</li>
+	</ul></li>
+</ul>
+<h3>デザイン作業効率化：ImageHayabusa</h3>
+<ul>
+	<li>登壇者
+	<ul>
+		<li>Gunther Brunner</li>
+	</ul></li>
+	<li>概要
+	<ul>
+		<li>デザイナーとフロントエンド、ネイティブエンジニアの間に<br />
+大きなタイムロスが発生している中、<br />
+PSDから、画像のリサイズ、配信までのワークフローを<br />
+加速化するべく立ち上がったImageHayabusaという社内プロジェクトを紹介します。</li>
+	</ul></li>
+</ul>
+<h2>登壇者</h2>
+<h3>Mario Freitas (マリオ・フレイタス) <a href="https://twitter.com/imkira85">@imkira</a></h3>
+<p><img src="https://lh3.googleusercontent.com/qc9Ilg9Z0mIiOW75fUjAW11PvS_rmHZicOboxPRYVuA=s500-no" style="width:120px;" alt="" /><br />
+株式会社サイバーエージェント エンジニア<br />
+1985年ポルトガル生まれ。2011年に株式会社サイバーエージェントに入社。主にゲーム開発、運用、インフラ構築、そして最近サービス向けの基盤開発にも興味を持ち、開発を行っている。</p>
+<h3>Gunther Brunner (グンタ・ブルンナー) <a href="https://twitter.com/gunta85">@gunta85</a></h3>
+<p><img src="https://lh3.googleusercontent.com/44LRKGFovPX-iHonDebX1Qt1PHoWqXfOuUVdGAdCl1o=s512-no" style="width:120px;" alt="" /><br />
+株式会社サイバーエージェント エンジニア<br />
+1985年アルゼンチン生まれ。ブエノスアイレス大学、情報科入学。2007年に来日。日本工学院、グラフィックデザイン科を卒業し、2012年からは株式会社サイバーエージェントへ。現在は社内だけでなく、業界全体の開発加速化をするための複数プロダクト企画と開発に努めている。</p>
+<h3>Kinnunen Simo (キンヌネン・シモ) <a href="https://twitter.com/sorccu">@sorccu</a></h3>
+<p><img src="https://lh3.googleusercontent.com/Jw2a5JTRVY5dGWEj8nn8F6HPyzjscM1fCdRp9iJUOgc=s460-no" style="width:120px;" alt="" /><br />
+株式会社サイバーエージェント エンジニア<br />
+2012年サイバーエージェントに入ったフィンランド人です。もう10年以上JavaScriptで開発しています。数年前ヨーロッパ・アメリカで人気だった「cufon」を作りました。サイバーエージェントでは殆どSTFに関わって、フロントのJSも、バックエンドとインフラもしています。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/67860" target="_blank">http://atnd.org/events/67860</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-07-07</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-07-07</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>170</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都渋谷区道玄坂1-12-1 渋谷マークシティウェスト 13F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>サイバーエージェント 13F セミナールームA</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6593968</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6964402</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>172835</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>AkiORT</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/AkiOrita21" target="_blank">@AkiOrita21</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>157</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-07-07</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

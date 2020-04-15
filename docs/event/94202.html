@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">katagaitai CTF勉強会 #10+11 - 関西|med</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">katagaitai CTF勉強会 #10+11 - 関西|med</h2>
+
+            <div class="buttons">
+                <a href="../json/events/94202.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/94202.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>94202</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>katagaitai CTF勉強会 #10+11 - 関西|med</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>概要</h2>
+<ul>
+	<li>チームkatagaitaiの実施する， <a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0"><span class="caps">CTF</span></a> に関する勉強会です．過去問を解きつつ技術解説をします．</li>
+	<li>学生～社会人若手の方を対象にわいわいやりたいと思ってます．</li>
+	<li>未定箇所については決まり次第ATNDを更新しますので，こまめにチェック頂くのが良いかと思います．</li>
+</ul>
+<h2>ターゲット層</h2>
+<ul>
+	<li><a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0"><span class="caps">CTF</span></a> で <strong>強くなりたい人</strong> ， <strong>やる気のある人</strong> を対象にしています．
+	<ul>
+		<li>難易度については，問題を覗いた上で各位にてご判断下さい(medなので難しくても許されるはず&#8230;)．</li>
+		<li>不明点があればTwitterかSlackで質問を飛ばしてください．
+		<ul>
+			<li>Slackであれば，運営が見落としていてもきっと誰かが答えてくれるでしょう．</li>
+		</ul></li>
+		<li>当日の雰囲気については <a href="http://togetter.com/li/843116">第2回のまとめ</a> が参考になると思います．</li>
+	</ul></li>
+</ul>
+<h2>参加資格</h2>
+<ul>
+	<li>以下の1～3いずれかに当てはまる方
+	<ol>
+		<li>学生の方</li>
+		<li>若手の方</li>
+		<li>気持ちが若手な方</li>
+	</ol></li>
+</ul>
+<h2>持ち物</h2>
+<ul>
+	<li>ノートPC</li>
+	<li>ネット回線(テザリング等)</li>
+</ul>
+<h2>費用</h2>
+<ul>
+	<li>無料
+	<ul>
+		<li>特に強制はしませんが，もし内容にご満足頂けたら，Wikipediaなど<br />
+お好きなWebサービスやOSSに，1000円の寄付をお願いしますね(←流行らせたい)．</li>
+	</ul></li>
+</ul>
+<h2>服装</h2>
+<ul>
+	<li>自由
+	<ul>
+		<li>採用活動とは関係ないので私服でよろしく．</li>
+	</ul></li>
+</ul>
+<h2>タイムテーブル</h2>
+<ul>
+	<li>予告なく変更する可能性があります．</li>
+	<li>受付でATNDによる出欠を取ります．
+	<ul>
+		<li>登録したハンドルネーム or ATND上の受付番号 を当日教えてください．</li>
+	</ul></li>
+	<li>懇親会とかいうシャレオツな催しはありませんのでご注意下さい．</li>
+</ul>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+		<th>解説者</th>
+	</tr>
+	<tr>
+		<td>09:30 &#8211; 10:00</td>
+		<td>受付</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>10:00 &#8211; 13:00</td>
+		<td>Crypto</td>
+		<td>trmr</td>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 14:00</td>
+		<td>各自適当に昼食</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>14:00 &#8211; 18:00(18:30?)</td>
+		<td>Pwnable</td>
+		<td>bata</td>
+	</tr>
+	<tr>
+		<td>19:00</td>
+		<td>会場施錠</td>
+		<td>-</td>
+	</tr>
+</table>
+<h2>内容</h2>
+<h3>Crypto</h3>
+<ul>
+	<li><a href="https://github.com/SideChannelMarvels/Deadpool/tree/master/sca_aes_rhme3_prequal/target">RHME3 Qualifiers &#8211; Crypto 1 &#8211; Tracing the Traces</a>
+	<ul>
+		<li>AESの消費電力波形のデータをもらえます</li>
+		<li>電力解析して鍵を手に入れましょう</li>
+	</ul></li>
+	<li><a href="https://github.com/ctfs/write-ups-2014/tree/master/boston-key-party-2014/crypto/differential_power">BkP <span class="caps">CTF</span> 2014 &#8211; Crypto 400 &#8211; Differential Power</a>
+	<ul>
+		<li>少しだけ問題を変えてます (解き方は同じ)</li>
+		<li>TEAの消費電力波形のデータをもらえます</li>
+		<li>電力解析して鍵を手に入れましょう</li>
+		<li>あれサンプリング波形数が10個しかなくね…？</li>
+	</ul></li>
+</ul>
+<h3>Pwnable</h3>
+<ul>
+	<li><a href="https://goo.gl/Se5HTy">Plaid <span class="caps">CTF</span> 2016 &#8211; Pwnable 666 &#8211; js_sandbox</a>
+	<ul>
+		<li>高得点問題として，たまに見かけるJavaScriptのexploit問題です．</li>
+		<li>V8の構造概要，及びlength系exploitの初歩を解説します．
+		<ul>
+			<li>2016年4月に出題された問題であるため，現在のV8の構造とは大きく異なる部分がありますが，ご了承下さい．</li>
+			<li>pwnテクに比重を置いていた過去の勉強会とは異なり，V8の構造についての解説が多めです．</li>
+		</ul></li>
+	</ul></li>
+</ul>
+<h2>準備しておくと良いもの</h2>
+<h3>Crypto</h3>
+<ul>
+	<li>Linux 環境 or Windows 環境
+	<ul>
+		<li>Ubuntu 16.04 LTSを想定しています</li>
+		<li>Windows 10を想定しています</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>Python 2.7
+	<ul>
+		<li>scipy</li>
+		<li>numpy</li>
+		<li>matplotlib</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>Z3.py
+	<ul>
+		<li>下記からインストール</li>
+		<li>https://github.com/Z3Prover/z3</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>ChipWhisperer
+	<ul>
+		<li>下記からインストール (Automatic Windows Installer or VM版が楽)</li>
+		<li>https://wiki.newae.com/Installing_ChipWhisperer</li>
+	</ul></li>
+</ul>
+<h3>Pwnable</h3>
+<ul>
+	<li>Linux環境
+	<ul>
+		<li>OSは問いませんが，Ubuntu16.04 64bitを推奨です(少なくとも資料ではこれを使います)．</li>
+	</ul></li>
+	<li>お好きなデバッガ
+	<ul>
+		<li>講義ではgdb + pedaを利用します．</li>
+	</ul></li>
+	<li>当時のV8をビルド出来ると，デバッグが楽になります．
+	<ul>
+		<li>用意される場合，ソースのfetchとビルドは，事前に済ませておいて下さい．
+		<ul>
+			<li>当日会場でfetchすることは，ご遠慮ください．
+			<ul>
+				<li>一斉に試されると回線がパンクする可能性があるためです．</li>
+			</ul></li>
+			<li>当日会場でビルドすることは推奨しません．
+			<ul>
+				<li>ノートPCの性能によっては，ビルドに長時間かかる可能性があるためです．</li>
+			</ul></li>
+			<li>2016年4月当時のV8をビルドする方法は，下記Slackで公開しています．</li>
+		</ul></li>
+		<li>ビルドに当たって，ディスク容量を10GB前後使用するため，用意出来ない人は無くても構いません．</li>
+	</ul></li>
+</ul>
+<h3>Slack</h3>
+<ul>
+	<li><a href="https://goo.gl/forms/azpFalckf5O8ZP9v1">参加者用Slack自動招待フォーム</a> があります．</li>
+	<li>参加者間の情報交換や相談&amp;質問等にご活用下さい．</li>
+	<li>前回と同じSlackですので，前回登録者は再登録不要です．</li>
+</ul>
+<h2>その他</h2>
+<ul>
+	<li>無線LANは用意しますが，速度的な問題もあるので，可能なら個人で回線用意をお願いします．
+	<ul>
+		<li>無線LAN/テザリングのどちらについても，回線は毎回混雑します．</li>
+		<li>OSイメージなどの大容量ファイルを，会場でDLしようとするのはご遠慮ください．</li>
+		<li>またテザリングの際は，なるべくPCとモバイルを有線接続するようにお願いします．</li>
+	</ul></li>
+	<li>当日の途中参加/途中退出などは構いません．</li>
+	<li>キャンセルはなるべくしないでください，キャンセル前提での申込みはやめましょう．</li>
+</ul>
+<h2>過去資料</h2>
+<ul>
+	<li><a href="https://speakerdeck.com/bata_24">https://speakerdeck.com/bata_24</a></li>
+	<li><a href="https://speakerdeck.com/yagihashoo">https://speakerdeck.com/yagihashoo</a></li>
+	<li><a href="http://www.slideshare.net/trmr105/presentations">http://www.slideshare.net/trmr105/presentations</a></li>
+	<li><a href="http://www.slideshare.net/ysk256/presentations">http://www.slideshare.net/ysk256/presentations</a></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/94202" target="_blank">http://atnd.org/events/94202</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2018-03-18</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2018-03-18</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.breeze-plaza.com/access/" target="_blank">http://www.breeze-plaza.com/access/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>69</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>大阪府大阪市北区梅田2-4-9 ブリーゼタワー8階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ブリーゼプラザ 803号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.6986699</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>135.493893</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>154287</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>bata_24</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/bata_24" target="_blank">@bata_24</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2018-03-18</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

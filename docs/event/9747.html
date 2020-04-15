@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">VC# ExpressでWindows Mobile開発 (1)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">VC# ExpressでWindows Mobile開発 (1)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/9747.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/9747.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>9747</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>VC# ExpressでWindows Mobile開発 (1)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><a href="http://d.hatena.ne.jp/n7shi/20101120">※資料を公開しています。</a></h1>
+<hr/>
+<h1>イベントの概要</h1>
+<p>Visual C# 2010 Express Editionを利用したWindows Mobileのアプリケーションを開発する勉強会です。特に前提知識は必要としませんので、開発は初めてという方でもお気軽にご参加ください。</p>
+<p>※ 対象はWindows Mobile 5～6.5.3です。Windows Phone 7は対象外となりますのでご注意ください。</p>
+<p>※ 本来、Visual C# 2010 Express EditionではWindows Mobileの開発はサポートされていません。特殊な設定（ <a href="http://d.hatena.ne.jp/n7shi/20090106/1231278402">参考1</a> , <a href="http://d.hatena.ne.jp/n7shi/20091031/1257001268">参考2</a> ）により開発を可能とします。勉強会ではその方法について詳しく解説します。</p>
+<h2>登録時の注意</h2>
+<p>登録時に希望日の入力を求められますが、無視してください。日付が未定だった頃の名残で、項目を後から削除できないためです。</p>
+<h2>参加費用</h2>
+<p>勉強会の参加費用は無料です。</p>
+<p>勉強会終了後、懇親会を予定しています。懇親会に参加される方は3,000円（学生さんは1,500円）のお支払いをお願いします。懇親会の参加有無につきましては、参加登録時に表示されるアンケートにご記入をお願いします。</p>
+<p>※ 懇親会は焼肉食べ放題を予定しています。</p>
+<h2>準備する物</h2>
+<p>実際に開発を体験して頂きますので、ノートパソコンにVisual C# 2010 Express Editionをインストールしてご持参ください。</p>
+<h3>インストール方法</h3>
+<p>Visual C# 2010 Express Editionのインストールに特別な設定は必要ありません。普通にインストールしてください。</p>
+<ul>
+	<li><a href="http://www.microsoft.com/japan/msdn/vstudio/express/">Visual Studio Express Edition ダウンロード</a></li>
+</ul>
+<p>※ Visual Studio 2010 Professional以上でもExpressと同様な設定により開発が可能です。それらがインストールされていれば、Expressをインストールする必要はありません。</p>
+<p>※ 2010をインストールする際、既に他のバージョン（2008など）がインストールされていても特に干渉しません。そのまま追加でインストールするだけで共存できます。ただし業務用で特殊な環境が構築されているケースは対象外とします。</p>
+<p>Visual Studio以外にも以下の4つをインストールしてください。よく分からない場合、当日インストール方法を説明します。</p>
+<ol>
+	<li><a href="http://www.microsoft.com/downloads/details.aspx?familyid=AEA55F2F-07B5-4A8C-8A44-B4E1B196D5C0">.<span class="caps">NET</span> Compact Framework 2.0 Service Pack 2 再頒布可能パッケージ</a></li>
+	<li><a href="http://www.microsoft.com/downloads/details.aspx?FamilyId=E3821449-3C6B-42F1-9FD9-0041345B3385">.<span class="caps">NET</span> Compact Framework 3.5 再頒布可能パッケージ</a></li>
+	<li><a href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=38c46aa8-1dd7-426f-a913-4f370a65a582">Windows Mobile 6 Localized Emulator Images</a> : 0411/Windows Mobile 6 Professional Images (<span class="caps">JPN</span>).msi</li>
+	<li><a href="http://www.microsoft.com/downloads/details.aspx?familyid=A6F6ADAF-12E3-4B2F-A394-356E2C2FB114">Microsoft Device Emulator 3.0</a> (日本語版エミュレータ）</li>
+</ol>
+<p>※ これらの使用方法は勉強会で解説します。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:10</td>
+		<td>入室</td>
+	</tr>
+	<tr>
+		<td>13:10 &#8211; 13:30</td>
+		<td>プロジェクト作成方法の説明</td>
+	</tr>
+	<tr>
+		<td>13:30 &#8211; 17:30</td>
+		<td>自由開発</td>
+	</tr>
+	<tr>
+		<td>17:30 &#8211; 18:00</td>
+		<td>片付け・退室</td>
+	</tr>
+	<tr>
+		<td>18:00 &#8211; 20:00</td>
+		<td>懇親会（希望者のみ）</td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/9747" target="_blank">http://atnd.org/events/9747</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2010-11-20</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2010-11-20</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.ginza-renoir.co.jp/myspace/mys074.htm" target="_blank">http://www.ginza-renoir.co.jp/myspace/mys074.htm</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区高田馬場2-17-4 菊月ビル地下１階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>カフェ・ミヤマ高田馬場駅前店 3号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.713488</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7054177</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>14213</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>7shi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/7shi" target="_blank">@7shi</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-11-27</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

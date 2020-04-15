@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">インクジェットの実務</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">インクジェットの実務</h2>
+
+            <div class="buttons">
+                <a href="../json/events/36010.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/36010.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>36010</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>インクジェットの実務</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>～インクジェット安定吐出に向けた中級編～</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>【習得できる知識】<br />
+●圧電素子のまとめ<br />
+●必要なインクパラメータ<br />
+●インク、ヘッドのパラメータ変動とそれによる特性変化<br />
+●速度と吐出量の関係<br />
+●速度と着弾精度<br />
+●測定方法および評価方法<br />
+●ばらつきの要因と対策</p>
+<p>【受講対象】<br />
+●インクジェットに関わっている中堅技術者<br />
+●ヘッドの開発者<br />
+●装置の開発者<br />
+●インクの開発者<br />
+●インクジェットの制御が知りたいソフト、ハードの開発者<br />
+●インクジェットについて個々の課題に取り組んでいるが、全体的、体系的に身につけたい方</p>
+<p>※予備知識　　インクジェットに関する基礎的な知識</p>
+<p>【講座趣旨】<br />
+　インクジェットは、実験室でごく容易に吐出できる反面、実用的に安定して長期間運転し続けることは容易ではない。<br />
+　本講座では、インクジェットの安定吐出技術について、講師の体験と理論に基づき、原理的な説明をするとともに具体的な課題、対策についても詳説する。</p>
+<p>【プログラム】<br />
+１．本講習の目的<br />
+２．コントラスト感度関数（ＣＳＦ）<br />
+　　2.1 人間の目は大きければよく見えるのか<br />
+　　2.2 民生用インクジェットと産業用インクジェット：不均一のちがい</p>
+<p>３．ドット不均一の例<br />
+　　3-1.記録ドット面積の不均一<br />
+　　3-2.記録ドット形状の不均一<br />
+　　3-3.記録ドット濃度の不均一<br />
+　　3-4.着弾精度の不均一</p>
+<p>４．不均一の原因概要<br />
+　　4-1.ノズル方向ばらつき<br />
+　　　　4-1-1.（狭義の）チャネルばらつき<br />
+　　　　4-1-2.ヘッドばらつき<br />
+　　4-2.走査方向ばらつき</p>
+<p>５．圧電定数d31とd15のちがいおよびヘッド構造との関係<br />
+　　5-1.分極と圧電定数<br />
+　　5-2.インクジェットの種類</p>
+<p>６．インクジェットヘッドのモデル化<br />
+　　6-1.集中定数モデルは役に立つか<br />
+　　6-2.「押し打ち」の式<br />
+　　6-3.薄膜PZT</p>
+<p>７．解析モデルの種類<br />
+　　7-1.集中定数モデル<br />
+　　7-2.圧力波モデル<br />
+　　7.3.ＣＦＤ</p>
+<p>８．例題ヘッドの具体的なパラメータ変動と特性変化<br />
+　　8-1.ノズル長さ、ノズル径、供給路長さ、供給路断面積のばらつきと特性変化<br />
+　　8-2.圧力室幅、圧力室長さ、ＰＺＴ厚さ、振動版厚さのばらつき<br />
+　　8-3.インク粘度、インク密度、インク音速の変動<br />
+　　8-4.３０/５０μmの気泡の存在<br />
+　　8-5.圧電定数、駆動電圧のばらつき</p>
+<p>９．速度変動に効く要因は何か（まとめ）<br />
+　　9-1.気泡<br />
+　　9-2.ノズル面積<br />
+　　9-3.圧力室幅</p>
+<p>１０．吐出量変動に効く要因は何か（まとめ）<br />
+　　10-1.圧力室幅<br />
+　　10-2.気泡<br />
+　　10-3.ピエゾ厚さ</p>
+<p>１１．モデル解析から判る事<br />
+　　11-1.変動に大きく影響する要因<br />
+　　11-2.速度と吐出量の関係</p>
+<p>１２．集中定数モデルの展開<br />
+　　12-1.集中定数モデルの展開例<br />
+　　　　12-1-1.駆動波形<br />
+　　　　12-1-2.応答周波数<br />
+　　　　12-1-3.クロストーク<br />
+　　12.2集中定数モデルの展開具体例（引打ち）</p>
+<p>１３．集中定数モデルの注意点<br />
+　　13-1.大サイズヘッドの誤差増大<br />
+　　13-2.モデル簡略化による実際との乖離<br />
+　　13-3.吐出速度と飛翔速度のちがい</p>
+<p>１４．ヘッド、システムから見たインクの重要特性<br />
+　　14-1.パラメータ<br />
+　　　　14-1-1.粘度、表面張力、その他抑えるべきパラメータ<br />
+　　14-2.ヘッド内での挙動<br />
+　　　　14-2-1.接液性、界面凝集など</p>
+<p>１５．速度と吐出量<br />
+　　15-1.速度と吐出量の関係<br />
+　　　　15-1-1.速度　<br />
+　　　　15-1-2.吐出量<br />
+　　　　15-1-3.固有振動周期と吐出量の関係<br />
+　　　　15-1-4.メニスカス位置と吐出量の関係</p>
+<p>１６．最適吐出量と最適速度<br />
+　　16-1.最適吐出量はどのように決めるか<br />
+　　16-2.最適飛翔速度はどのように決めるか</p>
+<p>１７．速度変動と着弾精度<br />
+　　17-1.インク飛翔速度変動と着弾精度<br />
+　　17-2.走査速度変動と着弾精度<br />
+　　17-3.プリントギャップ変動と着弾精度</p>
+<p>１８．インクジェットの測定法および評価<br />
+　　18-1.測定法<br />
+　　　　　18-1-1.速度<br />
+　　　　　18-1-2.吐出量<br />
+　　18-2.評価法<br />
+　　　　18.2.1.接液試験<br />
+　　　　　　18-2-1-1.インク<br />
+　　　　　　18-2-1-2.流路部材<br />
+　　　　18-2-2.吐出（印字）試験<br />
+　　　　　　18-2-2-1.周波数特性の見方<br />
+　　　　　　18-2-2-2.ウィンドマージンとは何か</p>
+<p>１９．ノズル毎のばらつきに対する対策<br />
+　　　19-1.アクチュエータ、流路のばらつき低減方法<br />
+　　　19-2.ノズルのばらつき低減方法</p>
+<p>２０．経時的ばらつきの要因と具体的対策<br />
+　　20-1.気泡<br />
+　　　　20-1-1.発生させない<br />
+　　　　20-1-2.ためない<br />
+　　　　20-1-3.取り除く<br />
+　　20-2.ノズル面汚れ<br />
+　　　　20-2-1.クリーニング方法<br />
+　　20-3.インク蒸発、界面凝集<br />
+　　　　20-3-1.放置時間に対する各種メンテ機構<br />
+　　20-4.昇温<br />
+　　　　20-4-1.パラメータ制御の例<br />
+　　　　　　20-4-1-1.粘度変化に対する制御<br />
+　　　　　　20-4-1-2.各種階調制御<br />
+　　20-5.残留振動<br />
+　　20-6.クロストーク</p>
+<p>２１．ヘッドインク以外の要因と具体的対策<br />
+　　21-1.環境<br />
+　　21-2.装置<br />
+　　　　21-2-1.負圧のコントロール<br />
+　　　　　　21-2-1-1.水頭差<br />
+　　　　　　21-2-1-2.キヤノン　カートリッジの特徴<br />
+　　　　　　21-2-1-3.エプソン　カートリッジの特徴<br />
+　　　　21-2-2.静電界の影響と対策例</p>
+<p>２２．その他の不均一対策<br />
+　　22-1.マルチパス<br />
+　　　　22-1-1.長所（高画質）<br />
+　　　　22-1-2.短所(印刷速度低下)<br />
+　　22-2.高速マルチパス<br />
+　　22-3.ノズル個別補正（ＤＰＮ）<br />
+　　　　22-3-1.長所と問題点<br />
+　　22-4.ヘッドシェイディング補正</p>
+<p>２３．おわりに<br />
+（名刺交換・個別相談）</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/36010" target="_blank">http://atnd.org/events/36010</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-01-30</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-01-30</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.rdsc.co.jp/seminar/130115.html" target="_blank">http://www.rdsc.co.jp/seminar/130115.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都江東区東陽4-5-18</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>江東区産業会館　第1会議室　【東京・江東区】</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6704844</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.8182957</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>54972</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>RDSC</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-01-15</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

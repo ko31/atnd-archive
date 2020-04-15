@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">x86/x64最適化勉強会1</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">x86/x64最適化勉強会1</h2>
+
+            <div class="buttons">
+                <a href="../json/events/18360.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/18360.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>18360</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>x86/x64最適化勉強会1</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>x86/x64の最適化についてみなでがやがやと議論します．</h1>
+<p>「x86/x64勉強会」ではありません．ある程度のx86/x64アセンブリ言語経験者を想定しています．</p>
+<p><a href="http://homepage1.nifty.com/herumi/diary/1108.html#6">1回目の資料とustreamへのリンク</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1110.html#1">2回目の資料とustreamへのリンク</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1203.html#31">3回目の資料とustreamへのリンク</a><br />
+h2. タイムテーブル</p>
+<p>まだ決まっていませんが時間は13:30～17:30(白熱すれば18:00)です．<br />
+このメンツに今更呼び出し規約も無いだろうと思ってintroの内容を変更しました．</p>
+<table>
+	<tr>
+		<td>時間</td>
+		<td>名前</td>
+		<td>内容</td>
+	</tr>
+	<tr>
+		<td>13:30～13:35</td>
+		<td><del>-</del></td>
+		<td>諸注意</td>
+	</tr>
+	<tr>
+		<td>13:35～14:05</td>
+		<td>herumi</td>
+		<td>条件分岐とcmovとmaxps(30分)</td>
+	</tr>
+	<tr>
+		<td>14:05～14:25</td>
+		<td>m_asama</td>
+		<td>キャッシュの話(20分)</td>
+	</tr>
+	<tr>
+		<td>14:25～14:35</td>
+		<td><del>-</del></td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>14:35～15:05</td>
+		<td>sinya8282</td>
+		<td>開発中のJIT版grepの苦労話(30分)</td>
+	</tr>
+	<tr>
+		<td>15:05～15:15</td>
+		<td><span class="caps">TAKESAKO</span></td>
+		<td>ビットを数える(10分)</td>
+	</tr>
+	<tr>
+		<td>15:15～15:30</td>
+		<td><del>-</del></td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>15:30～16:20</td>
+		<td>herumi</td>
+		<td>SSE4.2の文字列処理命令の紹介(50分)</td>
+	</tr>
+	<tr>
+		<td>16:20～16:40</td>
+		<td>kzmogi</td>
+		<td>CODEC屋のx86_x64最適化(20分)</td>
+	</tr>
+	<tr>
+		<td>16:40～16:50</td>
+		<td><del>-</del></td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>16:50～17:10</td>
+		<td>w_o</td>
+		<td>k10 vs CoreMA(20分)</td>
+	</tr>
+	<tr>
+		<td>17:10～17:30</td>
+		<td>nothingcosmos</td>
+		<td>コンパイラ系の簡単な紹介(20分)</td>
+	</tr>
+	<tr>
+		<td>17:30～17:50</td>
+		<td>shudo(仮)</td>
+		<td>Java JITコンパイラネタができるかも(20分)</td>
+	</tr>
+	<tr>
+		<td>17:50～</td>
+		<td><del>-</del></td>
+		<td>撤収(机移動)</td>
+	</tr>
+</table>
+<h2>場所</h2>
+<p>サイボウズ本社セミナールーム<br />
+http://labs.cybozu.co.jp/aboutus/access.html<br />
+東京都文京区後楽1-4-14 後楽森ビル16F</p>
+<ul>
+	<li>会場が12Fから16Fに変更になりました．ご注意ください．</li>
+</ul>
+<p>サイボウズ本社の方からustreamの機材を借りることができました(ありがとうございます!)．なにぶん初心者なのでうまくいくかわかりませんが試してみます．</p>
+<p>補欠で参加されたい方，微妙にスペースが無くはないので，光成(herumi@nifty.com)までご連絡ください．LT枠として考慮します．</p>
+<h2>過去の勉強会と資料へのリンク</h2>
+<p><a href="http://homepage1.nifty.com/herumi/diary/1108.html#6">1回目の資料とustreamへのリンク</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1110.html#1">2回目の資料とustreamへのリンク</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1203.html#31">3回目の資料とustreamへのリンク</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1206.html#16">4回目の資料とustreamへのリンク</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1303.html#28">5回目の資料とustreamへのリンク</a><br />
+<a href="http://developer.cybozu.co.jp/tech/?p=4112">x86/x64最適化勉強会5 レポート</a><br />
+<a href="http://homepage1.nifty.com/herumi/diary/1309.html#1">6回目の資料とustreamへのリンク</a><br />
+<a href="http://developer.cybozu.co.jp/tech/?p=5819">x86/x64最適化勉強会6 レポート</a><br />
+<a href="http://developer.cybozu.co.jp/tech/?p=8522">x86/x64最適化勉強会7 レポート</a></p>
+<p>atndへのリンク</p>
+<p><a href="https://atnd.org/events/18360">x86/x64最適化勉強会1</a><br />
+<a href="https://atnd.org/events/19140">x86/x64最適化勉強会2</a><br />
+<a href="https://atnd.org/events/25823">x86/x64最適化勉強会3</a><br />
+<a href="https://atnd.org/events/28847">x86/x64最適化勉強会4</a><br />
+<a href="https://atnd.org/events/37417">x86/x64最適化勉強会5</a><br />
+<a href="https://atnd.org/events/41227">x86/x64最適化勉強会6</a><br />
+<a href="https://atnd.org/events/61785">x86/x64最適化勉強会7</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/18360" target="_blank">http://atnd.org/events/18360</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-08-06</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-08-06</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都文京区後楽1-4-14 後楽森ビル16F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>サイボウズ本社セミナールーム（16F）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7035588</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7496359</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>2864</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>herumi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/herumi" target="_blank">@herumi</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-03-16</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

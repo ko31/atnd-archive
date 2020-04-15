@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">jQueryライトユーザレベルアップ勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">jQueryライトユーザレベルアップ勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/16668.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/16668.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>16668</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>jQueryライトユーザレベルアップ勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>僕と契約してjQueryコーダーになってよ！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>夢の中でコーディングしてた、ような</h1>
+<p>※サブタイはネタです。本人はマギカあんまり知りませんｗ</p>
+<ul>
+	<li>コアファイルのコードリーディングまではちょっと。。。</li>
+	<li>プラグインは使えればそれでいいんだけど？</li>
+	<li>他人の書いたコードをある程度すんなり読めるようにはなりたい</li>
+	<li>プラグインを書き直せるようになりたい</li>
+	<li>自分でデバッグできるようになりたい</li>
+	<li>自分がやりたいことをさっと形にできるようになりたい</li>
+</ul>
+<p>などなど。</p>
+<p>今回は、jQueryの概要を把握し、自分専用の元ファイル一式を整えて、好きなようにjQueryを操れるようになる、ことを目標にします。<br />
+初心者から初級者を中級者に底上げする勉強会にしたいと思っています。</p>
+<p>デバッグ大会では初級～中級レベルの課題を出し、解決方法を探ったり、その手法を教えあうことで楽しくレベルアップを図ります。<br />
+このため、PC（Macも可）を持参しないとつまらないかもしれません。<br />
+てゆーか、ノートPC持参してください。</p>
+<h2>タイムテーブル</h2>
+<p>6月25日 14:30 開場予定<br />
+部単位の入退室可</p>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>内容</th>
+		<th>サブタイ</th>
+	</tr>
+	<tr>
+		<td>14:55 &#8211; 15:00</td>
+		<td></td>
+		<td>予告編</td>
+		<td>ロー＠ンでみんなに会える（違</td>
+	</tr>
+	<tr>
+		<td>15:00 &#8211; 16:30</td>
+		<td>らき</td>
+		<td>第一部：おさらいjQuery</td>
+		<td>これはとっても嬉しいなって</td>
+	</tr>
+	<tr>
+		<td>16:45 &#8211; 18:00</td>
+		<td>らき</td>
+		<td>第二部：自分専用初期ファイル群作成と<br />FireBugでのデバッグ方法</td>
+		<td>もうバグも怖くない</td>
+	</tr>
+	<tr>
+		<td>18:15 &#8211; 20:00</td>
+		<td>みんな</td>
+		<td>第三部：デバッグ大会</td>
+		<td>バグも、仕様も、あるんだよ</td>
+	</tr>
+</table>
+<p>終わった後、希望者で軽くご飯を食べに行くと思います。<br />
+主催者は酒を飲まないので、酒を飲みに行くかどうかは微妙です。</p>
+<h2>デバッグ大会でどんなことをするか</h2>
+<h3>基本ルール</h3>
+<ul>
+	<li>ブラウザ上で片付ける</li>
+	<li>このページを保存等でローカルにファイルを保存してはいけない</li>
+	<li>使用しているブラウザで処理できるならツールの使用は構わない。アドオン、ブックマークレット、他サイトのサービス等の使用可（むしろ推奨）</li>
+	<li>jQueryユーザならjQueryで答えを作りましょう</li>
+	<li>ブラウザのアドオン（Firebug等）の機能による回答も一応おっけーです。その解答がツールの知らなかった機能を知るきっかけになるかもしれません。</li>
+</ul>
+<h3>お題例１</h3>
+<p>Yahoo! Japan のトップページ( http://yahoo.co.jp )にある、画面上部のY!BBとオークションのアイコンを入れ替えて表示してください。</p>
+<h3>お題例２</h3>
+<p>右肩の広告が邪魔なのでついでだから消してみましょう。でも怒られるかもしれないので、やっぱり表示しましょう。ゆっくり消してゆっくり再表示するのはどうでしょう？</p>
+<h3>お題例３</h3>
+<p>Y!Jのニューストピックスの記事タイトルを全て”これはテスト記事です”に書き換えてみましょう。</p>
+<h3>お題例４</h3>
+<p>記事のリストの偶数番目の文字列を白に、背景色を黒に、１行で書き換えましょう。</p>
+<h3>お題例５</h3>
+<p>アンカーをクリックしても画面遷移しないようにしてみましょう。</p>
+<p>これらの答えあわせは会場で！</p>
+<p>注：今これができないとか難しいというレベルの人をできるレベルに引き上げるための勉強会です。<br />
+なんだこの程度かと思うだけの知識のある方はキャンセル待ちの人に譲ってあげてください。</p>
+<p>※Yahoo!さんごめんなさいｗ</p>
+<h2>注意事項</h2>
+<ul>
+	<li>会場への直通連絡手段はありません。途中参加等はTwitterでハッシュタグをつけて呼んでください。フォトクリエイト様の公開電話への連絡は厳禁です。</li>
+	<li>セキュリティのため、お名刺を二枚頂戴し、本名を記帳いただく必要があります。ご協力お願いします。</li>
+	<li>jQueryの勉強会は初めてなので、参加者のレベル等々がわかりません。だいぶ初心者向けにするつもりですが、本人は職業SE/PGなので、初心者の定義に求めるレベルが少し高めかもしれません。少なくても、HTML,CSSの基本的な理解と、PCそのものの基本操作はできないと話になりません。</li>
+	<li><del>まさか人数オーバーな大盛況になるとは思っていない（当日は別所でもっと面白い勉強会が多数ありますよね。。。）ですが、ドタキャンは寂しくなってしまうので勘弁してください。</del></li>
+	<li>6/9 追記：予定していたより多くの人に興味を持っていただけてうれしいです。会場の都合により、予定人数ほぼいっぱいいっぱいです。当日のドタキャンはご遠慮ください。</li>
+	<li>都合がつかなくなった場合はなる早でキャンセルして、キャンセル待ちの人に譲ってあげてください。よろしくお願いします。</li>
+	<li>6/13 追記：会場のフィードバックいただきました。現在の参加数だと電源タップの数が若干不足するようです。もし電源タップを持ってきていただける方がいらっしゃいましたらご協力ください。</li>
+	<li>6/13 追記：当日の無線回線は混雑が予想されます。できるだけ自前の回線の用意をお願いします。</li>
+	<li>6/13 追記：今まで書いていませんでしたが、発表時にはFirefoxの4系を使う予定です。ChromeやSafariでも同様のことができると思いますし、説明もできますが、OperaやIE8以前のブラウザは守備範囲外（説明時のマシンがマックなので）です。お手数ですが自力での手順変換に自信のない方はFirefoxをインストールしてお持ちください。</li>
+	<li>6/23 追記：Firefox 5 がリリースされました。4以降のバージョンアップは、セキュリティフィックスとの区別をつけないということなので、（Macの方は特に）自動更新をオンにしておいたほうがよさそうです。Firebugは問題ないのですが、一部Firebugアドオンが対応しきれていないものがありますので、注意してください。とりあえず発表は５を使用します。</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/16668" target="_blank">http://atnd.org/events/16668</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-06-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-06-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.photocreate.co.jp/company/map_tokyo.html" target="_blank">http://www.photocreate.co.jp/company/map_tokyo.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区西新宿6-16-6</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社フォトクリエイト様会議室（ご好意で貸していただけることになりました）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6916927</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6877567</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>6257</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>RAKI</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/raki" target="_blank">@raki</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-06-23</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

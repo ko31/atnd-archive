@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第1回 PowerShell勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第1回 PowerShell勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/46022.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/46022.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>46022</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第1回 PowerShell勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td> PowerShell が日本でもっと普及して楽に自動化できるように！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>開催後のまとめ</h2>
+<p>主催のブログにて、セッション資料へのリンク、ツイートまとめ、今後についてご案内しています。<br />
+<a href="http://tech.guitarrapc.com/entry/2013/12/24/075409">tech.guitarrapc.com &#8211; 第一回 PowerShell 勉強会を開催時のセッション資料公開 と舞台裏とか</a></p>
+<h2>開催概要</h2>
+<p>2013/12/21 (土) 六本木で PowerShell勉強会をやります。<br />
+少しでも興味があれば誰でも参加OK、PowerShellに焦点をあてた希少なIT勉強会です。</p>
+<p>これが、 <a href="http://powershellgroup.org/node/429">Japan PowerShell User Group</a> の初セッションです。これからも、PowerShellを一緒に楽しむ機会を作れればと思いますです！</p>
+<ul>
+	<li>定員を30名から40名に増員しました！</li>
+	<li>前回、需要があるかアンケートを取った様子は <a href="http://atnd.org/events/44585">PowerShell勉強会 仮</a> を見てください</li>
+</ul>
+<ul>
+	<li>当日のUST中継などは今回は見送りとなります。(機材もってないです)</li>
+</ul>
+<h2>勉強会当日について(12/21 AM2:40 追記)</h2>
+<p><b>受付の場所</b><br />
+第一回PowerShell勉強会は、12/21 PM0:30 &#8211; 六本木ヒルズ森タワー LLフロアにて受付が立っております。HNにて本人確認させていただき、入館シールをお渡しします。案内のものが開場フロアまでご案内しますので、警備員のいる入場口から入ってください。</p>
+<p><b>森タワーはどこ</b><br />
+六本木ヒルズ森タワーは、 <a href="http://www.roppongihills.com/facilities/access/train.html">http://www.roppongihills.com/facilities/access/train.html</a> でいう日比谷線からのぼりエスカレーターで直通ルートがもっともわかりやすいかと思います。<br />
+エスカレーターを上って、まっすぐ目の前にある正面口が、オフィスフロアへの入口でオフィス入口のセキュリティゲート前に勉強会受付が立っています。</p>
+<p><b>万が一、遅れてしまう場合</b><br />
+12:30～入場<br />
+13:00～ 開始<br />
+上記と13:00～30分程度(一回目のセッションぐらい) は、LLフロアに受付が待機しております。<br />
+その後は、Twitter で #<span class="caps">JPPOSH</span> のタグを付けて、@guitarrapc_tech までメンションをお願いします。スタッフのものがLLに迎えにまいりますので、恐れ入りますが少しお待ちいただきますようお願いします。</p>
+<p>なるべく不自由がないように、行う所存ですがビル側のセキュリティと協力してスムーズな進行を心がけます。</p>
+<h2>「所属先と氏名」確認へご協力いただく必要があります。</h2>
+<p>ビル様のセキュリティの都合上、「所属先（個人可）と氏名」をいただく必要があります。<br />
+いただいた情報はビルに提出することのみに利用し、他の目的で利用することはありません。</p>
+<p>恐れ入りますが、参加者の方に管理者からメールを送付いたしますので、返信にて「所属先（個人可）と氏名」のご提出をお願いいたします。<br />
+遅くとも、前日までの返信が必須となりますのでよろしくお願いします。<br />
+大変心苦しいのですが、どうかご協力のほどお願い申し上げます。</p>
+<h2>参加費/参加資格</h2>
+<ul>
+	<li>興味がある方はだれでも申込みいただけます。</li>
+	<li>参加費は、勉強会は不要です。</li>
+	<li>懇親会参加の方は、懇親会チケットの方を確認してください。(3500円前後です。)</li>
+	<li>お手数ですが、懇親会も参加希望の方は別に参加をお願いします( <a href="http://atnd.org/events/46021">http://atnd.org/events/46021</a> )</li>
+</ul>
+<h2>スケジュール</h2>
+<p>およそ以下のスケジュールで予定しています。(順不同、敬称略)<br />
+セッション順序は仮のもので、前後する可能性があります。</p>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>対象</th>
+		<th>登壇者</th>
+		<th>概要</th>
+	</tr>
+	<tr>
+		<td>12:30～</td>
+		<td>全員</td>
+		<td colspan="2">開場</td>
+	</tr>
+	<tr>
+		<td>13:00～</td>
+		<td>全員</td>
+		<td colspan="2">会場説明</td>
+	</tr>
+	<tr>
+		<td>セッション1</td>
+		<td>初心者向け</td>
+		<td>ぎたぱそ(@guitarrapc_tech)</td>
+		<td>PowerShellの概要と使いどころ</td>
+	</tr>
+	<tr>
+		<td>セッション2</td>
+		<td>初心者向け</td>
+		<td>@SQLAzureJP</td>
+		<td>無題</td>
+	</tr>
+	<tr>
+		<td>セッション3</td>
+		<td>応用向け</td>
+		<td>渡邉源太(@gentaw0)</td>
+		<td><span class="caps">AWS</span> Tools for Windows PowerShellをつかいこなそう</td>
+	</tr>
+	<tr>
+		<td>15分</td>
+		<td>全員</td>
+		<td colspan="2">休憩</td>
+	</tr>
+	<tr>
+		<td>セッション4</td>
+		<td>応用向け</td>
+		<td>杉浦彰(@urasandesu)</td>
+		<td>PowerShellでDSL</td>
+	</tr>
+	<tr>
+		<td>セッション5</td>
+		<td>応用向け</td>
+		<td>@tanaka_733</td>
+		<td>C# からPowerShellを実行してみよう</td>
+	</tr>
+	<tr>
+		<td>セッション6</td>
+		<td>応用向け</td>
+		<td>牟田口大介(@mutaguchi)<br />
+(MS <span class="caps">MVP</span> for PowerShell)</td>
+		<td>PowerShell Desired State Configuration (<span class="caps">DSC</span>) について</td>
+	</tr>
+	<tr>
+		<td>15分</td>
+		<td>全員</td>
+		<td colspan="2">休憩</td>
+	</tr>
+	<tr>
+		<td>LT</td>
+		<td>全員</td>
+		<td>@5704k3<br />
+Mr.X<br />
+@_sunnyone</td>
+		<td>力をもってIllustratorを操作してみた話<br />
+謎<br />
+PowerShellスクリプトにMSBuildLauncherで簡易GUIをつける</td>
+	</tr>
+	<tr>
+		<td>18:30</td>
+		<td>全員</td>
+		<td colspan="2">おまけ含めて閉会</td>
+	</tr>
+	<tr>
+		<td>19:00</td>
+		<td>希望者</td>
+		<td colspan="2">懇親会へ(<a href="http://atnd.org/events/46021">http://atnd.org/events/46021</a>)</td>
+	</tr>
+</table>
+<h2>セッション詳細</h2>
+<p>登壇者が確定しましたー。</p>
+<h3>PowerShellの概要と使いどころ</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>ぎたぱそ<br />
+(@guitarrapc_tech)</td>
+		<td>PowerShellの歴史と目的<br />
+基本的な文法(ifやforeachなど)<br />
+cmdやvbs、シェルスクリプトとの違いから見る使いどころ</td>
+	</tr>
+</table>
+<h3>無題</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>@SQLAzureJP</td>
+		<td>なんとなくPowerShellコマンドの断片を知っていたり、<br />
+触ったりしたことはあるけど、ちゃんと使ったことが無かったのです。<br />
+IISの生ログを解析してねっといわれたら、<br />
+最近だとCentOSからアクセスできる場所において、awkでやっちゃう系。<br />
+そんな初心者がうっかり登壇すると言ってしまって、<br />
+泣きながらお勉強した10時間をお届け。<br />
+歴戦の兵士が居る前に喋るなんて、まぞっけたっぷりですが、<br />
+根気強くお付き合いください。</td>
+	</tr>
+</table>
+<h3><span class="caps">AWS</span> Tools for Windows PowerShellをつかいこなそう</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>渡邉源太(@gentaw0)</td>
+		<td><span class="caps">AWS</span> Tools for Windows PowerShellをつかったAWSインフラの構築方法についておはなしします</td>
+	</tr>
+</table>
+<h3>PowerShellでDSL</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>杉浦彰(@urasandesu)</td>
+		<td>PowerShellでDSLを設計してみます。<br />
+「PowerShellインアクション」にある「PowerShell言語の拡張」を基に、自作ライブラリを例にお話を。</td>
+	</tr>
+</table>
+<h3>C# からPowerShellを実行してみよう</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>@tanaka_733</td>
+		<td>PowerShellはWindowsのCUIツールとして非常に強力ですが、時にはGUIツールから操作をしたいときがあります。<br />
+そんなとき、既存のPowerShell資産を活用するためにも、C# コードからPowerShellを操作するお話をします。<br />
+単純なコマンド実行にとどまらず、PipeLine実行、スクリプトの実行、リモートコンピューターへの同期・非同期実行について紹介します。</td>
+	</tr>
+</table>
+<h3>PowerShell Desired State Configuration (<span class="caps">DSC</span>) について</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>牟田口大介(@mutaguchi)</td>
+		<td>Windows Server 2012 R2 とPowerShell 4.0 の新機能である <span class="caps">DSC</span> について紹介します。</td>
+	</tr>
+</table>
+<h2>LT (基本5-10分前後 / 3-4名まで)</h2>
+<h3>力をもってIllustratorを操作してみた話</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>@5704k3</td>
+		<td>PowershellからAdobe Illustratorを起動させ、<br />
+AWSと繋いで大量のファイルを自動で処理させてみたお話です。</td>
+	</tr>
+</table>
+<h3>謎</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>Mr.X </td>
+		<td>？？？？？？？</td>
+	</tr>
+</table>
+<h3>PowerShellスクリプトにMSBuildLauncherで簡易GUIをつける</h3>
+<table>
+	<tr>
+		<th>登壇者</th>
+		<th>詳細</th>
+	</tr>
+	<tr>
+		<td>@_sunnyone </td>
+		<td>クリックで実行できて結果が全部読めればいいだけなのに、いちいちGUIを作るのは面倒だという人に手抜きで画面をつける方法を紹介します。</td>
+	</tr>
+</table>
+<h2>会場案内</h2>
+<ul>
+	<li>株式会社グラニ(通称:謎社)を会場に行われます。</li>
+	<li>東京メトロ日比谷線(六本木駅) または 都営大江戸線(六本木駅) が最寄り駅となります。</li>
+	<li>無線LAN および 電源は会場から提供されます。</li>
+	<li>簡単な飲み物も提供されます。</li>
+	<li>良識あるご利用のほどお願いいたします。</li>
+</ul>
+<h2>謝辞</h2>
+<p>- Microsoft <span class="caps">MVP</span> for PowerShell の牟田口大介(@mutaguchi)さんから、 <a href="http://www.amazon.co.jp/%E3%80%90%E6%94%B9%E8%A8%82%E6%96%B0%E7%89%88%E3%80%91-Windows-PowerShell-%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9-%E7%89%9F%E7%94%B0%E5%8F%A3/dp/477415542X">【改訂新版】 Windows PowerShell ポケットリファレンス</a> を一冊いただきました。<br />
+- じゃんけんでお一人様へプレゼント予定です。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/46022" target="_blank">http://atnd.org/events/46022</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-12-21</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-12-21</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://powershellgroup.org/node/429/2013-12-21" target="_blank">http://powershellgroup.org/node/429/2013-12-21</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都港区六本木6丁目10-1 六本木ヒルズ森タワー15F 株式会社グラニ</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社グラニ</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6605556</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7291667</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>160273</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>@guitarrapc_tech</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/guitarrapc_tech" target="_blank">@guitarrapc_tech</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

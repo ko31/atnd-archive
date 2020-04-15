@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Nagoya.R #14</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Nagoya.R #14</h2>
+
+            <div class="buttons">
+                <a href="../json/events/70095.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/70095.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>70095</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Nagoya.R #14</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>統計解析環境「R」の勉強会、Nagoya.R #14 を開催します。<br />
+分野も年齢も職業も問わず、「R」について一緒に学びましょう！</h2>
+<h3>入門者の方も大歓迎です！Rを始めるなら是非ここで！<br />
+Ustream中継は <a href="http://www.ustream.tv/channel/nagoyar13">こちら</a> から</h3>
+<h2>★メニュー</h2>
+<table>
+	<tr>
+		<th>部</th>
+		<th>時間</th>
+		<th>タイトルと概要</th>
+	</tr>
+	<tr>
+		<td>0部</td>
+		<td>13:00-13:10</td>
+		<td>ご挨拶・自己紹介</td>
+	</tr>
+	<tr>
+		<td>1部</td>
+		<td>13:10-14:45</td>
+		<td> <strong>【入門者講習】担当： <a href="https://sites.google.com/site/kwsk3939/">川口勇作</a></strong><br />
+<ul><li>インストールから初期設定<br />
+<li>関数と変数について<br />
+<li>作図演習<br />
+<li>パッケージのインストール</ul><br />
+Rを触ったことのない方も、Rの基本的な操作ができるようになる内容となっております<br />
+<a href="http://www.slideshare.net/kawasaku/nagoyar-14">スライド</a> 、 <a href="https://drive.google.com/open?id=0B5obiqfxcbRcUmhYc2dQdnZqaFk">配布資料</a> 、 <a href="https://drive.google.com/open?id=0B5obiqfxcbRcaHphM2xRQ1RXVnc">Excelシート</a> </td>
+	</tr>
+	<tr>
+		<td>2部</td>
+		<td>15:00-</td>
+		<td><strong>【Lightning Talks】</strong><br />
+<ol><br />
+<li><strong>M-Yoshino「m×n形式のデータをひとまとめ」（5min）</strong><br />
+<ul><li>ロットごとにn数が違うのに、m×n形式でデータが作ってあると、そのままではヒストグラムを描くことができないなど不便です。rbindなどでデータを積み上げるのも大変。そんなときは、scanで一気にひとまとめ。退避はクリップボードを使いますが、データは大きいときは、dummy.txtなどに吐き出します。 <a href="https://drive.google.com/file/d/0B5obiqfxcbRcQnczV1FvTHFOYms/view?usp=sharing">スクリプト</a> </li></ul><br />
+<li><strong><a href="http://tamurayu.wordpress.com/">田村祐</a> 「コンソールベタ打ち卒業：スクリプトエディタを使おう」（5min）</strong><br />
+<ul><li>コンソールにそのまま打ち込んでいくよりも、スクリプトエディタを使う方が良いと個人的に思う理由をいくつかお話します（※好みの問題だとは思います）。 <a href="http://www.slideshare.net/yutamura1/ss-53955327">スライド</a> </li></ul><br />
+<li><strong>于劭贇「Tidy Data フレームワークの実践：SDAPS の質問紙データの処理」（20min）</strong><br />
+<ul><li>Wickham (2014) は、Tidy Dataという名のもとで、「1つの行が1つの観測、1つの列が1つの変数」というロング形式のデータ構造を推奨した。また、データ構造の標準化により、データ処理の手続きが定式化され、分析もより便利になると論じた。本発表では、光学式マーク認識システム <span class="caps">SDAPS</span> （ <a href="http://sdaps.org/">http://sdaps.org/</a> ）からエクスポートされたデータの整形処理を例に、Tidy Data の概念及び tidyr と dplyr パッケージの基本的な使い方を説明します。 <a href="https://drive.google.com/folderview?id=0ByocY3XiSk1ITEpocl9iZUt1UW8&amp;usp=drive_web">資料</a> </li></ul><br />
+<li><strong><a href="https://sites.google.com/site/kusanagikuni/">草薙邦広</a> 「マジで『もう❤鈍感なんだから～』？」（20min）</strong><br />
+<ul><li>ベイズ統計のお話</li></ul><br />
+</ol></td>
+	</tr>
+	<tr>
+		<td>3部</td>
+		<td>16:00-</td>
+		<td><strong>【発表】</strong><br />
+<ol><br />
+<li><strong>M-Yoshino 「スパース構造推定（グラフィカル・ラスー）」（45min）</strong><br />
+<ul><li>8月23日のNHKサイエンスゼロで「スパース・モデリング」が放映された。そこでは、L1正則化回帰が取り上げられていたが、もうひとつ重要な手法がある。それがグラフィカル・ラスーである。フリードマン先生の論文にあるグラフを出力するスクリプトを紹介する。<br />
+<li>【使用データ・ライブラリ】データはRに付属している「mtcars」を使用します。このデータはほぼランク落ちしている怖いデータです。古典的なggmとの差を見たいと思います。ライブラリは、ggm，glasso，igraphを使います。（glassoはグループ・ラスーではありません） <a href="https://drive.google.com/file/d/0B5obiqfxcbRcUERQc0xrMnpoU1E/view?usp=sharing">資料（zip）</a> </li></ul></td>
+	</tr>
+</table>
+<h2>★発表者募集中</h2>
+<ul>
+	<li>Lightning Talks をはじめとして、各部における発表者を絶賛募集中です。Lightning Talks は、 <strong>R に関わる話</strong> であれば <strong>どのようなことでも</strong> （10分で詳しい自己紹介でも！）結構です。分野も全く問いません。</li>
+	<li>発表していただける方は、 <strong>川口 （y.kawaguchi [at] nagoya-u.jp）</strong> まで、1) <strong>発表題目</strong> 、2) <strong>希望発表時間</strong> 、3) <strong>発表概要</strong> の3点をご連絡ください。</li>
+	<li>Nagoya.R #15 以降の発表者も早期に決定できると助かりますので、どうぞお気軽にお申込ください。なお、調整の結果、ご希望の発表時間をご用意できない場合、また、希望される人数により、#15 以降にご発表いただく場合がございます。予めご了承ください。</li>
+</ul>
+<h2>★運営からのお知らせ</h2>
+<ul>
+	<li>今回より、Lightning Talks 枠と発表枠の2枠を設けました。発表時間の比較的短いものをLightning Talks 枠に、それ以外のものを発表枠とさせていただいております。</li>
+	<li>申し訳ございませんが、会場では電源および無線LANを提供できません。PCを十分に充電した上で、無線LAN環境は各自で確保していただけますよう、予めご了承ください。</li>
+	<li>同日に今回の会場である名古屋大学 国際開発棟で、ホームカミングデーが開催されることになっていますが、今回の勉強会とは関係のない行事ですので、ご注意ください。</li>
+	<li>会場は、地下鉄名城線 名古屋大学駅 1番出口を出て徒歩3分ほどです。ルート付きの地図は <a href="https://drive.google.com/file/d/0B5obiqfxcbRcMERPRHg0NV94Vlk/view?usp=sharing">こちら（PDF）</a> です。</li>
+</ul>
+<ul>
+	<li>なにかご不明な点、ご不満な点がありましたら、以下の連絡先までお申し付け下さい。よろしくお願いします。</li>
+</ul>
+<p><strong><a href="https://sites.google.com/site/kwsk3939">川口 勇作</a> （名古屋大学大学院）<br />
+y.kawaguchi [at] nagoya-u.jp</strong></p>
+<h2>★過去のNagoya.R</h2>
+
+	<ol>
+		<li><a href="http://atnd.org/events/3396">第1回勉強会</a></li>
+		<li><a href="http://atnd.org/events/3982">第2回勉強会</a></li>
+		<li><a href="http://atnd.org/events/4504">第3回勉強会</a></li>
+		<li><a href="http://atnd.org/events/8233">第4回勉強会</a></li>
+		<li><a href="http://atnd.org/events/13612">第5回勉強会</a></li>
+		<li><a href="http://atnd.org/events/17968">第6回勉強会</a></li>
+		<li><a href="http://atnd.org/events/24109">第7回勉強会</a></li>
+		<li><a href="http://atnd.org/events/28700">第8回勉強会</a></li>
+		<li><a href="http://atnd.org/events/29795">第9回勉強会</a></li>
+		<li><a href="http://atnd.org/events/39304">第10回勉強会</a></li>
+		<li><a href="http://atnd.org/events/43634">第11回勉強会</a></li>
+		<li><a href="http://atnd.org/events/58339">第12回勉強会</a></li>
+		<li><a href="http://atnd.org/events/63359">第13回勉強会</a></li>
+	</ol></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/70095" target="_blank">http://atnd.org/events/70095</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-10-17</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-10-17</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>名古屋大学東山キャンパス国際開発棟6F 第3講義室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>137962</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Kawaguchi Yusaku</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kwsk3939" target="_blank">@kwsk3939</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2016-03-11</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

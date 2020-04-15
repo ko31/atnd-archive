@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">#自宅ラック勉強会 4.0 居酒屋でハンズオン！</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">#自宅ラック勉強会 4.0 居酒屋でハンズオン！</h2>
+
+            <div class="buttons">
+                <a href="../json/events/28717.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/28717.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>28717</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>#自宅ラック勉強会 4.0 居酒屋でハンズオン！</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>己を知り、相手を知れば百戦危うからず</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><span class="caps">ATTENTION</span> :</h1>
+<h3>本勉強会では書面によるNDAが必須となっております。<br />
+ご同意いただけない場合、キャンセルによる対応をお願いいたします。 <br />
+大変申し訳ありませんがご了承ください。</h3>
+<p>以下、NDA（秘密保持契約）の内容の要約になります。<br />
+事前にNDAの全文が欲しい方は @seafay （TwitterまたはATNDのメッセージ） までご連絡ください。</p>
+<p>1．書面による連絡が可能な連絡先（住所・氏名）の記載に同意いただく事<br />
+2．本勉強会で知り得た知識で迷惑行為を行わない事<br />
+3．勉強会の内容を発表者に許可なく第三者に開示しない事<br />
+4．NDA書面の内容に疑義がある場合は話し合いを行い、同意が出来ない場合は主催者側の解釈に従う事<br />
+5．上記事項のいずれかに違反し、第三者に損害が生じた場合、または恐れがある場合、すべての損害を負担する事</p>
+<p><a href="http://ja.wikipedia.org/wiki/%E7%A7%98%E5%AF%86%E4%BF%9D%E6%8C%81%E5%A5%91%E7%B4%84">秘密保持契約</a><br />
+以下 Wikipediaより抜粋<br />
+ある取引を行う際などに、法人間（または自然人との間）で締結する、営業秘密や個人情報など業務に関して知った秘密（すでに公開済みのものや独自にないし別ソースから入手されたものなどを除外することが多い。）を第三者（当該取引に関連する関連会社や弁護士、公認会計士などを除外することが多い。）に開示しない（行政庁や裁判所の要求する場合、その他法律上開示義務がある場合などが除外されることが多い。）とする契約。</p>
+<hr />
+<h1 style="vertical-align:middle;">Warning :</h1>
+<h3>本勉強会はあくまで自分のサーバーを守るすべを学ぶための勉強会です。<br />
+※ 今回はテーマがテーマですので慎重に会場のローカルネットの中だけで作業をお願いしますね。</h3>
+<h2>参加要件</h2>
+<p>・自宅でサーバーを建てている人<br />
+・VPSなどでサーバーを借りている人<br />
+・セキュリティってどうすればいいのか分からない人<br />
+・自宅ラックないつもの人々<br />
+・自宅ラックな話をしたい人<br />
+・どう考えても 新人/初心者じゃなくて同日開催される qpstudy に参加できなさそうな人</p>
+<p>そんな人たちを自宅ラック勉強会はいつだって歓迎します。</p>
+<h2>用意するもの</h2>
+<p>自宅ラック勉強会ではいつも用意するものとか<br />
+特別書かなくてもノートPCや機材を持ってくる人ばかりなのですが、<br />
+今回は念のために記載しておきます。</p>
+<p>1. ノートPC（LANポートがある事）<br />
+※ 当日無線LANでは行えません。</p>
+<p>2．BackTrack5R2が起動できる手段<br />
+※ HDDインストール、USBブート、DVDブート等</p>
+<p>3．対象となるVM（作ってきたい人向けだけ）<br />
+※ ただし、来場が13時以前に来ていただく必要があります。</p>
+<p>4．ハンコと公的身分証明書</p>
+<h2>やること（あくまで目安）</h2>
+<p>その0<br />
+・ESXi5（Xeon5540@1CPU/メモリ24GB/NIC4Port）を会場に用意します。</p>
+<p>その１<br />
+・12:00～13:30までに攻撃対象となるシステムを仮想上に用意します。<br />
+（ローカルかつインターネットへは接続しない）</p>
+<p>その２<br />
+・13:30 受け付け開始</p>
+<p>その３<br />
+・14:00 本編開始 会場説明～環境接続<br />
+・14:30 BackTrack 5 R2 の簡単な解説など</p>
+<p>その４<br />
+・15:00～16:00 ハンズオン</p>
+<p>その５<br />
+・16:00～17:00 復旧及び対策の模索</p>
+<p>その６<br />
+・17:30より <a href="http://atnd.org/events/28719">懇親会</a> を予定しております。</p>
+<h2>会場および集合場所</h2>
+<p>僕が企画するときは毎回なぜか居酒屋です。</p>
+<h3>　店名 ： 皐木（さつき）<br />
+　ジャンル ： 銚子直送魚介と黒豚・地鶏<br />
+　設備 ： 電源あり（ブレーカーに注意）<br />
+　アクセス：<br />
+　　東急田園都市線高津駅 徒歩1分 <br />
+　　東急田園都市線溝の口駅 徒歩15分</h3>
+<p>遅れてくる方は #自宅ラック勉強会 をハッシュタグとして付けてTweetしてください。</p>
+<h2>参加費</h2>
+<h3>500円（会場費+準備費）</h3>
+<h3>100円（BTR2ブートDVDが必要な場合）</h3>
+<h2>注意点</h2>
+<h3>その他持ち込む機材などは常識の範囲内でお願いいたします。<br />
+また、VM用意する人は事前に連絡ください。</h3>
+<h1>なお、キャンセルはお早めにお願いします・・・。マジで</h1>
+<h2>質問コーナー</h2>
+<p>Q1.自宅ラックって何？<br />
+A1.自宅にサーバーラックやネットワークラックを置いている人の事です。</p>
+<p>Q2.自宅ラックな人は多いの？<br />
+A2.近年、ITエンジニアの中では自宅ラックが普及してきているという調査結果を聞いた事があります。</p>
+<p>Q3.僕（私）も自宅ラックが欲しいんですが<br />
+A3.どうぞ、搬入や機材選定などについて詳しい人がきっと快くサポートしてくれます。</p>
+<p>Q4.電気代大丈夫ですか？<br />
+A4.商用電源を引けばどうということはない。</p>
+<p>Q5.自宅にラックなんてないんですが・・・。<br />
+A5.買うと捗りますよ。</p>
+<p>Q6.自宅にラックがないと参加できない？<br />
+A6.いいえ、正直ラックとか関係ないので・・・。</p>
+<p>Q7.いろいろと・・・大丈夫なの？<br />
+A7.わかりません・・・ですが、僕らは自分たちのサーバーを守りたいんです！</p>
+<p>Q8.LTできる？<br />
+A8.<a href="http://atnd.org/events/28719">懇親会</a> でどうぞ！</p>
+<p>Q9.USTする？<br />
+A9.出来るわけがありません！</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/28717" target="_blank">http://atnd.org/events/28717</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-05-19</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-05-19</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://r.gnavi.co.jp/g236400/" target="_blank">http://r.gnavi.co.jp/g236400/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>神奈川県川崎市高津区溝口4-1-3 ＴＩビルB1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>銚子直送魚介と黒豚・地鶏 「皐木（さつき）」</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6032367</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6162614</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>71036</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>seafay</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/seafay" target="_blank">@seafay</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-05-15</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

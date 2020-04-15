@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">「第1回分散処理ワークショップ in Tokyo」</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">「第1回分散処理ワークショップ in Tokyo」</h2>
+
+            <div class="buttons">
+                <a href="../json/events/17038.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/17038.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>17038</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>「第1回分散処理ワークショップ in Tokyo」</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>〜分散処理技術に関するトピックを@okuyamaooさんと座談会形式で議論しましょう〜</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>「第1回分散処理ワークショップ in Tokyo」を開催します</h1>
+<h2>■概要</h2>
+<h3>分散処理技術（NoSQL・分散FS・並列プログラミングモデル・大規模データ処理など…）に関するトピックを毎回取り上げ、トピックに沿ったスピーカーをお呼びしてそれについての議論を座談会形式で行う勉強会です。机を円に並べて、参加者も含めて議論できるような場になると良いと思っています。主催者の <a href="http://twitter.com/#!/doryokujin">@doryokujin</a> と <a href="http://twitter.com/#!/okuyamaoo">@okuyamaoo</a> さんは毎回スピーカーとして参加します。</h3>
+<h3>日程： 2011/07/08（金）18:00 〜 21:00<br />
+※勉強会の後は会場での懇親会（有料:21:00 〜 22:30）を予定しております。是非ともそちらもご参加下さい。</h3>
+<h2>■当日の流れ</h2>
+<h3>集合<br />
+17:40、17:50に大森ベルポート1Fの北側入口（喫煙所前）にスタッフが迎えに行きますのでそこお待ち下さい。勝手に会場には入れませんのでご注意下さい。遅れて来られる方はツイッターでハッシュタグ <a href="http://twitter.com/#!/search/%23dist_study">#dist_study</a> 、または <a href="http://twitter.com/#!/nifty_engineer">@nifty_engineer</a> 宛に返信をください。 上記集合場所まで迎えにいきます。Twitterの手段をお持ちで無い方は <a href="http://twitter.com/#!/doryokujin">@doryokujin</a> 宛のメール、 mr.stoicman[at]gmail.com まで連絡を下さい。</h3>
+<h3>ワークショップ<br />
+ワークショップ前半の90分は各NoSQLの概要の発表(各15分×5本)、後半は各自テーマや悩みや質問を出し合って全員で自由にディスカッションします。机は円テーブルにする予定です。肩肘のはらない、全員参加の有意義な場になることを期待しています。</h3>
+<h3>懇親会<br />
+懇親会は会場内にオードブルとドリンクを持ち込む形になります。是非ともこちらにもご参加下さい、当日の申し込みも可能です。</h3>
+<h2>■目的</h2>
+<h3>分散処理に関するトピックについて、 <br />
+・運用に関するハマリ所・問題点・Tips等の共有、<br />
+・技術に関する詳細な仕組み・特徴・長所/短所の共有<br />
+を行う事を目的としています。初心者向けの勉強会ではなく、実運用されている方々同士で情報を共有する場にしたいと思っています。</h3>
+<h2>■今回のトピック</h2>
+<h3>第1回のトピックは、お互いの得意分野であるNoSQLについて、特にスケーラビリティに関する部分にフォーカスして議論したいと考えています。Key-Value・列指向・ドキュメント（・グラフ）それぞれのスケーラビリティ周辺の仕組みや問題点を比較しながら議論して行ければ面白いと思っています。</h3>
+<h3>座談会ではスピーカーがお題をいくつか用意する形で議論を進めていきます。お題に関しては参加者の方からも広く募っていますのでTwitterなどで気軽に声をかけてください。</h3>
+<h2>■タイムテーブル</h2>
+<p>※ 予定は変更になる場合がございます。<br />
+※ 題目は随時更新していきます。</p>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>タイトル</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>18:00 &#8211; 19:30</td>
+		<td>各種NoSQLの紹介</td>
+		<td>座談会の前に扱うトピックについてのイントロダクションを行います。今回は各種NoSQLについての話題をとりあげますので各15分のイントロを行います：<br />
+* 分散Key-Valueストア、okuyamaについて( <a href="http://twitter.com/#!/okuyamaoo">@okuyamaさん</a> )<br />
+* ドキュメント指向DB、MongoDBについて( <a href="http://twitter.com/#!/doryokujin">@doryokujin</a> )<br />
+* NoSQL全体を俯瞰する( <a href="http://twitter.com/#!/tatsuya6502">@tatsuya6502さん</a> )<br />
+* Hibariについて( <a href="http://twitter.com/#!/josephwnorton">@josephwnortonさん</a> )<br />
+*列指向Cassandraについて（ <a href="http://twitter.com/#!/yukim">@yukimさん</a> ）</td>
+	</tr>
+	<tr>
+		<td>19:30 &#8211; 21:00</td>
+		<td>座談会</td>
+		<td>いくつかのお題に沿ってスピーカーを中心に議論を進めていきます。また参加者・Twitterからの質問や議論を広く受け付ける形で進めて行きたいと思っています。</td>
+	</tr>
+</table>
+<h2>スピーカー・モデレータ・スタッフ募集中です</h2>
+<h3>NoSQLに詳しく、スピーカーとして参加される方を募集しています。種類は問いません。 <a href="http://twitter.com/#!/doryokujin">@doryokujin</a> までメンションお待ちしております。また、モデレータ・会場スタッフも併せて募集しています。スタッフの皆さんの協力無しには勉強会は成り立つことができません。どうか宜しくお願いします。</h3>
+<h2>■きっかけ</h2>
+<h3>主催者の@okuyamaooさんは分散Key-Valueストア <a href="http://groups.google.com/group/kvs_okuyama">okuyama</a> の開発者で、分散処理系に関しては非常に多くの知識と経験を有しているスゴイ人です。僕は <a href="https://groups.google.com/group/mongodb-jp?hl=ja">MongoDB JP</a> の代表をやらせてもらっており、実際にデータ解析基盤としてMongoDBを活用しているということもあり、@okuyamaooさんが東京に出張に来られる度にお会いしてokuyamaやmongodbの仕組みや運用上の問題点について、大規模データ処理や次世代リコメンドの手法やあるべき姿などについての話題で盛り上がっていました。そしてこういった実体験や深い知識を持つ方との情報交換の場は非常に有用であることを痛感しており、「それなら勉強会（座談会）を開いて、より多くの方と共有していこう」という運びになり、今回の勉強会発足に至りました。</h3>
+<h2>■Ustream中継とハッシュタグについて</h2>
+<h3>当日はUstream中継を予定しておりませんが、協力者がいらっしゃれば中継を行いたいと思ってます。</h3>
+<h3>併せてハッシュタグですが #dist_study とします（当日までに変更するかもしれません）。これをツイートに付けて頂いて発言していただければ会場に声が届きます。</h3>
+<h2>■参加費</h2>
+<h3>・無料<br />
+・1500円（懇親会に参加される方：会場内で行います）<br />
+※ 懇親会に参加される方は登録時のアンケートで「出席」を選択して下さい。</h3>
+<h2>■持参していただくもの</h2>
+<h3>・名刺を最低2枚はお持ち下さい。<br />
+受付時に名刺などの氏名と連絡先が分かるものを頂いております。これは入退室管理の観点、機器破損・怪我等トラブル発生時のためにお伺いしています。その他の目的にはつかいません。</h3>
+<h2>■場所（勉強会＆懇親会）</h2>
+<h3>・勉強会：東京都品川区南大井6-26-1 ニフティ株式会社 大森ベルポートA館 6Fセミナールーム <br />
+・懇親会：同じ会場</h3>
+<h2>■当日の集合場所</h2>
+<h3>・集合場所<br />
+会場へ入るためにはスタッフの解錠が必要なので、当日の集合場所は大森ベルポート1Fの北側入口（喫煙所前）とします。 スタッフが迎えに来てくれますので一緒に中にお入り下さい。</h3>
+<h3>・遅刻された方へ <br />
+ツイッターでハッシュタグ <a href="http://twitter.com/#!/search/%23dist_study">#dist_study</a> 、または <a href="http://twitter.com/#!/nifty_engineer">@nifty_engineer</a> 宛にメッセージをください。 上記集合場所まで迎えにいきます。 また、知り合いがいる方は、その方へ連絡してください。</h3>
+<p><img src="http://tokyodebian.alioth.debian.org/bellport.png" /></p>
+<h2>■会場設備</h2>
+<h3>・プロジェクター<br />
+・無線LAN環境<br />
+・電源タップ（Macのアダプターは電源タップに刺さりませんので延長コードをお持ち下さい）</h3>
+<h2>■ユーザーグループ参加のお誘い</h2>
+<h3>この機会にご登録の方、宜しくお願いします。</h3>
+<ul>
+	<li><a href="http://groups.google.com/group/kvs_okuyama">okuyama</a></li>
+	<li><a href="https://groups.google.com/group/mongodb-jp?hl=ja">MongoDB JP</a></li>
+	<li><a href="https://groups.google.com/group/nosql-ja?hl=ja">nosql-ja</a></li>
+</ul>
+<h2>■会場提供</h2>
+<h3>会場の方はネット環境含めて全てニフティ様より無料で提供させてもらっております。本当にありがとうございます。</h3></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/17038" target="_blank">http://atnd.org/events/17038</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-07-08</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-07-08</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都品川区南大井6-26-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ニフティ株式会社 大森ベルポートA館 6Fセミナールーム （東京都品川区南大井6-26-1）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.5880481</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7316316</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>38689</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>doryokujin</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/doryokujin" target="_blank">@doryokujin</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-07-07</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

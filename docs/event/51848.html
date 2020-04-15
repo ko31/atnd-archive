@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Mroonga Meetup 2014/06/29 @東京</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Mroonga Meetup 2014/06/29 @東京</h2>
+
+            <div class="buttons">
+                <a href="../json/events/51848.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/51848.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>51848</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Mroonga Meetup 2014/06/29 @東京</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>Mroonga Meetup 2014/06/29</h1>
+<p>第4回目となる <a href="http://groonga.org/ja/">全文検索エンジンGroonga</a> の勉強会の開催のあと、 <a href="http://sourceforge.jp/projects/groonga/lists/archive/dev/2013-December/001937.html">草の根Groongaイベントのお誘い</a> の投稿がきっかけとなって、小規模なGroongaイベントがいくつか開催されました。</p>
+<ul>
+	<li><a href="http://groonga.org/ja/blog/2014/01/29/groonga-meetup.html">Groonga Meetup 2014/01/29</a> ドキュメントをよくしよう、をテーマに会場提供をWEICさんにお願いして開催できました。</li>
+	<li><a href="http://groonga.org/ja/blog/2014/03/29/sapporoonga.html">全文検索エンジンGroonga勉強会@札幌</a> 導入事例をぜひ聞きたい、ということで再び札幌の地で開催されたのが #sapporoonga です。</li>
+	<li><a href="http://groonga.org/ja/blog/2014/04/29/groonga-meetup-2.html">Groonga Meetup 2014/04/29</a> Groonga初心者向けの演習をやってみました。会場提供はWEICさんです。</li>
+	<li><a href="http://groonga.doorkeeper.jp/events/11169">Groongaドキュメント読書会1</a> Groongaのオンラインドキュメントをみんなで読んでみました。会場提供はぐるなびさんです。</li>
+</ul>
+<p>今回はそれに続いたイベントです。</p>
+<h2 id="concept">今回のコンセプト</h2>
+<p>今回のコンセプトは、前回同様「全文検索をしたい人の最初の一歩を踏みだしやすくしよう」です。</p>
+<p>前回は初めての試みということもあり、GroongaだけでなくMroongaも、と言っていたわりにGroonga中心でした。Mroongaについてはあまり扱えませんでした。そこで今回ははじめからMroongaを中心に基礎から体験してもらうイベントということにしました。Mroongaのことがなんとなくわかって、もうちょっと使い込んでみようかと思えるようになることを目的としています。参加した人は、イベント終了後にいつでも試せる環境を自分のノートPCに持って帰って、あとでおさらいしてもらえるといいですね！</p>
+<h2 id="participant">イベントの対象者</h2>
+<p>今回のイベントの対象者はMroongaの初心者です。<br />
+初心者っていっても幅が広いので、こんな感じの人を想定しています。</p>
+<ul>
+	<li>Linuxの基本操作（コマンドライン）ができる</li>
+	<li>MySQLを使ったことがある。SQLの知識がある。でも必要にかられて使ったことがあるというだけで、データベースエンジニアというわけではない。</li>
+	<li>全文検索に興味があるけどよくわからない。全文検索エンジンを導入してみたい。</li>
+	<li>Mroongaをインストールしてちょっとだけ使ってみたことがあるが、最近のMroongaについてはよく知らない。</li>
+	<li>Mroongaのインストールで以前つまずいてしまった。せっかくなので再度チャレンジしたい。</li>
+</ul>
+<h2 id="related-events">関連イベント</h2>
+<ul>
+	<li><a href="http://atnd.org/events/49639">Groonga Meetup 2014/04/29</a> 2014-04-29に行われたGroonga初心者向けの講習会</li>
+	<li><a href="http://atnd.org/events/43461">全文検索エンジンGroongaを囲む夕べ 4</a> 2013-11-29に行われた第4回目のGroonga勉強会</li>
+	<li><a href="http://atnd.org/events/33070">全文検索エンジンgroongaを囲む夕べ 3</a> 2012-11-29に行われた第3回目のGroonga勉強会</li>
+	<li><a href="http://atnd.org/events/20446">全文検索エンジンgroongaを囲む夕べ 2</a> 2011-11-29に行われた第2回目のGroonga勉強会</li>
+	<li><a href="http://atnd.org/events/20451">全文検索エンジンgroongaを囲む昼下がり@札幌</a> 2011-10-08に札幌で行われたGroonga勉強会</li>
+	<li><a href="http://atnd.org/events/9234">全文検索エンジンgroongaを囲む夕べ #1</a> 2010-11-29に行われた第1回目のGroonga勉強会</li>
+</ul>
+<h2 id="about-roonga">Mroongaとは</h2>
+<p>Mroongaは活発に開発が続いている全文検索エンジンです。すべてのMySQLユーザーに高速な全文検索機能を提供します。MroongaはTritonnの後継プロダクトです。</p>
+<h2 id="date">日時</h2>
+<p>2014年6月29日（日）</p>
+<ul>
+	<li>15:00 集合</li>
+	<li>17:00 撤収</li>
+</ul>
+<h3 id="time-table">タイムテーブル</h3>
+<p>今回も前回同様、休日の開催となります。平日だと参加できないよーという声があったのと、やっぱり肉の日ですし！</p>
+<table>
+	<tr>
+		<td>時刻</td>
+		<td>内容[発表者]（所要時間）</td>
+	</tr>
+	<tr>
+		<td>15:00-</td>
+		<td>集合</td>
+	</tr>
+	<tr>
+		<td>発表枠1</td>
+		<td>Mroongaの基礎(仮) 株式会社クリアコード 林さん</td>
+	</tr>
+	<tr>
+		<td>-</td>
+		<td>イベントのすすめかたの説明、資料をもとにした説明と実際に手を動かす演習を予定。</td>
+	</tr>
+	<tr>
+		<td>16:50-17:00</td>
+		<td>片付け（10分）</td>
+	</tr>
+	<tr>
+		<td>17:00-</td>
+		<td>すみやかに撤退</td>
+	</tr>
+</table>
+<h2 id="place">場所</h2>
+<p>株式会社WEICさんの会議室をお借りできることになりました。ありがとうございます！</p>
+<p><a href="http://www.weic.jp/www/information/profile.html">株式会社WEIC （東京都新宿区高田馬場 1－29－8　新宿東豊ビル5階）</a></p>
+<h3 id="admission">入場方法</h3>
+<p>会場に入る方法と注意事項は以下の通りです。</p>
+<ul>
+	<li>オフィスフロア入り口である5Fに来てください。</li>
+	<li>Pマークの関係上、受付にて受付票にご記入ください。入館証をお渡しするので、その際に名刺を1枚頂戴します。</li>
+</ul>
+<h2 id="application">発表の応募方法</h2>
+<p>基本的に演習メインですが、随時発表を受け付けています。<br />
+今回のイベントに合わせて発表するネタを披露したいかたは、 <a href="https://twitter.com/groonga">@groonga</a> に一報ください。</p>
+<h2 id="requirement">準備するもの</h2>
+<p>今回はMroongaのことがわかった気になってもらうための体験型のイベントです。各自作業用のPCを持参してください。</p>
+<p>演習にはあらかじめMroongaをインストールしてあり、サンプルデータが登録されている <a href="http://www.vagrantup.com/">Vagrant</a> のboxを使います。<br />
+以下の手順でダウンロードからVMの起動、ログインできることを当日までに確認しておいてください。</p>
+<ul>
+	<li>boxについては準備が遅れていて6/28にアップロード予定です。</li>
+	<li>会場にもboxをUSBメモリに入れて持っていきます。</li>
+</ul>
+<pre>
+$ vagrant box add centos65-mroonga http://packages.groonga.org/tmp/package.box
+$ wget http://packages.groonga.org/tmp/Vagrantfile
+$ vagrant up centos65_mroonga
+$ vagrant ssh centos65_mroonga
+</pre>
+<h3 id="conference-room">会場について</h3>
+<ul>
+	<li>会場では無線LANが利用可能です。</li>
+</ul>
+<h2 id="etc">参加特典</h2>
+<p>年に一度イベントでしか手に入らなかった <a href="http://groonga.org/ja/blog/2013/05/10/sticker.html">Groongaと関連プロジェクトのステッカー</a> ですが、このMeetupでも配布します！ぜひノートパソコンなどに貼ってGroongaやMroongaの普及に協力してください！</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/51848" target="_blank">http://atnd.org/events/51848</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-06-29</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-06-29</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://mroonga.org/ja" target="_blank">http://mroonga.org/ja</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区高田馬場 1－29－8　新宿東豊ビル5階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社WEIC 5F会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7108655</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7041809</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>158416</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>groonga</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/groonga" target="_blank">@groonga</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-06-29</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

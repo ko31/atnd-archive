@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第11回「ネットワーク パケットを読む会（仮）」</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第11回「ネットワーク パケットを読む会（仮）」</h2>
+
+            <div class="buttons">
+                <a href="../json/events/31677.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/31677.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>31677</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第11回「ネットワーク パケットを読む会（仮）」</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>ネットワークの中身を見る勉強会</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>
+<p>第11回目の「ネットワーク パケットを読む会(仮)」を以下の要領で開催します。ぜひご参加ください。<br>
+今回は第8回、第9回に続きフォレンジック系のパケット解析にチャレンジします。全問の解析ができなくともかまいませんので、<b>ぜひ解析にチャレンジの上</b>、ご参加ください。</p>
+</p>
+<ul>
+		<li>日時　2012年8月27日(月) 19:00 – 20:45</li>
+		<li>会場　<a href="http://www.pb-k.jp/city.chuo.7kuminkan/kyobashi-p.html" target="_blank">京橋プラザ区民館 ２階洋室１号室</a> (東京都中央区銀座１丁目２５番３号)</li>
+		<li>交通　各線 銀座・京橋・宝町・銀座一丁目・東銀座から徒歩、有楽町からも徒歩圏内です</li>
+		<li>内容</li>
+<ul>
+		<li>参加者一言自己紹介</li>
+		<li><a href="http://forensicscontest.com/">Network Forensics Puzzle Contest</a> に挑戦 (下記参照)</li>
+		<li>参加者発表 (ライトニング トークなど)・<strong>発表者募集中!!</strong></li>
+</ul>
+		<li>参加費　実費 300円程度の予定</li>
+</ul>
+<p>会場は第９回までと同じ会館の２階です。<br>
+ネットワーク解析関係の発表やライトニング トークを募集します。詳しくは「ネットワーク パケットを読む会（仮）」Web サイト (<a href="http://pa.hebikuzure.com/" target="_blank">http://pa.hebikuzure.com/</a>)をご覧ください。</p>
+<h4><a href="http://forensicscontest.com/">Network Forensics Puzzle Contest</a> に挑戦</h4>
+<p>第8回、第9回に引き続きオンライン上で開催されているパケット解析コンテスト <a href="http://forensicscontest.com/">Network Forensics Puzzle Contest</a> のPuzzle に挑戦します。<br>
+今回は第3回の出題「<a href="http://forensicscontest.com/2009/12/28/anns-appletv">Puzzle #3: Ann&#8217;s AppleTV</a>」の解析を試します。参加される方は、可能な範囲で出されている問題の解析を行ってください。なおこの Puzzle は過去の出題ですので、<a href="http://forensicscontest.com/2010/02/02/puzzle-3-answers">既に正解が公開されています</a>。勉強会では手軽に利用できるパケット解析ツール (Wireshark など) を使って、どのような手法で解析できるかを検討していきます。</p>
+<h5>解析結果の発表</h5>
+<p>解析手法とその結果の発表を希望される方は、<img src="http://www.hebikuzure.com/img/Gmail.png">にメールでご連絡ください。<br>
+またそれ以外にも<b>当日抽選で</b>発表者を指名させていただく場合があります。</p>
+<h5>出題内容</h5>
+<p>
+<p>出題を日本語訳しています。参考にしてください。</p>
+</p>
+<p>
+<p>Ann と Mr. X は新たな作戦本部を作っています。貴方と貴方の調査チームは犯人引き渡しのための書類手続きが完了するまで、彼女の行動を秘密裏に監視しています。最近になって、Ann は新品の AppleTV を手に入れ、それの固定 IP アドレスを 192.168.10.10 に設定しました。最近の彼女の行動を示す<a href="http://forensicscontest.com/contest03/evidence03.pcap">パケット キャプチャがここにあります</a>。</p>
+</p>
+<p>
+<p>貴方はフォレンジック調査員です。あなたの任務は Ann が何を検索したかを見つけ出し、彼女の興味についてのプロファイルを作成し、含まれている証拠を明らかにすることです。</p>
+</p>
+<ol>
+	<li>Ann の AppleTV の <span class="caps">MAC</span> アドレスは何か<br />
+	<li>Ann の Apple TV が <span class="caps">HTTP</span> リクエストで使用する User-Agent string は何か<br />
+	<li>Ann が AppleTV で最初に検索した単語は何か (インクリメンタル サーチのすべてについて)<br />
+	<li>Ann が最初にクリックした映画のタイトルは何か<br />
+	<li>映画のトレーラー (予告編) の <span class="caps">URL</span> は何か (&#8220;preview-url&#8221; で示されています)<br />
+	<li>Ann が二番目にクリックした映画のタイトルは何か<br />
+	<li>その映画を購入する価格はいくらか (&#8220;price-display&#8221; で示されています)<br />
+	<li>Ann が最後に検索した単語は何か</ol>
+<p>
+<p>証拠のパケット (evidence03.pcap) は以下からダウンロードできます<br>
+<a href="http://forensicscontest.com/contest03/evidence03.pcap">http://forensicscontest.com/contest03/evidence03.pcap</a><br>
+MD5 (evidence03.pcap) = f8a01fbe84ef960d7cbd793e0c52a6c9</p>
+</p>
+<h4>参加準備のお願い</h4>
+<ul>
+	<li>Wireshark などのパケット解析ツールがインストールされた PC をご持参いただくと、より楽しめると思います。</li>
+	<li>会場にはノート PC が利用できる電源があります。ただしコンセント数が少ないため、電源を利用したい方はできるだけテーブル タップなどのケーブルをご用意ください。<br />
+	<li>会場にはインターネット アクセス環境がありません。必要な方は自前で 3G/<span class="caps">LTE</span>/WiMAX などの環境をご用意ください。</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/31677" target="_blank">http://atnd.org/events/31677</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-08-27</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-08-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://pa.hebikuzure.com/ " target="_blank">http://pa.hebikuzure.com/ </a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都中央区銀座１丁目２５番３号</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>京橋プラザ区民館　洋室　１号室洋室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6729974</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7715169</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>18101</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>hebikuzure</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/hebikuzure" target="_blank">@hebikuzure</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-08-18</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

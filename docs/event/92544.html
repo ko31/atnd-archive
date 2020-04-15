@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">CreateJS勉強会 (第9回)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">CreateJS勉強会 (第9回)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/92544.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/92544.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>92544</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>CreateJS勉強会 (第9回)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>ついに正規リリースされたCreateJS 1.0.0を使う</h1>
+<h3><a href="https://createjs.com/">CreateJS</a> が2017年9月14日付で正規バージョン1.0.0にアップデートされました。ダイナミックでインタラクティブなwebコンテンツをつくる統合ライブラリとして、これから商用サイトでも本格的に使われると期待されます。</h3>
+<h3>当勉強会の開催も久しぶりになりましたので、CreateJSの概要やAnimate CC 2018との関連から、バージョン1.0.0の新機能、実際に使われるシーンまで、幅広くご紹介する予定です。</h3>
+<p>*イベントの内容や追加情報は、適宜更新します。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>18:30 &#8211; </td>
+		<td> </td>
+		<td> 開場 </td>
+	</tr>
+	<tr>
+		<td>19:00 &#8211; 19:05 (5分) </td>
+		<td> </td>
+		<td> ごあいさつ </td>
+	</tr>
+	<tr>
+		<td>19:07 &#8211; 19:37 (30分) </td>
+		<td> <span class="caps">ICS</span> <a href="https://twitter.com/clockmaker">池田 泰延</a> </td>
+		<td> CreateJSの概要 + Animate CC 2018の新機能 </td>
+	</tr>
+	<tr>
+		<td>19:37 &#8211; 19:45 (8分) </td>
+		<td> </td>
+		<td> 小憩 </td>
+	</tr>
+	<tr>
+		<td>19:45 &#8211; 20:15 (30分)</td>
+		<td> <a href="https://twitter.com/FumioNonaka">野中 文雄</a> </td>
+		<td> CreateJS 1.0.0で何が変わったか </td>
+	</tr>
+	<tr>
+		<td>20:15 &#8211; 20:23 (8分) </td>
+		<td> </td>
+		<td> 小憩 </td>
+	</tr>
+	<tr>
+		<td>20:23 &#8211; 20:53 (30分) </td>
+		<td> 世路庵 <a href="https://twitter.com/448jp">沖 良矢</a> </td>
+		<td> 我々はCreateJSをどう使うべきか？ </td>
+	</tr>
+	<tr>
+		<td> 20:53 &#8211; 21:00 (7分)</td>
+		<td></td>
+		<td>質疑応答</td>
+	</tr>
+</table>
+<h2>内容</h2>
+<h3>CreateJSの概要 + Animate CC 2018の新機能</h3>
+<p><span class="caps">ICS</span> <strong>池田 泰延</strong><br />
+Animate CCのHTML5 Canvas書き出しではCreateJSが採用されています。CreateJSの理解を深める事で、Animate CCで制作したアニメーションをスクリプトで制御できるようになります。このセッションでは、CreateJSの概要とAnimate CCの注目の新機能「カメラ」を中心に紹介します。</p>
+<p>※事前に「 <a href="https://ics.media/tutorial-createjs/index.html">CreateJS入門サイト</a> 」で基礎を学んでおくと、勉強会の理解が深まると思います。</p>
+<h3>CreateJS 1.0.0で何が変わったか</h3>
+<p><strong>野中 文雄</strong><br />
+CreateJSがついに正規バージョン1.0.0になりました。新たに備わった機能として大きいのがWebGLへの対応です。もっとも、それ以外の新機能はどれも小粒のようです。おそらく正規版のリリースとして、最適化や拡張性、安定性など、内部的な改善に力が注がれたものと考えられます。そういうわけで、少しマニアックな機能も含めて、CreateJS 1.0.0で何が変わったのかをご紹介します。</p>
+<h3>我々はCreateJSをどう使うべきか？</h3>
+<p>世路庵 <strong>沖 良矢</strong><br />
+2020年にFlash Playerのサポート終了を控えた今、過去にFlashで作られていたようなアニメーションをブラウザで目にする機会が減っています。一方で、UI/UXを重視する人々からは、動きを伴ったマイクロインタラクションに注目が集まっています。動きを作り出す技術は、時代を問わずに求められています。本セッションでは、HTML5時代にCreateJSをどう用いれば効果的なのか、考えるためのヒントをご紹介します。</p>
+<h2>イベント情報</h2>
+<table>
+	<tr>
+		<th>参加費 </th>
+		<td> 無料 </td>
+	</tr>
+	<tr>
+		<th>会場 </th>
+		<td> <a href="https://www.adobe.com/jp/">アドビ システムズ 株式会社</a><br />
+東京都品川区大崎1-11-2 ゲートシティ大崎イーストタワー19F </td>
+	</tr>
+	<tr>
+		<th>アクセス </th>
+		<td> <a href="https://www.adobe.com/jp/jos/company/location.html">地図</a> / <a href="https://www.google.co.jp/maps/place/〒141-0032+東京都品川区大崎１丁目１１−２/@35.6193829,139.7300948,18z/data=!4m2!3m1!1s0x60188a5f8a09c129:0xb7e92dfe609dce8f">Googleマップ</a></td>
+	</tr>
+	<tr>
+		<th>主催 </th>
+		<td> <a href="http://www.fumiononaka.com/">野中 文雄</a> </td>
+	</tr>
+	<tr>
+		<th>協賛 </th>
+		<td> アドビ システムズ 株式会社 </td>
+	</tr>
+	<tr>
+		<th>中継 </th>
+		<td> Creative Cloud 道場より中継 </td>
+	</tr>
+</table>
+<h2>補足</h2>
+<ul>
+	<li>都合がつかなくなって欠席される場合は必ず、すみやかにキャンセルの登録をお願いいたします。 <strong>無断欠席は参加できなかった方のご迷惑となります</strong> ので、お控えください。</li>
+	<li>会場ビルのエレベーターホールは、19時を過ぎますと外からは自動ドアが開かなくなります。 <a href="https://twitter.com/hashtag/CreateJS">#CreateJS</a> でtweetいただければ、可能なかぎりお迎えにあがります。けれど、進行に差し支えるおそれがありますので、できるだけ定刻にお越しください。</li>
+	<li>定員は会場の収容人数に歩留まりを考慮して定めてあります。そのため、遅れて来られた場合、最悪 <strong>立ち見になる</strong> ことがありえます。あらかじめご了承のうえ、できるだけ定刻にお越しください。</li>
+	<li>会場内のWiFiは公開されていません。電源もかぎられていますので、あらかじめご了承ください。</li>
+	<li>関連Facebookページ
+	<ul>
+		<li><a href="https://www.facebook.com/icswebjp"><strong><span class="caps">ICS</span> <span class="caps">INC</span>.</strong></a><br />
+ICSはインタラクティブコンテンツのプロダクションです。HTML5やFlashに関する技術情報をこちらのFacebookページにてお届けします。</li>
+		<li><a href="https://www.facebook.com/CreateJS"><strong>CreateJS</strong></a><br />
+HTML5のCanvasを使ってダイナミックでインタラクティブな表現ができるCreateJS Suiteの最新情報を公開・共有します。</li>
+	</ul></li>
+</ul>
+<h2>公開資料</h2>
+<h3><a href="https://www.slideshare.net/clockmaker_jp/createjs-animate-cc-2018">CreateJSの概要 + Animate CC 2018の新機能</a></h3>
+<p><span class="caps">ICS</span> <strong>池田 泰延</strong></p>
+<h3><a href="http://www.fumiononaka.com/samples/CreateJS/CreateJS_171207.html">CreateJS 1.0.0で何が変わったか</a></h3>
+<p><strong>野中 文雄</strong></p>
+<h3><a href="https://speakerdeck.com/448jp/wo-hacreatejswodoushi-ubekika">我々はCreateJSをどう使うべきか？</a></h3>
+<p>世路庵 <strong>沖 良矢</strong></p>
+<h3><a href="https://blogs.adobe.com/creativestation/ccdojo-192-createjs">#192 CreateJS勉強会を生中継－アドビ公式</a></h3>
+<p><strong>Creative Cloud 道場</strong></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/92544" target="_blank">http://atnd.org/events/92544</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-12-07</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-12-07</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://fumiononaka.com" target="_blank">http://fumiononaka.com</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都品川区大崎1-11-2</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>アドビ システムズ 株式会社</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6186917</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7319107</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>59714</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>FumioNonaka</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/FumioNonaka" target="_blank">@FumioNonaka</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-12-12</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

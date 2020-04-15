@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">オープンセミナー2013@香川</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">オープンセミナー2013@香川</h2>
+
+            <div class="buttons">
+                <a href="../json/events/40654.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/40654.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>40654</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>オープンセミナー2013@香川</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>オープンセミナー2013@香川</p>
+<p>日時： 7/13(土) 13:00～17:00<br />
+場所：JR高松駅前 高松シンボルタワー e-とぴあ・かがわ 5F BBスクエア<br />
+　　　　※入口は 4F です。<br />
+参加費：無料<br />
+懇親会：屋内ビアガーデン（１人￥4,500円）</p>
+<p>講演題目：<br />
+下地 忠史 氏		「Rmenuフレームワークについて」<br />
+よしだ ともこ 先生	「普通の女子中学生へのプログラミング教育に関するお知恵拝借！」<br />
+高塚 遙 氏			「PostgreSQL次期バージョン 9.3 のご紹介」<br />
+有山 圭二 氏		「AOSPにコントリビュートしよう！」</p>
+<p>13:00〜13:05 開会<br />
+13:05〜14:05 下地 忠史 氏<br />
+14:15〜15:05 よしだ ともこ 先生<br />
+15:15〜15:55 高塚 遙 氏<br />
+16:05〜16:50 有山 圭二 氏<br />
+16:50～ 片付け</p>
+<p>下地 忠史 氏：「Rmenuフレームワークについて」<br />
+===<br />
+Rmenuフレームワークを一言で表現すると</p>
+<p>Jsonを使用した、<br />
+データマッピング（項目移送）機能に集中した、<br />
+DSLベースのフレームワーク</p>
+<p>という事になります。</p>
+<p>サーバサイドはRubyを、クライアントサイドはJavaScriptを使い<br />
+それぞれ、MVCモデル、SMVCモデルを構築しています。</p>
+<p>このフレームワークについての全体像をご説明したいと思っています。<br />
+===</p>
+<p>よしだともこ先生：「普通の女子中学生へのプログラミング教育に<br />
+　　関するお知恵拝借！」<br />
+===<br />
+今、普通の小中学生（特に女子）にも、<br />
+プログラミングを楽しんでもらえる教育プログラムが作れないか、<br />
+と考えています。</p>
+<p>が、特に女子生徒の場合、実用的なことや自分にメリットあること<br />
+でないと、なかなか興味を示してくれません。（男の子のように、<br />
+レゴブロックで作った自動車のライントレースにワクワクするような<br />
+こともないようですし・・。）</p>
+<p>プログラミング能力は、持っていて損するものではありませんから、<br />
+ほっておいてもプログラミングに興味を持った、一昔前の一部の<br />
+男の子だけが、その能力を持った大人になっているというのが、<br />
+私には残念に思えるからです。</p>
+<p>Raspberry Pi (子どもが自分の小遣いで買えるパソコン)を<br />
+作られたEben Upton氏は、2013年5月27日の大阪での講演の中で、</p>
+<p>　「2005年以降、ケンブリッジ大学のコンピュータサイエンス入学の学生<br />
+　（物心がついた時から、高価な商品としてのパソコンが存在した世代）<br />
+　 のプログラミング能力が低くなると同時に、<br />
+　 大学でコンピュータを深く学びたい学生の数が減少した。</p>
+<p>　 これに対処するためには、10才頃の子どもたちに、<br />
+　 自由に遊びながらプログラミングできる環境を与えることが必要で、<br />
+　 10才で与えてあげればその8年後に、それが実を結ぶことになる。」</p>
+<p>と言われました。私もこれに同感しました。このために、今、<br />
+私たちに何ができるかを、いっしょに考えていただけませんか？<br />
+===</p>
+<p>高塚 遙 氏：「PostgreSQL次期バージョン 9.3 のご紹介」<br />
+=
+オープンソースRDBMSのPostgreSQL。
+2013年秋に、バージョン9.3がリリースされる予定です。
+バージョンアップに伴い、追加される機能をご紹介します。
+=</p>
+<p>有山 圭二 氏：「AOSPにコントリビュートしよう！」<br />
+=
+Androidは、オープンソースで開発が進められています。
+本セッションでは、Android Open Source Projectへの
+コントリビュータ登録の手順。パッチの提出、レビューでのやり取り。
+その他AOSPに関わる人々などを紹介します。
+=</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/40654" target="_blank">http://atnd.org/events/40654</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-07-13</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-07-13</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>高松市サンポート2-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>e-とぴあ・かがわ</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.3526676</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>134.0467571</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>6980</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Ｔａｍ</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/tam_x" target="_blank">@tam_x</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-07-03</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

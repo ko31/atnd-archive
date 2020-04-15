@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">振動工学の基礎　～振動・騒音の対策～</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">振動工学の基礎　～振動・騒音の対策～</h2>
+
+            <div class="buttons">
+                <a href="../json/events/46647.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/46647.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>46647</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>振動工学の基礎　～振動・騒音の対策～</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>振動発生メカニズムを理解し，具体的な対策を身につける！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>【講座のポイント】<br />
+　本講座は，振動を習ったことがない，あるいは，振動は習ったが実際の振動現象をどのように捉えてよいか分からない，といった初学者を対象にしている．<br />
+　そのため，振動の基本となる一自由度振動系の自由振動，固有振動数，強制振動，共振について，まず説明する．続いて，多自由度振動系における固有振動モードについて解説する．これらの説明は，視覚的に現象を捉えられるように，動画を併用して行う．<br />
+　以上の基礎知識を実際の設計・対策に応用・展開していくには，動的システムを十分に理解しておく必要がある．振動応答は，外力(加振力)に大きく支配される．現場で外力そのものが計測されることがほとんどない状況を考えると，変位や加速度といった振動応答から外力を推定するというプロセスが不可欠である．振動の発生メカニズム，つまり動的システムを理解してもらうために，例題を示しながら，外力と振動応答との関係を説明する．<br />
+　さらに，振動問題としてたびたび技術者を困らせる共振について，エネルギー的な観点から解説し，共振現象が物理的(本質的)に理解できるように講義を進める．<br />
+　振動発生メカニズムが理解できれば，次は，具体的な対策を考えることになる．振動系を構成する質量，ばね，減衰が，振動応答にどのような影響を与えるかをまず説明する．さらに，構造物の高剛性化ための基本的な考え方である「力の流れ」について解説する．また，高ダンピング設計の基本的な考え方にも言及する．<br />
+【プログラム】<br />
+１．はじめに<br />
+２．【振動の基礎】　一自由度振動系<br />
+　　2-1 自由振動<br />
+　　　　　2-1-1 運動方程式と固有振動数<br />
+　　　　　2-1-2 粘性減衰系の挙動<br />
+　　2-2 強制振動<br />
+　　　　　2-2-1運動方程式<br />
+　　　　　2-2-2 時刻歴波形と共振曲線<br />
+　　　　　2-2-3 力による強制振動・変位による強制振動<br />
+　　　　　2-2-4 振動の評価量<br />
+３．【振動の基礎】　多自由度振動系<br />
+　　3-1 二自由度振動系<br />
+　　　　　3-1-1運動方程式と固有振動数<br />
+　　　　　3-1-2 固有振動モード<br />
+　　　　　3-1-3 モードの表現方法<br />
+　　3-2 モーダル解析<br />
+４．【物理的に掘り下げる】　動的システム<br />
+　　4-1 「外力」が「運動」を支配する　<br />
+　　　　　4-1-1応答から外力を「推定」する<br />
+　　　　　4-1-2周波数分析の観点から考える<br />
+　　4-2 共振とは何か？　<br />
+　　　　　4-2-1エネルギー的な観点から見直してみる<br />
+　　　　　4-2-2外力がなす仕事とダンパによって消散されるエネルギー<br />
+　　　　　4-2-3共振は外力がもっとも効率良く仕事をなした結果起こる現象<br />
+５．【物理的に掘り下げる】　ばね・減衰・質量の影響<br />
+　　5-1 外力を小さくすることができればよいのだが<br />
+　　5-2 ばね支配・減衰器支配・質量支配<br />
+６．【振動特性の改善】　高剛性設計<br />
+　　6-1高剛性化／軽量化の基本的考え方　<br />
+　　6-2「力の流れ」を読む・適用する<br />
+　　6-3リブ構造の例<br />
+７．【振動特性の改善】　高ダンピング設計<br />
+　　7-1振動エネルギーをダンパに「流す」　<br />
+　　7-2板の曲げ振動を抑える制振材貼り付けの考え方<br />
+［質疑応答・名刺交換］</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/46647" target="_blank">http://atnd.org/events/46647</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-02-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-02-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.rdsc.co.jp/seminar/140254.html" target="_blank">http://www.rdsc.co.jp/seminar/140254.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>江東区亀戸2-19-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>商工情報センター　カメリアプラザ　9F　会議室　【東京・江東区】</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6976451</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.8245201</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>152152</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>amazawa</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-12-24</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

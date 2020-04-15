@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Webデザイナー向けAndroidレイアウト集中講座</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Webデザイナー向けAndroidレイアウト集中講座</h2>
+
+            <div class="buttons">
+                <a href="../json/events/19973.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/19973.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>19973</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Webデザイナー向けAndroidレイアウト集中講座</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>デザイン権限を取り戻せ！Androidと仲良くなろうぜ！デザイナーのためのAndroid レイアウトXML講座</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>～日本Androidの会 四国支部 第９回勉強会 in かがわ～</p>
+<h1>Androidレイアウトの記述方法を教えます！</h1>
+<p>Androidアプリのデザインを描いても、自力で設定することができない！でもAndroidってEclipseじゃないといけないし、開発環境の準備しないといけないし…。XMLで書かないといけないらしいし、よくわからない！（＞＜）</p>
+<p>そんなデザイナーの方が多いらしいという情報をキャッチした日本Androidの会 四国支部が遂に動いた！<br />
+やります！Androidデザイナー勉強会！</p>
+<p>講師：@patorash (日本Androidの会 四国支部 スタッフ)<br />
+参加費：1,000円<br />
+受付： 9:30<br />
+開始：10:00<br />
+終了・撤収：16:30〜17:00<br />
+準備について：</p>
+<ul>
+	<li>ノートPCは持参してください<br />
+（CPU Core2Duo以上, メモリ 2GB以上推奨）</li>
+	<li>開発環境は事前に構築しておいてください
+	<ul>
+		<li><a href="http://chariderpato.blogspot.com/2011/09/androidwindows7-64bit.html">Windows 7(64bit版)の環境構築方法はこちら</a></li>
+		<li><a href="http://chariderpato.blogspot.com/2011/09/androidmacos-x-lion-64bit.html">MacOS Xの環境構築方法はこちら</a></li>
+	</ul></li>
+	<li>Android実機を持っていない人は、エミュレータの設定を行ってください
+	<ul>
+		<li><a href="http://chariderpato.blogspot.com/2011/09/androidwindows7-64bit_2712.html">Win エミュレータの設定の仕方（ページ中盤より）</a></li>
+		<li><a href="http://chariderpato.blogspot.com/2011/09/androidmacos-x-lion-64bit_599.html">Mac エミュレータの設定の仕方</a></li>
+	</ul></li>
+</ul>
+<h2>午前の部</h2>
+<ol>
+	<li>Androidのレイアウトの種類の説明(HTMLっぽく)
+	<ul>
+		<li>レイアウトはdivタグのように使え！</li>
+		<li>押さえるべきレイアウト2つ。
+		<ol>
+			<li>LinearLayout</li>
+			<li>RelativeLayout</li>
+		</ol></li>
+	</ul></li>
+	<li>LinearLayoutだけでここまでできる！
+	<ul>
+		<li>横方向に均等配置</li>
+		<li>縦方向に均等配置</li>
+		<li>スクロールするViewの配置</li>
+		<li>フッターを作る方法</li>
+	</ul></li>
+	<li>中央揃えしたければRelativeLayoutを使え！
+	<ul>
+		<li>画像を中央表示するときに便利</li>
+		<li>Viewを重ねるときなども便利</li>
+	</ul></li>
+</ol>
+<h2>午後の部</h2>
+<ol start="4">
+	<li>実践！XMLでレイアウトを書く！
+	<ul>
+		<li>実在するアプリ「コスメマネージャー」のトップを作ってみる</li>
+		<li>まずはレイアウトファイルだけを編集</li>
+	</ul></li>
+	<li>スタイルを使ってみる
+	<ul>
+		<li>XML属性を使い回してコードをスッキリ</li>
+		<li>実践！XMLでスタイルを定義！</li>
+	</ul></li>
+	<li>テーマ
+	<ul>
+		<li>アプリに統一性を持たせる</li>
+		<li>マニフェストで指定する</li>
+		<li>実践！XMLでテーマを定義！</li>
+	</ul></li>
+</ol>
+<h2>備考など（必ず読んでください）</h2>
+<h3>会場について</h3>
+<table>
+	<tr>
+		<th>アクセス</th>
+		<td>「JR予讃線 丸亀駅」より徒歩10～15分程度です。土日は無料駐車<br />
+場が開いていない場合が多いので、できるだけ電車でのアクセスをお勧めします。</td>
+	</tr>
+	<tr>
+		<th>駐車場について</th>
+		<td>車でお越しの方は市民会館の無料駐車場もしくは近くの有<br />
+料駐車場をご利用ください。</td>
+	</tr>
+	<tr>
+		<th>ネット環境</th>
+		<td>残念ながらネット環境はありません。各自ご用意頂くか、事前<br />
+に環境準備の上ご参加ください。</td>
+	</tr>
+</table>
+<h3>懇親会について</h3>
+<p>懇親会は別途、ATNDを準備していますので、懇親会に参加される方は下記より申し込んでください。<br />
+<a href="http://atnd.org/events/20006">http://atnd.org/events/20006</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/19973" target="_blank">http://atnd.org/events/19973</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-10-15</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-10-15</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://sites.google.com/site/jagshikoku/" target="_blank">https://sites.google.com/site/jagshikoku/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>香川県丸亀市大手町二丁目4番20号</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>丸亀市民会館 第10会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.2899228</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>133.7986277</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>33424</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>patorash</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/patorash" target="_blank">@patorash</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-10-12</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

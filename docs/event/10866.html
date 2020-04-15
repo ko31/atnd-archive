@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">pixiv Tech Meeting</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">pixiv Tech Meeting</h2>
+
+            <div class="buttons">
+                <a href="../json/events/10866.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/10866.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>10866</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>pixiv Tech Meeting</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>-pixiv主催エンジニア向け勉強会-</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>pixiv主催で、エンジニアのための勉強会を開催いたします。<br />
+日程、場所は下記となります。参加は無料です。<br />
+※勉強会終了後、懇親会を行う予定です。</p>
+<p>定員がございますのでお早めのエントリーをお願いいたします。</p>
+<p>pixivを開設し約3年という短期間で、会員数260万、月間約20億ページビュー、<br />
+6Gbpsのトラフィックをもつ規模のサービスとなりました。<br />
+そんなpixivのサービスを裏で支えている開発チームや、インフラスタッフが<br />
+使っている技術の紹介と、外部の技術講師を招いて技術の交流を行います。</p>
+<p>エンジニアの方のご参加をお待ち致しております。</p>
+<p><b>■ピクシブ社員による事例紹介</b><br />
+<b>１）VPとSPIDERを使ったMySQL運用</b><br />
+　　講師：上薗竜太　通称カミポ （Twitter <a href="http://twitter.com/#!/kamipo">@kamipo</a>）<br />
+　　プロフィール：<br />
+　　1982年生まれ、兵庫県出身。神戸情報大学院大学卒業。2008年にピクシブに入社し、<br />
+　　リファクタリングなどのシステム改善、インフラや、セキュリティ分野など幅広く担当。<br />
+　　Perlが得意。</p>
+<p><b>２）6GbpsをさばくオレオレCDN構築術</b><br />
+　　講師：飯田祐基　通称マインド（Twitter <a href="http://twitter.com/#!/semind">@semind</a>）<br />
+　　プロフィール：<br />
+　　1981年生まれ、大阪府出身。大阪大学卒業後、大手プロバイダへ就職するも、<br />
+　　技術力を向上させたい一心で2009年にピクシブへ転職。<br />
+　　ピクシブ入社後は、pixivのデータセンター開設に携わり、pixivが利用している<br />
+　　サーバーやネットワーク周りなどインフラ部門を担当。</p>
+<p><b>３）SSD+Squidで画像をキャッシュしなイカ？</b>　<br />
+　　講師：藤本和寿　通称フジモ（Twitter <a href="http://twitter.com/#!/phji">@phji</a>）<br />
+　　プロフィール：<br />
+　　1986年生まれ、和歌山県出身。静岡大学在学時、ピクシブでインターンを経験し、<br />
+　　大学卒業後、2010年に新卒でピクシブに入社。インフラ部門を担当。<br />
+　　入社後に、URL短縮サービスp.tl（ピードットティエル）を構築し、提供を行う。</p>
+<p><b>４）pixiv.js -4年目のサービスをきれいにしよう</b><br />
+　　講師：横野巧也　通称ヨコスケ（Twitter <a href="http://twitter.com/#!/yksk">@yksk</a>）<br />
+　　プロフィール：<br />
+　　2010年にピクシブに入社。絵を描くのが好き。PC版pixivのプログラマ。JSを得意とする。</p>
+<p><b>５）エログロOK!? JavaScriptとCanvasで作るiPhone向け勝手ゲーム開発</b>　<br />
+　　講師：杉本紳一郎　通称モヤシ（Twitter <a href="http://twitter.com/#!/Moyashipan">@Moyashipan</a>）<br />
+　　プロフィール：<br />
+　　1985年生まれ、北海道出身。はこだて未来大学卒業。2009年にピクシブに入社し、<br />
+　　チョビチョビゲームを作成するほか、pixivチャット、drawtwit、小説投稿機能を担当。</p>
+<p><b>６）pixivの画像アップロードシステム</b><br />
+　　講師：久保達彦　通称ボッコ（Twitter <a href="http://twitter.com/#!/cubicdaiya">@cubicdaiya</a>）<br />
+　　プロフィール：<br />
+　　2010年にピクシブに入社し、インフラ部門、セキュリティ分野を担当するほか<br />
+　　プログラミングも行い、pixivでの画像アップロード高速化を実現させる。</p>
+<p><b>７）pixivのリコメンデーションシステム</b><br />
+　　講師：青木俊介　通称アオピコ（Twitter <a href="http://twitter.com/#!/aopico">@aopico</a>）　 <br />
+　　プロフィール：<br />
+　　1978年生まれ、千葉県出身。東京大学工学部在学中、チームラボ創業。<br />
+　　2009年よりピクシブにてピクシブ株式会社取締役、開発統括を担当。</p>
+<p>また、スピーカーとしてPHPカンファレンスなどでも講演される<br />
+以下の方々にもPHPをテーマとした発表をいただく予定です。</p>
+<p><b>■小泉守義 様</b>（Twitter <a href="http://twitter.com/#!/moriyoshit"> @moriyoshit</a> ）<br />
+　・2002年よりPHPのコミッターを勤める。Python Hack-a-thon, Shibuya.pm, LL Tigerなどの<br />
+　　イベントの余興を主に担当。</p>
+<p><b>■個々一番 様</b>（Twitter <a href="http://twitter.com/#!/cocoitiban"> @cocoitiban</a> ）　【テーマ】PHPあるある話<br />
+　・ソーシャルゲームの<a href="http://mt9.jp/">「まちつく！」</a>や写真共有サイトの<a href="http://photozou.jp/">「フォト蔵」</a>でおなじみの<br />
+　　<a href="http://www.zynga.co.jp/">Zynga Japan</a> でエンジニアをされています。<br><br></p>
+<tr><b>■当日のタイムテーブル</b></tr>
+<p>&lt;table border=1 cellspacing=0 cellpadding=3 bordercolordark=&#8220;#ffffff&#8221; bordercolor=&#8220;#777777&#8221;&gt;<br />
+<tr bgcolor="#cccccc"><th>講師</th><th>時間</th><th>予定/テーマ</th></tr><br />
+<tr><th bgcolor="#cccccc">−</th><td>18:30</td><td>開演</td></tr><br />
+<tr><th bgcolor="#cccccc">上薗竜太</th><td>15分</td><td>VPとSPIDERを使ったMySQL運用</td></tr><br />
+<tr><th bgcolor="#cccccc">横野巧也</th><td>15分</td><td>pixiv.js -4年目のサービスをきれいにしよう</td></tr><br />
+<tr><th bgcolor="#cccccc">杉本紳一郎</th><td>15分</td><td>エログロOK!? JavaScriptとCanvasで作るiPhone向け勝手ゲーム開発</td></tr><br />
+<tr><th bgcolor="#cccccc">−</th><td>10分</td><td>休憩</td></tr><br />
+<tr><th bgcolor="#cccccc">久保達彦</th><td>15分</td><td>pixivの画像アップロードシステム</td></tr><br />
+<tr><th bgcolor="#cccccc">青木俊介</th><td>15分</td><td>pixivのリコメンデーションシステム</td></tr><br />
+<tr><th bgcolor="#cccccc">藤本和寿</th><td>15分</td><td>SSD+Squidで画像をキャッシュしなイカ？</td></tr><br />
+<tr><th bgcolor="#cccccc">飯田祐基</th><td>15分</td><td>6GbpsをさばくオレオレCDN構築術</td></tr><br />
+<tr><th bgcolor="#cccccc">−</th><td>10分</td><td>休憩</td></tr><br />
+<tr><th bgcolor="#cccccc">個々一番 様</th><td>30分</td><td>PHPあるある話</td></tr><br />
+<tr><th bgcolor="#cccccc">小泉守義 様</th><td>30分</td><td>当日公開</td></tr><br />
+<tr><th bgcolor="#cccccc">−</th><td>21:50〜</td><td>閉演</td></tr></p>
+</table>
+<p>15分枠では約5分ほどの質疑応答時間をご用意いたします。</p>
+<p>※当日は名刺2枚をご持参くださいますようお願いいたします。</p>
+<p>◆ピクシブでは現在エンジニアを募集しております。入社希望の方は、<br />
+　若干枠をご用意しておりますので、氏名・年齢・所属・経歴・連絡先を明記し<br />
+　「【pixiv Tech Meeting】参加申込み」という件名でメールにてご連絡ください。<br />
+　ご連絡先メールアドレス　recruit@pixiv.co.jp</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/10866" target="_blank">http://atnd.org/events/10866</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2010-12-20</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2010-12-20</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://pixiv.co.jp" target="_blank">http://pixiv.co.jp</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>〒151-0051  東京都渋谷区千駄ヶ谷4-23-5 JPR千駄ヶ谷ビル5F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ピクシブ本社内オフィス</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6809029</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7067607</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>54838</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>tech_pixiv</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>66</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2010-12-21</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

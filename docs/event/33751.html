@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">DSL（SQL）からのプラン最適化/プラン実行周辺話題の読み合わせ</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">DSL（SQL）からのプラン最適化/プラン実行周辺話題の読み合わせ</h2>
+
+            <div class="buttons">
+                <a href="../json/events/33751.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/33751.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>33751</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>DSL（SQL）からのプラン最適化/プラン実行周辺話題の読み合わせ</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>来るべき未来に備えて</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>★第一回目決めました★<br />
+日時：1/25 19:00-21:00<br />
+場所：北品川＠ノーチラス（okachimachiさんのご厚意により）<br />
+一回目の内容と、読み合わせ担当者（要相談、@maropu迄）<br />
+※どこまで、というのは決めず、時間内でいけるところまで<br />
+15.1 Introduction to Physical-Query-Plan Operators<br />
+15.2 One-Pass Algorithms<br />
+15.3 Nested-Loop Joins<br />
+担当: maropu (21p程度）</p>
+<p>15.4 Two-Pass Algorithms Based on Sorting<br />
+15.5 Two-Pass Algorithms Based on Hashing<br />
+担当: mooz（15p程度）</p>
+<p>15.6 Index-Based Algorithms<br />
+15.7 Buffer Management<br />
+担当: choplin（12p程度）</p>
+<p>15.8 Algorithms Using More Than Two Passes<br />
+16.1 Pasing and Preprocessing<br />
+担当: oza_x86（11p程度）</p>
+<p>16.2 Algebraic Laws for Improving Query Plans<br />
+担当: ueshin（12p程度）</p>
+<p>16.3 From Parse Trees to Logical Query Plans<br />
+担当: ashigeru（10p程度）</p>
+<p>maropuが認識している参加予定者11名（部屋の関係でこれで〆ています）<br />
+@oza_x86 @choplin @okachimachiorz1<br />
+@ashigeru @ueshin @taroleo @nobu_k<br />
+@h_kaw @shiumachi @stillpedant @maropu</p>
+<p>※下にも書いていますが、読み会は以下を想定しています<br />
+1. 和訳するのではなく、各担当者が英語をサラサラよんで（議論・疑問点があれば）適度な間隔で止めて話し合うスタイル（通称okachimachi-style）を採用しています<br />
+2. 資料作成はいらないです（内容は復習済みを想定しているので、速度重視です）<br />
+3. せっかく各分野から集まっているので、話中心にしたいです（主催者の単なる意見ですが・・・）</p>
+<p>/* <del>-</del> 過去ログ <del>-</del> */<br />
+【注意】本勉強会は以下を参加条件としています<br />
+・以下の書籍２冊を持っていること<br />
+・一度読んでいる、もしくは復習する勇気がある<br />
+・main参加者の誰かと知り合い<br />
+・読み合わせ担当になってもよいこと（適当にセクションで振り分ける予定です）<br />
+※事前資料作成は必要ありません、okachimachi-styleに準じます</p>
+<hr />
+<p>該当書籍と読み合わせを行う章は以下を想定します<br />
+Database Systems: The Complete Book<br />
+- http://www.amazon.co.jp/Database-Systems-The-Complete-Book/dp/0131873253<br />
+15 Query Execution<br />
+16 The Query Compiler</p>
+<p>Principles of Distributed Database Systems<br />
+- http://www.amazon.co.jp/Principles-Distributed-Database-Systems-Tamer/dp/1441988335<br />
+6 Overview of Query Processing<br />
+7 Query Decomposition and Data Localization<br />
+8 Optimization of Distributed Queries</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/33751" target="_blank">http://atnd.org/events/33751</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-01-25</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.nautilus-technologies.com/company/access.html#map01" target="_blank">http://www.nautilus-technologies.com/company/access.html#map01</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>品川区北品川1-19-5 コーストライン品川ビル</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>Nautilus-Technologies</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6236608</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7426791</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>87071</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>maropu</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/maropu" target="_blank">@maropu</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-01-15</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

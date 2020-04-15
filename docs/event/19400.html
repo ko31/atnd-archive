@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">WebデザイナーのためのGit勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">WebデザイナーのためのGit勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/19400.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/19400.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>19400</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>WebデザイナーのためのGit勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>デザイナーも Git を使って Github で遊べるようになろう</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>参加者の方へ</h1>
+<p>決定事項、注意点、変更などがありますのでご確認をお願いします。</p>
+<h2>＜内容＞</h2>
+<p>内容が決まりました。</p>
+<h3>「Gitの準備編」</h3>
+<p>ゴール：GitHubのアカウントを作って、pushできる準備まで行う。</p>
+<h3>「基本操作編」</h3>
+<p>ゴール：自己紹介を入れたREADMEファイルをgithub上に公開する。</p>
+<h3>「応用編」</h3>
+<p>ゴール：Pull Requestを送れるところまで</p>
+<p>をやる予定です。</p>
+<p>もし、今回の内容がレベルが低すぎるよ！という方、講師のエンジニアさんを多めに呼んでいるので、なるべく、知りたいことを個別で教えてあげられるようにしたいのですが、そういった方に満足いただける内容になるかがわかりません。次回はさらに難しいところをやりますので、今回は補欠の方に譲ることもご検討いただけたらと思います。</p>
+<h2>＜注意点＞</h2>
+<h3>１、OSはMac OS X 10.6 Snow Leopard以上をインストールしておいてください</h3>
+<p>もし古いOSを使っている方はVMwareかVirtualBoxを使ってUbuntuをインストールをお願いします</p>
+<h3>２、Xcodeを事前にインストールしておいてください</h3>
+<p>※これのインストールに1時間以上かかります</p>
+<p>インストール方法はこちら<br />
+<a href="https://github.com/prog4designer/p4d-git/wiki/Git-Install">https://github.com/prog4designer/p4d-git/wiki/Git-Install</a></p>
+<h3>３，テキストエディット以外のエディタをインストールしておいてください</h3>
+<p>Coda、Espresso、CotEditor、mi …など</p>
+<p>特にXcodeはインストールに時間がかかりますので、忘れずにインストールをお願いします。</p>
+<h3>４，Gitのインストールに挑戦してみてください</h3>
+<p>インストール方法はこちら<br />
+<a href="https://github.com/prog4designer/p4d-git/wiki/Git-Install">https://github.com/prog4designer/p4d-git/wiki/Git-Install</a></p>
+<h2>＜質問はこちらで＞</h2>
+<p>もし、上記注意点について不明な点、質問がありましたらこちらで質問して下さい。</p>
+<p><a href="http://lingr.com/room/prog4designer">http://lingr.com/room/prog4designer</a></p>
+<h2>＜Gitがインストール出来なかった方＞</h2>
+<p>Xcodeのインストール以外の作業でわからないことがあり、Gitがインストールできなかった方は、当日13:30にご入場ください。インストール作業をお手伝いします。</p>
+<h2>＜懇親会について＞</h2>
+<p>懇親会もZynga様の場所を貸していただくことになりました。ピザと発泡酒（アルコールがダメな方はお茶）で軽い懇親会を行います。参加者は一人1000円です。</p>
+<p>それでは、当日よろしくお願いします。</p>
+<p>========</p>
+<h2>Webデザイナーのための Git 勉強会を開催します</h2>
+<p>バージョン管理システム Git が使えるデザイナーをもっと増やしたい！と思うエンジニアさんたちが集まって、丁寧に Git が使えるまでデザイナーに教えるというイベントを開催します。</p>
+<p>新しいサービスを立ち上げる際、デザイナーがバージョン管理システムを使えることで一気に効率がよくなります。つまり、これからのデザイナーには必須なスキル！</p>
+<p>バージョン管理？って方も心配いりません。新しいスキルを身につけたいデザイナー、エンジニアの知り合いが欲しいデザイナー、エンジニアたちに自分のデザインスキルをアピールしたデザイナーは是非、ご参加ください。</p>
+<h2>参加条件</h2>
+<p>申し訳ないのですが、ちょっと厳しい参加条件があります。</p>
+<h3>Webデザイナーである（デザインが出来る、コーディングが出来る）<br />
+Macを持っていて、Macを持ってこれる（windowsでもVMwareでubuntuを動かせればOK）</h3>
+<p>以上の条件を満たしている方限定になります。</p>
+<h2>用意するもの</h2>
+<p>自分のMac（アダプタを忘れずに）</p>
+<h2>参加費用</h2>
+<p>無料（飲食OKなので、各自飲み物などを用意してください）</p>
+<h2>開催日時</h2>
+<p>2011年09月11日（日曜日）<br />
+14:00 〜 18:00（懇親会は18:15より開始予定）</p>
+<h2>開催場所</h2>
+<p>ジンガジャパン株式会社 様<br />
+http://www.zynga.co.jp/</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/19400" target="_blank">http://atnd.org/events/19400</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-09-11</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-09-11</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.zynga.co.jp/about/" target="_blank">http://www.zynga.co.jp/about/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都渋谷区桜丘町22-14 N.E.S.ビル2階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>Zynga Japan</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6546364</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6998095</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>37046</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>machida</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/machida" target="_blank">@machida</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-09-04</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

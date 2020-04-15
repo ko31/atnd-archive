@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PostgreSQL Advent Calendar 2012（全部俺）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PostgreSQL Advent Calendar 2012（全部俺）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/34093.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/34093.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>34093</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PostgreSQL Advent Calendar 2012（全部俺）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>PostgreSQL Advent Calendar 2012（全部俺）</p>
+<p>12/1 から 12/25 までの25日間、毎日 PostgreSQL に関する記事をひとつずつ書いていく企画です。通常の Advent Calendar と違う点として、25日間全部俺が書きます。</p>
+<p>もし通常の PostgreSQL Advent Calendar 2012 が立ってタイトル紛らわしいって言われたらなんか考えます。</p>
+<p>（追記 11/14）<br />
+参加型の（普通の）PostgreSQL Advent Calendarはこちら→ <a href="http://atnd.org/events/34176">http://atnd.org/events/34176</a></p>
+<table>
+	<tr>
+		<th>日付</th>
+		<th>担当</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>2012-12-01</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresql.html">PostgreSQL初期設定これだけは変えておこう</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-02</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/contrib.html">contribモジュールを使ってみよう</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-03</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/sqlpgstatstatements.html">実行が遅いSQL文をpg_stat_statementsで抽出する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-04</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/pgbadgersql.html">pgBadgerでSQLログを分析する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-05</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresqltoppgtop.html">PostgreSQL版topコマンド「pg_top」を使ってみよう</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-06</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/pgfiledump.html">pg_filedumpでテーブル／インデックスファイルを覗いてみる</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-07</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/pgbuffercache.html">pg_buffercacheで共有バッファを覗いてみる</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-08</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/blog-post.html">パフォーマンス統計情報のスナップショットを取得する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-09</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/blog-post_9.html">ウィンドウ関数を使ってブロック読み込み量の推移を見る</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-10</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/r.html">Rを使ってパフォーマンス統計情報を可視化する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-11</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/growthforecast.html">GrowthForecastでパフォーマンス情報を可視化する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-12</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/hinemospostgresql.html">HinemosでPostgreSQLの性能を監視する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-13</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/awspostgresql.html">AWSでそこそこセキュアにPostgreSQLインスタンスを立ち上げる</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-14</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/pgreceivexlog.html">pg_receivexlogでリアルタイムバックアップを取得する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-15</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/tablelog.html">tablelogでテーブルの更新差分を取得する</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-16</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresql_16.html">PostgreSQLのストレージアーキテクチャ（基本編）</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-17</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresqlpage-pruning.html">PostgreSQLのストレージアーキテクチャ（Page Pruning編）</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-18</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresqlhot.html">PostgreSQLのストレージアーキテクチャ（HOT編）</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-19</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresqlfillfactor.html">PostgreSQLのストレージアーキテクチャ（FILLFACTOR編）</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-20</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/93.html">次期バージョンの9.3で実装された更新可能ビューを試してみる</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-21</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/pgtappostgresql.html">pgTAPを使ってPostgreSQL上でデータベースの単体テストを行う</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-22</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/ssdpostgresql.html">データブロックサイズの変更と分析系クエリへの性能影響（SSD編）</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-23</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresql_23.html">テーブルパーティショニングを使って実現するパフォーマンス向上</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-24</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/pgpart.html">テーブルパーティショニングツール「pg_part」を使ってみる</a></td>
+	</tr>
+	<tr>
+		<td>2012-12-25</td>
+		<td>satoshi.nagayasu</td>
+		<td><a href="http://pgsqldeepdive.blogspot.jp/2012/12/postgresqlmppstado.html">PostgreSQL用MPPミドルウェア「Stado」の導入</a></td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/34093" target="_blank">http://atnd.org/events/34093</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://pgsqldeepdive.blogspot.jp/" target="_blank">http://pgsqldeepdive.blogspot.jp/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>6570</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>satoshi.nagayasu</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/snaga" target="_blank">@snaga</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第6回 ZABBIX-JP勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第6回 ZABBIX-JP勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/48954.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/48954.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>48954</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第6回 ZABBIX-JP勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>第6回 <span class="caps">ZABBIX</span>-JP勉強会</h1>
+<p><a href="http://atnd.org/events/28199">前回</a> の開催から約2年も経過してしましましたが、久々に <a href="http://www.zabbix.jp/"><span class="caps">ZABBIX</span>-JP</a> 主催の勉強会を開催します。</p>
+<p>今回は、今後リリース予定の最新バージョン(2.4)の情報やZabbixの活用方法など技術的な内容満載で行います。<br />
+土曜日開催になりますが、ご興味ある方はぜひご参加下さい。<br />
+(内容は変更される可能性がありますのでご注意下さい。)</p>
+<h2>■ 日時</h2>
+<p><strong>2014年4月12日 (土) 15:00-18:00(受付は14:30から!)</strong></p>
+<h2>■ 参加人数</h2>
+<p><strong>140名</strong></p>
+<h2>■ 参加費用</h2>
+<p><strong>無料</strong></p>
+<h2>■ アジェンダ</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者(敬称略)</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>14:30 &#8211; 15:00</td>
+		<td>-</td>
+		<td>開場・受付</td>
+	</tr>
+	<tr>
+		<td>15:00 &#8211; 15:25</td>
+		<td>Zabbix Japan 寺島 広大 ( <a href="https://twitter.com/kodai74">@kodai74</a> )</td>
+		<td>Zabbix最新情報について</td>
+	</tr>
+	<tr>
+		<td>15:25 &#8211; 15:50</td>
+		<td>TIS株式会社 池田 大輔 ( <a href="https://twitter.com/ike_dai">@ike_dai</a> )</td>
+		<td>Zabbix本に書いたこと書けなかったこと</td>
+	</tr>
+	<tr>
+		<td>15:50 &#8211; 16:00</td>
+		<td>-</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>16:00 &#8211; 16:25</td>
+		<td>株式会社サマリー  <a href="https://twitter.com/kenjiskywalker">@kenjiskywalker</a> </td>
+		<td>Zabbixの運用において、自分で自分の労働力と時間を節約する為の工夫事例紹介</td>
+	</tr>
+	<tr>
+		<td>16:25 &#8211; 16:50</td>
+		<td>クリエーションライン株式会社 <a href="https://twitter.com/zembutsu">@zembutsu</a> (a.k.a 前佛 雅人)</td>
+		<td>ZabbixのAPIを使って、運用を楽しくする話(仮)</td>
+	</tr>
+	<tr>
+		<td>16:50 &#8211; 17:00</td>
+		<td>-</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 17:30</td>
+		<td style="text-align:center;" colspan="2">LT大会(登壇者募集中)</td>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 17:05</td>
+		<td><a href="https://twitter.com/2box2bo">@2box2bo</a></td>
+		<td>ZabbixProxy on RaspberryPi(仮)</td>
+	</tr>
+	<tr>
+		<td>17:05 &#8211; 17:10</td>
+		<td>鈴木 崇文 (<a href="https://twitter.com/BlueSkyDetector">@BlueSkyDetector</a>)</td>
+		<td>mruby で zabbix agent の loadable module を作ってみた</td>
+	</tr>
+	<tr>
+		<td>17:10 &#8211; 17:15</td>
+		<td>@_BSmile_</td>
+		<td>ZABBIXに手の届かない所はない（仮）</td>
+	</tr>
+	<tr>
+		<td>17:15 &#8211; 17:20</td>
+		<td><a href="https://twitter.com/qryuu">@qryuu</a></td>
+		<td>Zabbixの分散構築～ConoHa VPSでのZabbix Server構築～<br />
+＊自宅ラックポータルの裏側＊</td>
+	</tr>
+	<tr>
+		<td>17:20 &#8211; 17:25</td>
+		<td>山根 健志 (<a href="https://twitter.com/fripper1214">@fripper1214</a>)</td>
+		<td>LLD（ローレベルディスカバリ）を弄り倒せ、zabbix_senderを併用してらくらく可視化</td>
+	</tr>
+	<tr>
+		<td>17:25 &#8211; 17:30</td>
+		<td></td>
+		<td>発表者募集中</td>
+	</tr>
+	<tr>
+		<td>17:30 &#8211; 18:00</td>
+		<td>-</td>
+		<td>クロージング・片付け</td>
+	</tr>
+</table>
+<p>本編終了後、会場近くで懇親会を実施します。<br />
+懇親会の参加登録はこちらからお願いします。<br />
+<a href="http://atnd.org/events/49388">第6回ZABBIX-JP勉強会 <del>懇親会</del></a></p>
+<p><strong>LT希望者は、このイベントのコメントまたは、Twitterにて@ike_dai宛にメッセージ下さい。</strong></p>
+<h2>■ 場所</h2>
+<p><strong>フューチャーアーキテクト セミナールーム <br />
+（東京都品川区大崎1-2-2　アートヴィレッジ大崎セントラルタワー 15F）</strong></p>
+<p><a href="http://www.future.co.jp/company/map.html">会場地図</a></p>
+<h2>■ 当日の集合場所</h2>
+<p><strong>開始20分前・10分前までは、&quot;URL&quot;:http://www.avoct.com/shop.html の6(権兵衛)と7(ドトール)の間の入り口にスタッフが待機して会場まで案内します。</strong></p>
+<p><strong>集合時間に遅れた場合は#zabbix_jpハッシュタグをつけてTwitterでメッセージを送ってください。スタッフが迎えに行きます。遅れる方が多いとスタッフが会場と入り口を往復することになりますので、できる限り遅刻はしないようにお願いします。</strong></p>
+<p><strong>行き方</strong></p>
+<p><strong>1. 大崎駅 北改札口 を出て、東口(≠新東口)へ</strong></p>
+<p><img src="http://www.avoct.com/access/img/map02.gif" alt="" /></p>
+<p><strong>2. 東口を左にまっすぐ(アートヴィレッジ大崎セントラルタワー方面)</strong></p>
+<p><img src="http://www.avoct.com/access/img/map03.gif" alt="" /></p>
+<p><strong>3. ドトールと権兵衛(おにぎり屋)の間の入り口から入館　※地図の(6), (7)の間の入り口</strong></p>
+<p><img src="http://www.avoct.com/shop/shop_map00.gif" alt="" /></p>
+<h2>■ その他事項</h2>
+<ul>
+	<li>当日電源タップが不足すると思われるので、持参＆共有が可能な方はお持ちいただけると助かります。</li>
+	<li>無線LANを開放する予定ですが、100人を超えると不安定になるかもしれません。（APが耐えられないかもしれません）PCのネットワーク共有が可能な方は、ご協力（隣の席の人に共有するなど）頂けると助かります。</li>
+	<li>休日のため、オフィス正面玄関は閉まっています。上記の通り、別の入り口から入館することになります。この入口は、本オフィスの入館カードがないと開きません。</li>
+	<li>退館は入館カードがなくとも可能なのですが、上記の通り弊社のスタッフがいなければ入館できません。ですので、再入場は原則禁止とさせてください。また、ビル内でも非常通路などに入ると、入館カードがないと戻れないことがあります。不必要な移動は極力おやめください。</li>
+	<li>喫煙所は外(1F, 2F)にあります。館内は禁煙です。休憩時間にスタッフが喫煙所まで誘導致します。（入館カードがないと再入場できないので、必ずスタッフと一緒に行くようにして下さい。）</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/48954" target="_blank">http://atnd.org/events/48954</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-04-12</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-04-12</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.zabbix.jp" target="_blank">http://www.zabbix.jp</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都品川区大崎1-2-2</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>フューチャーアーキテクト セミナールーム（東京都品川区大崎1-2-2　アートヴィレッジ大崎セントラルタワー 15F） （東京都品川区大崎1-2-2）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6223078</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7273303</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>90524</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>ike_dai</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/ike_dai" target="_blank">@ike_dai</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>140</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-04-11</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

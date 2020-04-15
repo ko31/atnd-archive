@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">CreateJS勉強会 (第5回)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">CreateJS勉強会 (第5回)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/61440.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/61440.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>61440</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>CreateJS勉強会 (第5回)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>新CreateJSをコンテンツ制作に活かす</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>新CreateJSをコンテンツ制作に活かす</h1>
+<h3><a href="http://createjs.com/#!/Home">CreateJS</a> が昨年末の2014年12月12日、ほぼ1年ぶりにライブラリを改めました。正規バージョン1.0もいよいよ近づいてきたようです。WebGLにも対応して、魅力的なWebコンテンツをつくるためのライブラリとして期待が高まります。CreateJSの新機能や、その活用の仕方、さらには表現の可能性についてご紹介します。</h3>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>18:30 -</td>
+		<td></td>
+		<td> 開場 </td>
+	</tr>
+	<tr>
+		<td>19:00 &#8211; 19:05 (5分)</td>
+		<td></td>
+		<td> ごあいさつ </td>
+	</tr>
+	<tr>
+		<td>19:05 &#8211; 19:50 (45分)</td>
+		<td> <a href="http://www.fumiononaka.com/">野中 文雄</a> </td>
+		<td> 新しいCreateJSで書くコードはどう変わるのか </td>
+	</tr>
+	<tr>
+		<td>19:50 &#8211; 19:57 (7分)</td>
+		<td> <a href="http://twitter.com/tonkotsuboy_com">鹿野 壮</a> </td>
+		<td> LT: CreateJSとNode.jsを使ってサーバーでcanvas要素を使おう </td>
+	</tr>
+	<tr>
+		<td>19:57 &#8211; 20:05 (8分)</td>
+		<td></td>
+		<td> 小憩 </td>
+	</tr>
+	<tr>
+		<td>20:05 &#8211; 20:50 (45分)</td>
+		<td> <a href="http://clockmaker.jp/">池田 泰延</a> </td>
+		<td> CreateJSで制作するスペシャルコンテンツ </td>
+	</tr>
+	<tr>
+		<td>20:50 &#8211; 20:57 (7分)</td>
+		<td> <a href="http://twitter.com/umi_kappa">蔵下 雅之</a> </td>
+		<td> LT: PreloadJSで「悩ませないローディング」の作り方 </td>
+	</tr>
+</table>
+<h2>内容</h2>
+<h3>新しいCreateJSで書くコードはどう変わるのか</h3>
+<p><strong>野中 文雄</strong><br />
+新たなCreateJSは、内部的な設計が整理され、最適化も進められました。そうした仕組みの中から公開された新しい機能もあります。知っておくとお得なコードや、書き方に注意しなければならない点など、つぎのようなお品書きでご説明します。</p>
+<ul>
+	<li>Graphicsクラスでコマンドを使う</li>
+	<li>CreateJSのクラスの新たな継承の仕方</li>
+	<li>PreloadJSの新しいローダーを使う</li>
+	<li>Matrix2Dの行列演算の仕様が変わった</li>
+</ul>
+<h3>LT: CreateJSとNode.jsを使ってサーバーでcanvas要素を使おう</h3>
+<p><strong>鹿野 壮</strong><br />
+CreateJSとNode.jsを組み合わせると、サーバーサイドでcanvasを扱うことができます。今回はサーバー側で画像を加工する簡単なデモを通して、サーバーサイドでCreateJSを使うメリットをご紹介します。</p>
+<h3>CreateJSで制作するスペシャルコンテンツ</h3>
+<p><strong>池田 泰延</strong><br />
+最新のCreateJSではWebGLに対応した一方で従来方式のHTML5 Canvas方式も残しています。それぞれの描画方式に制約があるためですが、適材適所につかえば表現力豊かに高速な描画を得ることができます。今回はそれらのテクニックを使ったスペシャルコンテンツの作り方とワークフローを紹介します。</p>
+<h3>LT: PreloadJSで「悩ませないローディング」の作り方</h3>
+<p><strong>蔵下 雅之</strong><br />
+外部ファイルを読み込む際によく見かける「くるくる」と回るアニメーションGIFのローディング。読み込んだ進捗がわからず「あとどれだけ待ったらいいの？」と悩むことも多いと思います。そんな悩みをユーザに与えないローディングの作り方をPreloadJSを使用したサンプルでご紹介します。</p>
+<h2>イベント情報</h2>
+<table>
+	<tr>
+		<th>参加費 </th>
+		<td> 無料 </td>
+	</tr>
+	<tr>
+		<th>会場 </th>
+		<td> <a href="https://www.adobe.com/jp/">アドビ システムズ 株式会社</a><br />
+東京都品川区大崎1-11-2 ゲートシティ大崎イーストタワー19F </td>
+	</tr>
+	<tr>
+		<th>アクセス </th>
+		<td> <a href="https://www.adobe.com/jp/jos/company/location.html">地図</a> /  <a href="https://www.google.co.jp/maps/place/〒141-0032+東京都品川区大崎１丁目１１−２/@35.6193829,139.7300948,18z/data=!4m2!3m1!1s0x60188a5f8a09c129:0xb7e92dfe609dce8f">Googleマップ</a> </td>
+	</tr>
+	<tr>
+		<th>主催 </th>
+		<td> <a href="http://www.fumiononaka.com/">野中 文雄</a> </td>
+	</tr>
+	<tr>
+		<th>協賛 </th>
+		<td> <a href="http://ics-web.jp/lab/">株式会社 <span class="caps">ICS</span></a> </td>
+	</tr>
+	<tr>
+		<th>中継 </th>
+		<td> USTREAMの配信を準備しています(予定) </td>
+	</tr>
+</table>
+<h2>補足</h2>
+<ul>
+	<li>関連Facebookページ
+	<ul>
+		<li><a href="https://www.facebook.com/icswebjp"><strong><span class="caps">ICS</span> <span class="caps">INC</span>.</strong></a><br />
+ICSはインタラクティブコンテンツのプロダクションです。HTML5やFlashに関する技術情報をこちらのFacebookページにてお届けします。</li>
+		<li><a href="https://www.facebook.com/CreateJS"><strong>CreateJS</strong></a><br />
+HTML5のCanvasを使ってダイナミックでインタラクティブな表現ができるCreateJS Suiteの最新情報を公開・共有します。</li>
+	</ul></li>
+	<li>直前・無断の欠席はお控えいただきますようお願いいたします。やむを得ず欠席される場合は、お早めにキャンセルしてください。</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/61440" target="_blank">http://atnd.org/events/61440</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-02-10</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-02-10</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.adobe.com/jp/jos/company/location.html" target="_blank">https://www.adobe.com/jp/jos/company/location.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都品川区大崎1-11-2</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>アドビ システムズ 株式会社</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6186917</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7319107</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>59714</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>FumioNonaka</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/FumioNonaka" target="_blank">@FumioNonaka</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-02-10</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">TDD Boot Camp 札幌 1.5</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">TDD Boot Camp 札幌 1.5</h2>
+
+            <div class="buttons">
+                <a href="../json/events/15390.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/15390.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>15390</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>TDD Boot Camp 札幌 1.5</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>札幌Javaコミュニティ勉強会</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><span class="caps">TDD</span> Boot Camp 札幌 1.5</h1>
+<p><span class="caps">TDD</span> Boot CampはTDD（テスト駆動開発）を実際に体験しながら学ぶイベントです。 <br />
+これまで東京を初め北陸や名古屋でも開催されており、札幌で2011年1月に開催しています。<br />
+そして、TDDBC札幌2.0が6月4日に開催される事も確定しましたが、その前に少し予習をしたい！という要望に応えるべく、TDDBC札幌1.5を開催します。<br />
+TDDBCでは多くの事を学び感じることができますが、それだけでテスト駆動開発を自分のスキルにすることはできず、何度も繰り返して実践していく必要があります。<br />
+TDDBC札幌1.5は、TDDBC札幌02の前哨戦としてJavaを使いユニットテストに慣れる事を目標としたイベントです。</p>
+<h2>日時</h2>
+<p>2011年5月15日（日）10:00 ～ 16:30</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<td>09:30〜10:00</td>
+		<td>開場</td>
+	</tr>
+	<tr>
+		<td>10:00〜11:30</td>
+		<td>テスト駆動開発とユニットテスト（講師 @shuji_w6e）</td>
+	</tr>
+	<tr>
+		<td>11:30〜12:00</td>
+		<td>チーム作り、お題の発表、テストリストの作成</td>
+	</tr>
+	<tr>
+		<td>12:00〜16:00</td>
+		<td>テスト駆動開発演習（途中でお弁当）</td>
+	</tr>
+	<tr>
+		<td>16:00〜16:30</td>
+		<td>振り返り</td>
+	</tr>
+</table>
+<p>・時間配分等は目安です<br />
+・演習は３〜４名で１チームとします。<br />
+・演習は１台のPCを使って、TDDの１サイクル毎に実装者を交代する乱取り形式で行います。<br />
+・演習ではノートPCを使用しますが、３〜４名に１台あれば良いので全員が持ってくる必要はありません。<br />
+・演習で対応する言語はJavaのみです。<br />
+・Javaの基本構文が解り、数十行程度のプログラムが書ける程度のスキルがあれば参加可能です。</p>
+<h2>開発環境の準備</h2>
+<p><a href="http://devtesting.jp/tddbc/?%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%EF%BC%88Java%2F%E6%9C%AD%E5%B9%8C%EF%BC%89">こちら</a> を参照して、開発環境を作成してご参加いただけると、成果物の共有などがスムーズにできます。</p>
+<h2>お題</h2>
+<p>札幌 1.5 のお題は <a href="https://bitbucket.org/shuji.w6e/20110515-tddbc-forum/wiki/Home">Bitbucket</a> で公開しています。<br />
+システムの複雑さはそれほどではなく、現実的にありそうなシステムとして、掲示板システムの開発を想定しています。<br />
+後半ではデータベースと接続してのテストを行うなどの予定です。</p>
+<h2>お弁当</h2>
+<p>昼食は、お題についての作戦会議などを行いながら、チームでお弁当を食べます。以下のメニューからお好みのお弁当を選択して、コメント欄に記入してください。<br />
+＜メニュー＞<br />
+・魚弁当<br />
+・肉弁当<br />
+・三色（鶏）弁当<br />
+・からあげ弁当<br />
+※お茶がつきます</p>
+<h2>会場</h2>
+<p><a href="http://www.sapporosansin.jp/">札幌市産業振興センター（東札幌） セミナールーム４</a><br />
+住所: 札幌市白石区東札幌５条１丁目１－１（地下鉄東西線東札幌駅から徒歩５分）</p>
+<h2>参加費</h2>
+<p>1,500円（昼食込） <br />
+※学生は1,000円 <br />
+※領収書が必要な方は受付にて申し出てください <br />
+※当日キャンセルについては参加費をご請求させていただくこともありますのでご了承ください。</p>
+<h2>定員</h2>
+<p>１６名</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/15390" target="_blank">http://atnd.org/events/15390</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-05-15</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-05-15</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://devtesting.jp/tddbc/?TDDBC%E6%9C%AD%E5%B9%8C1.5" target="_blank">http://devtesting.jp/tddbc/?TDDBC%E6%9C%AD%E5%B9%8C1.5</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>札幌市白石区東札幌５条１丁目１－１</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>札幌市産業振興センター</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>43.0561666</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>141.3859688</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>2991</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>shuji_w6e</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/shuji_w6e" target="_blank">@shuji_w6e</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-05-10</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

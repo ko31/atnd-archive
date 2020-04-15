@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Debian/Ubuntu JP Advent Calendar 2011</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Debian/Ubuntu JP Advent Calendar 2011</h2>
+
+            <div class="buttons">
+                <a href="../json/events/22905.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/22905.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>22905</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Debian/Ubuntu JP Advent Calendar 2011</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>Debian/Ubuntu でもやろうず。<br />
+<ul><br />
+<li>Debian/Ubuntu 開発ネタ</li><br />
+<li>Debian/Ubuntu パッケージを使ってみたネタ</li><br />
+<li>Debian/Ubuntu ポエム</li></p>
+</ul>
+<p>など&#8230;.</p>
+<p>12/1 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111201#p02">apt-rdepends を使っていいのは小学生まで</a></p>
+<p>12/2 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111202#p01">apt-mark 使ったパッケージのhold と unhold</a></p>
+<p>12/3 <a href="http://d.hatena.ne.jp/mkouhei/20111204/1322929318">pythonでBTSの情報をゴニョゴニョする。</a></p>
+<p>12/4 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111204#p01">debfoster で作業環境の初期状態を管理する</a></p>
+<p>12/5 <a href="http://d.hatena.ne.jp/kazken/20111205">「ICONIA <span class="caps">TAB</span> A500でUbuntuとか」</a></p>
+<p>12/6 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111206#p01">dget でソースパッケージが展開できない問題を回避する</a></p>
+<p>12/7 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111207#p01">dlocate パッケージを使ってファイルやパスがどのパッケージに含まれているものなのか確認する</a></p>
+<p>12/8 <a href="http://hitaki.net/diary/20111207.html">「古いsun-java6パッケージを使っていいのは小学生までだねーキャハ」</a></p>
+<p>12/9 <a href="http://devslog.com/article/20111209091712.html">「Web系のサーバー管理者になりたい人にオススメする Debian <span class="caps">GNU</span>/Linux」</a></p>
+<p>12/10 <a href="http://vbkaisetsu.sky-air.net/wordpress/?p=520">「ソースコードの差分や変更履歴を眺める」</a></p>
+<p>12/11 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111211#p01">cowbuilder/pbuilder でbaseイメージを分けて使う</a></p>
+<p>12/12 <a href="http://vbkaisetsu.sky-air.net/wordpress/?p=497">「グラフを描くソフトたち」</a></p>
+<p>12/13 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111213#p01">パッケージで使っているパッチシステムを確認する</a></p>
+<p>12/14 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111214#p01">mk-build-deps を使ってパッケージのビルドに必要パッケージをインストール、アンインストールする。</a></p>
+<p>12/15 <a href="http://www.argv.org/~chome/blog/noisefactory/2011/12/debian-pure-blends.html">「みんなのためのDebian Pure Blends」</a></p>
+<p>12/16 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111216#p01">DEP3 形式のパッチで debian/changelog を更新する</a></p>
+<p>12/17 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111217#p01">Debian Package の changelog を取得する</a></p>
+<p>12/18 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111218#p01">debsecan で Debian のセキュリティ情報を管理する</a></p>
+<p>12/19 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111219#p01">どのパッケージがディスクスペースを取っているか確認する</a></p>
+<p>12/20 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111220#p01">ABIやAPIの変更に伴い、新しいパッケージ依存に移行中のパッケージをチェックする</a></p>
+<p>12/21 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111221#p01">getbuildlog を使ってパッケージビルドログを取得する</a></p>
+<p>12/22 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111222#p01">debian-refcard パッケージと Debian チートシート</a></p>
+<p>12/23 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111223#p01"> rc-alert / popbugs コマンドを使ってシステムにインストールされているRCバグを確認する</a></p>
+<p>12/24 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111224#p01">クロスコンパイル環境を構築する</a></p>
+<p>12/25 <a href="http://www.nigauri.org/~iwamatsu/d/?date=20111225#p01">dcmd を使ってパッケージリストを抽出し、その一覧を処理する</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/22905" target="_blank">http://atnd.org/events/22905</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-12-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.debian.or.jp/~iwamatsu/advent/" target="_blank">http://www.debian.or.jp/~iwamatsu/advent/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>3359</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>n-iwamatsu</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

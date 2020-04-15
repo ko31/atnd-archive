@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">DNS温泉3 (DNS温泉2016) ... 熊本です!</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">DNS温泉3 (DNS温泉2016) ... 熊本です!</h2>
+
+            <div class="buttons">
+                <a href="../json/events/80244.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/80244.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>80244</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>DNS温泉3 (DNS温泉2016) ... 熊本です!</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>趣旨</h2>
+<p>玉名の名湯掛け流し天然温泉に浸かり、泊まり込みで <span class="caps">DNS</span> を学びましょう。 おこがましいですが微々たる震災復興支援のつもりで地域を選択しました。<br />
+ <a href="https://atnd.org/events/67744">昨年のDNS温泉2</a> と同様に、わかっているつもりでわかっていない <span class="caps">DNS</span> について基礎から <span class="caps">RFC</span> とインターネットシミュレータ (<a href="http://sim.internot.jp/vitocha/"><span class="caps">VITOCHA</span></a>) でじっくり理解を進めましょう。今回は初参加の方を対象とした内容の地方巡業ですが、復習のつもりのリピーターも歓迎します。参加者からのライトニングトーク (制限時間不定) も歓迎します。</p>
+<h2>日程</h2>
+<p>10月1日 (土) 13:30 &#8211; 10月2日 (日) 12:00　(現地集合、現地解散)</p>
+<h2>会場</h2>
+<ul>
+	<li><a href="http://www.shougensansou.net/">熊本県玉名温泉 百年の歴史を誇る日本庭園の宿 尚玄山荘 (しょうげんさんそう）</a></li>
+</ul>
+<p>　→JR鹿児島本線「玉名駅」下車。タクシーで約7分。(送迎の手配検討します)</p>
+<ul>
+	<li>参加費: 宿泊代 11,500円 (税込)  + 懇親会費 1,500円 (非飲酒者500円)
+	<ul>
+		<li>夕朝食+宿泊(5人/1室)</li>
+	</ul></li>
+	<li>女性部屋も用意します。アンケートに回答あるいは主催者までご相談ください</li>
+	<li><a href="http://kyushu-fukkou.jp/">九州ふっこう割</a> の割引券が利用できるかもしれませんが供給数も少なく10月分は未定であてにはできなさそうです。</li>
+</ul>
+<h2>申し込み/定員</h2>
+<ul>
+	<li>20名
+	<ul>
+		<li>メールアドレスを登録したアカウントでお申し込みください</li>
+		<li>宗教的に <span class="caps">ATND</span> を利用できない方は主催者までお問い合わせください</li>
+		<li>宿泊の関係上、申し込み後、本名をお尋ねさせていただきます</li>
+	</ul></li>
+</ul>
+<h2>プログラム (仮)</h2>
+<h3>一日目</h3>
+<p>13:30 始業式</p>
+<ul>
+	<li>オリエンテーション</li>
+	<li>自己紹介</li>
+</ul>
+<p>14:00 1時間目 哲学</p>
+<ul>
+	<li><span class="caps">DNS</span> の基礎を疑い再考する
+	<ul>
+		<li>権威とは何か</li>
+		<li>委任とは何か</li>
+		<li>ゾーンとは何か</li>
+		<li>内部名とは何か</li>
+		<li>グルーとは何か</li>
+		<li>再帰とは何か<br />
+(テキスト: RFC1034, RFC1035)</li>
+	</ul></li>
+</ul>
+<p>15:20 休み時間</p>
+<p>15:40 2時間目 図工</p>
+<ul>
+	<li><span class="caps">DNS</span> を触ってみる
+	<ul>
+		<li>仮想ネットワークを作る (VITOCHAの紹介)</li>
+		<li>自分のドメインを作る</li>
+		<li>検索してみる<br />
+(教材: ノートパソコン, VirtualBox, <span class="caps">VITOCHA</span>)</li>
+	</ul></li>
+</ul>
+<p>17:00 放課 (<a href="http://www.shougensansou.net/%e6%ba%90%e6%b3%89%e3%81%8b%e3%81%91%e6%b5%81%e3%81%97%e3%81%ae%e5%a4%a9%e7%84%b6%e6%b8%a9%e6%b3%89/">お風呂</a> など)</p>
+<p>18:30 夕食</p>
+<p>20:00 3時間目 学級会</p>
+<ul>
+	<li>LT大会 &amp; 懇親会
+	<ul>
+		<li><span class="caps">DNSSEC</span> を理解する環境の紹介 (RFC5155 example)</li>
+		<li>&#8220;<span class="caps">ENT</span> was here!!!&#8221; とは?</li>
+		<li><a href="http://www.shougensansou.net/%e5%85%89%e3%81%ae%e3%82%a4%e3%83%aa%e3%83%a5%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b3/">光のイリュージョン</a> (庭園見学会)</li>
+	</ul></li>
+</ul>
+<p>22:00 就寝</p>
+<h3>2日目</h3>
+<p>7:00 朝食</p>
+<p>8:30 1時間目 理科</p>
+<ul>
+	<li>キャッシュサーバの動作を知る
+	<ul>
+		<li>反復検索を理解する</li>
+		<li>何がキャッシュに入るか</li>
+		<li>キャッシュはどう変化するか</li>
+		<li>「浸透おそい」と言わずにすむネームサーバ移転のノウハウ<br />
+(テキスト: RFC2181 / 教材: ノートパソコン, VirtualBox, <span class="caps">VITOCHA</span>)</li>
+	</ul></li>
+</ul>
+<p>10:00 休み時間</p>
+<p>10:30 2時間目 社会</p>
+<ul>
+	<li><span class="caps">DNS</span> の脆弱性を知る
+	<ul>
+		<li>共用サーバの問題を理解する</li>
+		<li>キャッシュポイズニングを理解する</li>
+	</ul></li>
+</ul>
+<p>12:00 解散</p>
+<p>LT発表者募集しております!</p>
+<h2>資料</h2>
+<p><a href="http://www.e-ontap.com/dns/onsen3/">http://www.e-ontap.com/dns/onsen3/</a></p>
+<h2>主宰者</h2>
+<p>中京大学工学部 教授 鈴木常彦 / お問い合わせ E-mail: dns-onsen at e-ontap.com または ツイッター: @tss_ontap</p>
+<h2>その他</h2>
+<ul>
+	<li>参加者はできるだけ VirtualBox あるいは VMWare をインストールしたノートパソコン (主記憶2GB以上推奨) をお持ちください。(聴講だけでも可)</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/80244" target="_blank">http://atnd.org/events/80244</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2016-10-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2016-10-02</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.shougensansou.net/" target="_blank">http://www.shougensansou.net/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>〒865-0007 熊本県玉名市河崎１番地1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>熊本県玉名温泉 百年の歴史を誇る日本庭園の宿 尚玄山荘 (しょうげんさんそう）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>32.9398976</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>130.5601978</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>10209</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>tss_ontap</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-11-22</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

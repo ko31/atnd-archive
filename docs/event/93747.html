@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Raspberry Pi + カメラで画像認識IoTをやってみよう with おいしいものパーティ</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Raspberry Pi + カメラで画像認識IoTをやってみよう with おいしいものパーティ</h2>
+
+            <div class="buttons">
+                <a href="../json/events/93747.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/93747.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>93747</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Raspberry Pi + カメラで画像認識IoTをやってみよう with おいしいものパーティ</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>XSHELLが開発しているisaax。Raspberry Pi や Edison , NanoPi などのLinuxが動くSBC(Single Board Computer)をカンタンに使うことのできるシステムです。</p>
+
+<p>今回は Raspberry Pi ＋　カメラを使って、インストール・プログラム登録・画像認識とプログラム変更をお手軽にやってみましょう。(2017/12 に行った勉強会の拡大版です。前回の勉強会の様子はこちら→ <a href="https://xshell.io/2017/12/iot-raspberry-pi-camera/">https://xshell.io/2017/12/iot-raspberry-pi-camera/</a> )</p>
+
+<p>画像認識はOpenCV使って動体検出やります。メンドクサイOpenCVのインストールは既に終えているイメージを使うので♪</p>
+
+<p>IoTっぽくRaspberryPiはヘッドレス（ディスプレイ、キーボード、マウス、GUI画面を使わない）で扱い、 -クラウドに送信、isaaxから設定を行います。- → 今回はクラウドからデプロイ、プログラム変更して動作に反映をやっていきます。</p>
+
+<p>isaaxを使うと、
+- PCでプログラム作ってGitHubにpushするとRaspberryPiの内容がスグ更新
+- 電源とネットワークさえRaspberryPiにつなげばいいのでカフェでファッショナブルにだってできる</p>
+
+<p>使い方を説明しながら、カメラで画像認識までやってみます。
+誰でもWelcomeです！！</p>
+
+<p>参加無料です。RaspberryPi持ってない人は、貸出OKです。</p>
+
+<h2>やること</h2>
+
+<ul>
+<li>おいしいもの持ち寄って</li>
+<li>おいしいもの食べながら</li>
+<li>isaax設定して</li>
+<li>RaspberryPi動かして</li>
+<li>画像認識して</li>
+<li>遊ぶ！！</li>
+</ul>
+
+<h2>対象</h2>
+
+<p>Raspberry Piで遊んでみたい</p>
+
+<p>画像認識ちょっとやってみたい</p>
+
+<p>isaaxって何かな？</p>
+
+<p>おいしいもの食べたい</p>
+
+<p>のようなひと</p>
+
+<p>学生や個人の方、会社の方問わず大歓迎です！</p>
+
+<h2>参加にあたって</h2>
+
+<ul>
+<li>PC持ってきてください！</li>
+<li>RasbperryPi持ってきてください！！（持ってない人は参加エントリーにコメントで書いてね！）</li>
+<li>おいしいもの持ってきてください！</li>
+<li>技術がわからない人、キッズも大歓迎！</li>
+<li>ベビー連れにも対応！　遠慮無くWelcome!</li>
+</ul>
+
+<h2>日時、開催場所</h2>
+
+<p>2018/01/15（月） 19:00-21:00</p>
+
+<p>亀戸文化センター 大研修室
+東京都江東区亀戸2-19-1カメリアプラザ2階
+https://www.kcf.or.jp/kameido/access/</p>
+
+<h2>予定</h2>
+
+<ul>
+<li>19:00 オープニング、自己紹介、XSHELLの説明など</li>
+<li>19:30 isaax設定、RaspberryPi動作確認</li>
+<li>20:00 カメラを使う　撮影してみる！！</li>
+<li>20:30 動体検知してisaaxを使って調整（各自進めるところまで）</li>
+<li>21:00 おしまい</li>
+</ul>
+
+<h3>参加者が持ってくる必要のあるもの</h3>
+
+<ul>
+<li> PC
+
+<ul>
+<li>Linux/Mac/WindowsいずれもOKです</li>
+<li>WindowsはWindows7以降の対応となります</li>
+</ul></li>
+<li>RaspberryPiボード
+
+<ul>
+<li>RaspberryPI B/B+/2/3 あたりをお持ち下さい。RasapberyPi A/Zero/Zero Wは今回は対応外でゴメンナサイ！</li>
+<li>RaspberryPiをお持ちでない方は貸出できます。数に限りがあるのであらかじめエントリー時のコメントでお申し出ください。</li>
+</ul></li>
+<li>名刺２枚
+
+<ul>
+<li>もし、名刺交換してもいい会社の人は２枚お持ち下さい。</li>
+<li>個人の人や、名刺交換までしなくても・・・という人はOKです！</li>
+</ul></li>
+<li>おいしいもの！！</li>
+</ul>
+
+<h3>参加費</h3>
+
+<p>無料です！！</p>
+
+<h2>懇親会</h2>
+
+<p>当日、有志で懇親会に行きます！</p>
+
+<h2>注意事項</h2>
+
+<ul>
+<li>イベントに関して事前に連絡などある場合があります。atndからのメッセージを受け取れる設定にしておいてください。</li>
+<li>イベントの様子などは中継録画や写真撮影し、公開します。顔出しNGの方はエントリー時にお書きください。</li>
+<li>おいしいもの持ち寄りです</li>
+<li>PC持ってきてください！</li>
+</ul>
+
+<p>株式会社XSHELLの社内勉強会として企画しましたが、おいしいものを持ってきてくれるなら誰でもWelcomeです！！</p>
+
+<h2>XSHELLとは</h2>
+
+<p>シングルボードコンピューターを使って、プロトタイピングから、プロダクションモデルまでをシームレスにつなぐ、IoT向けのPaaSを開発しています。
+WEBアプリケーション技術、ハードウェア技術、3Dモデリング技術を組み合わせて、IoTの事業開発支援も行っています。
+オフィスはレーザー加工機、3Dプリンタ、小型CN旋盤、オシロスコープなどがあって、ミニFablabみたいになってるよ！</p>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/93747" target="_blank">http://atnd.org/events/93747</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2018-01-15</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2018-01-15</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.kcf.or.jp/kameido/access/" target="_blank">https://www.kcf.or.jp/kameido/access/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都江東区亀戸2-19-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>亀戸文化センター 2F 大研修室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.69764510000001</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.8245201</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>11285</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>nanbuwks</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/nanbuwks" target="_blank">@nanbuwks</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2018-01-10</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

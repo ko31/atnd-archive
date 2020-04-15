@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">プレNiigata.pm 忘年会 2011</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">プレNiigata.pm 忘年会 2011</h2>
+
+            <div class="buttons">
+                <a href="../json/events/22272.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/22272.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>22272</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>プレNiigata.pm 忘年会 2011</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>忘年会をやりましょう。Perlに興味がある方ならば、技術力は問いません。みんなでわいわい技術の話をして盛り上がりましょう。Perl書いたことないけどPerl(er)に興味があるとかでもかまいません！</p>
+<p>今回はHachioji.pmにならって、参加者みんなが発表をするという一枚LTやってみませんか？</p>
+<p>内容はそんなに大それたものである必要はありません。「コードで自己紹介書いてみました」でもいいし、「昨日書いたスクリプト」とか「先月ハマった例」とかでもいいです。みんなが発表することで、コミュニケーションを加速させるというのが目的です。無理なひとは無理に用意しないでもいいけど！</p>
+<p>一枚LTとは…</p>
+<ul>
+	<li>発表する事はだいたい１ページ（A4など）にまとめること</li>
+	<li>発表時間は１～２分程度</li>
+	<li>自分の名前（ハンドルでもいい）を載せること（コミュニケーションが目的なので）</li>
+	<li>質疑応答をやればいいので、書ききらなくてもOK</li>
+	<li>ネタ発表歓迎します</li>
+</ul>
+<p>このガイドラインはあくまでガイドラインなので、破ったっていいです。<br />
+目的は皆に発表してもらうこと、コミュニケーションを推進する事です。</p>
+<pre>
+use strict;
+use warnings;
+use PreNiigata;
+
+my $niigatapm = PreNiigata-&gt;new();
+
+for my $member ($niigatapm-&gt;yaer_end_party(2011)-&gt;menbers) {
+    $member-&gt;lightning_talk and $member-&gt;drink;
+}
+</pre>
+<p><span class="caps">IRC</span>: #niigatapm@freenode</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/22272" target="_blank">http://atnd.org/events/22272</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-12-10</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.gate-nagaoka.com/isaribi/" target="_blank">http://www.gate-nagaoka.com/isaribi/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>長岡市大手通１-４－２　駅前大黒ビル１Ｆ</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>長岡駅周辺</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>37.4469985</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>138.8517021</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>65102</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>neko_gata_s(shinpei)</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/neko_gata_s" target="_blank">@neko_gata_s</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-12-05</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">JSUG勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">JSUG勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/59340.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/59340.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>59340</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>JSUG勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>日本Springユーザ会 勉強会</h2>
+<p>8月に引き続き、新しいSpringのプロダクトやSpring導入のTips、Spring導入事例紹介などを中心に勉強会を実施したいと考えています。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>タイトル</th>
+		<th>発表者</th>
+	</tr>
+	<tr>
+		<td>19:00 &#8211; 19:40</td>
+		<td>SpringBootを用いたドメイン駆動設計</td>
+		<td>風間さん</td>
+	</tr>
+	<tr>
+		<td>19:40 &#8211; 20:20</td>
+		<td>オムニチャネルソリューション~hybrisとSpringフレームワーク</td>
+		<td>ムニンドラさんとマーシャルさん</td>
+	</tr>
+	<tr>
+		<td>20:20 &#8211; 21:00</td>
+		<td>試験に出るSpring</td>
+		<td>土岐さん</td>
+	</tr>
+</table>
+<h2>講演概要</h2>
+<h3>SpringBootを用いたドメイン駆動設計</h3>
+<ul>
+	<li>出演：風間 淳一郎
+	<ul>
+		<li>株式会社マネーパートナーズソリューションズ システムマネジメント部部長。<br />
+Web系のシステム開発を経験した後、2004年より金融系の開発に従事。<br />
+2007年より現職。SpringFrameworkを2004年から利用。</li>
+	</ul></li>
+	<li>概要
+	<ul>
+		<li>現場で実際に運用されているドメインモデリングをSpringBoot基盤に載せた形で紹介します。<br />
+なるべく具体的なコードを用いて説明したいと思っています（残高/入出金辺りの具体的なコード例をSpringBootピュア(+ Lombok)な実装で作ってみようかと思っています）</li>
+	</ul></li>
+</ul>
+<h3>オムニチャネルソリューション~hybrisとSpringフレームワーク</h3>
+<ul>
+	<li>出演：ムニンドラ・エッデラ
+	<ul>
+		<li>ハイブリスジャパン株式会社 シニア コンサルタント。<br />
+B2Bウェアハウスシステムのシステムインテグレーションのプロジェクトにて来日、その後日本に滞在。<br />
+Fioranoデータインテグレーションソフトウェアでの国内エンジニアとして従事し、2012年にハイブリスに参画。<br />
+Spring Framework を含めて様々な Java フレームワークを経験し、現在はハイブリス導入の際の技術コンサルタントとしてプロジェクトを支援。</li>
+	</ul></li>
+	<li>出演：マーシャル・ジェン
+	<ul>
+		<li>ハイブリスジャパン株式会社 シニア コンサルタント。<br />
+法律判例Webアプリケーションシステムプロジェクトにて2006年に来日。日本での業務を継続し、楽天株式会社に入社。<br />
+楽天にてバックエンドエンジニアおよびWebサービスチームにてSpringをベースにしたI/F構築を経験した後、2014年にハイブリスジャパンに入社。現在はムニンドラとともにお客様の導入プロジェクトの支援に従事。</li>
+	</ul></li>
+	<li>概要
+	<ul>
+		<li>グローバルの多くの著名企業にて採用されているオムニチャネルソリューション hybris。<br />
+この hybris のソリューションの概要と、そのソフトウェアの中で採用されている Spring フレームワークのテクノロジーとそのメリットについて紹介</li>
+	</ul></li>
+</ul>
+<h3>試験に出るSpring</h3>
+<ul>
+	<li>出演：土岐孝平さん
+	<ul>
+		<li>大学で情報工学科を専攻。業務では多くのシステム開発プロジェクトに従事。<br />
+現在では主にJavaEE（特にSpring Frameworkを得意とする）を使用したシステムのアーキテクトやコンサルタントとして活動しており、研修講師・記事執筆等もおこなっている。<br />
+また、これまでの経験から、保守／運用を楽にするツール開発を独自におこなっている。</li>
+	</ul></li>
+	<li>概要
+	<ul>
+		<li>Springを如何に学ぶか。詳しくは当日のお楽しみ♪</li>
+	</ul></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/59340" target="_blank">http://atnd.org/events/59340</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-11-27</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-11-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.facebook.com/JapanSpringUser" target="_blank">https://www.facebook.com/JapanSpringUser</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都渋谷区代々木2-1-1 新宿マインズタワー</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>新宿マインズタワー 20F セミナールーム </td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6866193</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6988754</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>44785</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>長谷川</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/hasedanna" target="_blank">@hasedanna</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-11-20</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

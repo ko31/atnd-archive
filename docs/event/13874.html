@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第3回MessagePackハッカソン（春）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第3回MessagePackハッカソン（春）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/13874.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/13874.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>13874</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第3回MessagePackハッカソン（春）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>の内容などを決める</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>※参加登録はEventbriteで行ってください</h1>
+<p>このATNDは告知用ページとして使っています。</p>
+<p><a href="http://msghack3.eventbrite.com/">参加登録：http://msghack3.eventbrite.com/</a></p>
+<h1>内容</h1>
+<ol>
+	<li>仕様や設計などの相談</li>
+	<li>Hacking!!</li>
+</ol>
+<h1>日時</h1>
+<p>4月3日（日） 14:00〜</p>
+<h1>場所</h1>
+<p>株式会社 プリファードインフラストラクチャー会議室</p>
+<p>ありがとうございます！</p>
+<h1>タイムテーブル<br />
+<img src="http://gyazo.com/4ecddd06198a88466cd084fdf9de3d22.png" alt="処理シーケンス"/></h1>
+<h1>議題</h1>
+<p><a href="http://syuki.skr.jp/files/20110402/msghack3.pdf">スライド</a></p>
+<h2>MessagePack-RPCのバージョンと名前空間の仕様議論</h2>
+<p>名前空間：複数のモジュールで構成されるサーバアプリケーションで、RPCのポート番号は1つだけにしたいときに、RPCのメソッド名が重なってしまうことがあるので、名前空間を分けたい。</p>
+<p>互換性も維持したい（例：名前空間が省略していたら、この名前空間が指定されていることにする）。</p>
+<p>参考： <a href="http://togetter.com/li/83252">RPCのバージョン &#8211; Togetter</a></p>
+<ul>
+	<li>プロトコルどうする</li>
+	<li>APIの設計&amp;プロトタイピング</li>
+</ul>
+<p>：frsyuki、nobu_kさんぜひ</p>
+<h2>MessagePack-RPCのエラー処理の実装</h2>
+<p>Java版には実装できそう。</p>
+<p><a href="http://togetter.com/li/107535">MessagePack-<span class="caps">RPC</span> Java版のエラー処理の実装など &#8211; Togetter</a></p>
+<p><a href="https://gist.github.com/470667">組み込みエラーの継承関係の案 &#8211; gist</a></p>
+<ul>
+	<li>プロトコル</li>
+	<li>APIの設計&amp;実装</li>
+</ul>
+<p>：frsyuki、mugaさんぜひ</p>
+<h2>Scala対応</h2>
+<p>TemplateBuilder周りに修正が必要そう？</p>
+<p>JavaBean対応（privateフィールドのシリアライズ）</p>
+<p><a href="https://github.com/takezoux2/msgpack">takezoux2/msgpack at github</a></p>
+<p>：takezoux2さん、frsyuki、mugaさんぜひ</p>
+<h2>JRuby対応</h2>
+<p>無案。</p>
+<h2>日付/時刻型のシリアライズ方法のガイドライン</h2>
+<p>「文字列はUTF-8」のように、ガイドラインを決めておくと相互運用性が向上する。</p>
+<ul>
+	<li>案1：1970-01-01 00:00:00 <span class="caps">UTC</span> からの経過秒を整数で保存</li>
+	<li>案2：1970-01-01 00:00:00 <span class="caps">UTC</span> からの経過ミリ秒を整数で保存</li>
+	<li>案3：1970-01-01 00:00:00 <span class="caps">UTC</span> からの経過マイクロ秒を整数で保存</li>
+	<li>案4：1970-01-01 00:00:00 <span class="caps">UTC</span> からの経過秒（精度は秒またはミリ秒またはマイクロ秒）を浮動小数で保存</li>
+	<li>案5：1970-01-01 00:00:00 <span class="caps">UTC</span> からの (経過秒, マイクロ秒) を整数2要素の配列で保存</li>
+</ul>
+<ul>
+	<li>Java版でDateクラスの組み込みTemplateを実装？</li>
+</ul>
+<p>：takezoux2さん、frsyuki、mugaさんぜひ</p>
+<h2>big decimal型のシリアライズ方法</h2>
+<ul>
+	<li>Java版でBigDecimalクラスの組み込みTemplateを実装？</li>
+</ul>
+<p>：mugaさん</p>
+<h2>Java版のTemplateのプリコンパイラの実装</h2>
+<p>Androidではクラスを動的にロードできない制約があるので、JavassistTemplateBuilderが使えない。<br />
+そこで、事前に.classを生成しておけると嬉しい。</p>
+<ul>
+	<li>実装方法
+	<ul>
+		<li>コマンド？</li>
+		<li>コンパイラプラグイン？</li>
+		<li>アノテーションプロセッサ？</li>
+	</ul></li>
+</ul>
+<p>：mugaさん</p>
+<h2>IDLの仕様</h2>
+<p><a href="http://togetter.com/li/116494">Thriftの謎とIDLの型システム &#8211; Togetter</a></p>
+<p><a href="https://gist.github.com/888627">MessagePack <span class="caps">IDL</span> 言語仕様案 &#8211; gist</a></p>
+<h2>IDLの実装方法</h2>
+<h3>プロトタイプ実装</h3>
+<p><a href="https://github.com/frsyuki/msgpack-idl">frsyuki/msgpack-idl.git &#8211; github</a></p>
+<ul>
+	<li>実装済み
+	<ul>
+		<li>構文解析</li>
+		<li>抽象構文木の構築</li>
+	</ul></li>
+	<li>未実装
+	<ul>
+		<li>Genericsの評価器</li>
+		<li>継承関係の評価器</li>
+		<li>型の検査器</li>
+		<li>コード生成器</li>
+		<li>コード生成器のプラグイン機構</li>
+	</ul></li>
+	<li>詳細
+	<ul>
+		<li>実装言語：Ruby</li>
+		<li>パーサライブラリ：&quot;parslet&quot;:http://kschiess.github.com/parslet/</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>所感：frsyuki
+	<ul>
+		<li>面倒なところはクリアした！ 事態収束への道筋は見えた。</li>
+		<li>Thrift互換性は一端捨ててみた。互換性を取るなら、Thrift IDL→MessagePack <span class="caps">IDL</span> ASTへの変換器を実装する方針</li>
+		<li>今の実装では、テキスト→謎のツリー→AST→IR→言語コード の4パス処理。ちょっと遅い。</li>
+	</ul></li>
+</ul>
+<h2>圧縮</h2>
+<ul>
+	<li>A案：MessagePackに入れる</li>
+	<li>B案：RPCのプロトコルに入れる</li>
+	<li>C案：RPCのトランスポートに入れる</li>
+</ul>
+<p><a href="http://togetter.com/li/115344">MessagePackで圧縮をサポートして節電する！ &#8211; Togetter</a></p>
+<h2>このページのような内容を常にまとめておくページが欲しい</h2>
+<p>githubのリポジトリ（コミットログ）とも連携したいところ。</p>
+<ul>
+	<li>Wikiの中にページを作成する案</li>
+	<li>新たにJIRAを入れてチケットベースにする案
+	<ul>
+		<li>frsyuki：JIRAを使ってみているところ</li>
+	</ul></li>
+</ul>
+<p>：frsyuki、kzkさん</p>
+<h3>JIRAとConfluence</h3>
+<p>試験的にインストールしてみました：frsyuki</p>
+<ul>
+	<li>http://jira.msgpack.org/</li>
+	<li>http://wiki.msgpack.org/</li>
+</ul>
+<h2>MessagePackカンファレンスをやりたいという話</h2>
+<p><a href="http://twitter.com/mikeda/status/42224416154849280">@mikeda: みんなMessagePackがイイって言ってるなぁ。実際、どういうところに使ってるんだろ</a></p>
+<p><a href="http://twitter.com/kana_t/status/44094130678272000">@kana_t: msgpackの資料がすくない</a></p>
+<p>みたいな話もあるので、こんな所でこんな感じで使っていて、マジで使える品質だZE☆！ というアッピールができると良さそう！</p>
+<p>話すネタとか場所とか。</p>
+<h2>型変換テンプレートがRuby版にも欲しい</h2>
+<p>本質的にシリアライザには型変換の機構が必要で、日付型や文字列/バイト列問題をスマートに解決するには型変換機構が必須になる。</p>
+<p>と言うわけで、Ruby版にもC++版やJava版にあるような型変換テンプレートを導入したいが、今のところ設計案なし。</p>
+<h2><span class="caps">RPC</span> Ruby版の課題</h2>
+<h3>EventMachine対応</h3>
+<p>背景：EventMachineに対応して欲しいと言うtweetが、海外でちょくちょく発生している。<br />
+http://twitter.com/#!/tobi/status/52112027455471616</p>
+<p>方針：Java版と同じ設計で、イベントループをプラガブルにする案。ただしEventMachineはNettyと違ってマルチスレッドに対応しておらず、あらかじめ決められたreactor threadなるスレッドでしか駆動できない制限があるため、若干の工夫を要すると思われる</p>
+<h3>エラー処理、バージョン、名前空間の設計と実装</h3>
+<p>プロトコルが決まったら、まずプロトタイプ的な実装が必要になりそう。</p>
+<p>エラー処理のAPIは、現在のAPIではユーザー定義の例外クラスを設定できないので、SessionクラスやSessionPoolクラスなどに例外クラスを設定するメソッドを追加する必要がある。<br />
+参考（Java版） <a href="http://togetter.com/li/107535">MessagePack-<span class="caps">RPC</span> Java版のエラー処理の実装など</a></p>
+<p>バージョンのAPIは、無案。たぶんDispatcherの改修で対応可能。</p>
+<p>名前空間のAPIは、現状のAPIではServerに一つのDispatcherしか渡せないのを、複数の key =&gt; Dispatcher ペアを渡せるようにする。（ついでにQtのsignal/slotの様な疎結合性を高めるディスパッチ方式を導入してみたい）</p>
+<h3>サーバからクライアントへのRPC</h3>
+<p>繋げてきたクライアントに対して、逆方向（サーバ→クライアント）にRPCしたいというケースが意外に多くある。</p>
+<p>API的には、Sessionクラスにserve(Dispatcher)メソッドを実装する。あるいは、serveメソッドを別のクラスかモジュールに切り出して、SessionクラスとServerクラスが継承するかMixInする。</p>
+<p>実装的な問題として、サーバはクライアントに対してSessionインスタンスを作って割り当てる必要がある（今は割り当てていない）。たぶん、Transportクラス（とTransportクラスとServerクラスの間のインタフェース）にも変更が必要になる（Transportクラスが接続を受け付けたときにSessionインスタンスを作成する）。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/13874" target="_blank">http://atnd.org/events/13874</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-04-03</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-04-03</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://msgpack.org/" target="_blank">http://msgpack.org/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都文京区本郷 2-40-1 本郷東急ビル 4F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社 プリファードインフラストラクチャー</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7068792</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7598805</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>12010</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>frsyuki</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-04-02</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

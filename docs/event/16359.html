@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">画像処理アルゴリズム（処理内容からFPGA化まで）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">画像処理アルゴリズム（処理内容からFPGA化まで）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/16359.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/16359.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>16359</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>画像処理アルゴリズム（処理内容からFPGA化まで）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>勉強・実験用ソフトIPキットⅢを用いたPC実習付き！PCは弊社で1人1台準備します！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>【受講対象】<br />
+１）以下業種の画像処理部の技術者、管理責任者 <br />
+　デジタルカメラ、デジタルビデオカメラ <br />
+　印刷、カラーコピー機 <br />
+　ディスプレイ <br />
+　レーザ計測、位置決め <br />
+　医療画像処理、医療機器制御 <br />
+　衛星画像処理 <br />
+　超解像技術 <br />
+　ロボットのカメラ、制御 <br />
+　外観検査装置 <br />
+　非破壊検査装置 <br />
+　車載カメラ <br />
+　防犯カメラ <br />
+２）現在もしくは今後の業務に画像処理が必要になる方 <br />
+３）画像処理部のハードウェア、ソフトウェアの切り分け作業を必要とする方</p>
+<p>【講演の趣旨】<br />
+　画像処理開発専門に、機能要求を受けて開発している会社での開発の進め方を学びます。実体験したトラブルなどをお伝えすることで、トラブル回避につながったり、ハード、ソフトの実現手段の使い分けの参考になれば幸いです。質疑応答が最も白熱するセッションです。実務で困っている内容を質問でぶつけて下さい。<br />
+　FPGA内回路は、新人が事前コーディングした全ソースを、ポイントだけチェックします。ハード設計の実習は時間の都合上行いませんが、質問頂ければ全ての回路を説明させて頂きます。</p>
+<p>【講演概要】<br />
+　セミナー前半では画像処理について、応用製品分野や基礎的な処理を学びます。二値化、空間フィルタ、ラベリング、特徴量、オフセット、ゲイン、シェーディング、ガンマ補正、パターンマッチングなどを原理は簡単に、どんな効果があるかを中心に簡単に説明します。これらの処理を組み合わせて処理効果を体験してもらう為、勉強＆実験用ソフト(IPキットⅢ)を用いて、各自PCを使って実際に操作してもらいます(IPキットⅢの評価版は、持ち帰れます)。 <br />
+　後半は、ハードウェアとソフトウェアの切り分けについての考え方を学びながら、実現方法の選定を実践します。更に、ハード化する事を決めた部分の要求仕様を明確にし、デバイスメーカーの比較やデバイス規模(ゲート規模、IOピン数)などを考慮しFPGAを選定します。最後に、事前に用意されている簡単なキャプチャーボード上のFPGAに、画像処理を加えて動作させるデモを行います。</p>
+<p>【習得できる知識】<br />
+・画像処理の定石的処理 <br />
+・画像処理装置を設計する際のシステム設計 (ハード、ソフトのバランス感覚) <br />
+・基礎的な画像処理技術を組み合わせた応用方法 <br />
+・色々な尺度から評価したFPGAの効率的な選定方法 <br />
+・アルゴリズムのハード化に向いている処理、不向きな処理 <br />
+・ハードウェアとソフトウェアを切り分ける考え方</p>
+<p>【プログラム】<br />
+１．産業分野における画像処理<br />
+　　1-1 外観検査装置 <br />
+　　1-2 車載カメラ <br />
+　　1-3 セキュリティ(侵入検知) <br />
+　　1-4 デジタルカメラ <br />
+　　1-5 カラーコピー機と写真現像機(キレイの違い)<br />
+２．定石的な画像処理　～ソフトウェアで学ぶ～<br />
+　　2-1 二値化 <br />
+　　2-2 空間フィルタ <br />
+　　2-3 ラベリング <br />
+　　2-4 特徴量抽出 <br />
+　　2-5 オフセット・ゲイン <br />
+　　2-6 シェーディング補正 <br />
+　　2-7 ガンマ補正 <br />
+　　2-8 面積階調 <br />
+　　2-9 グレースケール変換 <br />
+　　2-10 画像変形 <br />
+　　2-11 画像圧縮 <br />
+　　2-12 <span class="caps">FFT</span> <br />
+　　2-13 パターンマッチング<br />
+３．要求に基づいたアルゴリズム検討　～仕様例から実習まで～<br />
+　　3-1 アルゴリズム検討の流れ <br />
+　　3-2 例題を解いてみよう（実習）<br />
+４．ハードウェアとソフトウェアの切り分け<br />
+　　4-1 実現手段の種類 <br />
+　　4-2 それぞれのメリットとデメリット <br />
+　　4-3 ハードウェア(<span class="caps">FPGA</span>)とソフトウェア(<span class="caps">CPU</span>)の上手な組み合わせ<br />
+５．ハードウェア化に必要な条件定義<br />
+　　5-1 計算精度 <br />
+　　5-2 処理速度<br />
+６．FPGAの選定<br />
+　　6-1 ALTERAとXILINX <br />
+　　6-2 コストパフォーマンス <br />
+　　6-3 処理による必要ゲート規模 <br />
+　　6-4 必要とするI/Oピンとピン互換 <br />
+　　6-5 現実の選択制約(入手性、トレンド)<br />
+７．実演デモ　～ハードウェアによる１５×１５コンボリューションフィルタ～<br />
+８．まとめ<br />
+（質疑応答・名刺交換・個別相談）</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/16359" target="_blank">http://atnd.org/events/16359</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-07-26</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-07-26</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.rdsc.co.jp/seminar/110726.html" target="_blank">http://www.rdsc.co.jp/seminar/110726.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都江東区青海2-4-32</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>タイム24ビル　4F　セミナールーム　【東京・江東区】</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6177178</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7771268</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>50819</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>mfcdt065</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-05-30</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

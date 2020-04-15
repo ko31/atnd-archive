@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PE勉強会 (3)</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PE勉強会 (3)</h2>
+
+            <div class="buttons">
+                <a href="../json/events/13353.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/13353.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>13353</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PE勉強会 (3)</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>DLLを解析しよう</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1><a href="http://d.hatena.ne.jp/n7shi/20110416">※資料を公開しています。</a></h1>
+<hr/>
+<p>※ 使用ソフトにデバッガ（OllyDbg）を追加しました。「準備する物」をご確認ください。</p>
+<h1>イベントの概要</h1>
+<p>Windowsの実行ファイル (<span class="caps">EXE</span>/<span class="caps">DLL</span>) で使われているPE (Portable Executable) 形式についての勉強会です。バイナリいじりの基礎から始めて、EXEファイルやDLLファイルをコンパイラなしで作って動かすことを目標にします。PEをきっかけにして、x86のマシンコードやOSのメモリ管理について理解を深めるのが狙いです。</p>
+<p>前回のEXEに引き続いてDLLを見ていきます。途中参加は大歓迎ですので、バイナリいじりは初めてという方でもお気軽にご参加ください。</p>
+<p>※ 将来的に他のOSのバイナリ形式への展開も踏まえ、GNUツールに慣れるためgccを使用します。Visual Studioは対象外とします。</p>
+<h2>参加費用</h2>
+<p>勉強会の参加費用は1,000円です。内訳は場所代とドリンク代です。会場にはセルフサービスのドリンクバーが設置されています。</p>
+<p>勉強会終了後、懇親会を予定しています。懇親会に参加される方は2,000円（学生さんは1,000円）のお支払いをお願いします。懇親会の参加有無につきましては、参加登録時に表示されるアンケートにご記入をお願いします。</p>
+<p>懇親会会場: <a href="http://www.sankofoods.com/shop/kinjr/kinjr_shop54.html">月の雫 池袋ヒューマックス店</a> （コースなし・自由注文）</p>
+<h2>準備する物</h2>
+<p>実際に解析を体験して頂きますので、ノートパソコンをご用意ください。必要な環境やソフトは以下の通りです。</p>
+<ol>
+	<li>OS: 説明にはWindowsを使用します。EXEが動かせる環境であれば、Windowsでなくても構いません。UNIX系OSではWineが利用できます。エミュレータ上でゲストとしてWindowsを動かしても構いません。</li>
+	<li>gcc: 説明には <a href="http://bit.ly/h9K2ws">MSYS＋MinGW</a> を使用します。Windows以外のOSではMinGWのクロスコンパイラが利用できます。</li>
+	<li>テキストエディタ: 説明には <a href="http://notepad-plus-plus.org/">Notepad＋＋</a> を使用します。特に指定ではないため、他のテキストエディタでも構いません。</li>
+	<li>バイナリエディタ: 説明には <a href="http://www.vector.co.jp/soft/win95/util/se032859.html">BZ</a> を使用します。特に指定ではないため、他のバイナリエディタでも構いません。</li>
+	<li>デバッガ: 説明には <a href="http://www.ollydbg.de/">OllyDbg</a> を使用します。Wineでの動作は未確認ですが、Wineには <a href="http://www.winehq.org/docs/winedev-guide/wine-debugger">winedbg</a> があるようです。</li>
+</ol>
+<p>※ これらの使用方法は勉強会で解説します。</p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:10</td>
+		<td>入室</td>
+	</tr>
+	<tr>
+		<td>13:10 &#8211; 13:20</td>
+		<td>環境チェック</td>
+	</tr>
+	<tr>
+		<td>13:20 &#8211; 13:50</td>
+		<td>前回の復習</td>
+	</tr>
+	<tr>
+		<td>13:50 &#8211; 14:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>14:00 &#8211; 14:50</td>
+		<td>idata</td>
+	</tr>
+	<tr>
+		<td>14:50 &#8211; 15:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>15:00 &#8211; 15:50</td>
+		<td>edata</td>
+	</tr>
+	<tr>
+		<td>15:50 &#8211; 16:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>16:00 &#8211; 16:50</td>
+		<td>reloc</td>
+	</tr>
+	<tr>
+		<td>16:50 &#8211; 17:00</td>
+		<td>休憩</td>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 17:30</td>
+		<td>質疑応答</td>
+	</tr>
+	<tr>
+		<td>17:30 &#8211; 17:35</td>
+		<td>資料説明</td>
+	</tr>
+	<tr>
+		<td>17:35 &#8211; 17:40</td>
+		<td>次回予告</td>
+	</tr>
+	<tr>
+		<td>17:40 &#8211; 18:00</td>
+		<td>片付け・退室</td>
+	</tr>
+	<tr>
+		<td>18:00 &#8211; 20:00</td>
+		<td>懇親会（希望者のみ）</td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/13353" target="_blank">http://atnd.org/events/13353</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-04-16</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-04-16</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.ginza-renoir.co.jp/myspace/msbb002.htm" target="_blank">http://www.ginza-renoir.co.jp/myspace/msbb002.htm</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都豊島区南池袋1-16-20 ぬかりやビル2階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>マイ・スペース＆ビジネスブース池袋西武横店 7号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7264869</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7113832</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>14213</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>7shi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/7shi" target="_blank">@7shi</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-11-27</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

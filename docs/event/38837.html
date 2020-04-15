@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">【広島】ＡＷＳハンズオンセミナー</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">【広島】ＡＷＳハンズオンセミナー</h2>
+
+            <div class="buttons">
+                <a href="../json/events/38837.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/38837.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>38837</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>【広島】ＡＷＳハンズオンセミナー</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>概要</h2>
+<p>アマゾン ウェブ サービス（AWS）を利用して、セキュアでスケーラブルなウェブサービスの構築手順を体験できるハンズオンを実施いたします。</p>
+<p>AWSを使ってより安全にサービスを運用する方法、ウェブサービスの規模に合わせて、柔軟にシステムを拡張する方法を体験できる内容です。</p>
+<p>スタートアップでこれからウェブサービスを構築しようと考えている方や物理インフラの運用でスケーリング(必要なサーバの見積、調達)にお悩みの方は是非ご参加ください！</p>
+<p>なお、本ハンズオン終了後、<a href="http://www.hibis.jp/">HiBiS</a>様主催によるビジネス交流会にて本ハンズオン講師の堀内さんのスペシャルトークが予定されています。（第一回勉強会では時間の都合で割愛されてしまった内容がノーカットで聞けるかと！）<br />
+場所は割とすぐ近くのYMCAのホールとなりますので、「懇親会が無くて残念！」って方はこちらへの合流を検討してみてはいかがでしょう？３０００円で立食形式となっております。</p>
+<p>参考URLはこちら　<a href="http://www.hibis.jp/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/">http://www.hibis.jp/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E6%83%85%E5%A0%B1/</a></p>
+<h2>費用</h2>
+<p><strong>お一人様 1,000円</strong><br />
+※アンケートにお答えいただく事で$25のAWSクーポンをお渡しいたします。</p>
+<h2>お願い</h2>
+<p>お申し込みの際にはAWSの利用状況をコメントいただけると助かります。<br />
+「業務で利用経験あり」「個人で使う程度」「使った事が無い」等。</p>
+<h2>講師</h2>
+<p>堀内 康弘　アマゾン データ サービス ジャパン株式会社　テクニカルエバンジェリスト</p>
+<h2>体験できるAWSサービス</h2>
+<ul>
+	<li>Amazon EC2（クラウド内の仮想サーバー）</li>
+	<li>Elastic Load Balancing（Amazon EC2の自動分散処理）</li>
+	<li>Amazon RDS（My <span class="caps">SQL</span>, Oracle, <span class="caps">SQL</span> Serverのためのマネージド型リレーショナルデータベースサービス）</li>
+	<li>Amazon Machine Images</li>
+	<li>Amazon VPC（独立したクラウドリソース）</li>
+</ul>
+<h2>対象</h2>
+<p>　AWSを使ってセキュアでスケーラブルなWebサービスを構築することに 興味のある方</p>
+<h2>ご参加に必要な要件</h2>
+<ul>
+	<li>Amazon Web Servicesのアカウントを取得済みで利用できる状態であること</li>
+	<li>Webサーバ、DBサーバ、ロードバランサーがどういったものか知っていること</li>
+	<li>サブネットやルートテーブル、ゲートウェイといった用語を理解できること</li>
+</ul>
+<h2>アジェンダ</h2>
+<table>
+	<tr>
+		<td>WordPressサイトを最小構成でスタートする。</td>
+		<td>Web + DB 1台構成</td>
+		<td>クラウド上にセキュアな環境(<span class="caps">VPC</span>)を作成し、その中でWordPress サイトを構築していきます。 </td>
+	</tr>
+	<tr>
+		<td>スケールできるアーキテクチャに移行する準備をする。</td>
+		<td>Web + DB 2台構成</td>
+		<td>アクセスに応じてインフラを容易に拡張できるようにするために1台のサーバに共存しているWebサーバとDBサーバを2台に切り離します。 DBサーバにはAmazon Relational Service (<span class="caps">RDS</span>)を使います。 </td>
+	</tr>
+	<tr>
+		<td>Webサーバがスケールできる構成を構築する。</td>
+		<td>LB + Web x2 + DB 構成</td>
+		<td>負荷対策と可用性を高めるためにWebサーバがスケールでき構成を 構築していきます。 具体的には、もう1台Webサーバを追加し、2台構成にします。 <br />さらにロードバランサを作成し、作成した2台のWebサーバにインターネット経由のアクセスを均等に分散する構成を構築して いきます。 <br/>ロードバランサにはAmazon Elastic Load Balancing (<span class="caps">ELB</span>)を使います。 </td>
+	</tr>
+	<tr>
+		<td>DBサーバがスケールできる構成を構築する。</td>
+		<td>LB + Web x2 + DB x2 構成</td>
+		<td>データベースサーバも負荷に強く、可用性が高い構成にしていきます。 <br/>AWSではRDSの機能を使い、この両方を簡単に実現可能です。</td>
+	</tr>
+</table>
+<h2>当日の持ち物</h2>
+<p><strong>参加者個人のAWSアカウント </strong><br />
+※お忘れになった場合は、ハンズオンを受講できません。ご注意下さい。</p>
+<p>PCは実習室に用意されているものを使う予定ですので、持参いただく必要はありません。</p>
+<p>AWSアカウントをお持ちで無い方は事前に作成をお願いします。<br />
+<a href="http://aws.amazon.com/jp/register-flow/">http://aws.amazon.com/jp/register-flow/</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/38837" target="_blank">http://atnd.org/events/38837</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2013-05-14</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2013-05-14</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>広島市中区袋町6-36</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>袋町の広島市まちづくり市民交流プラザ６Ｆ 実習室  （広島市中区袋町6-36） </td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.3915524</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>132.4582478</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>135291</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>tetsuya mito</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2013-05-13</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

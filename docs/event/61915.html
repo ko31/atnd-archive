@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第39回IT勉強宴会in大阪</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第39回IT勉強宴会in大阪</h2>
+
+            <div class="buttons">
+                <a href="../json/events/61915.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/61915.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>61915</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第39回IT勉強宴会in大阪</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>競演モデリング発表会</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>テーマ</h1>
+<h2>今回の趣旨</h2>
+<p>まともな「表記法の寄せ集め」であれば、おのずとワンセットの認識の枠組みが立ち上がる。（中略）そのあたりの違いを手っ取り早く理解するためには、同一のシステム要件をネタにして同時にモデリングしてみればいい。（渡辺幸三氏ブログ「設計者の発言」2013.01.07「 <a href="http://watanabek.cocolog-nifty.com/blog/2013/01/post-aea8.html">各種技法の『競演くモデリングライブ』を</a> 」より）</p>
+<p>本邦初。異なる開発方法論の実務者によるモデリング発表会です。「T字形ER手法」の鳥谷部氏と「三要素分析法」の渡辺幸三氏に、同一課題にもとづいてその場でモデリングしていただきます。課題の説明後に、業務フローとデータモデルをホワイトボードに描き広げ、その結果を皆で比較検討します。手法毎のモデル様式の違いだけでなく、モデリング過程での「頭の使い方」の違いにも気づいてもらえるでしょう。さらには、手法の違いに関係なく、モデリングすることによる実装合理化の効果までを実感できるでしょう。前代未聞のモデリングライブをお見逃しなく。</p>
+<h2>花束問題</h2>
+<p>その場で業務要件を挙げていただきモデリングするというイベントは <a href="http://blog.benkyoenkai.org/2011/04/2011-04-22xead-driver.html">第8回</a> でやりましたが、2時間では一つの手法ですら時間が厳しいという経験を得ました。そのため今回はこの発表会のために練習問題を作りました。</p>
+<p>　題して「 <a href="http://www.benkyoenkai.org/2015/01/v12.html">花束問題V1.2</a> 」です。もしこの問題の業務モデリングを発表して下さる方が何人かおられるなら再度やりたいと思いますので是非声をかけて下さい。</p>
+<p>★ファイルはメーリングリストのアーカイブにあります<br />
+ <a href="https://groups.google.com/forum/#!topic/benkyoenkai/W3qnr2OGLC4">https://groups.google.com/forum/#!topic/benkyoenkai/W3qnr2OGLC4</a></p>
+<p>製本できるように編集しました。１枚目が表紙＋裏表紙になります<br />
+ <a href="https://drive.google.com/open?id=0BykMR9FfFyLORVlLU2czY1dJUkk&amp;authuser=0">PDF版</a><br />
+ <a href="https://drive.google.com/file/d/0BykMR9FfFyLOSF85MjdyVUluV0E/view?usp=sharing">DOC版</a></p>
+<h2>業務モデリング</h2>
+<p>この勉強宴会は2010年12月にスタートしました。皆さんのおかげで早くも4年が経過しました。設立の趣旨は「 <strong>どんな手法でも良いから業務モデリングしましょう</strong> 」という主張です。特に2000年以降にこの業界に入った方はモデリングといえばＵＭＬだと勘違いされている方が多いです。ＵＭＬは「Unified Modeling Language（統一モデリング言語）」ですから書き方しか定義されていません。しかも若い方がＵＭＬで書いているのは「プログラムをどうつくるか」というソフトウエア詳細設計です。</p>
+<p>そのあたりは共通フレーム２００７を使って <a href="http://blog.benkyoenkai.org/2013/02/2013-02-2221it.html">第21回</a> でご説明しました。</p>
+<p><a href="http://blog.benkyoenkai.org/2013/02/2013-02-2221it.html"><img src="http://1.bp.blogspot.com/-5KUd9j2JkPQ/VMZJI7DATtI/AAAAAAAAAIo/KkrJ0n4AGWc/s1600/20150124_frame_mini.jpg" alt="" /></a></p>
+<p>一時期オブジェクト指向分析という手法が流行りかけましたが行き詰っているように見ています。今回は２つともデータモデリングを主体とした手法ですが、その他の手法の方もぜひこの問題に挑戦して発表して下さい。<br />
+　<br />
+　</p>
+<h1>タイムテーブル</h1>
+<p>　　２０１５年　０２月２０日（金曜日）　１８：３０スタート</p>
+<table>
+	<tr>
+		<td style="text-align:center;">時間</td>
+		<td style="text-align:center;">発表者</td>
+		<td style="text-align:center;">タイトル</td>
+	</tr>
+	<tr>
+		<td>18:30～19:00</td>
+		<td style="text-align:center;">システムズ・デザイン（株）鳥谷部　聡さん</td>
+		<td style="text-align:center;">方法論としてのＴ字形ＥＲの説明</td>
+	</tr>
+	<tr>
+		<td>19:00～19:10</td>
+		<td style="text-align:center;">フィナンシャル・インスティチュート 山本愛緒さん</td>
+		<td style="text-align:center;">花束問題の簡単な解説</td>
+	</tr>
+	<tr>
+		<td>19:10～19:40</td>
+		<td style="text-align:center;">システムズ・デザイン（株）鳥谷部　聡さん</td>
+		<td style="text-align:center;">モデリング発表（Ｔ字形ＥＲ手法）</td>
+	</tr>
+	<tr>
+		<td>19:40～20:10</td>
+		<td style="text-align:center;">デービーコンセプト　渡辺幸三さん</td>
+		<td style="text-align:center;">モデリング発表（三要素分析法）</td>
+	</tr>
+	<tr>
+		<td>20:10～20:30</td>
+		<td style="text-align:center;"></td>
+		<td style="text-align:center;">質疑応答</td>
+	</tr>
+</table>
+<strong>手法については今回発表されるお二人のルーツという意味であり、厳格にその手法に従っている事を保証するものではありません。というか業務要件に応じてどれだけ臨機応変に変化させて解決策に導くかが真の見どころのはずです</strong>
+<p>　</p>
+<h1>場所</h1>
+<a href="http://www.jac-recruitment.jp/foothold/osaka.html"><span class="caps">JAC</span> Recruitment 大阪支社会議室</a>
+<p>大阪市北区梅田2-2-2 ヒルトンプラザウエスト 12F<br />
+※無料でお貸しいただきありがとうございます</p>
+<p>★いつもどおり２次会をどこかの居酒屋で行います。講師は来て下さいますから疑問点や言いたい事があればどうぞ。割り勘ですがいつも３０００円～４０００円程度です。学生さんは無料にしますので申し出て下さい。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/61915" target="_blank">http://atnd.org/events/61915</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-02-20</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-02-20</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.benkyoenkai.org/" target="_blank">http://www.benkyoenkai.org/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>大阪市北区梅田2-2-2 ヒルトンプラザウエスト 12F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>JAC Recruitment 大阪支社会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.6998354</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>135.4952185</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>55375</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>佐野初夫</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/hatsanhat" target="_blank">@hatsanhat</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-02-20</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

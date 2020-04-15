@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">NFC勉強会＠福岡</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">NFC勉強会＠福岡</h2>
+
+            <div class="buttons">
+                <a href="../json/events/25013.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/25013.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>25013</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>NFC勉強会＠福岡</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>みんなでNFCに対する理解を深めよう！</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>NFC勉強会＠福岡</h1>
+<p><strong>勉強会終了後に懇親会をやります（告知がぎりぎりでごめんなさい）。</strong> <a href="http://atnd.org/events/25826">こちら</a> からご登録ください。</p>
+<p><a href="http://atnd.org/events/23019">NFCハッカソン</a> に触発されて、福岡でもNFC勉強会を開催してみることにしました。東京な方は <a href="http://atnd.org/events/25821">第1回 NFC勉強会</a> なんていかがでしょう。</p>
+<h2>NFCとは</h2>
+<p>Near Field Communicationの略称で、近距離の無線通信規格のことです。<br />
+身近なところではnimoca、SUGOCA、はやかけんが有名で、<br />
+Galaxy NexusやGalaxy S2 LTEにも搭載されている注目の機能です。<br />
+最近では、任天堂 Wii UのコントローラにNFC機能が搭載されることでも話題となりました。</p>
+<p>ちなみに、仕様策定をしているNFC ForumによるとNFCには3つのモードがあります。</p>
+<ul>
+	<li><span class="caps">NFC</span> Card Emulation Mode<br />
+一般的なNFCカードに擬態（？）するモード。<br />
+俗にいうオサイフケータイのメイン部分。モバイルSuica便利です。</li>
+</ul>
+<ul>
+	<li>Pear-to-Pear Mode<br />
+端末同士でデータをやり取りするモード。<br />
+Android Beam はこのモードを使っています。</li>
+</ul>
+<ul>
+	<li>Reader/Writer Mode<br />
+端末自身がリーダ・ライタになるモード。スマートポスターの仕組みにはこのモードを使っています。<br />
+個人的には、 <a href="http://www.sony.co.jp/Products/felica/events/seminar201110.html">FeliCaソリューションセミナー</a> の受付でAndroid端末に参加証（FeliCa Lite）を<br />
+かざすことで参加者チェックされていた衝撃が忘れられません。（ <a href="http://www.colegg.com/campus/info/">先生ケータイ</a> を使っていたとか何とか）</li>
+</ul>
+<p>これらモードを使うと、何か素敵なことができる気がしませんか？</p>
+<h2>勉強会の目的</h2>
+<p>本勉強会では有志によるLTや実際に手を動かす時間を設けることでNFCを理解し、体験することを目的とします。<br />
+手を動かすという性質上、 <strong>参加される上でご自身のラップトップ等あった方が良いと思います。</strong></p>
+<p>主催者の周囲だけかもしれませんが、NFCといっても割とみんな <strong>興味を持ってくれない</strong> ので<br />
+気軽に参加していただけると嬉しいです。</p>
+<h2>タイムスケジュール</h2>
+<ul>
+	<li>12:30 順次受け付け</li>
+	<li>13:00～ ご挨拶、自己紹介タイム</li>
+	<li>13:20～17:00 発表タイム
+	<ul>
+		<li>13:20～13:50  <strong><span class="caps">NFC</span> 技術の基礎知識</strong> by <a href="http://twitter.com/h_madoromi">@h_madoromi</a><br />
+技術方式やなどの総合的なお話。<br />
+　</li>
+		<li>14:00～14:40 <strong>一人でもNFC開発</strong> by <a href="http://twitter.com/hiro99ma">@hiro99ma</a> さん<br />
+家でNFC開発をやるときの準備や「私はこうやってます」という苦労話など。 <a href="http://www.slideshare.net/hiro99ma/nfc-11745522">予稿はこちら</a> 。<br />
+　</li>
+		<li>15:00～15:10 <strong>NFC＋Flex</strong> by <a href="http://twitter.com/kirl0076">@kirl0076</a> さん<br />
+　</li>
+		<li>15:20～16:00 <strong>Qt（キュート）に felicalib</strong> by <a href="http://twitter.com/vivisuke">@vivisuke</a> さん<br />
+フリーライブラリの felicalib を <span class="caps">GUI</span> フレームワークのQtから使用してみたサンプルを解説。 <a href="http://vivi.dyndns.org/tech/Qt/QtFelicalib.html">予稿はこちら</a> 。<br />
+　</li>
+		<li>16:20～16:40 <strong>NFCQuest作ったよ</strong> by <a href="http://twitter.com/tomorrowkey">@tomorrowkey</a> さん<br />
+参考リンク: <a href="http://www.brilliantservice.co.jp/nfcquest/"><span class="caps">NFC</span> Quest</a><br />
+　</li>
+		<li>16:50～17:00 <strong><span class="caps">RFID</span>/NFCを使ったショッピングカートシステムの紹介</strong> by <a href="http://twitter.com/kirl0076">@kirl0076</a> さん他</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>～18:10 then<br />
+時間的余裕 ？ Hands-on ： 雑談タイム；</li>
+	<li>18:30 閉会の言葉</li>
+</ul>
+<ul>
+	<li>19:30～21:30 懇親会予定</li>
+</ul>
+<h2>あると便利なもの</h2>
+<ul>
+	<li><span class="caps">NFC</span> Reader/Writer<br />
+何でも良いのですが、入手容易性の観点から <a href="http://www.amazon.co.jp/dp/B0047AHHD2">RC-S370</a> あたりがおすすめ。</li>
+</ul>
+<ul>
+	<li><span class="caps">NFC</span> Card / おサイフケータイ / NFC機能付き端末<br />
+動作確認用。R/W と違ってこれはお貸しすることもできると思います。</li>
+</ul>
+<h1>参考文献</h1>
+<ul>
+	<li><a href="http://www.kumikomi.net/interface/contents/201204.php">発売中のInterfaceが熱い！</a><br />
+NFC的な意味で。</li>
+	<li><a href="http://www.slideshare.net/satorii/nfchack-sony">NFCハッカソンの時のソニーさんによるスライド</a><br />
+分かりやすい！</li>
+</ul>
+<ul>
+	<li>技術仕様
+	<ul>
+		<li><a href="http://www.sony.co.jp/Products/felica/business/tech-support/index.html">Sony Japan | FeliCa | 法人のお客様 | 技術情報</a><br />
+FeliCa関連はこのあたりから。</li>
+		<li><a href="http://www.felicanetworks.co.jp/tech/">技術情報｜FeliCa Networks</a><br />
+おサイフケータイならこのあたりから。Androidからもいける。</li>
+		<li><a href="http://developers.orangetags.jp/words/mifare">Mifareとは？ &#8211; 技術者向けNFC(FeliCa,Mifare)開発支援のNFC Developers&#8217;サイト</a><br />
+Mifare関連はこのあたりから。</li>
+		<li><a href="http://www.nfc-forum.org/specs"><span class="caps">NFC</span> Forum : Specifications</a><br />
+NFC全般(?)はこのあたりから。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>国際標準とか
+	<ul>
+		<li><a href="http://www.jisc.go.jp/app/JPS/JPSO0020.html"><span class="caps">JIS</span></a> なら無料で閲覧できます。<br />
+<span class="caps">ISO</span>/<span class="caps">IEC</span> 14443(近接型ICカード)=<span class="caps">JIS</span> X 6322とか。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li><span class="caps">SDK</span> / ライブラリ
+	<ul>
+		<li><a href="http://felicalib.tmurakam.org/">felicalib</a><br />
+割と簡単だけど、ちょっと古い。</li>
+		<li><a href="http://www.sony.co.jp/Products/felica/business/products/ICS-D004_002_003.html"><span class="caps">SDK</span> for <span class="caps">NFC</span> Starter Kit</a><br />
+個人的なおすすめ。</li>
+	</ul></li>
+</ul>
+<h1>お知らせ</h1>
+<ul>
+	<li>2012-02-28
+	<ul>
+		<li>発表内容を更新しました。</li>
+		<li>微妙にタイムスケジュールを変更しました。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>2012-02-27
+	<ul>
+		<li>発表内容を追加しました。伴いHands-onの時間が段々怪しく……ｗ</li>
+		<li>勉強会終了後、 <a href="http://atnd.org/events/25826">懇親会</a> をやりますので、勉強会に参加される方は是非。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>2012-02-26
+	<ul>
+		<li>@hiro99ma さんの発表予稿へのリンクを張りました。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>2012-02-22
+	<ul>
+		<li>@vivisuke さんの発表予稿へのリンクを張りました。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>2012-02-21
+	<ul>
+		<li>タイムスケジュールを追記しました。</li>
+		<li>参考文献を追記しました。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>2012-02-08
+	<ul>
+		<li><strong>会場が決まりました！</strong><br />
+※地図が上手く表示されていませんが、 <a href="http://www.nekocafe-keurig.com/top.php?p=access"><span class="caps">NEKO</span> <span class="caps">CAFE</span> <span class="caps">KEURIG</span></a> さんのお隣のビルです。</li>
+		<li>時間を <strong>13:00からに変更</strong> しました。</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>2012-02-03
+	<ul>
+		<li><span class="caps">ATND</span> のイベントを立てました。</li>
+	</ul></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/25013" target="_blank">http://atnd.org/events/25013</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-03-03</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-03-03</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>福岡市中央区大名1-10-14</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>GuildCafe Costa (MATCH 2F)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>33.5868049</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>130.3933356</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>103412</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>treby</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/treby006" target="_blank">@treby006</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-03-01</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

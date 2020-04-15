@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">【第一回 Phybbit勉強会 〜Chatbotについてお話ししましょう〜】</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">【第一回 Phybbit勉強会 〜Chatbotについてお話ししましょう〜】</h2>
+
+            <div class="buttons">
+                <a href="../json/events/88262.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/88262.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>88262</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>【第一回 Phybbit勉強会 〜Chatbotについてお話ししましょう〜】</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>【第一回 Phybbit勉強会 〜Chatbotについてお話ししましょう〜】</h2>
+
+<p><br></p>
+
+<h1>登壇者</h1>
+
+<h3>Eurico (株式会社Phybbit CTO）<br></h3>
+
+<h3>Kanda (株式会社Phybbit engineer)<br></h3>
+
+<h3>Bob (株式会社Phybbit engineer)<br></h3>
+
+<h3>Edward(INFERRET JAPAN株式会社 CEO)<br></h3>
+
+<h3>Christoph(INFERRET JAPAN株式会社 COO)</h3>
+
+<p><br></p>
+
+<h1>講演内容</h1>
+
+<hr>
+
+<h3>Eurico</h3>
+
+<h4>イントロダクション/ Chatbotの概要とユースケース紹介</h4>
+
+<h4>- サービス（SpiderAF）のサーバー側のインフラストラクチャの状態をChatbotで監視 -</h4>
+
+<p><br>
+2つのパートに分けてお話します。<br>
+まずは、</p>
+
+<ul>
+<li><p><strong>Chatbotとは何か</strong></p></li>
+<li><p><strong>一般的なChatbotで利用できるリソースはどのようなものがあるか</strong>
+<br>をお話します。</p></li>
+</ul>
+
+<p>次に、<br>サービス（SpiderAF）インフラストラクチャの監視で<br></p>
+
+<p><strong>確認された問題</strong> と<br>
+<strong>その問題の調査に費やす時間を短縮するためにどのようにChatbotを使用したか</strong> <br></p>
+
+<p>についてお話します。</p>
+
+<hr>
+
+<h3>Kanda</h3>
+
+<h3>GoogleAppScriptでSlackBotを作る</h3>
+
+<p><strong>サーバ管理不要のSlackbotを作る！</strong></p>
+
+<p>GoogleAppScriptは、サーバを立てずに
+Httpリクエストに応答するエンドポイントを準備することができます。</p>
+
+<p>そこで、</p>
+
+<p><strong>GoogleAppScript</strong>を使い
+<strong>サーバ管理不要のSlackbot</strong>を作る方法</p>
+
+<p>をご紹介します！</p>
+
+<hr>
+
+<h3>Bob</h3>
+
+<h3>AWSで試すChatbot (仮)</h3>
+
+<p><strong>サーバ管理不要のChatbotを作る！</strong></p>
+
+<p>Chatopsを気軽に試すために、AWSの<br></p>
+
+<ul>
+<li><strong>Lambda</strong> <br></li>
+<li><strong>APIGateway</strong></li>
+</ul>
+
+<p>を使って、<strong>サーバ管理不要のChatbot</strong>を作る方法をご紹介。<br></p>
+
+<p>また、<strong>システム構成</strong>、<strong>実装の上で注意するポイント</strong>をお話します！
+<br></p>
+
+<hr>
+
+<h3>Edward and Christoph</h3>
+
+<h3>エンベデッド環境におけるマルチモーダル音声対話</h3>
+
+<p>Inferretで研究開発している<br></p>
+
+<p><strong>マルチモーダル音声対話</strong> についてお話しします。</p>
+
+<p>研究の目的は<strong>複数の入力情報（例えば　音、タッチと動画)</strong>を同時に処理して<br>
+<strong>出力(例えばブラウザに表示してテキストを読み上げ)</strong>する、<br>
+<strong>マルチモーダルダイアログシステム</strong>の開発です。<br></p>
+
+<p>特に私たちは、プライバシーの問題を重要と考えているので、インターネットに接続せずに動作する<br>
+端末組込型の開発に取り組んでいます。</p>
+
+<hr>
+
+<p><u>※ 内容は変更になる可能性があります。</u> <br>
+<u>※当日、軽食・お飲物ご用意ございます。</u><br>
+<u>※ 当日の外国人スピーカーのLTは英語で行います。</u></p>
+
+<hr>
+
+<table><thead>
+<tr>
+<th>開始時間</th>
+<th>発表時間</th>
+<th>タイトル</th>
+<th>発表者</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>18:45</td>
+<td></td>
+<td>開場・受付開始</td>
+<td></td>
+</tr>
+<tr>
+<td>19:00</td>
+<td>5分</td>
+<td>ご挨拶・イントロダクション</td>
+<td></td>
+</tr>
+<tr>
+<td>19:05</td>
+<td>20分</td>
+<td>Chatbotの概要とユースケース紹介 -サービス（SpiderAF）のサーバー側のインフラストラクチャの状態をChatbotで監視 -</td>
+<td>Eurico</td>
+</tr>
+<tr>
+<td>19:25</td>
+<td>20分</td>
+<td>GoogleAppScriptでSlackBotを作る</td>
+<td>Kanda</td>
+</tr>
+<tr>
+<td>19:45</td>
+<td>10分</td>
+<td>休憩</td>
+<td></td>
+</tr>
+<tr>
+<td>19:55</td>
+<td>20分</td>
+<td>エンベデッド環境におけるマルチモーダル音声対話</td>
+<td>Edward and Christoph</td>
+</tr>
+<tr>
+<td>20:15</td>
+<td>20分</td>
+<td>AWSで試すChatbot (仮)</td>
+<td>Bob</td>
+</tr>
+<tr>
+<td>20:35</td>
+<td></td>
+<td>懇親会</td>
+<td></td>
+</tr>
+<tr>
+<td>21:30</td>
+<td></td>
+<td>終了予定</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><br></p>
+
+<h1>プロフィール</h1>
+
+<hr>
+
+<h2>Eurico</h2>
+
+<ul>
+<li>ウェブ/モバイル開発(4 年)</li>
+<li>ゲーム開発(1 年)</li>
+<li>AIの応用研究 (4年)</li>
+</ul>
+
+<h2>Kanda</h2>
+
+<ul>
+<li>iOS開発(3年)</li>
+<li>php開発 (9ヶ月)</li>
+<li>java 開発(2ヶ月)</li>
+<li>Ruby on rails開発(1年7ヶ月)</li>
+<li>node.js開発(6ヶ月)</li>
+</ul>
+
+<h2>Bob</h2>
+
+<ul>
+<li>Ruby on Rails での 3年間のwebアプリ開発</li>
+<li>Objective-C・Swiftでの3年間のiOSアプリ開発</li>
+<li>DevOps(9ヶ月)</li>
+</ul>
+
+<h2>Edward</h2>
+
+<ul>
+<li>音声認識 博士(ケンブリッジ大学)</li>
+<li>音声認識・ランゲージモデリング リサーチ経験(20年以上)</li>
+</ul>
+
+<h2>Christoph</h2>
+
+<ul>
+<li>自然言語処理 博士(東京工業大学)</li>
+<li>自然言語処理・カーナビ対話開発経験(20年以上)</li>
+</ul>
+
+<p><br></p>
+
+<h2>このような人にオススメ！</h2>
+
+<ul>
+<li>Chatbotを試してみたい人</li>
+<li> Chatbotが本番運用でどのように役に立つのかを知りたい人</li>
+<li> Chatbotを使っているが、サーバの管理をしたくない人</li>
+<li>AWSLambdaとAPIGatewayに興味がある人</li>
+</ul>
+
+<hr>
+
+<h3>English</h3>
+
+<h1>【The First Phybbit Study Group ~ Lets talk about chatbot】</h1>
+
+<hr>
+
+<p><strong>Date</strong>: [tentative] 15/ 6/ 2017 (Thursday)<br>
+<strong>Time</strong>: 7pm ~ 9:30pm (Opening 6:45pm)<br>
+<strong>Admission</strong> Fee：Free　(30 tickets only)<br>
+<strong>Venue</strong> ：21cafe＜ニイイチカフェ＞<br>
+※Participants can bring their own refreshments (We prepare light meal and drinks.)<br>
+<strong>URL</strong> ：https://geechs-magazine.com/21cafe/index</p>
+
+<hr>
+
+<p>Speakers</p>
+
+<p><strong>Eurico</strong> (株式会社Phybbit CTO） 
+<strong>Kanda</strong>(株式会社Phybbit engineer) 
+<strong>Bob</strong>(株式会社Phybbit engineer) 
+<strong>Edward</strong>(INFERRET JAPAN株式会社 CEO) 
+<strong>Christoph</strong>(INFERRET JAPAN株式会社 COO) </p>
+
+<hr>
+
+<h2>Talks</h2>
+
+<p><strong>Eurico</strong><br>
+Introduction on chatbots &amp; Use case: monitoring SpiderAF&#39;s server-side infrastructure status with a chatbot<br></p>
+
+<p>The talk with be split in 2 parts. <br>
+During the first part we will review what is a chatbot, what are the resources available to u to make one, the typical applications. In the second part, we will explain the problems we were facing in monitoring our service&#39;s (SpiderAF) infrastructure and how by introducing a chatbot we could reduce our time spent investigating problems.</p>
+
+<hr>
+
+<p><strong>Kanda</strong>　
+SlackBot with Google Apps Script <br></p>
+
+<p>Let&#39;s create Slack bot without managing server!<br>
+Google Apps Script prepares endpoints to respond to http requests.<br>
+I&#39;ll introduce how to create slackbot without server management using Google Apps Script.<br></p>
+
+<hr>
+
+<p><strong>Bob</strong>
+Run chatbot with aws lambda and api gateway <br></p>
+
+<p>Let&#39;s create Slack bot without managing server!<br></p>
+
+<p>To feel free to try chatbot, I&#39;ll introduce how to create chatbot without server management using aws lambda and api gateway.<br>
+And, I&#39;ll talk about point to note in the system configuration and implementation.<br></p>
+
+<hr>
+
+<p><strong>Edward and Christoph</strong>　Multi-modal voice agents in embedded environments<br></p>
+
+<p>Describe the progress of our R&amp;D work at Inferret towards developing multi-modal interactive agents. The aim of our recent R&amp;D has focused on examining how to effectively combine multiple types of simultaneous input sources(e.g. sound, touch and video) with simultaneous output modalities(e.g. browser display and text-to-speech) - a multi-modal dialog system. In particular, we are very sensitive to privacy concerns and focus on solutions which do not require a connection to the internet. We hope to demonstrate the progress of our development with a demo. </p>
+
+<hr>
+
+<p><strong>Schedule</strong></p>
+
+<p>18:45   Registration<br>
+19:00  Opening speech<br>
+19:05   Introduction on chatbots &amp; Use case: monitoring SpiderAF&#39;s server-side infrastructure status with a chatbot Eurico<br>
+19:25  SlackBot with Google Apps Script (仮)  Kanda<br>
+19:45  Break<br>
+19:55  Multi-modal voice agents in embedded environments  Edward and Christoph<br>
+20:15  Run chatbot with aws lambda and api gateway  (仮)  Bob<br>
+20:35 Networking session<br>
+21:30  Closing<br></p>
+
+<hr>
+
+<p><strong>Speaker Profile</strong><br></p>
+
+<p><strong>Eurico</strong><br>
+- web/mobile development (4 years)<br>
+- game development (1 year)
+- research in applied AI (4 years) </p>
+
+<p><strong>Kanda</strong><br> 
+- iOS 3 year 
+- php 9 month
+- java 2 month<br>
+- ruby on rails 1 year 7 month
+- node.js 6 month </p>
+
+<p><strong>Bob</strong><br> 
+- 3 years web application development with using RoR<br> 
+- 3 years ios application with Objective-C and a little swift<br> 
+- 9 months DevOps<br></p>
+
+<p><strong>Edward</strong><br> 
+- PhD in Speech recognition (Cambridge University)<br> 
+- 20+ years experience in speech recognition and language modelling research<br></p>
+
+<p><strong>Christoph</strong><br> 
+- PhD in Natural Language Processing (Tokyo Institute of Technology)<br> 
+- 20+ years experience in natural language processing and dialog development for Car Navigation Systems<br></p>
+
+<hr>
+
+<p><strong>Peoples who will be recommended to listen your session</strong></p>
+
+<ul>
+<li><p>Peoples who want to try chatbot<br> </p></li>
+<li><p>Peoples who has been used chatbot on their server, and don&#39;t want to care about their server<br></p></li>
+<li><p>Peoples who has a interest in aws lambda and aws api gateway<br> </p></li>
+</ul>
+
+<hr>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/88262" target="_blank">http://atnd.org/events/88262</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-06-15</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-06-15</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://geechs-magazine.com/21cafe/index" target="_blank">https://geechs-magazine.com/21cafe/index</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都渋谷区道玄坂2-11-1 G-SQUARE 10階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>21cafe＜ニイイチカフェ＞</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6579441</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6961231</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>276191</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Phybbit</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/Phybbit" target="_blank">@Phybbit</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-06-09</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

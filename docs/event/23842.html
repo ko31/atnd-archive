@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第6回 スタートHaskell</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第6回 スタートHaskell</h2>
+
+            <div class="buttons">
+                <a href="../json/events/23842.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/23842.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>23842</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第6回 スタートHaskell</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>スタートHaskell :: [初心者] → IO [経験者] -- 遅延評価とプログラムの論証について</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h3>更新(1/9)</h3>
+<p><a href="http://www.paraiso-lang.org/ikmsm/books/c81.html">新刊「簡約!? λカ娘(二期)」</a> の頒布があります。</p>
+<hr />
+<h1 style="vertical-align:middle;">遅延評価とプログラムの論証について</h1>
+<p>Haskell入門者のための勉強会 <strong>スタートHaskell</strong> の <strong>第6回</strong> （最終回）のATNDです。</p>
+<p>スタートHaskellは、入門者から初心者の方を対象に、実際にコーディングをしながらHaskellを学ぶ勉強会です。月1回ペースで全6回を予定しています。</p>
+<p>今回は <a href="http://www.mew.org/~kazu/doc/book/haskell.html">プログラミングHaskell</a> の <strong>12章</strong> から <strong>13章</strong> までの範囲の演習問題をみんなで解いていきます。</p>
+<p>12章：遅延評価<br />
+13章：プログラムの論証</p>
+<p>また <a href="http://www.paraiso-lang.org/ikmsm/books/c81.html">新刊「簡約!? λカ娘(二期)」</a> の頒布があります。</p>
+<h2>タイムテーブル</h2>
+<strong>12:50</strong> までにIIJ 1Fロビー チェンバロ前に集合
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+		<th>発表者</th>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 13:05</td>
+		<td> 会場案内</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>13:05 &#8211; 13:25</td>
+		<td> 発表：第12章：遅延評価</td>
+		<td>imsutenさん</td>
+	</tr>
+	<tr>
+		<td>13:25 &#8211; 14:55</td>
+		<td> 発表：第12章の練習問題</td>
+		<td>下記参照</td>
+	</tr>
+	<tr>
+		<td>14:55 &#8211; 15:15</td>
+		<td> 休憩（スタートHaskellアンケートあり）</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>15:15 &#8211; 15:35</td>
+		<td> 発表：第13章：プログラムの論証</td>
+		<td>imsutenさん</td>
+	</tr>
+	<tr>
+		<td>15:35 &#8211; 17:05</td>
+		<td> 発表：第13章の練習問題</td>
+		<td>下記参照</td>
+	</tr>
+	<tr>
+		<td>17:05 &#8211; 17:35</td>
+		<td> LT枠（3分x10人くらい、飛び入り歓迎）</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>17:35 &#8211; 18:00</td>
+		<td> そのほかのHaskell勉強会の紹介</td>
+		<td></td>
+	</tr>
+</table>
+<h2>アンケート</h2>
+<p><a href="https://docs.google.com/spreadsheet/viewform?formkey=dE0teDRIQV9MVEpLS0ZValZpMG51clE6MQ">スタートHaskell #6 アンケート</a></p>
+<h2>練習問題の担当</h2>
+<p>練習問題の発表者を募集中です。<br />
+<a href="https://groups.google.com/group/start-haskell?hl=ja">グーグルグループ</a> か、ATNDのコメントでご連絡ください。</p>
+<h3>12章</h3>
+<table>
+	<tr>
+		<th>番号</th>
+		<th>担当</th>
+	</tr>
+	<tr>
+		<td>問題1</td>
+		<td>choplin(仮)</td>
+	</tr>
+	<tr>
+		<td>問題2</td>
+		<td>choplin(仮)</td>
+	</tr>
+	<tr>
+		<td>問題3</td>
+		<td>choplin(仮)</td>
+	</tr>
+	<tr>
+		<td>問題4</td>
+		<td>shokos</td>
+	</tr>
+	<tr>
+		<td>問題5</td>
+		<td>dekosuke</td>
+	</tr>
+	<tr>
+		<td>問題6</td>
+		<td>beketa</td>
+	</tr>
+</table>
+<h3>13章</h3>
+<table>
+	<tr>
+		<th>番号</th>
+		<th>担当</th>
+	</tr>
+	<tr>
+		<td>問題1</td>
+		<td>m.yamamoto</td>
+	</tr>
+	<tr>
+		<td>問題2</td>
+		<td>nagaet</td>
+	</tr>
+	<tr>
+		<td>問題3</td>
+		<td>nagaet</td>
+	</tr>
+	<tr>
+		<td>問題4</td>
+		<td>nagaet(仮)</td>
+	</tr>
+	<tr>
+		<td>問題5</td>
+		<td>nagaet(仮)</td>
+	</tr>
+	<tr>
+		<td>問題6</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>問題7</td>
+		<td>masterq</td>
+	</tr>
+	<tr>
+		<td>問題8</td>
+		<td>sat0_da</td>
+	</tr>
+	<tr>
+		<td>問題9</td>
+		<td>seizans</td>
+	</tr>
+	<tr>
+		<td>問題10</td>
+		<td>beketa</td>
+	</tr>
+</table>
+<h2>事前準備</h2>
+<ul>
+	<li>事前に <a href="http://hackage.haskell.org/platform/">Haskell Platform</a> をインストールしておいてください。</li>
+	<li><a href="http://www.amazon.co.jp/gp/product/4274067815/">プログラミングHaskell</a> の <strong>12章</strong> から <strong>13章</strong> までを読んですべての例を実行してみてください。</li>
+</ul>
+<p><cite>Haskell Platformインストールのガイドライン、 <a href="http://groups.google.com/group/start-haskell/browse_thread/thread/5230952afae92349">Linux版</a> , <a href="http://groups.google.com/group/start-haskell/browse_thread/thread/176c6251bdbec68b">Mac版</a> , <a href="http://groups.google.com/group/start-haskell/browse_thread/thread/f31af0c86742e746">Windows版</a> を参考にしてください。</cite><br />
+<cite><a href="http://groups.google.com/group/start-haskell">スタートHaskellのグーグルグループ</a> にも連絡を流すことがあります。</cite></p>
+<h2>持ち物</h2>
+<ul>
+	<li>ノートパソコン</li>
+	<li><a href="http://www.amazon.co.jp/gp/product/4274067815/">プログラミングHaskell</a></li>
+	<li>事前に <a href="http://hackage.haskell.org/platform/">Haskell Platform</a> をインストール</li>
+	<li>電源タップ(ご協力お願いします)</li>
+	<li>名札（ある方はご持参ください）</li>
+</ul>
+<p><cite>会場には無線LANと電源を用意してあります。</cite></p>
+<h2>集合場所</h2>
+<p><a href="http://www.jinbochomitsui.com/"><span class="caps">IIJ</span></a><br />
+ <strong>12:50</strong> までにIIJ 1Fロビー チェンバロ前に集合お願いします。</p>
+<p><cite>会議室は禁煙です。近くに喫煙所があります。</cite><br />
+<cite>飲食は常識の範囲でお願いします。飲み物の自動販売機があります。</cite><br />
+<cite>ネットワークは無線LANがあります。</cite><br />
+<cite>休日は直接会場にお越しいただけませんので、この集合場所でお待ちください。</cite><br />
+<cite>遅れた方は #start_haskell宛にツイートか、中の人に助けを求めてください。。</cite></p>
+<h2>費用</h2>
+<p>無料</p>
+<h2>懇親会</h2>
+<p>勉強会終了後、別のお店で行う予定。参加者は当日募集します。</p>
+<h2>スタートHaskellについて</h2>
+<table>
+	<tr>
+		<td>Twitter</td>
+		<td><a href="http://twitter.com/#!/start_haskell">@start_haskell</a></td>
+	</tr>
+	<tr>
+		<td>ハッシュタグ</td>
+		<td>#start_haskell</td>
+	</tr>
+	<tr>
+		<td>メーリングリスト</td>
+		<td><a href="https://groups.google.com/group/start-haskell?hl=ja">start-haskell@googlegroups.com</a></td>
+	</tr>
+	<tr>
+		<td>ライブ中継</td>
+		<td><a href="http://justin.tv/kiwamu">Justin.tv</a> , <a href="http://www.ustream.tv/channel/start-haskell"><span class="caps">USTREAM</span></a></td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/23842" target="_blank">http://atnd.org/events/23842</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-01-28</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-01-28</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://http://www.iij.ad.jp/" target="_blank">http://http://www.iij.ad.jp/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区神田神保町1-105 神保町三井ビルディング</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>IIJ 大会議室 (17階)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6942723</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7607447</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>80128</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>スタートHaskell</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/start_haskell" target="_blank">@start_haskell</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-01-28</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

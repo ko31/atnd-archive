@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">実習セミナー：RAC環境でのレスポンス遅延を調査・解決</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">実習セミナー：RAC環境でのレスポンス遅延を調査・解決</h2>
+
+            <div class="buttons">
+                <a href="../json/events/19033.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/19033.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>19033</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>実習セミナー：RAC環境でのレスポンス遅延を調査・解決</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>「DBがなんか遅いんだけど！」「DBで何か起きてないか確認して！」こんな問い合わせへの対応 “一人”でできますか？</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>お客さまやユーザ部門からの 「データベースがなんか遅いんだけど！」 や、「データベースで何か起きてないか<br />
+確認して！」 などの問合せに対して、皆さんはどれだけ迅速な対応ができているでしょうか。日頃から多くの事例を<br />
+経験している場合は別ですが、そのような機会もなくやはりいざという時にはなかなか満足のいく対応ができないのが<br />
+現実ではないでしょうか。<br />
+本勉強会では、そんな皆さんに対してOracleデータベースに関するより多くの調査の経験をして頂くことを目的に、<br />
+実際に発生しうる事例を想定した演習をご用意しています。演習は、Oracleデータベースのシステム統計データを<br />
+解析する実習を中心に調査の流れを理解していただくために5つに分割しており、各々 「調査演習」 → 「解説」 <br />
+というように調査のポイントをわかりやすく解説しながら進めていく形式となっています。ですので、実践経験を<br />
+積みたい方はもちろんのこと、あまり経験のない方にもご参加いただける内容となっています。</p>
+<p>さて、いくつかご用意しているコンテンツ（備考を参照ください）のうち今回のコンテンツは、RAC環境でのレスポンス<br />
+遅延の事例を扱います。RAC環境に関しては、触れる機会自体がそれほどないこともありますし、調査においては<br />
+シングル環境にはない特別なノード間の処理を意識する必要があるなど、上級者の方にとっても歯ごたえのある内容<br />
+になっています。なお、あまり経験がないという初級者の方も、5つの演習が調査手順に沿った内容になっています<br />
+ので、演習は厳しいかもしれませんが「演習毎の“解説”を理解すること」を目的に受講いただくだけでも、十分<br />
+満足していただける内容かと思います。</p>
+<p>演習内容の詳細や応募方法については、以下詳細に記載しておりますので参考にしてください。<br />
+それでは、皆様のご参加をお待ちしております。</p>
+<p>【 詳細 】</p>
+<p>■開催日時<br />
+  9月2日(金) 18:30-21:00　(受付：18:00開始)</p>
+勉強会終了後に、立食形式の懇親会（21:00-22:00）を予定しております。
+参加可能な方は、ふるってご参加ください。
+<p>　<br />
+■演習内容<br />
+　調査で使用するシステム統計データは、各ノードで取得した「AWRレポート」のみです。このデータを使用して、<br />
+　与えられた問題について解析して頂きます。</p>
+<p>　演習の進め方について、今回はペアを組んでのグループワーク形式で行う予定です。一人で黙々と調査をするので<br />
+　はなく、ペアの方と積極的に情報交換や相談をしながら演習を行っていただきたいと考えています。あまり経験の<br />
+　ない方にとっては経験者の方とペアを組むことで、回答の導き出し方など、いろいろなことが得られるのではないか<br />
+　と思います。<br />
+　また、日頃、社内のメンバーにはできないような相談もできるかもしれませんし、ぜひこの機会を演習以外の<br />
+　情報交換の場にも活用いただければと思います。</p>
+<p>　以下、演習の内容を簡単にご紹介します。</p>
+<p>[ 問題 ]<br />
+　DBが2Node RACで構成されている社内システムにおいて、「Node1側で実行された処理のレスポンスが悪い」という<br />
+　報告を受けました。その為、DBの稼働状況を確認し、レスポンス遅延の原因及び遅延していた処理の特定を行って<br />
+　ください</p>
+<p>　この問題を調査するにあたって、手順に沿って5つの演習を用意しています。大まかに言うと、<br />
+　「DBの稼働状況の確認」 → 「詳細調査」 → 「結果のまとめ」 というような流れです。<br />
+　参考までに、演習1は以下のような内容になります。</p>
+<hr />
+[ 演習１]
+<p>　Node1について、以下AWRレポートの項目について調査し、DBの稼働傾向確認してください。<br />
+　　-	Instance Activity Stats<br />
+　　-	Load Profile<br />
+　　-	Top5 Timed Evnets<br />
+　確認した結果について、以下の3点を回答してください。<br />
+　　1.	DBの稼働状況は、どのような状況ですか？<br />
+　　2.	DBの稼働状況より、障害の原因としてどのようなことが考えられますか？<br />
+　　3.	次に調査すべき項目は何ですか？</p>
+<hr />
+<p>　演習1から演習4までは上記の流れで調査を行い、演習5ではそれまで調査した結果をまとめていただくという<br />
+　内容です。</p>
+<p>■当日の持ち物<br />
+　演習にて使用する「PC」を、お手数ですがご持参ください。日頃から使い慣れているPCを使って調査して<br />
+　いただきたいと考えているためです。<br />
+　PCの要件は以下の通りです。<br />
+　　・	テキストエディタ ･･･ 今回使用する演習用データはテキスト形式のファイルです。<br />
+　　　　　　　　　　　　　　そのため、データ参照のために必要となります。<br />
+　　・	USBポートが使用可能であること ･･･ 演習用データは当日USBで配布する予定となっています。<br />
+　　　　　　　　　　　　　　　　　　　　　　　　　そのためUSBポートが使用できる必要があります。<br />
+　　・	無線LAN接続が可能であること ･･･ OTNマニュアルの参照などのためにインターネットアクセスを行います。<br />
+　　　　　　　　　　　　　　　　　　　　　　今回の会場は無線LAN環境となります。</p>
+<p>　PCをどうしても準備できないという方は、申し込みの際に「PC希望」の旨をコメントに記載ください。<br />
+　なお、こちらでご用意できる台数に限りがありますので、なるべく各自でご持参いただけますようご協力を<br />
+　お願い致します。</p>
+<p>■定員</p>
+<p>　前回参加者枠 13名　※事前登録済み<br />
+　新規募集枠 13名 → 19名へ増席しました(8/22)</p>
+<p>　合計32名</p>
+<p>　※定員になり次第受付を終了させていただきます。</p>
+<p>　参加登録にあたって、該当する方は以下2点をコメントに記載してください。<br />
+　　・	PCをご希望の方 ⇒　「PC希望」<br />
+　　・	AWRレポートの解析経験のない方 ⇒ 「調査未経験」<br />
+　※ペア決めの参考にさせていただきます</p>
+<p>■参加費用<br />
+  無料（※懇親会参加の方は別途1000円程度）</p>
+<p>■会場<br />
+  日本オラクル株式会社　青山本社　（http://www.oracle.co.jp/aoyamacenter/）</p>
+<p>■講師<br />
+  PSソリューションズ社員（Oracle Master Platinum　資格保有者）</p>
+<p>■お問合せ先<br />
+  PSソリューションズ株式会社<br />
+  SS事業部_問合せ窓口（ss_info@pssol.co.jp）</p>
+<p>■注意事項<br />
+  ・事前にお申込いただき、お申込が確定した方のみ入場可能です。補欠者の方は当日お越しいただきましても<br />
+    ご参加いただけませんのでご了承ください。参加登録が完了された方は、当日日本オラクル本社まで<br />
+    お越しください。</p>
+<p>■備考<br />
+　勉強会の全体カリキュラムとしては、以下の通り5つのコンテンツを用意しています。今回の開催ではそのうち、<br />
+　「4. RAC環境の1ノードでレスポンス遅延が発生している」を実施します。残りのコンテンツについても、<br />
+　今後随時開催予定ですので、興味のある方はぜひご参加ください。</p>
+<p>　　1.	CPU使用率が高騰して処理が進まない<br />
+　　2.	DBにてスローダウンが発生している(処理が全体的に遅延)<br />
+　　3.	特定の処理にてレスポンス遅延が発生している<br />
+　　4.	RAC環境の1ノードでレスポンス遅延が発生している<br />
+　　5.	1～4を踏まえた総合演習</p>
+<p>　現在までの実績は以下の通りです。(今回は第2回です。)</p>
+<p>　　第1回　6/10,17(2日間)	上記3のコンテンツ<br />
+　　(参考：http://oracletech.jp/seminar/event/000332.html)</p>
+<p>■事前登録済み<br />
+　事前登録済みの方のTwitterIDです。お間違いがないかどうか念のためご確認ください。</p>
+<p>　@s4r_agent<br />
+　@winggate<br />
+　@sora_to_umi<br />
+　@kitayama_t<br />
+　@hanakara_milk<br />
+　@discus_hamburg<br />
+　@yoshikaw<br />
+　@chirokings<br />
+　@wmo6hash<br />
+　@kouji_s_0808<br />
+　@wrcsus4<br />
+　@Scudelia<br />
+　@sh2nd</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/19033" target="_blank">http://atnd.org/events/19033</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-09-02</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-09-02</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://pssol.co.jp/" target="_blank">http://pssol.co.jp/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都港区北青山2-5-8</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>日本オラクル株式会社　青山本社　（http://www.oracle.co.jp/aoyamacenter/）</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6712183</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7186712</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>49550</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>pssol_ssd</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-08-31</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

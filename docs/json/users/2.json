@@ -1,0 +1,1 @@
+{"results_returned":1,"results_start":1,"events":[{"event":{"event_id":2,"title":"testイベント","event_url":"http://atnd.org/events/2","limit":2000,"accepted":2,"waiting":0,"updated_at":"2008-09-01T22:17:34.000+09:00","users":[{"user":{"user_id":10,"nickname":"sumito","twitter_id":"sumito","status":1}},{"user":{"user_id":45,"nickname":"akioz@mixi","twitter_id":null,"status":1}}]}}]}

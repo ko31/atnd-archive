@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Python Tips Advent Calendar 2012</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Python Tips Advent Calendar 2012</h2>
+
+            <div class="buttons">
+                <a href="../json/events/34762.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/34762.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>34762</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Python Tips Advent Calendar 2012</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>概要</h1>
+<p>Python に関する Tips を書いていきます。</p>
+<h2>教科書</h2>
+<p><a href="http://stackoverflow.com/questions/101268/hidden-features-of-python">Hidden features of Python &#8211; Stack Overflow</a></p>
+<h2>タイムテーブル</h2>
+<table>
+	<tr>
+		<th>日</th>
+		<th>担当者</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>12/1</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121201/1354335103">比較の連鎖</a></td>
+	</tr>
+	<tr>
+		<td>12/2</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121202/1354419213">文字列を複数行に書く</a></td>
+	</tr>
+	<tr>
+		<td>12/3</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121203/1354542386">スライス操作あれこれ</a></td>
+	</tr>
+	<tr>
+		<td>12/4</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121204/1354578335">暗黙bool値変換</a></td>
+	</tr>
+	<tr>
+		<td>12/5</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121205/1354636168">print で標準出力以外に出力する</a></td>
+	</tr>
+	<tr>
+		<td>12/6</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121206/1354636589">外部変数のキャプチャ</a></td>
+	</tr>
+	<tr>
+		<td>12/7</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121207/1354860540">for-else, try-else 構文</a></td>
+	</tr>
+	<tr>
+		<td>12/8</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121208/1354965947">再 raise</a></td>
+	</tr>
+	<tr>
+		<td>12/9</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121209/1355051952">内包表記いろいろ</a></td>
+	</tr>
+	<tr>
+		<td>12/10</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121210/1355102920">filter, map に指定する関数</a></td>
+	</tr>
+	<tr>
+		<td>12/11</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121211/1355189821">文字列のフォーマット出力</a></td>
+	</tr>
+	<tr>
+		<td>12/12</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121212/1355324852">リストやタプルの unpack</a></td>
+	</tr>
+	<tr>
+		<td>12/13</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121213/1355326025">バッククォートでrepr</a></td>
+	</tr>
+	<tr>
+		<td>12/14</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121214/1355531868">２次元データの縦と横を入れ替える</a></td>
+	</tr>
+	<tr>
+		<td>12/15</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121215/1355532721">データのフラット化</a></td>
+	</tr>
+	<tr>
+		<td>12/16</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121216/1355627284">roundの桁数指定</a></td>
+	</tr>
+	<tr>
+		<td>12/17</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121217/1355735287">iter に関数を渡す</a></td>
+	</tr>
+	<tr>
+		<td>12/18</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121218/1355805602">iterable を分ける</a></td>
+	</tr>
+	<tr>
+		<td>12/19</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121219/1355906355">組み込み関数を隠してしまった場合</a></td>
+	</tr>
+	<tr>
+		<td>12/20</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121220/1356002420">関数のデフォルト値の初期化タイミング</a></td>
+	</tr>
+	<tr>
+		<td>12/21</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121221/1356051760">yield の戻り値を受け取る</a></td>
+	</tr>
+	<tr>
+		<td>12/22</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121222/1356255226">zlib, base64, rot13 エンコーディング</a></td>
+	</tr>
+	<tr>
+		<td>12/23</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121223/1356255729">シグネチャ確認</a></td>
+	</tr>
+	<tr>
+		<td>12/24</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121224/1356318221">正規表現あれこれ</a></td>
+	</tr>
+	<tr>
+		<td>12/25</td>
+		<td>@melponn</td>
+		<td><a href="http://d.hatena.ne.jp/melpon/20121225/1356367018">イースターエッグ</a></td>
+	</tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/34762" target="_blank">http://atnd.org/events/34762</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>3342</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>melpon</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/melponn" target="_blank">@melponn</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-12-25</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

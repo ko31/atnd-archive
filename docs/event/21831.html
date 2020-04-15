@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PHP Apocalypse</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PHP Apocalypse</h2>
+
+            <div class="buttons">
+                <a href="../json/events/21831.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/21831.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>21831</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PHP Apocalypse</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>PHPに打ち克って世界をより良くする</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p><del>休日開催のため、森タワー臨時受付を出す必要があり、名簿作成のため参加者のかたの実名を頂きたいです。ATNDの参加とあわせ、大変お手数ですが、こちらのフォームにもご記入をいただきます。<br />
+<a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dDVGYzJ3SDJrdkxVcHdUM3BEM1ZqSmc6MQ#gid=0" target="_blank">→名簿</a><br />
+</del><strong><i><br />名簿記入&amp;アンケート受付終わりました。が、来ていただいたら多分入れますので、たとえ補欠やATND未登録でも来てみてください！</i></strong></p>
+<p>カッとなって立てました。<br />
+そろそろPHPに全力か？<br />
+ということで皆様の現場での戦いの遍歴を持ち寄り、PHPコミュニティとPHP採用の会社を巻き込んで、光にあふれたPHPの話をしましょう。</p>
+<p><strong>長い時間やりたいので土曜日開催で確定させました！覚悟ください</strong><br />
+<h2>タイムテーブル</h2><br />
+〜13:05<br />
+    諸注意とあいさつ<br />
+〜15:00<br />
+    プレゼンテーション<br />
+〜17:00<br />
+    ワールドカフェ<br />
+〜18:00<br />
+    ビアバッシュをいれながら<br />
+    LTをやるか、ワールドカフェの続きをやるか空気を見て決定</p>
+<h2>プレゼンテーション</h2>
+<p>10min〜30minの選択制です<br />
+今だと尺ちょっと長め？なので調整いれるかも</p>
+<ul>
+	<li>確定組
+	<ul>
+		<li>tsuyoshikawa 15min GREEのサーバサイドとかPHPの生存戦略について</li>
+		<li>k-z-h 30min とあるウェブサービスの立ち上げ / <span class="caps">PHP</span> の行く先</li>
+		<li>ShiroKappa 30min PHPと一回り　～僕とPHPの12年～</li>
+		<li>sotarok 30min PHPで幸せになるための話</li>
+		<li>koriym ?min <span class="caps">PHP</span> : This is it</li>
+		<li>yuya_takeyama ?min Proposal for xSpec <span class="caps">BDD</span> Framework for <span class="caps">PHP</span></li>
+	</ul></li>
+	<li>未確定組
+	<ul>
+		<li>yamashiro</li>
+		<li>moriyoshi 15min</li>
+	</ul></li>
+</ul>
+<h2>ワールドカフェ</h2>
+<p>事前アンケートで収集してみたところ集まってきたネタです。<br />
+当日募集も行います。</p>
+<ul>
+	<li>テーマ的によさそうなもの
+	<ul>
+		<li>なぜプログラマーからのPHPの評価はそもそもいけてないのだろう</li>
+		<li>PHPのレガシーコードを含むプロジェクトとどう戦うのがベストか</li>
+		<li>mod_phpのいけてたところは何だろう</li>
+		<li>現状のPHPコミュニティをどう思いますか</li>
+		<li>hiphop PHPのようなアプローチに未来はあるのか</li>
+		<li>nginxとphp-fpmはmod_phpを塗り替えるのか</li>
+		<li>PHPを使い続ける理由があるとすれば何か</li>
+	</ul></li>
+</ul>
+<ul>
+	<li>ちょっと要素技術よりなもの
+	<ul>
+		<li>いけてる開発環境とは</li>
+		<li>ベストなwebフレームワークは</li>
+		<li>PHPにおける環境依存との戦い(iniや文字コード、DB層とのアクセス情報)</li>
+		<li>Testingとか開発手法とか</li>
+		<li>どうやってチームで開発しているか</li>
+	</ul></li>
+</ul>
+<h2>LT</h2>
+<p>申し訳ないですが、お酒の入ったタイミングで開始します！<br />
+ネタはなんでもあり！？</p>
+<p>飛び入りは自由です。(当日募集あり)</p>
+<ul>
+	<li>確定組
+	<ul>
+		<li>fal_aqua04 とあるPECLとの格闘の記録から振り返る、PHP世界を明るく生き抜く方</li>
+		<li>yando CandyCane &#8211; RedmineをPHPに移植する</li>
+	</ul></li>
+	<li>未確定組
+	<ul>
+		<li>yoya</li>
+		<li>taku_o</li>
+		<li>kon_do</li>
+	</ul></li>
+</ul>
+<h2>懇親会について</h2>
+<p>懇親会費は1500円で、会場内での開催を予定しています。そのままピザやビールが届いて、ビアバッシュ形式になる予定です。<br />
+事前に希望受付をしていますが、当日その場での参加も可能です。</p>
+<p>懇親会費は受付で頂く予定です。</p>
+<h2>飲食、喫煙について</h2>
+<p>会場内は飲食は出来ますが、社員証がないと出入りが難しいので気軽に買いにいけません。ですので飲み物などは各自お持ちください。</p>
+<p>また、会場内は禁煙です。喫煙スペースはビル外なのでたっぷり吸ってからご来場ください。</p>
+<h2>無線LANについて</h2>
+<p>GREEでゲスト用の無線LANの提供があります</p>
+<h2>入館について</h2>
+<p>正面入り口(メインエントランス)は閉まっていますので、スターバックス側からの入館となります。臨時受付を下図の場所にもうけますので、そちらで受付していただくようお願いいたします。<br />
+<img src="http://farm8.staticflickr.com/7003/6523593441_4a2ae5a2da_b.jpg"></p>
+<p>受付時間以降お越しの場合は、森タワー休日中は警備員さんが受付を代替するため、ビル内の警備員さんにお声がけしてください。</p>
+<p>ただしビル内の移動には社員証が必要なため、社員の案内が必要です。<br />
+twitterで @tsuyoshikawa でご連絡頂くか、または、 090-6138-9374 までお電話をください。</p>
+<h2>Ustについて</h2>
+<p>やるかもしれません。ある場合は当日アナウンスします！</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/21831" target="_blank">http://atnd.org/events/21831</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-12-17</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-12-17</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都港区六本木6-10-1 六本木ヒルズ森タワー12Fセミナールーム</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>グリー株式会社</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6642722</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7291455</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>39499</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>@tsuyoshikawa</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/tsuyoshikawa" target="_blank">@tsuyoshikawa</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-12-17</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

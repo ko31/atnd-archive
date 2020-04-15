@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">シェルスクリプト入門　福岡</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">シェルスクリプト入門　福岡</h2>
+
+            <div class="buttons">
+                <a href="../json/events/75045.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/75045.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>75045</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>シェルスクリプト入門　福岡</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>シェルスクリプト　入門</h2>
+
+<h3>対象者</h3>
+
+<p>初心者(黒い画面が怖い)という方に今回、勉強会を開催したいとおもいます。
+解説は初心者向けの内容ですが問題は簡単な問題から少し頭を使うものまで用意いたしますので&quot;スコシデキル&quot;という方もご参加ください。</p>
+
+<h2>概要</h2>
+
+<p>簡単なテキスト処理はUNIX系OSのコマンドで簡単に実現できてしまいます。</p>
+
+<p>コマンドについて初めから比較的に優しくやって
+ワイワイ楽しい勉強会にしたいと思っております。</p>
+
+<p>参加費は無料です。無線LAN有。</p>
+
+<h2>場所</h2>
+
+<p>BETASOFT 無料貸し出し会議室</p>
+
+<p><a href="https://sites.google.com/site/betasoftmeetingroom/room">〒812-0011 福岡県福岡市博多区博多駅前３丁目２２−８
+朝日生命博多駅前ビル 3F</a></p>
+
+<h2>タイムテーブル</h2>
+
+<table><thead>
+<tr>
+<th style="text-align: right">時間</th>
+<th style="text-align: left">タイトル</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: right">19:00 - 19:10</td>
+<td style="text-align: left">開場・ベータソフト様LT</td>
+</tr>
+<tr>
+<td style="text-align: right">19:10 - 19:30</td>
+<td style="text-align: left">スクリプト入門　解説</td>
+</tr>
+<tr>
+<td style="text-align: right">19:30 - 20:30</td>
+<td style="text-align: left">問題を解く</td>
+</tr>
+<tr>
+<td style="text-align: right">20:30 - 20:50</td>
+<td style="text-align: left">解説・クロージング</td>
+</tr>
+</tbody></table>
+
+<h2>連絡先</h2>
+
+<p>Twitter:<a href="https://twitter.com/SMotouchi_net">@SMotouchi_net</a></p>
+
+<p>もしくはfaceboookに友達申請送って連絡してください</p>
+
+<h2>準備</h2>
+
+<p>シェル芸初心者の僕
+<a href="https://twitter.com/SMotouchi_net">@SMotouchi_net</a></p>
+
+<p>が、できる限りサポートいたします。
+大したこと出来ないので…
+玄人の方も大歓迎です。</p>
+
+<h4>持ち物</h4>
+
+<p>UNIX環境が利用できるノートPC（OSXなMacも可）</p>
+
+<p>おやつは300円まで(シェル芸勉強会　福岡サテライトと同じ額)</p>
+
+<h6>PCの環境</h6>
+
+<p>Windowsの場合は、VirtualBoxもしくはVMwearPlayerにUNIX環境を入れればいいです。</p>
+
+<p>日本語対応の端末と日本語入力はあったほうがいいです。</p>
+
+<p>GNU版のsed、awk、grepなどを使います。Linux系ならまず大丈夫。</p>
+
+<h6>GNU系のコマンド</h6>
+
+<p>MacはBSD系なので、homebrewで下記をインストール。</p>
+
+<p>$ brew install coreutils</p>
+
+<p>$ brew install gnu-sed</p>
+
+<p>$ brew install gawk</p>
+
+<p>$ brew tap homebrew/dupes</p>
+
+<p>$ brew install homebrew/dupes/grep</p>
+
+<h2>最後に</h2>
+
+<p>学科に向けてクローズな勉強会にしようと思っていたのですが周りに勉強会をしてほしいと言われたので今回、この様な形で開催いたしました。</p>
+
+<p>初めての(外向き)勉強会で至らない部分もあるでしょうが少しでも皆様に知識や経験を持ち帰ってもらえるような
+勉強会にするため準備しておりますのでよろしくお願いします。
+みなさまのご参加心よりお待ち申し上げます。</p>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/75045" target="_blank">http://atnd.org/events/75045</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2016-03-11</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2016-03-11</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>〒812-0011 福岡県福岡市博多区博多駅前３丁目２２−８ 朝日生命博多駅前ビル 3F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>BETASOFT 無料貸し出し会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>33.5883921</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>130.4164904</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>225035</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>Shuya Motouchi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/nwiizo" target="_blank">@nwiizo</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2016-03-04</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

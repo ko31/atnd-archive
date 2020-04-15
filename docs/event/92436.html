@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第32回シェル芸勉強会：福岡サテライト</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第32回シェル芸勉強会：福岡サテライト</h2>
+
+            <div class="buttons">
+                <a href="../json/events/92436.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/92436.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>92436</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第32回シェル芸勉強会：福岡サテライト</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>第32回シェル芸勉強会 福岡サテライト会場</h1>
+
+<h2>概要</h2>
+
+<p>東京で開催される第32回シェル芸勉強会に、Youtubeライブストリームでリモート参加します。福岡サテライト会場としては16回目です。UNIXの基礎であるCLIなシェルやコマンドの使い方の訓練所です。小さな問題を解いていくスタイルです。終了後にLTなどもしあれば。内容は問わず、LT練習でも。</p>
+
+<p>今回は午前の部がお休み、午後の部は未定という事です。</p>
+
+<ul>
+<li>東京の本家勉強会案内はこちら<br>
+<a href="https://usptomo.doorkeeper.jp/events/66759">jus共催 第32回全くインスタ映えしないシェル芸勉強会</a></li>
+</ul>
+
+<h2>日時</h2>
+
+<ul>
+<li>2017年12月02日（土）10:00 - 18:00</li>
+<li>09:30 - 10:00: 開場、準備など</li>
+<li>10:00 - 11:45: 午前の部</li>
+<li>13:00 - 16:00: 午後の部「第32回シェル芸勉強会」</li>
+<li>16:00〜18:00: LTなどあれば。後片付け。</li>
+</ul>
+
+<h2>開催場所</h2>
+
+<ul>
+<li>会場: 株式会社レスコ（旧ベータソフト）様会議室</li>
+<li>住所: 福岡県福岡市博多区博多駅前３丁目２２−８ 朝日生命博多駅前ビル 3F</li>
+</ul>
+
+<h2>参加費など</h2>
+
+<ul>
+<li>参加費は無料です。</li>
+<li>会場には無線LANがありますが、念のためWifiルータなども持って来ていただけると助かります。</li>
+</ul>
+
+<h2>連絡先</h2>
+
+<p>連絡はTwitterの <a href="https://twitter.com/papiron">@papiron</a> 宛へ</p>
+
+<h2>ハッシュタグ</h2>
+
+<p><a href="https://twitter.com/search?q=%E3%82%B7%E3%82%A7%E3%83%AB%E8%8A%B8">#シェル芸</a></p>
+
+<h2>持参物</h2>
+
+<p>初心者の方は<a href="https://twitter.com/papiron">@papiron</a>がサポートさせていただきます。</p>
+
+<ul>
+<li>UNIX系OSが使えるパソコン
+
+<ul>
+<li>各種Linux（VirtualBoxに入れたLinux等もOK）</li>
+<li>Mac</li>
+<li>FreeBSD（日本語環境が使えたほうが良い）</li>
+<li>Cygwinでも大丈夫かも？</li>
+<li>今ならBash on WIndowsも？</li>
+</ul></li>
+<li>おやつ（300円まで）</li>
+</ul>
+
+<h2>準備して欲しいソフトウェア</h2>
+
+<p>シェルはbashが前提ですが、他のシェルでも可能です。コマンドはGNU版のsed、awk、grepなどを使います。Linux系ならまず大丈夫。</p>
+
+<h3>Macの場合</h3>
+
+<p>homebrewで下記をインストール。</p>
+
+<pre><code>$ brew install coreutils
+$ brew install gnu-sed
+$ brew install gawk
+$ brew tap homebrew/dupes
+$ brew install homebrew/dupes/grep
+</code></pre>
+
+<p>参考：<a href="http://qiita.com/quattro_4/items/e75f2b4156ef45fb6640">高速化したGNU grepをインストールする</a></p>
+
+<h3>FreeBSDの場合</h3>
+
+<p>pkgで下記をインストール。</p>
+
+<pre><code>$ pkg install bash
+$ pkg install coreutils
+$ pkg install gsed
+$ pkg install gawk
+$ pkg install gnugrep
+</code></pre>
+
+<h2>Open usp Tukubai</h2>
+
+<p>ユニケージ開発手法で利用されるTukubaiコマンドのオープンソース版Open usp Tukubaiコマンドもあると便利です。入手先は下記のリンクを参照。わからない場合はサポートさせていただきます。</p>
+
+<p><a href="https://uec.usp-lab.com/TUKUBAI/CGI/TUKUBAI.CGI?POMPA=DOWNLOAD">Open usp Tukubai</a></p>
+
+<h3>インストール方法</h3>
+
+<p><code>git</code>で最新版を<code>clone</code>して<code>make install</code>してください。<code>sudo</code>は必要に応じて。</p>
+
+<pre><code>$ git clone git://github.com/usp-engineers-community/Open-usp-Tukubai.git
+$ cd Open-usp-Tukubai
+$ sudo make install
+</code></pre>
+
+<p>Macの場合はHomebrewのFormulaを公開しています。</p>
+
+<pre><code>$ brew tap papiron/shelltool
+$ brew install papiron/shelltool/open-usp-tukubai
+</code></pre>
+
+<p>FreeBSDの場合はpkgでインストール可（ただし古いバージョン）</p>
+
+<pre><code>$ sudo pkg install open-usp-tukubai
+</code></pre>
+
+<h2>その他便利なコマンド</h2>
+
+<ul>
+<li>nkf (文字コード変換やurlencode/urldecodeなど)</li>
+<li>md5sum (ファイルのハッシュ値)</li>
+<li>jq (JSONの扱い)</li>
+<li>tree (ディレクトリ構造表示)</li>
+</ul>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/92436" target="_blank">http://atnd.org/events/92436</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-12-02</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-12-02</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://usptomo.doorkeeper.jp/events/66759" target="_blank">https://usptomo.doorkeeper.jp/events/66759</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>福岡県福岡市博多区博多駅前３丁目２２−８ 朝日生命博多駅前ビル 3F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>株式会社レスコ（旧ベータソフト）様会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>33.5883921</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>130.4164904</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>30817</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>papiron</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/papiron" target="_blank">@papiron</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-11-10</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

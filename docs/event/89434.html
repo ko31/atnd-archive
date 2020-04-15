@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">katagaitai CTF勉強会 #9 - 関東|easy</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">katagaitai CTF勉強会 #9 - 関東|easy</h2>
+
+            <div class="buttons">
+                <a href="../json/events/89434.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/89434.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>89434</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>katagaitai CTF勉強会 #9 - 関東|easy</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>概要</h2>
+<ul>
+	<li>チームkatagaitaiの実施する， <a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0"><span class="caps">CTF</span></a> に関する勉強会です．過去問を解きつつ技術解説をします．</li>
+	<li>学生～社会人若手の方を対象にわいわいやりたいと思ってます．</li>
+	<li>未定箇所については決まり次第ATNDを更新しますので，こまめにチェック頂くのが良いかと思います．</li>
+	<li>夏バテしたので今夏はeasyです，冬は気合入れるので許して(色々企画中)．</li>
+</ul>
+<h2>ターゲット層</h2>
+<ul>
+	<li><a href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0"><span class="caps">CTF</span></a> で <strong>強くなりたい人</strong> ， <strong>やる気のある人</strong> を対象にしています．
+	<ul>
+		<li>難易度については，問題を覗いた上で各位にてご判断下さい．</li>
+		<li>不明点があればTwitterかSlackで質問を飛ばしてください．
+		<ul>
+			<li>Slackであれば，運営が見落としていてもきっと誰かが答えてくれるでしょう．</li>
+		</ul></li>
+		<li>当日の雰囲気については <a href="http://togetter.com/li/843116">第2回のまとめ</a> が参考になると思います．</li>
+	</ul></li>
+</ul>
+<h2>参加資格</h2>
+<ul>
+	<li>以下の1～3いずれかに当てはまる方
+	<ol>
+		<li>学生の方</li>
+		<li>若手の方</li>
+		<li>気持ちが若手な方</li>
+	</ol></li>
+</ul>
+<h2>持ち物</h2>
+<ul>
+	<li>ノートPC</li>
+	<li>ネット回線(テザリング等)</li>
+</ul>
+<h2>費用</h2>
+<ul>
+	<li>無料
+	<ul>
+		<li>特に強制はしませんが，もし内容にご満足頂けたら，Wikipediaなど<br />
+お好きなWebサービスやOSSに，1000円の寄付をお願いしますね(←流行らせたい)．</li>
+	</ul></li>
+</ul>
+<h2>服装</h2>
+<ul>
+	<li>自由
+	<ul>
+		<li>採用活動とは関係ないので私服でよろしく．</li>
+	</ul></li>
+</ul>
+<h2>タイムテーブル</h2>
+<ul>
+	<li>予告なく変更する可能性があります．</li>
+	<li>受付でATNDによる出欠を取ります
+	<ul>
+		<li>登録したハンドルネーム or ATND上の受付番号 を当日教えてください．</li>
+	</ul></li>
+	<li>懇親会とかいうシャレオツな催しはありませんのでご注意下さい．</li>
+</ul>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>内容</th>
+		<th>解説者</th>
+	</tr>
+	<tr>
+		<td>09:30 &#8211; 10:00</td>
+		<td>受付</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>10:00 &#8211; 13:00</td>
+		<td>Reversing</td>
+		<td>bata</td>
+	</tr>
+	<tr>
+		<td>13:00 &#8211; 14:00</td>
+		<td>各自適当に昼食</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>14:00 &#8211; 18:00</td>
+		<td>Web</td>
+		<td>やぎはしゅ</td>
+	</tr>
+	<tr>
+		<td>19:00</td>
+		<td>会場施錠</td>
+		<td>-</td>
+	</tr>
+</table>
+<h2>内容</h2>
+<h3>Reversing</h3>
+<ul>
+	<li><a href="https://ctf.fluxfingers.net/2012/challenge.php?id=12">Hack.lu <span class="caps">CTF</span> 2012 reversing 500 &#8211; DonnBeach</a>
+	<ul>
+		<li><a href="https://captf1.captf.com/2012/hacklu/12-donn_beach.exe">バイナリがDL出来ない人向けリンク</a></li>
+		<li>アンチデバッグとしての独自VM機構
+		<ul>
+			<li>真新しいことを講義する内容ではありません．</li>
+			<li>独自VMを解いたことが無い方向けに，基本に忠実に，独自VMを解きます．</li>
+			<li>但しそこそこ難しい(というか面倒)かとは思います．</li>
+		</ul></li>
+		<li>MMX命令</li>
+		<li>疑似的なAES</li>
+	</ul></li>
+	<li>おまけ
+	<ul>
+		<li>求解処理について(時間があれば)</li>
+	</ul></li>
+</ul>
+<h3>Web</h3>
+<ul>
+	<li>XSS千本ノック
+	<ul>
+		<li>クロスでサイトなスクリプティングをする
+		<ul>
+			<li>真新しいことを講義する内容ではありません．てか講義しません．</li>
+			<li>みんなでわいわいXSSしたいな、と思って企画しました．</li>
+			<li>現在鋭意準備中です♡問題提供お待ちしてます♡(吐きそう</li>
+		</ul></li>
+	</ul></li>
+</ul>
+<h2>準備しておくと良いもの</h2>
+<h3>Reversing</h3>
+<ul>
+	<li>Windows環境
+	<ul>
+		<li>OSは問いませんが7以降推奨です．32bit/64bitどちらでもOK．</li>
+	</ul></li>
+	<li>お好きなディスアセンブラ
+	<ul>
+		<li>講義ではWindows上のIDA Proを利用します．</li>
+		<li>但しIDAのFree版では，一部の重要な命令の解釈ができないようなので注意しましょう．</li>
+		<li>以下で解析できるようです．
+		<ul>
+			<li><span class="caps">IDA</span> Pro Demo版(30分で終了するらしいので注意)</li>
+			<li>Binary.ninja Demo版(解析結果の保存ができないらしいので注意)</li>
+			<li>radare2</li>
+		</ul></li>
+	</ul></li>
+	<li>お好きなデバッガ
+	<ul>
+		<li>講義ではWindows上のx64dbgを利用します．</li>
+	</ul></li>
+	<li>C言語をコンパイルできる環境
+	<ul>
+		<li>講義ではLinux(VM)上のgccを利用します．</li>
+	</ul></li>
+	<li>python2.7系，及びz3pyが動作する環境
+	<ul>
+		<li>講義ではLinux(VM)上のpython2 + z3pyを利用します．</li>
+	</ul></li>
+	<li><strong>重要:</strong> 事前に <a href="https://ctf.fluxfingers.net/2012/challenge.php?id=12">バイナリ</a> を読んできましょう．
+	<ul>
+		<li>え，読めない？それは精進が足りてませんね，気合 of 気合で何とかなるはずです．
+		<ul>
+			<li>講義の中でバイナリの動作や解析の流れは解説しますので，事前に読めていなくても問題はありません．</li>
+			<li>とはいえ，どこまで自分一人で解析できるのか，着手くらいはしておいて欲しいとは思っています．</li>
+			<li>というかCTF playerなら気合で読めますよね？</li>
+		</ul></li>
+		<li>その他Slackで質問を飛ばすという手段も推奨です．</li>
+	</ul></li>
+</ul>
+<h3>Web</h3>
+<ul>
+	<li>ノートPC</li>
+	<li>Chrome
+	<ul>
+		<li>requestb.inをブックマークしておく</li>
+	</ul></li>
+	<li>インターネット上に公開されたWebサーバ
+	<ul>
+		<li>VPSだと最of高</li>
+		<li>極力Webサーバなしでも解けるようにするつもりです</li>
+	</ul></li>
+	<li>Burpsuite Free edition
+	<ul>
+		<li>使い方とかは特に解説しないです</li>
+		<li>FiddlerとかZAPでも可</li>
+	</ul></li>
+	<li><strong>重要:</strong> 以下は必須です
+	<ul>
+		<li>ほどよいXSS力と折れない心</li>
+		<li>XSSになりたい気持ち</li>
+	</ul></li>
+</ul>
+<h3>Slack</h3>
+<ul>
+	<li><a href="https://goo.gl/forms/azpFalckf5O8ZP9v1">参加者用Slack自動招待フォーム</a> があります．</li>
+	<li>参加者間の情報交換や相談&amp;質問等にご活用下さい．</li>
+	<li>前回と同じSlackですので，前回登録者は再登録不要です．</li>
+</ul>
+<h2>その他</h2>
+<ul>
+	<li>無線LANは用意しますが，速度的な問題もあるので，可能なら個人で回線用意をお願いします．
+	<ul>
+		<li>無線LAN/テザリングのどちらについても，回線は毎回混雑します…．</li>
+		<li>OSイメージなどの大容量ファイルを，会場でDLしようとするのはご遠慮ください．</li>
+		<li>またテザリングの際は，なるべくPCとモバイルを有線接続をするようにお願いします．</li>
+	</ul></li>
+	<li>当日の途中参加/途中退出などは構いません．</li>
+	<li>キャンセルはなるべくしないでください，キャンセル前提での申込みはやめましょう．</li>
+</ul>
+<h2>過去資料</h2>
+<ul>
+	<li><a href="https://speakerdeck.com/bata_24">https://speakerdeck.com/bata_24</a></li>
+	<li><a href="https://speakerdeck.com/yagihashoo">https://speakerdeck.com/yagihashoo</a></li>
+	<li><a href="http://www.slideshare.net/trmr105/presentations">http://www.slideshare.net/trmr105/presentations</a></li>
+	<li><a href="http://www.slideshare.net/ysk256/presentations">http://www.slideshare.net/ysk256/presentations</a></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/89434" target="_blank">http://atnd.org/events/89434</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-08-27</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-08-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.udx-n.jp/access.html" target="_blank">http://www.udx-n.jp/access.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区外神田4−14−1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>秋葉原UDX 4F NEXT-2</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.70052470000001</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7725077</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>154287</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>bata_24</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/bata_24" target="_blank">@bata_24</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>108</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-08-27</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

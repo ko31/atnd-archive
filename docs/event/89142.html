@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第５７回オープンＣＡＥ勉強会（夏合宿）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第５７回オープンＣＡＥ勉強会（夏合宿）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/89142.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/89142.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>89142</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第５７回オープンＣＡＥ勉強会（夏合宿）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>夏合宿の今後の詳細情報は随時更新されており、以下の勉強会ウエブ に最新情報を示しますので、必ず確認してください。また連絡は申込時のメールアドレスに行いますので、ご確認をお願いします。</h2>
+<p>最終締切を経て、参加者２０名で行います。下記の情報に従い解析環境の準備をお願いします。</p>
+<p><a href="http://opencae.gifu-nct.ac.jp/pukiwiki/index.php?%C2%E8%A3%B5%A3%B7%B2%F3%CA%D9%B6%AF%B2%F1%A1%A7H290826">第５７回勉強会：H290826</a></p>
+<p>申込にはATNDを利用しますが、事前に連絡や確認を行うため、アンケートの項目は、もれなく全て記載してください。<br />
+宿泊や食事の都合もあり、第１次締め切りを７月３１日とし、最終締切を８月１８日とします。ただし先着順で締切ります。</p>
+<p>メールアドレスの記入が心配な方は、直接にATNDのメッセージで管理者の柴田まで送付ください。事前連絡で必要ですので携帯メール不可で必ずご登録ください。</p>
+<p>※合宿としておりますが、宿泊は必須ではありませんし、いずれか１日のみの参加も可能です。（ただし実費は分割しません）</p>
+<h6>第１日目：８月２６日（土）１３：００～１７：３０　流体解析について（演習２課題）</h6>
+<p>演習１：「OpenFOAMを効果的に活用するTreeFOAMの応用」（藤井）<br />
+まずは基本となるTreeFoamの簡単な使い方（tutorialの実行方法、境界条件の設定方法、メッシュ作成など）の説明を行います。 ここで、要素数の多い大規模モデルの場合、binary形式の方がファイルサイズも小さく読み込みも早くなりますが、通常のeditorで確認、編集できない欠点があります。 そこでTreeFoamを用いることで、内蔵のeditorでbinaryの編集ができるので、その編集方法を説明。DEXCS2016上で最新のTreeFoamに入れ替えて説明予定です。</p>
+<p>演習２：「ANSYS Workbench18を用いた流体解析の実習」（田村）<br />
+この演習では商用ツール（学生版・試用版）のANSYS Workbench18を用いて、熱流体解析の導入教育でよく題材とされる、温度が異なる2つの流れが合流するミキシングエルボー内の流れを対象とします。 形状作成、メッシング、解析、ポスト処理をWorkbench18を用いて一連の解析作業を行い、基本的な操作を学びます。 形状作成ではWorkbench18からデフォルトとなったSpaceClaim、流体解析ではFluent、CFXを使います。</p>
+<h6>第２日目：８月２７日（日）０８：００～１２：３０　構造解析について（演習２課題）</h6>
+<p>演習３：「DEXCS-WinXistrによるシェルや骨組の解析演習」（柴田）<br />
+設計者用ＣＡＥや教育研究での活用を目指して、Windowsで活用できるオープンＣＡＥとして開発された、構造解析環境DEXCS-WinXistrを用いて、標準的なソリッド要素ではなく、シェルや骨組による解析手順を演習します。 まずは基本となる操作方法を確認してから、骨組構造やシェル構造の解析演習を行います。構造解析ではFrontISTRのWindows版を用いて、フリーに利用できるツールのみを用いて解析環境を実現します。</p>
+<p>演習４：「オープンソースCalculixとABAQUSの使い方」（ＳＨ）<br />
+この演習では商用ツール（学生版・試用版）のABAQUSとCalculixとの比較検討から、オープンＣＡＥのと商用ソフトの文法の相違や類似点を説明いたします。 これより実践的な構造解析において、商用ツールとオープンＣＡＥを適材適所で活用して、効果的なものづくりを目指すノウハウを獲得します。 また無料のABAQUS/<span class="caps">CAE</span> Student版を使って、接触解析や弾塑性解析の解析手順を演習します。環境はWindows版を用います。</p>
+<p>費用：　実費（全演習通しで3000円：講師謝礼と作業謝金で2000円＋茶菓子代会場費雑費で1000円としてお願いします）⇒　宿泊費や交流会については、実費（2000+5000円程度）をご負担頂きます。総額１万円予定です。なお宿泊費や交流会は最終締切後はキャンセル料を頂くことがあります。</p>
+<p>詳細情報は、以下の勉強会ウエブ に示しますので、必ず確認してください。<br />
+<a href="http://opencae.gifu-nct.ac.jp/pukiwiki/index.php?%C2%E8%A3%B5%A3%B7%B2%F3%CA%D9%B6%AF%B2%F1%A1%A7H290826">第５７回勉強会：H290826</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/89142" target="_blank">http://atnd.org/events/89142</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2017-08-26</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2017-08-27</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.softopia.info/access/" target="_blank">http://www.softopia.info/access/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>岐阜県大垣市加賀野4丁目1番地の7</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>ソフトピアジャパン　ドリームコア２階　岐阜イノベーションセンター研修室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.3675669</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>136.6394693</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>104325</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>ShibataRyoichi</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2017-08-20</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

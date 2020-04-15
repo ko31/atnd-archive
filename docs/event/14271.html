@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第2回 MongoDB JP 勉強会 in Tokyo</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第2回 MongoDB JP 勉強会 in Tokyo</h2>
+
+            <div class="buttons">
+                <a href="../json/events/14271.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/14271.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>14271</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第2回 MongoDB JP 勉強会 in Tokyo</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>第2回 MongoDB JP 勉強会 in Tokyo</h1>
+<h2>■ 4月9日（土）に第2回MongoDB勉強会を開催します</h2>
+<h3>「第1回 MongoDB JP ＆ CouchDB JP 合同勉強会 in Tokyo」（<a href="http://d.hatena.ne.jp/doryokujin/20101213/1292201919" >資料</a>・<a href="http://gihyo.jp/news/report/2010/12/2101" >ビデオ</a>）や「MongoDB Conference in Japan ( #mongotokyo )」（<a href="http://gihyo.jp/news/report/2011/03/2301" >資料・ビデオ</a>）と盛り上がりをみせているMongoDBですが、この勢いで第2回勉強会を開催します。たくさんの方々の参加をお待ちしております。</h3>
+<h3>※ 勉強会の後は会場での懇親会を予定しております。是非ともそちらもご参加下さい。</h3>
+<h2>■Ustream中継とハッシュタグについて</h2>
+<h3>Ustreamによる中継を予定しています。第一回勉強会・カンファレンスに引き続き、技評さんのアカウントをお借りしています。URLはチャンネル mongotokyo の<br />
+<a href="http://www.ustream.tv/channel/mongotokyo">http://www.ustream.tv/channel/mongotokyo</a><br />
+でお送ります。技評さん、毎回本当にありがとうございます。</h3>
+<h3>併せてハッシュタグですがカンファレンスに引き続き、<a href='http://twitter.com/#!/search?q=%23mongotokyo'>#mongotokyo</a> を今後も使わせてい頂くことにします。これをツイートに付けて頂いて発言していただければ会場に声が届きます。<a href='http://twitter.com/#!/search?q=%23MongoDB'>#mongodb</a> も併せてお使いください。</h3>
+<h2>■参加費</h2>
+<h3>・参加費：500円（おやつ代）<br />
+・懇親会費：1500円（懇親会に参加される方はアンケートの項目で&quot;参加&quot;の方にチェックを入れてください。）<br />
+<del>※ 正式な懇親会費用は懇親会参加人数によって判断させていただきます。概ね以上の値段設定でお願いします。</del><br />
+ ※ 懇親会費用確定しました！今回は¥1500で御願いします。</h3>
+<h2>■持参していただくもの</h2>
+<h3>・名刺（ネームプレートをお渡しします）<br />
+・電源タップ（共有が可能な方）<br />
+・Wifiルータ（共有が可能な方）<br />
+※会場の電源・無線環境には限りがありますので、快適にご使用して頂くには皆さんのご協力が必要になります。電源タップ・Wifiルータの持ち寄れる方は宜しくお願いします。</h3>
+<h2>■タイムテーブル</h2>
+<p>※ 随時更新していきます。<br />
+※ 予定は変更になる場合がございます。<br />
+※ 時間には質問の時間も含めて多めにとっています。質問から生まれる、両者有意義な議論とフィードバックを期待しております。</p>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>発表者</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>14:00 &#8211; 14:50</td>
+		<td><a href="http://twitter.com/#!/doryokujin">@doryokujin</a></td>
+		<td><strong>Sharding詳解</strong><br>Shardingに関して基本からできるだけ詳細までお話します。オライリーから出版されている「<a href="http://oreilly.com/catalog/0636920018308">Scaling MongoDB</a>」が実は全てShardingの内容だったので今回はShardingに絞って仕組みと機能を網羅したいと思います。Replica Sets は次回やります。&lt;(_ _)&gt;</td>
+	</tr>
+	<tr>
+		<td>15:00 &#8211; 15:50</td>
+		<td><a href="http://twitter.com/#!/bibrost">@bibrost</a></td>
+		<td><strong>Type-safe MongoDB with Scala</strong><br>静的型付け言語とMongoDBは相性が悪い、そう考えている人も多いのではないでしょうか。確かにメリットが減る部分はありますが、他のNoSQL・RDBでは真似のできない強力な使い方ができるため決して相性は悪くはありません。MongoDB活用事例としても有名なfoursquareが公開したScala用DSL Rogueをベースに、MongoDBを静的型付け言語から利用する事例を紹介します。</td>
+	</tr>
+	<tr>
+		<td>16:00 &#8211; 16:50</td>
+		<td><a href="http://twitter.com/#!/muddydixon">@muddydixon</a></td>
+		<td><strong>アクセスログをできるだけいろいろ見る時のmapreduce + ニフティクラウドでの構築とパフォーマンスを初心者からわかりやすく</strong></td>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 17:15</td>
+		<td><a href="http://twitter.com/#!/yamaneko1212">@yamaneko1212</a></td>
+		<td><strong>[LT]：地理空間インデックスを利用したWebアプリケーション</strong></td>
+	</tr>
+	<tr>
+		<td>17:25 &#8211; 18:00</td>
+		<td><a href="http://twitter.com/#!/joe_hrmn">@joe_hrmn</a></td>
+		<td><strong>Tachy with MongoDB</strong></td>
+	</tr>
+	<tr>
+		<td>18:00 &#8211; 19:00</td>
+		<td>@everyone</td>
+		<td><strong>ディスカッション</strong> 〜MongoDBを活用し、震災対策に役立てないか？・MongoDBのここが知りたい〜</td>
+	</tr>
+	<tr>
+		<td>19:00 &#8211; 21:00</td>
+		<td></td>
+		<td><strong>懇親会（ピザ・お菓子・アルコール）</strong></td>
+	</tr>
+</table>
+<p>※ 特に最後の座談会は懇親会までの時間調整です</p>
+<h2>■場所（勉強会＆懇親会）</h2>
+<h3>・フューチャーアーキテクト セミナールーム <br />
+（東京都品川区大崎1-2-2　アートヴィレッジ大崎セントラルタワー 15F）</h3>
+<p>　※会場を提供していただいた<a href="http://twitter.com/#!/understeer">@understeer</a>さん、ありがとうございます！</p>
+<h2>■当日の集合場所</h2>
+<h3>・集合場所<br />
+開始20分前・10分前までは、<a href="http://www.avoct.com/shop.html"><span class="caps">URL</span></a>の6(権兵衛)と7(ドトール)の間の入り口にスタッフが待機して会場まで案内します。<br />
+開始後に遅れてくる方は、ハッシュタグ( #mongotokyo )をつけるか( @doryokujin  @understeer )への返信に「着いた」とつぶやいたらお迎えに行く形式にします。</h3>
+<p><img src="http://www.avoct.com/shop/shop_map00.gif" /><br />
+<img src="http://www.avoct.com/access/img/map02.gif" /><br />
+<img src="http://www.avoct.com/access/img/map03.gif" /></p>
+<h2>■参考資料</h2>
+<h3>・<a href="http://twitter.com/#!/saicologic">@saicologic</a>さんの資料：<a href="http://www.slideshare.net/saicologic/mongodb-4751087">MongoDB</a><br />
+・<a href="http://www.djcinnovations.com/archives/55">Introducing MongoDB（英語）</a></h3>
+<p>※ MongoDBのチュートリアル資料を掲載しています。随時更新していくつもりです。</p>
+<h2>■会場準備スタッフを募集しております！</h2>
+<h3>会場準備をお手伝いしていただける方を募集しています。 <a href="http://twitter.com/#!/doryokujin">@doryokujin</a> かコメント欄に連絡していただければと思います。</h3>
+<h2>■ユーザーグループ参加のお誘い</h2>
+<h3>勉強会の変更通知や今後の勉強回・活動については全て各ユーザーグループ上で行います。これを機会にぜひともユーザーグループにご参加下さい。</h3>
+<h3>・<a href="https://groups.google.com/group/mongodb-jp?hl=ja" >MongoDB JP</a>：  <a href="https://groups.google.com/group/mongodb-jp?hl=ja" >https://groups.google.com/group/mongodb-jp?hl=ja</a><br />
+・<a href="https://groups.google.com/group/nosql-ja?hl=ja" >nosql-ja</a>： <a href="https://groups.google.com/group/nosql-ja?hl=ja" >https://groups.google.com/group/nosql-ja?hl=ja</a></h3>
+<h2>会場提供</h2>
+<h3>会場の方はネット環境含めて全てフューチャーアーキテクト様より無料で提供させてもらっております。本当にありがとうございます。</h3></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/14271" target="_blank">http://atnd.org/events/14271</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-04-09</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-04-09</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都品川区大崎1-2-2　アートヴィレッジ大崎セントラルタワー 15F</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>フューチャーアーキテクト セミナールーム </td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6223078</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7273303</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>38689</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>doryokujin</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/doryokujin" target="_blank">@doryokujin</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-04-08</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

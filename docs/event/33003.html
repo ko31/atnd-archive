@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">岡山でLinuxカーネルと戯れる会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">岡山でLinuxカーネルと戯れる会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/33003.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/33003.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>33003</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>岡山でLinuxカーネルと戯れる会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>(看板は&#34;岡山Linuxカーネル勉強会&#34;で出ます)</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>(11/30 23:55更新, LT枠が1つ埋まりました)</p>
+<h1>いきさつ</h1>
+<p>以前のRuby・Ruby on Rails勉強会の懇親会で案があったLinuxカーネル勉強会的なものをやりたいなと思います．</p>
+<h1>概要</h1>
+<p>さすがに，コードリーディングはちょっと大変そうなので，セッション形式にしようかと考えています．<br />
+とりあえず今勝手に考えている案はこんな感じ．<br />
+ &#8211; Linuxカーネルのソースコードをどうやって手に入れるか<br />
+ &#8211; ソースコードを読むのに便利そうなツールの紹介<br />
+ &#8211; ソースコードを読むための基礎知識<br />
+ &#8211; ソースコードの一部解説<br />
+(最初の2つを僕がくらいを話そうかなと考えてます)</p>
+<h1>参加費</h1>
+<p>1人あたり <del>300円程度(人数が増えればもう少し安くなるかも)</del> <big><strong>200円</strong></big>になりました．</p>
+<h1>懇親会</h1>
+<p>場所と費用が決まりました．<br />
+場所: 庄や 岡山駅前店<br />
+時間: 18:30開始，2時間<br />
+費用: 一人 3500円<br />
+懇親会を行いたいと思います．<br />
+参加される方は以下のATNDページに参加登録をお願いします(参加登録なしでは参加できないかもしれないです)．<br />
+<a href="http://atnd.org/events/34313">http://atnd.org/events/34313</a></p>
+<h1>日程と場所</h1>
+<p>日時と場所が確定しました!</p>
+<p>日時: 12月1日 13:00〜17:00<br />
+場所: 岡山市民会館</p>
+<h2>タイムテーブル(仮)</h2>
+<table>
+	<tr>
+		<th style="text-align:center;">時間</th>
+		<th style="text-align:center;">内容</th>
+		<th style="text-align:center;">発表者    </th>
+	</tr>
+	<tr>
+		<td style="text-align:center;">13:00&#8212;13:15</td>
+		<td style="text-align:center;" colspan="2">会場準備</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">13:15&#8212;13:45</td>
+		<td style="text-align:center;">自己紹介</td>
+		<td>全員</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">13:45&#8212;14:30</td>
+		<td style="text-align:center;">Linuxカーネルを読もう(導入編)</td>
+		<td>deepTokikane </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">14:30&#8212;14:45</td>
+		<td style="text-align:center;" colspan="2">休憩</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">14:45&#8212;15:45</td>
+		<td style="text-align:center;">スピンロックからはじめるLinuxカーネル入門<br />
+                          （キャッシュ一制御を知れば並列処理がわかる）   </td>
+		<td>hira  </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">15:45&#8212;16:00</td>
+		<td style="text-align:center;" colspan="2">休憩</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">16:00&#8212;16:30</td>
+		<td style="text-align:center;">ラズパイで動く監視カメラ</td>
+		<td>tpol05</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">16:30&#8212;16:40</td>
+		<td style="text-align:center;">[LT] 組み込みOSを作って遊ぶ</td>
+		<td>ext_sui</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">16:30&#8212;16:45</td>
+		<td style="text-align:center;">[LT]</td>
+		<td>未定</td>
+	</tr>
+	<tr>
+		<td style="text-align:center;">16:45&#8212;17:00</td>
+		<td style="text-align:center;" colspan="2">撤収作業</td>
+	</tr>
+</table>
+<h1>LTのスピーカ募集中</h1>
+<p>おかげさまでセッションの枠はすべて埋まりました．<br />
+<big>しかし</big><br />
+LT枠がまだ全然埋まってません!<br />
+というわけでLTしてくれる人募集してます．<br />
+1人5分程度で話してくれる人募集中です．</p>
+<p>特に学生の方は，人前で発表する機会が増えると思います．<br />
+他の学生よりも先に発表する機会を得られるというのはいいことだと思いますよ．</p>
+<p>LTなので，気軽に話して見てください．<br />
+自分がLinuxでやってみたいこととか話すと誰か教えてくれるかもしれませんよ?</p>
+<p>発表したい，という方は主催者まで連絡をください(連絡先は一番下に書いてます．)<br />
+h1. その他</p>
+<h2>ATNDページ更新のお知らせについて</h2>
+<p>参加者の方にはこのページの更新をメールでお知らせします．<br />
+また，ATNDにメールを登録されてないかたは，Twitterの方へメンションでお知らせします．<br />
+メールでは困るなどありましたら，下記の連絡先にお伝えください．</p>
+<h2>意見や提案，意見などがある場合</h2>
+<p>希望や提案，意見などありましたらコメントください．<br />
+下のコメント欄以外にも以下の連絡先に寄せてもらってもいいです．</p>
+<ul>
+	<li>@pukka_TiM (主催者のTwitterアカウント)</li>
+	<li>deep.wiki@gmail.com (主催者のメールアドレス)</li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/33003" target="_blank">http://atnd.org/events/33003</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>岡山県岡山市北区 丸の内2丁目1番1号</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>岡山市民会館</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>34.6654283</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>133.9323253</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>80272</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>deepTokikane</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/deep_tkkn" target="_blank">@deep_tkkn</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-11-30</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">オープンCAE勉強会＠富山（第60回）</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">オープンCAE勉強会＠富山（第60回）</h2>
+
+            <div class="buttons">
+                <a href="../json/events/94524.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/94524.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>94524</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>オープンCAE勉強会＠富山（第60回）</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>　オープンCAE（OpenFOAM，Salome-mecaなど）に関心を持つ技術者，研究者，学生などが集まり，気軽に情報交換・相談する場所を作ることを目的に，勉強会を開催します。
+　すでに使用経験のある方はもちろん，興味はあるけれど使い方が分らないという方も大歓迎です。お気軽にご参加ください。</p>
+
+<hr>
+
+<p>・参加登録時には，ATNDサイトで何らかのメールアドレス登録が必要です。これは，開催に関する情報等を確実にお知らせするためです。［YahooIDでの登録ができなくなったとの報告があります。その場合には，お手数をお掛けしますが，別の方法でのご登録をお願いいたします。］</p>
+
+<p>・参加登録時に登録するメッセージは，このウェブで公開されます。不必要な個人情報などは記載しないようにご注意ください。ニックネーム等での登録も問題ありません。</p>
+
+<p>・参加登録時に，アンケート（交流会参加/不参加）にご協力ください。交流会を用意するために，早期に参加者数が把握できると助かります。参加検討中の方も，主催者に状況をお知らせいただけると助かります。</p>
+
+<ul>
+<li>参加予定者数が少ない場合，交流会の開催方法を変更（会場近隣飲食店での開催）する場合があります。詳細は開催担当者へお問い合わせください。</li>
+</ul>
+
+<h3>＜講習会について：予定＞</h3>
+
+<h4>タイトル： OpenFOAM付属V&amp;V例題の実行と結果の自動処理化[予定]（講師 中山勝之氏）</h4>
+
+<h5>内容：</h5>
+
+<p>　OpenFOAM V1712には，V&amp;Vの例題として，verificationAndValidation/schemes/divergenceExampleが加わった。シンプルな2次元場において，14種類の拡散項のスキームを使用して，その特徴を比較するためのものである。ソルバにはscalarTransportFoamを使用し，定められた速度場で移流するパッシブスカラーの様子を再現する。</p>
+
+<p>　まず，この例題の内容を確認し，スクリプトを活用して，効率的にシミュレーションの実行・テストを実践する方法について学ぶ。</p>
+
+<p>　さらに，多くの計算結果を効率的にポスト処理するための自動化方法を学ぶ。これは，前回のオープンCAE勉強会@富山での講習内容に続くものである。計算結果を可視化した画像を自動的に作成する。</p>
+
+<p><img src="http://eddy.pu-toyama.ac.jp/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3CAE%E5%8B%89%E5%BC%B7%E4%BC%9A-%E5%AF%8C%E5%B1%B1/?action=common_download_main&amp;upload_id=311" alt="自動生成した画像の例：速度の拡散の様子" title="自動生成した画像の例：速度の拡散の様子"></p>
+
+<p><img src="http://eddy.pu-toyama.ac.jp/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3CAE%E5%8B%89%E5%BC%B7%E4%BC%9A-%E5%AF%8C%E5%B1%B1/?action=common_download_main&amp;upload_id=312" alt="自動生成した画像の例：速度の拡散の様子" title="自動生成した画像の例：速度の拡散の様子"></p>
+
+<h5>講習マシンについて：</h5>
+
+<p>　ハンズオン講習をご希望の方は，講習環境を用意したノートPCをご持参ください。必要な環境は， <strong>OpenFOAM v1712</strong> に加えて，python-vtk, python-pip, python-tkをインストールし，さらに，pipによってnumpy, scipy, pandas, matplotlibをインストールする必要があります。 <strong>前回までのオープンCAE勉強会＠富山用講習マシンだけでは実習できません。下記のマシンに更新してください。</strong></p>
+
+<p>　OpenFOAM v1712 をインストールした仮想マシンアプライアンスを作成しました。Virtualboxなどの仮想環境が使用できるかたは，下記からファイルを取得し，仮想環境にインポートしてお使いいただけます。</p>
+
+<p><a href="https://drive.google.com/file/d/1myRwGqfNgpN7loZdAfXiFnvngFBqwIRF/view?usp=sharing" title="講習用仮想マシン">講習用仮想マシン</a></p>
+
+<p>　上記リンクからダウンロードするファイルのサイズは 約4GB です。これを，Virtualboxなどの仮想環境でインポートしてください。すると，仮想マシンが生成されます。その仮想マシンは，20GB程度のディスク容量を必要とします。ご利用予定のノートPCの空き容量にご注意ください。</p>
+
+<p>　なお，継続してオープンCAE勉強会＠富山に参加されている方は，これまでの仮想マシンを削除して，上記の仮想マシンを導入していただいても結構です。同じような仮想マシンを複数保存するよりも，最新のものだけにすることで，使用ディスク容量が低減できます。これまでの仮想マシンでは，必要な機能がインストールされていませんのでご注意ください．[OpenFOAM最新版 v1712と追加パッケージが必要となります。] </p>
+
+<hr>
+
+<p>　今回も，勉強会終了後に，有志による交流会を開催します。交流会では，富山の名産 ますの寿司 食べ比べを開催します。</p>
+
+<p><a href="https://www.google.com/maps/d/edit?mid=zN5wfbhjMjik.ku1aa7ugvXEA">オープンCAE勉強会＠富山 ますのすしマップ</a></p>
+
+<h4>タイムスケジュール(予定)</h4>
+
+<p>13:00　　　受け付け開始</p>
+
+<p>13:30-　　 参加者自己紹介</p>
+
+<p>　　　　　 ミニ講習会「OpenFOAM付属V&amp;V例題の実行と結果の自動処理化（予定） 」</p>
+
+<p>15:30-　　 参加者報告＆ディスカッション</p>
+
+<p>17:30頃　勉強会終了</p>
+
+<p>　　　　　交流会開始（有志のみ）　ますの寿司　食べ比べ</p>
+
+<p>18:30　交流会終了</p>
+
+<h4>参加費：</h4>
+
+<p>　　　　勉強会　無料</p>
+
+<p>　　　　交流会は実費（社会人1000円，学生500円程度）</p>
+
+<h4>参加者：</h4>
+
+<p>　　　　オープンソースCAEに関心のある方。使用経験の有無等は問いません。</p>
+
+<p>　　　　OpenFOAM の話題が多いですが，それ以外のソフトについても話題となります。</p>
+
+<h4>備考１：</h4>
+
+<p>　　　　今回からの参加も大歓迎です。遠慮なく参加してください。はじめて参加の方は，自己紹介［経歴，OpenFOAM等使用歴(なしでもOK)，今取り組んでいる課題，これから取り組みたい課題 等］をお願いします。</p>
+
+<p>　　　　継続参加の方は，近況の報告をお願いいたします。現在の取り組み状況について，少し詳しく説明していただける方は，中川までお知らせください。</p>
+
+<p>　　　　プロジェクタとPCがありますので，お使いいただいて結構です。</p>
+
+<h4>備考２：</h4>
+
+<p>　　講習会では，参加者持参のノートPCを使用します。実習での作業は行わず，見学だけでの参加も可能です。</p>
+
+<p>　　講習環境を設定した仮想マシンの配布を予定しています。Virtualbox等の仮想マシン環境をご用意ください。</p>
+
+<p>　　ノートPCの準備について、ご質問・ご相談などございましたら、中川までお知らせください。</p>
+
+<h4>備考３：</h4>
+
+<p>　　過去の講習資料は下記のサイトからダウンロードできます。</p>
+
+<p>　　　　 <a href="http://eddy.pu-toyama.ac.jp/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3CAE%E5%8B%89%E5%BC%B7%E4%BC%9A-%E5%AF%8C%E5%B1%B1/">オープンCAE勉強会＠富山</a></p>
+
+<p>　　詳細は，中川まで，お問い合わせください。</p>
+
+<hr>
+
+<p>会場の富山県立大学の最寄り駅は，あいの風富山鉄道の小杉駅です。富山駅から2駅です。
+<a href="http://www.pu-toyama.ac.jp/outline/access/2013/03/19/1052/">富山県立大学へのアクセス</a></p>
+
+<p>小杉駅からの公共交通機関には，コミュニティバスがあります。小杉駅南口で発着の，14 太閤山線 または 13 小杉地区循環線（左回り）をご利用ください。</p>
+
+<p><a href="http://www.city.imizu.toyama.jp/combus/route/route14.html">14 小杉駅・太閤山線</a></p>
+
+<p><a href="http://www.city.imizu.toyama.jp/combus/route/route13.html">13 小杉地区循環線（左回り）</a></p>
+
+<p><a href="https://www.google.co.jp/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=6&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwji6crzqqvNAhXGFqYKHadaD-cQFgg9MAU&amp;url=https%3A%2F%2Fwww.google.com%2Fmymaps%2Fviewer%3Fmid%3D1rvqBD8zzhYoJyzBu2RRYxVzgQ8E%26hl%3Den_US&amp;usg=AFQjCNFGgHWL9AOUIRJR9rxUHelovPMljw&amp;sig2=xgq9fWEYFA4N7A18mSM_JA">富山県立大学周辺 ランチマップ</a></p>
+
+<hr>
+
+<p>オープンCAE勉強会＠富山　OpenFOAM関連（ポスト処理自動化）講習会 事前準備について（ver.20180206）</p>
+
+<h1>トレーニング環境について</h1>
+
+<ul>
+<li>講習会では，ご持参いただいたノートPC上の仮想マシンを利用して，シミュレーションソフトOpenFOAM v1712 を使用します．</li>
+<li><p>講習会当日までに完了していただく必要のある作業は，次の通りです．仮想マシン等の作業に不慣れな場合，時間がかかることがあります．早めに作業していただき，不明点等はお問い合わせください．</p>
+
+<ol>
+<li>ノートPCのスペックを確認する
+　  2. ノートPCに仮想環境ソフトウェア Virtualboxをインストールする</li>
+<li>講習用仮想マシンをダウンロードする</li>
+<li>ダウンロードした講習用仮想マシンをVirtualboxにインポートする</li>
+<li>インポートした仮想マシンが起動することを確認する</li>
+<li>いずれかのステップで問題が発生した場合には，問合せ先にメールで相談する</li>
+</ol></li>
+<li><p>上記1～6の作業の詳細は，下記をご覧ください。 </p></li>
+</ul>
+
+<h2>ノートPCのスペック等について</h2>
+
+<ul>
+<li>ノートパソコンを持参ください．トレーニングは，ご持参いただいたノートPCを使用して実施いたします．ノートPCの推奨環境は以下の通りです．
+
+<ul>
+<li>CPU: Pentium4以上 (64bit対応のCPU)</li>
+<li>OS: Windows 7以降(CPUが64bit対応であれば，OSは32bit版でも可)，または MacOS X 10.5以降</li>
+<li>RAM: 2GB以上</li>
+<li>空きディスク容量：25GB以上推奨（20GB以下では，外付けディスクを併用するなどが必要．）</li>
+<li>空きUSBポート: 1つ以上</li>
+<li>マウス: ParaViewの操作のために外付けのホイールボタン付きマウスを持参されることをお勧めします．</li>
+<li>VirtualBoxやVMWare等の仮想環境ソフトウェアが動作すること，または，USB起動ができること．（必ず，動作することを確認してください．インストールしたが動かない場合には，事前にご相談ください．）</li>
+<li>所属先や自宅でネットワークに接続し，事前に提供するファイル等をダウンロードできること．</li>
+<li>次の情報をご確認ください．
+
+<ul>
+<li>OSの管理者権限のあるユーザのパスワード</li>
+<li>BIOS設定方法（パスワード設定時はそのパスワード．起動ディスクの順序を変更しUSB外付けメディアから起動できるようにする．仮想化技術(Intel Virtual TechnologyやAMD Virtualization)を有効にする．）</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2>ノートPCの事前準備</h2>
+
+<ul>
+<li><p>ノートPCに，Oracle Virtualbox をインストールして，動作することを確認してください．</p>
+
+<ul>
+<li>Oracle Virtualbox は，下記から取得可能です。
+
+<ul>
+<li>https://www.virtualbox.org/</li>
+<li>最新版は VirtualBox 5.2.6 です．(2018年2月6日現在)</li>
+</ul></li>
+<li>Virtualbox は，ライセンス GNU General Public License (GPL) version 2 で提供されるオープンソースソフトウェアです．自由に使うことができます．</li>
+<li>Virtualbox以外の仮想マシン環境（VmWare）でも利用可能です．ただし，VmWare Player は個人的利用以外には使えません．企業活動でのご利用については，ライセンスをご確認ください．</li>
+</ul></li>
+<li><p>講習用仮想マシンを作成しました．仮想マシンのアプライアンス（Open Virtualization Format Archive形式　OVF1.0　拡張子 .ova）を配布いたします．事前に下記の作業を実施し，持参ノートPCに講習環境を構築してください．</p>
+
+<ul>
+<li>下記アドレスからファイル「Mx17-20180205.ova」をダウンロードする．（ファイルサイズは約4GB）
+
+<ul>
+<li>
+<a href="https://drive.google.com/file/d/1myRwGqfNgpN7loZdAfXiFnvngFBqwIRF/view?usp=sharing" title="講習用仮想マシン">講習用仮想マシン</a></li>
+</ul></li>
+<li>VirtualBoxを起動し，「ファイル」メニューから，「仮想アプライアンスのインポート」を選択する。先にダウンロードしたMx17-20180205.ovaファイルを選択して，インポートを実施する。（仮想マシンが作成されます。20GB程度のディスク容量が必要です。）</li>
+<li>作成された仮想マシンが起動することを確認する。（仮想マシンの ユーザ名：user　　パスワード：user）</li>
+<li>上記の仮想マシン アプライアンスは，Windows，Mac，Linux等の各OS上の仮想環境からインポート可能です．</li>
+</ul></li>
+<li><p>すでにOpenFOAMをご利用の方で，独自に OpenFOAM ｖ1712 の環境を用意できる方は，それをお使いいただいて結構です．ただし，下記の追加が必要です。事前に動作確認に必要な情報を提供いたしますので，ご相談ください。</p>
+
+<ul>
+<li>python-vtk python-tk python-pip</li>
+<li>pipを利用して，下記を追加インストール
+
+<ul>
+<li>numpy, scipy, pandas, matplotlib</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2>講習用教材の配布</h2>
+
+<ul>
+<li>今回の教材事前配布はありません。当日，資料を配付します．</li>
+</ul>
+
+<h2>ご質問など 問合せ先</h2>
+
+<ul>
+<li><p>講習会の準備について，ご質問がございましたら， ATND申込みサイトまたは  <a href="https://groups.google.com/forum/#!forum/openfoam">Googleグループ OpenFOAM</a> にてお問い合わせください.</p></li>
+<li><p>Googleドライブを利用して，ファイルを配布いたします．Googleドライブにアクセスできない等の問題がございましたら，中川までお知らせください．</p></li>
+</ul>
+
+<h2>変更履歴</h2>
+
+<ul>
+<li>2018年2月06日 初版</li>
+</ul>
+</td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/94524" target="_blank">http://atnd.org/events/94524</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2018-02-17</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2018-02-17</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://eddy.pu-toyama.ac.jp/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3CAE%E5%8B%89%E5%BC%B7%E4%BC%9A-%E5%AF%8C%E5%B1%B1/" target="_blank">http://eddy.pu-toyama.ac.jp/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3CAE%E5%8B%89%E5%BC%B7%E4%BC%9A-%E5%AF%8C%E5%B1%B1/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>富山県射水市黒河5180</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>富山県立大学 機械システム工学科 学科会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>36.7078171</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>137.096279</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>80589</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>NAKAGAWA Shinji</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2018-02-19</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

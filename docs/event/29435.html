@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">第18回 IT基礎技術勉強会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">第18回 IT基礎技術勉強会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/29435.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/29435.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>29435</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>第18回 IT基礎技術勉強会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Assembler, Kernel, Binary 勉強会 (ARM編)</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>セミナー中心の、IT基礎技術の勉強会です。気楽な感じでご参加ください。</p>
+<p>第18回のテーマは以下です。</p>
+<p>「Assembler, Kernel, Binary 勉強会 (ARM編)」</p>
+<p>■ 内容</p>
+<p>第17回(<a href="http://atnd.org/events/29090">http://atnd.org/events/29090</a>)のARM編です．<br />
+ARMは携帯電話などで利用されている，近年話題の組込み向けプロセッサです．</p>
+<p>文字列を出力するだけのプログラム、いわゆる「Hello World」はＣ言語の入門書の導入部分での定番ですが、その処理内容を深く追いかけると、Ａ４用紙で何枚ものレポートが書けるとよく言われます。</p>
+<p>ARMの開発環境で「Hello World」の実行バイナリを作成し，シミュレータで実行させ，デバッガで動作を追ってみましょう．また逆アセンブルしてどのようなことが行われているのかを解析してみましょう．</p>
+<p>今回利用するARM向け「Hello World」はライブラリ類は一切利用しない，フルスクラッチのものです．このためスタートアップやシステムコール呼び出し，メモリ配置などもすべて理解することが可能です．</p>
+<p>クロスコンパイラ・シミュレータ・デバッガ・逆アセンブラ・バイナリエディタなどを利用します．実際に手を動かす勉強会です。</p>
+<p>※以前の内容については以下を参照してください。<br />
+<a href="http://kozos.jp/group/ITbeginner.html">http://kozos.jp/group/ITbeginner.html</a></p>
+<p>■ 対象</p>
+<p>・アセンブラ，カーネル，バイナリに興味のあるかた<br />
+・組込み向けプロセッサや組込みソフトウェアの開発環境に興味のあるかた<br />
+・シミュレータ実行や対応方法などに興味のあるかた<br />
+・以下の「やること」を見て「面白そう！」と思うかた</p>
+<p>■ やること</p>
+<p>・PC上にARMのクロスコンパイル環境を構築し，ARM向けの実行バイナリを作成してみる．</p>
+<p>・GDBのシミュレータ機能で実行バイナリを動作させてみる．</p>
+<p>・逆アセンブルして解析してみる．関数呼び出し時のスタックの使い方とかを見る。</p>
+<p>・デバッガで動作をアセンブラ単位で追ってみる．</p>
+<p>・ARMでのスタートアップやシステムコールの呼び出しを見る．</p>
+<p>・GDBのシミュレータのソースコードを読み，どのような対応をすればシミュレータで動作させられるのか調べる．</p>
+<p>・(余裕があれば)ARMのThumb命令についても見てみる．アセンブラや実際の動作，シミュレータ内部での処理を見てみる．</p>
+<p>■ 説明対象レベル</p>
+<p>「シェルベースのCUI環境での操作には馴染みがあって，lsやcdなどの基本操作やmore(もしくはless)によるファイル参照，vi(もしくはemacs)でのファイル編集には慣れている．でもバイナリエディタやgdbの操作は未経験」くらいを対象に説明します．</p>
+<p>バイナリエディタはなんでもいいのでインストールして軽く慣れておいてください(ファイルを開いて編集して保存，くらいができればいいです)．とくに無ければ，hexeditに<a href="http://kozos.jp/books/asm/">http://kozos.jp/books/asm/</a>のパッチ当てして使うのがおすすめです．hexedit は Ctrl-X でファイル保存して終了，だけおぼえておけばあとは見たままフツーに使えます．</p>
+<p>gdbはemacsから操作するわけではないので，emacsは必須ではありません．(-tuiオプションを利用して，gdbが持つテキストユーザインターフェースをベースに説明します)</p>
+<p>■ 環境について</p>
+<p>今回は逆アセンブルやバイナリ解析など，参加者のかたに実際に手を動かしてもらう勉強会になります．</p>
+<p>なのでなるべくなら，各自，ＰＣを持参してください。（持参できるＰＣが無かったり手作業に自信が無い場合，聞くことに集中したい場合には，ＰＣ無しで聞くだけの参加でもＯＫです）</p>
+<p>作業環境は以下の２通りが選べます．</p>
+<p>(1)自前で環境を用意する場合</p>
+<p>以下の環境を利用します．</p>
+<p><a href="http://kozos.jp/books/asm/">http://kozos.jp/books/asm/</a></p>
+<p>FreeBSD, Ubuntu, CentOS, Cygwin で環境構築できることを確認してあります．上記から「最新の出力環境の構築のためのアーカイブ(2012/02/26)」をダウンロードし，上記サイトの説明に従ってインストールしてください．</p>
+<p>以下も参考にしてください．</p>
+<p><a href="http://kozos.jp/group/018/build.html">http://kozos.jp/group/018/build.html</a></p>
+<p>説明はFreeBSD上でやるのでいちおう推奨はFreeBSDですが，UbuntuなどのGNU/Linux環境やCygwinでもＯＫです．上記のクロスコンパイル環境が構築できればプラットホームは問いません．</p>
+<p>難しい場合は以下の「サーバ利用」でも構いませんが，自前ＰＣにインストールするならばインターネット接続が不要なため，安定して操作できると思います．また事前に操作に馴染んでおくこともできます．</p>
+<p>説明はCUIベースで行います．説明者が使うツールは tcsh, emacs, less, hexedit ですが，bash, vi, more, bvi とかでも構いません．何かしら，使える状態にしておいてください．</p>
+<p>(2)サーバを利用する場合</p>
+<p>今回はFreeBSDのサーバをこちらで用意します．自前で開発環境を構築するのが面倒な場合，サーバを利用することもできます．</p>
+<p>各自が自分のＰＣからサーバにログインして，ツール操作をしてもらう感じになります．各自、インターネットに接続できるＰＣを持参してください。</p>
+<p>無線LANによるインターネット接続環境はこちらでも用意しますが，説明者は説明を始めたらネットワークの管理はできないので，保証はできません．可能ならば各自用意してください．</p>
+<p>GUIでなくUNIX上でシェルを使っての操作になります．SSHでのログイン、bash or tcsh, vi or emacs, more or less, bvi or hexedit などの操作に慣れておいたほうがいいです．本題の説明に集中するため，これらについては最低限しか説明しません．各自で調べておいてください．不安なかたは早めに来て慣れてください．</p>
+<p>gdbの操作はある程度は説明しますが，初心者向けに丁寧に説明するわけではありません．CUIの操作に慣れていること前提でガンガン進みます．</p>
+<p>ＰＣにはTeraTermなど，SSHでログインできるツールをインストールしてきてください．TeraTermとWinSCPか，もしくは Cygwinがおすすめです．当日は本題の方に集中したいので，このへんの準備もあらかじめ各自でお願いします．(当日はすぐに本題の説明に入るので，現地でインストールなどしている時間はあまり無いと思います)</p>
+<p>■ おおまかなスケジュール</p>
+<p>18:45　集合<br />
+18:50～19:00　オープニング<br />
+19:00～21:00　セミナー(途中でてきとうに休憩を入れます)</p>
+<p>■ 資料</p>
+<p>今回はプロジェクタによる説明と板書がメインになります。配布資料はありません。</p>
+<p>■ その他</p>
+<p>雰囲気的には、セミナーなので、まあ授業みたいな感じになります。説明するのは、主催者の坂井です。</p>
+<p>場所は神奈川県川崎市の武蔵小杉駅から徒歩10分程度の公民館です。<br />
+(注)場所がわかりにくいです(毎回迷子者が出ています)。地図をご確認ください．また，以下の案内も参考にしてください。</p>
+<p><a href="http://kozos.jp/group/ITbeginner.html">http://kozos.jp/group/ITbeginner.html</a></p>
+<p>ひとり数百円程度の会場費＋電気代(￥100)がかかります。(会場費を割勘します)<br />
+学生は無料です。<br />
+コンセントを利用しなければ電気代は不要です．なのでなるべくならばＰＣのバッテリーを充電してきてください．コンセントの数が少ないので(会議室内に数箇所程度しかありません！)，なるべく電源タップを持参してください．</p>
+<p>開始時間は一応19時としてありますが、平日開催なので、開始時間は多くの参加者が来れる時間に合わせて調整します。会場は入退室自由なので、遅れて来たり早めに帰ったりしてもかまいません。</p>
+<p>会場は18:00には開場しておくので、早めに来てぐだぐだと待っていても構いません。今回は各自の準備やセッティングなどに時間もかかりますので、来れるならばなるべく早めに来てください。</p>
+<p>本勉強会は主催者が個人活動として行っているものなので，手が回りきらず当日はなにか不備があるかもしれません(とくにネットワーク環境など)．ご了承ください．</p>
+<p>応募者少数の場合には、状況を見て中止にするかもしれません。そのときはごめんなさい。</p>
+<p>のんびり気楽な感じでやりましょう。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/29435" target="_blank">http://atnd.org/events/29435</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-06-29</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-06-29</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://kozos.jp/group/ITbeginner.html" target="_blank">http://kozos.jp/group/ITbeginner.html</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>神奈川県川崎市中原区小杉町3-1</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>川崎市 総合自治会館 (第１会議室)</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.5751102</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.6552815</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>25080</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kozos</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kozossakai" target="_blank">@kozossakai</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-06-12</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

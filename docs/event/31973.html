@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">R Advent Calendar 2012</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">R Advent Calendar 2012</h2>
+
+            <div class="buttons">
+                <a href="../json/events/31973.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/31973.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>31973</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>R Advent Calendar 2012</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>クリスマスまでのアドベント期間，日替わりで R に関する記事を公開していきましょう！ クリスマス当日まで毎日 R に関する新しい記事が産まれる素敵なイベントです。</p>
+<p>R Advent Calendar は昨年も行われ，大盛況でした。昨年度の R Advent Calendar の様子は <a href="http://atnd.org/events/22039">昨年のカレンダー</a> をご覧ください。</p>
+<h3>ルール</h3>
+
+	<ol>
+		<li>まずはこのイベントに参加しましょう。</li>
+		<li>参加した順番に日替わりで R に関するブログ記事を書きます。最初に登録した人が 1 日目，次に登録した人が 2 日目，…という具合に進行します。</li>
+		<li>ブログ記事を書いたら，このページのコメント欄にその <span class="caps">URL</span> を書いてください。 <span class="caps">HTML</span> 形式でリンクを張ることもできるようです。</li>
+	</ol><h4>そもそも R って何？</h4>
+<p>R はフリーでオープンソースな統計解析環境およびその記述言語です。 R をはじめて知ったという方は，ぜひ公式サイト <a href="http://www.r-project.org/">www.r-project.org</a> (英語) からダウンロードして触ってみてください。</p>
+<h4>どんな内容を書けばいいの？</h4>
+<ul>
+	<li>R はじめました</li>
+	<li>R を使う前に注意すべきこと</li>
+	<li>R でこんな解析が簡単にできるよ</li>
+	<li>R でこんなグラフが描けたいんだけどどうしたらいいの</li>
+	<li>R の example がわかり辛いのでいろいろ試して理解を深めた</li>
+	<li>R を使うには Windows, Mac OS X, Linux どれが良いの？</li>
+	<li>R はオワコンだから○○やろうぜ！</li>
+</ul>
+<p>…などなど，とにかく R に触れる内容なら <strong>何でもあり</strong> です。気負わず楽しく。</p>
+<p>もちろんこれら以外のトピックも大歓迎です。 <a href="http://atnd.org/events/22039">昨年のカレンダー</a> も参考にしてみてください。</p>
+<h4>ブログがない</h4>
+<p>ブログというのはあくまで 1 つの形式であって，本当にブログである必要はありません。例えば <a href="http://rpubs.com/">RPubs</a> という R に特化したドキュメント公開できるサイトの利用がオススメです。</p>
+<h4>参加したいけど定員オーバーしちゃった…</h4>
+<p><strong>定員オーバーした場合でも参加可能です</strong> 。 Advent 期間ではありませんが， 26 日以降の日程で割り振ります。クリスマスを越して，ついでに年も越したらいいんじゃないかな！ 躊躇せず参加してください。</p>
+<h4>逆に定員に達しない場合は？</h4>
+<p>人数が集まらなかった場合は，有志がコメント欄に「○日は自分が書く」と宣言して書いてくれると嬉しいです。それでも足りなければ「オレ達の R は始まったばかりだ！」と， R のこれからの発展を願いつつ終了いたします。</p>
+<h3>R Advent Calendar 2012</h3>
+<table>
+	<tr>
+		<th style="text-align:center;width:14.3%;"><span style="color:red;">日</span> </th>
+		<th style="text-align:center;width:14.3%;">月 </th>
+		<th style="text-align:center;width:14.3%;">火 </th>
+		<th style="text-align:center;width:14.3%;">水 </th>
+		<th style="text-align:center;width:14.3%;">木 </th>
+		<th style="text-align:center;width:14.3%;">金 </th>
+		<th style="text-align:center;width:14.3%;"><span style="color:blue;">土</span> </th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td style="text-align:center;"><span style="color:blue;">1</span><br />
+<a href="http://d.hatena.ne.jp/dichika/20121201/1354351380">dichika2</a> </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;"><span style="color:red;">2</span><br />
+<a href="http://d.hatena.ne.jp/teramonagi/20121202/1354424134">teramonagi</a> </td>
+		<td style="text-align:center;">3<br />
+<a href="http://d.hatena.ne.jp/kenchan0130_aki/20121203/1354521319">kenchan0130_aki</a> </td>
+		<td style="text-align:center;">4<br />
+<a href="http://d.hatena.ne.jp/yokkuns/20121204/1354634964">yokkuns</a> </td>
+		<td style="text-align:center;">5<br />
+<a href="http://d.hatena.ne.jp/wakuteka/20121205/1354714504">wakuteka</a> </td>
+		<td style="text-align:center;">6<br />
+<a href="http://d.hatena.ne.jp/tsutatsutatsuta/20121206/1354737461">tsutatsuta</a> </td>
+		<td style="text-align:center;">7<br />
+<a href="http://d.hatena.ne.jp/yuifu/?_ts=1354887631">yuifu</a> </td>
+		<td style="text-align:center;"><span style="color:blue;">8</span><br />
+<a href="http://d.hatena.ne.jp/langstat/20121208#p1">langstat</a> </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;"><span style="color:red;">9</span><br />
+<a href="http://d.hatena.ne.jp/Hiro_macchan/20121210/1355104704">Hiro_macchan</a> </td>
+		<td style="text-align:center;">10<br />
+<a href="http://d.hatena.ne.jp/isobe1978/20121210/1355065348">アドファイブ代表</a>  </td>
+		<td style="text-align:center;">11<br />
+<a href="http://rpubs.com/kaz_yos/rad2012">kaz_yos</a> </td>
+		<td style="text-align:center;">12<br />
+<a href="http://d.hatena.ne.jp/sfchaos/20121212">sfchaos</a> </td>
+		<td style="text-align:center;">13<br />
+<a href="http://www.grayrecord.com/blog/dev/archives/2012/12/predictcoxph.html">G.O.R.N</a><br />
+ </td>
+		<td style="text-align:center;">14<br />
+<a href="http://m884.hateblo.jp/entry/2012/12/14/221559">phosphor_m</a> </td>
+		<td style="text-align:center;"><span style="color:blue;">15</span><br />
+<a href="http://d.hatena.ne.jp/EulerDijkstra/20121215/1355564356">sleipnir002</a> </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;"><span style="color:red;">16</span><br />
+<a href="http://rpubs.com/mokjpn/rsnake">mokjpn</a> </td>
+		<td style="text-align:center;">17<br />
+<a href="http://holidayworking.github.com/blog/2012/12/17/hive/">holidayworking</a> </td>
+		<td style="text-align:center;">18<br />
+<a href="http://d.hatena.ne.jp/gepuro/20121218/1355759416">gepuro</a> </td>
+		<td style="text-align:center;">19<br />
+<a href="http://kosugitti.hatenadiary.jp/entry/2012/12/19/144228">Kosugitti</a> </td>
+		<td style="text-align:center;">20<br />
+<a href="http://kininaru-tetsu.blogspot.jp/2012/12/r.html">tetsuroito</a> </td>
+		<td style="text-align:center;">21<br />
+<a href="http://rpubs.com/T_Yamane/3297">T_Yamane</a> </td>
+		<td style="text-align:center;"><span style="color:blue;">22</span><br />
+<a href="http://rpubs.com/soultoru/3309">soultoru</a>  </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;"><span style="color:red;">23</span><br />
+<a href="http://blog.recyclebin.jp/archives/3180">kos59125</a> </td>
+		<td style="text-align:center;"><span style="color:red;">24</span><br />
+<a href="http://d.hatena.ne.jp/isseing333/20121224/1356279424">isseing333</a> </td>
+		<td style="text-align:center;">25<br />
+<a href="http://sanoche16.blogspot.jp/2012/12/r-advent-calendar-2012-25r-advent.html">sanoche</a>  </td>
+		<td style="text-align:center;">26<br />
+<a href="http://rpubs.com/sakaue/vector">SakaueTatsuya</a> </td>
+		<td style="text-align:center;">27<br />
+<a href="http://d.hatena.ne.jp/yatsuta/20121227">yatsuta</a> </td>
+		<td style="text-align:center;">28<br />
+<a href="http://d.hatena.ne.jp/hoxo_m/20121228/p1">hoxo_m</a> </td>
+		<td style="text-align:center;"><span style="color:blue;">29</span><br />
+<a href="http://ameblo.jp/wdkz/entry-11437098440.html">wdkz</a> </td>
+	</tr>
+	<tr>
+		<td style="text-align:center;"><span style="color:red;">30</span><br />
+<a href="http://anime.geocities.jp/x_emacser/index.html">emacser</a> </td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<p>※ 随時更新</p>
+<h4>題目リスト</h4>
+<ol>
+	<li>(dichika2) <a href="http://d.hatena.ne.jp/dichika/20121201/1354351380">献本御礼から始まるヒストリー(R Advent Calendar2012)</a></li>
+	<li>(teramonagi) <a href="http://d.hatena.ne.jp/teramonagi/20121202/1354424134">隠れマルコフモデルで異常検知(R Advent Calendar2012)</a></li>
+	<li>(kenchan0130_aki) <a href="http://d.hatena.ne.jp/kenchan0130_aki/20121203/1354521319">Rで時系列データを扱うためのクラスたち</a></li>
+	<li>(yokkuns) <a href="http://d.hatena.ne.jp/yokkuns/20121204/1354634964">knitr+sendmailR でHTMLレポート配信</a></li>
+	<li>(wakuteka) <a href="http://d.hatena.ne.jp/wakuteka/20121205/1354714504">RStudio Advent Calendar 2012 (R Advent Calendar 2012)</a></li>
+	<li>(tsutatsuta) <a href="http://d.hatena.ne.jp/tsutatsutatsuta/20121206/1354737461">irisの正体 (R Advent Calendar 2012 6日目)</a></li>
+	<li>(yuifu) <a href="http://d.hatena.ne.jp/yuifu/?_ts=1354887631">確率変数としてのp-valueの感覚をRで身につける</a></li>
+	<li>(langstat) <a href="http://d.hatena.ne.jp/langstat/20121208#p1">wordcloudで遊ぼう（R Advent Calendar 2012）</a></li>
+	<li>(Hiro_macchan) <a href="http://d.hatena.ne.jp/Hiro_macchan/20121210/1355104704">R Advent Calendar 2012</a></li>
+	<li>(アドファイブ代表) <a href="http://d.hatena.ne.jp/isobe1978/20121210/1355065348">Rのメタプログラミングとモナド (R Advent Calendar 2012)</a></li>
+	<li>(kaz_yos) <a href="http://rpubs.com/kaz_yos/rad2012">Rで臨床研究1: Table 1の検定をする</a></li>
+	<li>(sfchaos) <a href="http://d.hatena.ne.jp/sfchaos/20121212">モザイクプロットと分割表(R Advent Calendar 2012)</a></li>
+	<li>(G.O.R.N) <a href="http://www.grayrecord.com/blog/dev/archives/2012/12/predictcoxph.html">predict.coxphの中身を覗く</a></li>
+	<li>(phosphor_m) <a href="http://m884.hateblo.jp/entry/2012/12/14/221559">ggplot2のテーマを手軽に作成・編集する(R Advent Calendar 2012)</a></li>
+	<li>(sleipnir002) <a href="http://d.hatena.ne.jp/EulerDijkstra/20121215/1355564356">アソシエーション分析可視化パッケージarulesViz</a></li>
+	<li>(mokjpn) <a href="http://rpubs.com/mokjpn/rsnake">Rでスネークゲーム</a></li>
+	<li>(holidayworking) <a href="http://holidayworking.github.com/blog/2012/12/17/hive/">R から Hive を使う方法</a></li>
+	<li>(gepuro) <a href="http://d.hatena.ne.jp/gepuro/20121218/1355759416">google chart apiのようなものをR言語を利用して再現してみる(R Advent Calendar2012)</a></li>
+	<li>(Kosugitti) <a href="http://kosugitti.hatenadiary.jp/entry/2012/12/19/144228">社会調査士のためのこれからの因子分析</a></li>
+	<li>(tetsuroito) <a href="http://kininaru-tetsu.blogspot.jp/2012/12/r.html">Rで固有値と特異値分解の計算をする方法</a></li>
+	<li>(T_Yamane) <a href="http://rpubs.com/T_Yamane/3297">Rでライフゲイム(R Advent Calendar 2012)</a></li>
+	<li>(soultoru) <a href="http://rpubs.com/soultoru/3309">おそらく最速でRStudio Serverを利用開始する方法</a></li>
+	<li>(kos59125) <a href="http://blog.recyclebin.jp/archives/3180">Excel に R のプロット</a></li>
+	<li>(isseing333) <a href="http://d.hatena.ne.jp/isseing333/20121224/1356279424">【CodeIQ】Rで解くデータサイエンティスト問題の解説（R Advent Calendar2012）</a></li>
+	<li>(sanoche) <a href="http://sanoche16.blogspot.jp/2012/12/r-advent-calendar-2012-25r-advent.html">Rを用いたTwitterテキストマイニング</a></li>
+	<li>(SakaueTatsuya) <a href="http://rpubs.com/sakaue/vector">R のグラフはベクタ（ベクトル）画像で出力すべきたった１つの理由</a></li>
+	<li>(yatsuta) <a href="http://d.hatena.ne.jp/yatsuta/20121227">フレームにまつわるエトセトラ</a></li>
+	<li>(hoxo_m) <a href="http://d.hatena.ne.jp/hoxo_m/20121228/p1">RStudio Shiny TIPS</a></li>
+	<li>(wdkz) <a href="http://ameblo.jp/wdkz/entry-11437098440.html">スタン・ハンセンに想いを馳浩</a></li>
+	<li>(emacser) <a href="http://anime.geocities.jp/x_emacser/index.html">コミケとR</a></li>
+</ol>
+<h3>参加しよう！</h3>
+<p>カレンダーにあなたの名前を残してみませんか。</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/31973" target="_blank">http://atnd.org/events/31973</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-12-30</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>21686</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>kos59125</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/kos59125" target="_blank">@kos59125</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-12-30</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

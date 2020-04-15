@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">帰ってきたCoqで圏論の会</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">帰ってきたCoqで圏論の会</h2>
+
+            <div class="buttons">
+                <a href="../json/events/26669.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/26669.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>26669</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>帰ってきたCoqで圏論の会</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>Coqを使って圏論と戯れる one-day proofathon </td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h2>当日の成果</h2>
+<p>Awodey本（下記参照）の Exercise 1.9 (a), (b) を解きましたとさ．</p>
+<ul>
+	<li><strong>Coqチーム</strong> : <a href="https://github.com/khibino/coq-Category-201205">github</a></li>
+	<li><strong>Agdaチーム</strong> ： <a href="https://github.com/konn/category-agda">github</a></li>
+</ul>
+<h2>概要</h2>
+<p>各自、圏論の問題を持ち込んで、Coqを使って証明する one-day proofathon です。</p>
+<p>当日共有するライブラリは A. Megacz, <a href="http://www.cs.berkeley.edu/~megacz/coq-categories/">Category Theory in Coq</a> です。</p>
+<ul>
+	<li>こいつを写経するもよし、</li>
+	<li>自分で圏論の定義書いてこいつで答え合わせするもよし、</li>
+	<li>これを使って適当な問題を証明していくもよし、</li>
+	<li>まったく無視して独自路線に走ってもよし</li>
+</ul>
+<p>なお、S. Awodey, <a href="http://www.amazon.co.jp/dp/0199587361/" title="2nd Ed.">Category Theory</a> （Awodey本）があると幸せかもしれません。</p>
+<p>Coq初心者も圏論初心者も歓迎。周りの人に聞きまくってください。</p>
+<p>なお、過去会参加者は、そのときの続きをやってもらっても構いません。</p>
+<h2>タイムテーブル</h2>
+<p><strong>10:00-10:30</strong> 始めの時間（準備、自己紹介や意気込みなど）<br />
+<strong>10:30-18:00</strong> ひたすら証明を書く時間<br />
+<strong>18:00-19:00</strong> 成果を披露する時間</p>
+<h2>注意事項</h2>
+<ul>
+	<li>各自、自分で証明したいお題、やりたいことを自分で持ち込んでください。こちらからは特に用意しません。</li>
+	<li>Coqが実行出来る環境を各自用意してください。また、上記のライブラリも、各自ダウンロードしておいてください。</li>
+	<li>当日の部屋は <strong>「CLTT読書会」名義</strong> で借りています。お間違えなきよう。</li>
+	<li>ネットワーク環境は、準備できるか不明なのでこれも各自で。</li>
+	<li>お昼はどうするか、始めの時間で考えます。</li>
+</ul>
+<h2>特別セッション：帰ってきたAgdaで圏論の会</h2>
+<p>前回約1名に好評だった、併設セッション <strong>Agdaで圏論の会</strong> も開催します。<br />
+ルールはCoqで圏論と同じで、代わりにAgdaを使うだけです。<br />
+ただし、当日仲間はずれになるかもしれませんが、責任は持てません。</p>
+<p><strong>参考</strong> Agda用圏論ライブラリ <a href="https://github.com/agda/categories">https://github.com/agda/categories</a></p>
+<h2>過去の開催</h2>
+<ul>
+	<li>第1回： <a href="http://atnd.org/events/15000">Coqで圏論の会</a>
+	<ul>
+		<li><a href="http://togetter.com/li/131681">togetterまとめ</a></li>
+	</ul></li>
+	<li>第2回： <a href="http://atnd.org/events/17725">スタートCoqで圏論 in honor of こんさん</a></li>
+</ul>
+<h2>参考</h2>
+<ul>
+	<li>A. Megacz, <a href="http://www.cs.berkeley.edu/~megacz/coq-categories/">Category Theory in Coq</a>
+	<ul>
+		<li>前回評判の良かったCoqの圏論ライブラリ。今回標準採用されました</li>
+	</ul></li>
+	<li>S. Awodey, <a href="http://www.amazon.co.jp/dp/0199587361/" title="2nd Ed.">Category Theory</a>
+	<ul>
+		<li>通称Awodey本。定番になりつつある圏論の教科書。上記のライブラリはこの本を参考にしているらしい。</li>
+	</ul></li>
+	<li>A. Saïbi, <a href="http://coq.inria.fr/pylons/contribs/view/ConCaT/v8.3">ConCaT</a>
+	<ul>
+		<li>Coqの圏論ライブラリ。前回までの参加者には程よく腐っていると好評。</li>
+	</ul></li>
+	<li>A. Carvalho, <a href="http://www.cs.math.ist.utl.pt/ftp/pub/CarvalhoA/98-C-DiplomaThesis/">Category Theory in <span class="caps">COQ</span></a>
+	<ul>
+		<li>Coqで圏論を実装してみたよというAlexandraさんの卒業論文（PS）。</li>
+		<li>ConCaTに似てます。</li>
+		<li>Coqのバージョンが古く、最近のと文法が微妙に違います。</li>
+	</ul></li>
+	<li>D. Rydeheard and R. Burstall, <a href="http://www.cs.man.ac.uk/~david/categories/book/book.pdf">Computational Category Theory</a>
+	<ul>
+		<li>MLで圏論を語る古きよき本（PDF）。</li>
+		<li>採用されてるMLが古いです。</li>
+	</ul></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/26669" target="_blank">http://atnd.org/events/26669</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-05-05</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-05-05</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="" target="_blank"></a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区新宿2-19-1 ビックスビル地下2階</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>カフェミヤマ 新宿3丁目ビッグスビル店 5号室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6901324</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7078768</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>3452</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>bonotake</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/bonotake" target="_blank">@bonotake</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-05-11</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

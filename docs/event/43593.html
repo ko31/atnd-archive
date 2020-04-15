@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">Physicaloid FPGA</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">Physicaloid FPGA</h2>
+
+            <div class="buttons">
+                <a href="../json/events/43593.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/43593.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>43593</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>Physicaloid FPGA</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>Physicaloid <span class="caps">FPGA</span> <span class="caps">PERIDOT</span> ウォッチページ</h1>
+<p><big><br />
+※このページはイベント参加申し込みではありません。<br />
+Physicaloid FPGAの<b>2次ロットの情報をウォッチしたい方、ｲｲﾈｯと思てくださった方</b>ポチっておいてください。<br />
+次期ロットの生産数の参考にさせていただきます。</p>
+<p>初期ロット、先行予約10枚分の製作は無事終了しました。少数生産ということで予定より若干オーバしてしまいましたが、8500円で頒布しました。<br />
+（2次ロットはもうすこし値段おさえる予定です）</p>
+<p>おかげさまで次ロットには問題なく進められそうです。</p>
+<h2>2次ロット情報</h2>
+<p>2次ロット : 120枚 製造<br />
+値段 : 7000〜8000円<br />
+リリース : 12月下旬<br />
+購入方法 ： 別途連絡</p>
+<p>基本的に初期ロットからの変更点はありません。</p>
+<p>2次ロットもUSBコネクタに刻印入れる予定です。<br />
+動画：<a href="http://www.youtube.com/watch?v=LvbcCy-5Xf4">http://www.youtube.com/watch?v=LvbcCy-5Xf4</a><br />
+こんなかんじで1個1個刻印しています。</p>
+<h2>初期ロット情報</h2>
+<p><img src="http://www.physicaloid.com/wp-content/uploads/2013/09/physicaloid_fpga.png" width=50%></p>
+<p>FPGAをさわったことのないユーザからハックしたいユーザまで<br />
+いろんな人が楽しめる<b>Physicaloid FPGAボードのウォッチページ</b>です。<br />
+イベント参加募集じゃありませんｺﾞﾒﾝﾅｻｲ。イベントは別でやるますんで。</p>
+<p>初期ロット：10枚<br />
+値段：7000〜8000<br />
+リリース：MFT2013のある11/3を予定<br />
+渡す方法：MFT2013 or 郵送</p>
+<p>FPGAとは：Field Programmable Gate Arrayの略でIC内のハードウェアロジックを自在に書き換えることができるデバイスのこと。HDL(ハードウェア記述言語)と呼ばれる言語でハードウェアロジックを記述することができる。<br />
+ハードウェアの高速性を持ちながら、柔軟にプログラマブルロジックを組むことができることが特徴。</p>
+<p>※Arduino IDEでプログラミングするものではなく、HDLコーディング、コンポーネント開発をするためのハードです。</p>
+<h2>Physicaloid <span class="caps">FPGA</span> Peridot（フィジカロイド <span class="caps">FPGA</span> ペリドット）</h2>
+<h5>特徴</h5>
+<h6>Arduino型FPGAボード</h6>
+<ul><li>Arduinoピン互換ボード<br />
+<li>そこそこ遊べるサイズのFPGA Altera Cyclone IV EP4CE6E22 (6,272 EL)を搭載<br />
+<li>64Mbit <span class="caps">SDRAM</span> 搭載<br />
+<li>Arduino用シールド使用OK（ただしIO電源3.3Vに限る、アナログ入力なし）<br />
+<li>USBケーブル1本で動作可</ul>
+<p><span class="caps">PERIDOT</span> の回路図、HDLコード等 <a href="https://github.com/osafune/peridot">https://github.com/osafune/peridot</a> <b>New!</b></p>
+<h6>Macでもいけるエントリ向け開発環境（予定）</h6>
+<p>MacだとQuartusIIインストールできないから開発できないんだよﾈｰをなくしたいので。。。<br />
+<ul><li>FPGA初心者用にコンパイル済データを提供。<br />
+　「とりあえず動かしてみる」ができるようMac,Linux,Win Chrome/AndroidからUSBケーブル1本でFPGAに即コンフィグレーション、即動作。<br />
+　元となっているHDLも公開<br />
+<li>もちろん通常のQuartusIIで開発、USB BlasterでコンフィグレーションもOK<br />
+<li>Webコンパイル環境構築予定（QuartusIIが使えないMac,Linuxでもコンパイル可）</p>
+</ul>
+<h6>Chromeブラウザ、Androidと連携（<del>動作テスト中</del>githubにてコード公開中）</h6>
+<p><a href="http://www.physicaloid.com/wp-content/uploads/2013/09/physicalod_ss21.png"><img src="http://www.physicaloid.com/wp-content/uploads/2013/09/physicalod_ss21.png" width=50%></a><br />
+FPGAの処理結果をPC/Android上で表示する仕組みを提供<br />
+<ul><li>Chrome, Androidのjs/Java開発ライブラリを提供、オープンソースで公開<br />
+<li>Chrome/Android ⇔ FPGA間データ通信のためのシンプルなAPIを提供<br />
+<li>Win, Mac, LinuxのChromeブラウザ、もしくはAndroidからコンフィグレーション</p>
+</ul>
+<p>Chrome js コード <a href="https://github.com/osafune/Physicaloid.js">https://github.com/osafune/Physicaloid.js</a> <b>New!</b><br />
+Android Java Library コード <a href="https://github.com/ksksue/PhysicaloidLibrary">https://github.com/ksksue/PhysicaloidLibrary</a> <b>New!</b></p>
+<h2>更新情報</h2>
+<p>- 2013/11/20<br />
+2次ロットの生産数を公開<br />
+<span class="caps">PERIDOT</span> の回路図、HDLコード等 <a href="https://github.com/osafune/peridot">https://github.com/osafune/peridot</a><br />
+Chrome からコンフィグレーション・通信するための js コード <a href="https://github.com/osafune/Physicaloid.js">https://github.com/osafune/Physicaloid.js</a><br />
+Android Java Library コード <a href="https://github.com/ksksue/PhysicaloidLibrary">https://github.com/ksksue/PhysicaloidLibrary</a></p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/43593" target="_blank">http://atnd.org/events/43593</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-06-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-06-01</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://www.physicaloid.com/" target="_blank">http://www.physicaloid.com/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>83941</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>す～。</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/ksksue" target="_blank">@ksksue</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>131</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-05-13</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

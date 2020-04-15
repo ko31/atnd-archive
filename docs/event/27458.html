@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">iOS 勉強会議 #4</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">iOS 勉強会議 #4</h2>
+
+            <div class="buttons">
+                <a href="../json/events/27458.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/27458.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>27458</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>iOS 勉強会議 #4</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p><span style="color:red;"><strong>※ 遅い時間に到着される場合は、建物の鍵が閉まっていますので、当日遅れて到着された場合は 080-1266-2159 まで連絡ください</strong></span><br />
+<span style="color:red;"><strong>※ 当日会場にネットがない可能性があるので、事前に資料をローカルにダウンロードするなどしておいてください。また、持ち運び出来るネット環境をお持ちの方は是非お持ちください。</strong></span></p>
+<h2>今回のテーマ</h2>
+<p><strong>iOS アプリの UI にもっとも使われる UITableView をマスターしよう！</strong></p>
+<h2>概要</h2>
+<p>誰でも参加可能な iOS 、 Objective-C 、 Xcode の読書会形式の勉強会です。</p>
+<p>参加条件は特にありません。ご自由にご参加ください！</p>
+<p>毎回、独立したテーマがあり、それを一からやりますので、初参加の方も安心です。</p>
+<p>あなたもこの機会に iPhone アプリを作れるようになってみませんか？</p>
+<h2>勉強会の内容</h2>
+<ul>
+	<li>各自が事前に宿題をやってくる</li>
+	<li>会場では宿題の内容を振り返り、議論したり疑問点を共有したりする</li>
+	<li>余った時間は、自由にコード書いたり質問したりする</li>
+</ul>
+<h2>勉強会の目的</h2>
+<p>一人で学べる箇所は各自事前に勉強し、一人ではなかなか解決できない箇所を効率的に学んでいくことを目的にしています。</p>
+<p>交流や学習自体が目的ではなく、勉強会を通して実践的なコードが書けるようになることが最大の目的です。</p>
+<h2>この勉強会で効率的に学ぶコツ</h2>
+<p>事前に、自分が<strong>何を理解したいのかを明確に</strong>してその部分を重点的に勉強してきて、この勉強会で議論をすることが効率的に上達するコツです。</p>
+<p>宿題の分量は多いし、内容もそれなりに難解だとは思いますので、自分の<strong>学びたいこと解決したい悩みの部分だけを重点的に</strong>勉強してきて、それを勉強会の中で解決するという方法も大歓迎です。</p>
+<h2>宿題</h2>
+<p>（すべて熟読してくる必要はありません。サッと目を通して、疑問点や注意点などを考えておきましょう）</p>
+<h3>メイン資料</h3>
+<ol>
+	<li><a href="https://developer.apple.com/jp/devcenter/ios/library/documentation/TableView_iPhone.pdf">iOS Table Viewプログラミングガイド</a>
+	<ul>
+		<li>参考読了時間 2 時間</li>
+		<li>UITableView や UITableViewCell の使い方、カスタマイズ方法が具体的な事例とともに紹介されている。</li>
+	</ul></li>
+	<li><a href="https://developer.apple.com/jp/devcenter/ios/library/documentation/TableView_iPhone.pdf">Core Data プログラミングガイド</a>
+	<ul>
+		<li>この資料は今回やるかやらないかは時間次第なので、時間が余ったら読んでくるくらいの感じで良いです。</li>
+		<li>参考読了時間 4 時間</li>
+	</ul></li>
+</ol>
+<h3>ソースコードリーディングの題材</h3>
+<ol>
+	<li><a href="https://github.com/search?utf8=%E2%9C%93&amp;q=iOS&amp;repo=&amp;langOverride=&amp;start_value=1&amp;type=Repositories&amp;language=Objective-C">GitHub などからオープンソースの教材になりそうなプロジェクトを探してくる</a>
+	<ul>
+		<li>次回以降に、ソースコードリーディングをやりたいので、その題材を探してきてください</li>
+	</ul></li>
+</ol>
+<h3>前提知識を付けるために読んでおくと良いかもしれない資料</h3>
+<ol>
+	<li><a href="https://developer.apple.com/jp/devcenter/ios/library/documentation/iPhone101.pdf">初めての iOSアプリケーション</a>
+	<ul>
+		<li>参考読了時間 2 時間</li>
+		<li>実際に手を動かして iOS アプリケーションを動かすことが出来ます</li>
+	</ul></li>
+	<li><a href="https://developer.apple.com/jp/devcenter/ios/library/documentation/SecondiOSAppTutorial.pdf">2つ目のiOSアプリケーション：ストーリーボード</a>
+	<ul>
+		<li>参考読了時間 4 時間</li>
+		<li>実際に手を動かして、ビューコントローラを複数使った iOS アプリケーションを動かすことが出来ます</li>
+	</ul></li>
+	<li><a href="https://developer.apple.com/jp/devcenter/ios/library/documentation/ViewControllerPGforiOS.pdf">iOS View Controllerプログラミングガイド</a>
+	<ul>
+		<li>参考読了時間 4 時間</li>
+		<li>ストーリーボードの役割、ビューコントローラのライフサイクルや、ビューコントローラの種類とその役割がよく分かる資料になっています</li>
+	</ul></li>
+</ol>
+<h2>スケジュール</h2>
+<table>
+	<tr>
+		<th>時間</th>
+		<th>タイトル</th>
+	</tr>
+	<tr>
+		<td>17:00 &#8211; 21:00</td>
+		<td>資料の読み合わせ＆議論</td>
+	</tr>
+	<tr>
+		<td>21:00 &#8211; 22:00</td>
+		<td>ロスタイム、自習＆ハック</td>
+	</tr>
+</table>
+<h2>注意</h2>
+<p>人が 1 人でも集まったら、開催します。</p>
+<p>途中参加、覗き見大歓迎</p>
+<h2>当日連絡先</h2>
+<p>080-1266-2159</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/27458" target="_blank">http://atnd.org/events/27458</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2012-04-08</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2012-04-08</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.facebook.com/groups/204509146321537/" target="_blank">https://www.facebook.com/groups/204509146321537/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都文京区本郷７丁目３−１</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>東京大学本郷キャンパス　工学部新2号館9階 技術経営戦略学専攻ラウンジ講義室 92C2</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.7127036</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7632773</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>42357</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>amachang!</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/amachang" target="_blank">@amachang</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2012-04-04</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

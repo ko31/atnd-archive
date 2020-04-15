@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">PHP5.4 Advent Calendar 2011</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">PHP5.4 Advent Calendar 2011</h2>
+
+            <div class="buttons">
+                <a href="../json/events/22473.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/22473.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>22473</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>PHP5.4 Advent Calendar 2011</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p>12/1から12/24まで、一日一人自分のブログにPHP5.4に関する記事を書いていくイベントです。以下仕様です。</p>
+<ul>
+	<li>参加者は、PHP5.4に関する記事をブログに書く</li>
+	<li>記事を書いたら、このページのコメント欄で書いた記事のURLを教えて下さい</li>
+</ul>
+<p>ブログに書く記事の内容は、PHP5.4に関係するものなら、深いものから、10分程度でかけるTipsまで全部オッケーです。書く内容に困ったら<a href="https://svn.php.net/repository/php/php-src/tags/php_5_4_0RC2/NEWS">PHP5.4 Rc2のNEWS</a>を参考にしましょう。</p>
+<p>Advent Calendarって何?どんなもの?っていうかたは以下URLを参考に指定ください。<br />
+<a href="http://gihyo.jp/news/info/2010/12/0102">http://gihyo.jp/news/info/2010/12/0102</a></p>
+<h2>当番</h2>
+<p>記事の内容が他人とかぶりたくない方は、コメント欄で記事の概要をあらかじめ宣言してもらえれば助かります。また、記事を書く方は執筆する前にコメント欄を確認していただければ助かります。</p>
+<table><tr><th>日付</th><th>名前</th><th>記事</th></tr>
+<tr><td>12/1</td><td><a href="http://twitter.com/anatoo">@anatoo</a></td><td><a href="http://d.hatena.ne.jp/anatoo/20111130/1322665209">PHP5.4のインタラクティブシェル: 細かな改善</a></td></tr>
+<tr><td>12/2</td><td><a href="http://twitter.com/yohgaki">@yohgaki</a></td><td><a href="http://blog.ohgaki.net/php-5-4-arrays"><span class="caps">PHP</span> 5.4から配列定義は超簡単に、そして落とし穴も</a></td></tr>
+<tr><td>12/3</td><td><a href="https://twitter.com/ooharabucyou">@ooharabucyou</a></td><td><a href="http://labs.bucyou.net/php54-2011-3/"><span class="caps">PHP</span> 5.4 Advent Calendar &#8211; 3日目</a></td></tr>
+<tr><td>12/4</td><td><a href="https://twitter.com/rsky">@rsky</a></td><td><a href="http://blog.r-sky.jp/post/13702883082/php-5-4-tips">PHP5.4 の配列Tips</a></td></tr>
+<tr><td>12/5</td><td><a href="https://twitter.com/chobi_e">@chobi_e</a></td><td><a href="http://chobie.hatenablog.com/entry/2011/12/05/000323">5.4のSession周りの変更について</a></td></tr>
+<tr><td>12/6</td><td><a href="https://twitter.com/madapaja">@madapaja</a></td><td><a href="http://blog.madapaja.net/2011/12/php54-bearsunday.html">PHP5.4+ で開発が行われている <span class="caps">BEAR</span>.Sunday フレームワークを動かしてみる</a></td></tr>
+<tr><td>12/7</td><td><a href="https://twitter.com/Hiraku">@Hiraku</a></td><td><a href="http://blog.tojiru.net/article/239067872.html">PHP5.4時代のprivateメソッドテスト手法</a></td></tr>
+<tr><td>12/8</td><td><a href="https://twitter.com/do_aki">@do_aki</a></td><td><a href="http://d.hatena.ne.jp/do_aki/20111208/1323315995">Advent Calrndar 8日目 Zend Multibyte</a></td></tr>
+<tr><td>12/9</td><td><a href="https://twitter.com/srea2431">@srea2431</a></td><td><a href="http://blog.tamazawa.net/2011/12/php54.html">php5.4で@(エラー制御演算子)はどう進化したのか？</a></td></tr>
+<tr><td>12/10</td><td><a href="https://twitter.com/soudai1025">@soudai1025</a></td><td><a href="http://soudai1025.blogspot.com/2011/12/php54htmlspecialchars.html">PHP5.4でのhtmlspecialcharsの仕様変更とセキュリティ</a></td></tr>
+<tr><td>12/11</td><td><a href="https://twitter.com/tpyamamoto">@tpyamamoto</a></td><td><a href="http://paul-yamamoto.tumblr.com/post/14059100842/trait">traitでデザインパターン再考</a></td></tr>
+<tr><td>12/12</td><td><a href="https://twitter.com/co3k">@co3k</a></td><td><a href="http://co3k.org/blog/21">DTrace で <span class="caps">PHP</span> スクリプトの動作を追跡する</a></td></tr>
+<tr><td>12/13</td><td><a href="https://twitter.com/anatoo">@anatoo</a></td><td><a href="http://d.hatena.ne.jp/anatoo/20111213/1323714933">PHP5.4の新機能の一つ: アップロード進捗の取得</a></td></tr>
+<tr><td>12/14</td><td><a href="https://twitter.com/tpyamamoto">@tpyamamoto</a></td><td><a href="http://paul-yamamoto.tumblr.com/post/14171117921/php5-4">PHP5.4でコンストラクタを呼ばずにインスタンスが作れる</a></td></tr>
+<tr><td>12/15</td><td><a href="https://twitter.com/
+srea2431">@srea2431</a></td><td><a href="http://blog.tamazawa.net/2011/12/php54breakcontinue.html">PHP5.4のbreak/continueについて</a></td></tr>
+<tr><td>12/16</td><td><a href="https://twitter.com/yohgaki">@yohgaki</a></td><td><a href="http://blog.ohgaki.net/php-5-4-accessor-php"><span class="caps">PHP</span> 5.4でのAccessorとPHP 5.5以降で検討されているAccessor</a></td></tr>
+<tr><td>12/17</td><td><a href="https://twitter.com/rsky">@rsky</a></td><td><a href="http://blog.r-sky.jp/post/14354423041/php-5-4-zend-api"><span class="caps">PHP</span> 5.4におけるZend APIの変更点</a></td></tr>
+<tr><td>12/18</td><td><a href="https://twitter.com/cocoitiban">@cocoitiban</a></td><td><a href="http://d.hatena.ne.jp/cocoiti/20111218">PHP5.4 Advent Calendar 2011 18日目</a></td></tr>
+<tr><td>12/19</td><td><a href="https://twitter.com/co3k">@co3k</a></td><td><a href="http://co3k.org/blog/23">次のプロジェクトで <span class="caps">PHP</span> 5.4 の採用を提案するための 3 つのポイント</a></td></tr>
+<tr><td>12/20</td><td><a href="https://twitter.com/yuya_takeyama">@yuya_takeyama</a></td><td><a href="http://blog.yuyat.jp/archives/1540">Travis CI で <span class="caps">PHP</span> 5.4 も CI する, PHPUnit も Behat もやる</a></td></tr>
+<tr><td>12/21</td><td><a href="http://twitter.com/kokkekun">@kokkekun</a></td><td><a href="http://k-holy.sakura.ne.jp/wordpress/2011/12/21/callable_typehint/">callableタイプヒントの追加と配列から文字列への暗黙の変換時の警告 (PHP5.4 Advent Calendar 2011 Day 21)</a></td></tr>
+<tr><td>12/22</td><td><a href="https://twitter.com/do_aki">@do_aki</a></td><td><a href="http://d.hatena.ne.jp/do_aki/20111222/1324523998">Advent Calendar 22日目 scanner.l と parser.y の差分を解説してみる</a></td></tr>
+<tr><td>12/23</td><td><a href="https://twitter.com/Hiraku">@Hiraku</a></td><td><a href="http://blog.tojiru.net/article/242054875.html">trait時代のライブラリ設計を予想してみる #php5_4</a></td></tr>
+<tr><td>12/24</td><td><a href="https://twitter.com/anatoo">@anatoo</a></td><td><a href="http://d.hatena.ne.jp/anatoo/20111224/1324724885">PHP5.4はどのようなバージョンなのか : PHP5.4 Advent Calendar 24日目最後</a></td></tr>
+</table></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/22473" target="_blank">http://atnd.org/events/22473</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2011-12-01</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2011-12-25</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://php.net" target="_blank">http://php.net</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>59471</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>anatoo_jp</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/anatoo" target="_blank">@anatoo</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2011-12-24</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

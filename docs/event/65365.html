@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">WordPress講座シリーズ ～WordPressのオリジナルテーマをFoundationPressで作成しよう！（導入・環境整備編）～</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">WordPress講座シリーズ ～WordPressのオリジナルテーマをFoundationPressで作成しよう！（導入・環境整備編）～</h2>
+
+            <div class="buttons">
+                <a href="../json/events/65365.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/65365.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>65365</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>WordPress講座シリーズ ～WordPressのオリジナルテーマをFoundationPressで作成しよう！（導入・環境整備編）～</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><p><strong><span style="font-size:22px">WordPress講座シリーズ</span><br />
+～WordPressのオリジナルテーマをFoundationPressで作成しよう！（導入・環境整備編）～</strong><br />
+&nbsp;</p>
+<hr />
+<p>&nbsp; &nbsp; &nbsp;&nbsp;<br />
+WordPressでオリジナルサイトを作る場合、みなさんはどのような方法で作られてますか？</p>
+<p>ゼロからゴリゴリ書いていくのは大変だし、かといって既存のテーマをカスタマイズしていくのも、テーマ毎にクセがあったりして、意外と面倒だったりします。</p>
+<p>そこでオススメしたいのが、FoundationPressによるオリジナルテーマ作成です！FoundationPressとは、CSSフレームワークであるFoundation5を組み込んだWP用テーマです。</p>
+<p>CSSフレームワークとして有名なのはBootStrapですが、海外ではFoundation5も負けず劣らずの人気があります。特にシンプルでクセのないデザインが、スターターキット向きで好まれています。</p>
+<p>BootStrapをWPのテーマに読み込んで使っている方も多いと思いますが、FoundationPressはFoundation5を組み込んだWPテーマですので、PHPファイルも全部含まれています。</p>
+<p>テーマをセットすれば、後はBootStrapと同じように、HTMLタグに特定のclassを指定してカスタマイズしていきます。<br />
+もちろんレスポンシブ対応で、BootStrapにないモジュールやコンポーネントの他、アイコンフォントの代表格FontAwesomeなどもセットされており、イマドキのWeb制作に欠かせないアイテム類が手軽に利用できます。<br />
+慣れるとテーマ制作がサクサク進み、グッと効率化されること請け合いです！<br />
+私も最近の制作はほとんどFoundationPressばかりです(笑)</p>
+<p>このようにとても便利なFoundationPressですが、導入の敷居がちょっと高いのが難点です。zipファイルを解凍するだけでは必要なコンポーネントが揃いません。</p>
+<p>快適にFoundationPressを使うなら、git、Node.js、Grunt、Bowerなどが必要となります。</p>
+<p>いわゆる「黒い画面」ですが、しかしここで諦めてしまうのはもったいなさすぎ！ 一度「黒い画面」を通り抜けてしまえば、sassをcssに自動コンパイルしてブラウザも自動リロード、といった快適な制作環境が手に入ります！</p>
+<p>ということで今回は「FoundationPress導入・環境整備編」と称して、ハンズオン形式でみなさんにgit、Node.js、Gruntなどをインストールしていただいて環境を整え、最初の障害を乗り越えていただきます。</p>
+<p>そしてさらにローカルPCにインストールしたWPにFoundationPressをセットして、FoundationPressでどんな風にオリジナルテーマを作成していくかの概略を解説・ご紹介していきます。<br />
+一度環境を整えれば、その後は驚くほどカンタンです。ぜひこの機に「黒い画面」のハードルを越えて、FoundationPressによる快適な制作環境を手にしてください<br />
+&nbsp;</p>
+<hr />
+<p><strong>【主催】</strong>株式会社クリーク・アンド・リバー社　プロフェッショナルエデュケーションセンター</p>
+<p><strong>【講師】</strong>田中俊行 ( Office T2 代表 )</p>
+<p><strong>【日時】</strong>2015年5月28日（木） 19：00～21：00（全1日・2H）</p>
+<p><strong>【場所】</strong>C&amp;R社 3号館4F トレーニングルーム<br />
+　　　　東京都千代田区麹町3-6 住友不動産麹町ビル3号館<br />
+　　　　<a href="https://www.c-place.ne.jp/0020Access/" target="_blank"><strong>https://www.c-place.ne.jp/0020Access/</strong></a><br />
+　　　　<strong>オレンジ色の<span style="font-size:20px"><span style="color:#FF8C00">●</span></span></strong>のがトレーニングルームです！</p>
+<p><strong>【参加料】</strong>4,000円（税込）</p>
+<p><strong>【対象】</strong><br />
+・WordPressでオリジナルサイトを効率的に制作したい方<br />
+・WPにCSSフレームワークを導入してみたい方<br />
+・BootStrapじゃないフレームワークを使ってみたい方<br />
+・「黒い画面」にためらい、抵抗感のある方<br />
+・SASS、gruntなどを導入してみたい方</p>
+<p><strong>【定員】</strong>10名 ※定員になり次第キャンセル待ちとさせていただきます。</p>
+<p><strong>【講師プロフィール】</strong> &nbsp;&nbsp; &nbsp;<br />
+<strong>◆田中俊行（たなか・としゆき）</strong><br />
+Office T2 代表<br />
+フリーのWeb制作者・ライター。<br />
+広告代理店のWebディレクターや私立大学のサイト保守・運営などを経てフリーに。サイト制作と平行して、Movable Typeに特化したオンラインWebスクールの主催や、ブログ、SEOなどの講師等も歴任。近年は専らWordPressベースのサイトを多く手がける。 またビジネス系のWebライターとしても活動。</p>
+<p><strong>【ひとこと】 &nbsp;&nbsp;</strong> &nbsp;<br />
+WPによるサイト構築の手段として、FoundationPressの利用は絶対に知っておいて損のない選択肢だと自信を持ってオススメします。とはいえ、使うには「黒い画面」が必要と聞くと、尻込みしてしまう方も少なくないかもしれません。</p>
+<p>今回は特にそんな方に向けて、「黒い画面」をハンズオンで一緒に学ぶことで、とっとと乗り越えてFoundationPressへの道を切り開きましょう！ という内容にしました。たとえFoundaitonPressを使わなくとも、「黒い画面」はもう昨今のWeb制作では欠かせなくなってきていますので、ぜひこの機会に最新のWeb制作環境への「とっかかり」をつかんでください！</p>
+<p><br />
+<strong>【注意事項】 &nbsp;&nbsp;</strong> &nbsp;<br />
+※開催1週間前に最低開催人数に達しない場合は、延期または中止とさせていただくことがございます。予めご了承下さい。</p>
+<p><strong>【カリキュラム】</strong> &nbsp;&nbsp; &nbsp;<br />
+・ハンズオンでgit, Node.js, Bowerをインストール<br />
+・FoundationPressをインストールし、ローカルのWPにセット<br />
+・講師によるFoundationPressカスタマイズの概要説明（一部ハンズオンでカスタマイズも体験していただきます）<br />
+・質疑応答</p>
+<p><strong>【実習環境】</strong> &nbsp;&nbsp; &nbsp;<br />
+●<strong>ご自身のパソコン(Win/Mac)を持ち込んでの参加</strong>をお勧めします。<br />
+●持参できない方は、教室のWindowsノートパソコンもご利用いただけますが、一部実習が体験できない内容もありえますのでご了承下さい。<br />
+●<span style="color:#FF0000"><strong>PCをお持ち込みの場合は、ローカルにXAMPPとWordPressをインストールして持参</strong></span>ください。<br />
+<span style="color:#FF0000">※インストールには時間がかかりますので、当日までに必ずご自身にてインストール願います。</span></p>
+<p><strong><span class="caps">XAMPP</span></strong><br />
+<a href="https://www.apachefriends.org/jp/index.html" target="_blank">https://www.apachefriends.org/jp/index.html</a></p>
+<p><strong>WP</strong><br />
+<a href="https://ja.wordpress.org/about-wp-ja/" target="_blank">https://ja.wordpress.org/about-wp-ja/</a></p>
+<p>（WordPress講座シリーズ～WordPress インストールとメンテナンス～にご参加いただくと、XAMPPとWPのローカルへのインストールをハンズオンで学習することができます。</p>
+<p><strong>インストールがまだの方、インストールに不安がある方は、是非こちらの講座もご受講ください。講座詳細はこちら&rarr;　<a href="http://bit.ly/1bpzfPB" target="_blank">http://bit.ly/1bpzfPB</a>）<br />
+※今回のツール類とFoudationPressのインストールのために、約400MBの空き容量が必要です。</strong></p>
+<p>・ブラウザはWindows, Mac共にGoogle Chromeを推奨します。PC持参の方は拡張機能のLiveReloadもインストールされることをお勧めします。<br />
+<a href="http://bit.ly/1Ga8E3k" target="_blank">http://bit.ly/1Ga8E3k</a></p>
+<p>&nbsp;</p>
+<p><br />
+詳細 <a href="http://bit.ly/1O9JetQ" target="_blank">http://bit.ly/1O9JetQ</a><br />
+申込 <a href="http://bit.ly/1enyUbn" target="_blank">http://bit.ly/1enyUbn</a></p>
+<hr />
+<p>◆本件に関するお問い合わせ先◆<br />
+株式会社クリーク・アンド・リバー社<br />
+プロフェッショナルエデュケーションセンター<br />
+植原（うえはら）さゆり<br />
+Tel:03-4550-0063 E-mail:info@c-place.ne.jp&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/65365" target="_blank">http://atnd.org/events/65365</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2015-05-28</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2015-05-28</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="https://www.c-place.ne.jp/0020Access/" target="_blank">https://www.c-place.ne.jp/0020Access/</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都千代田区麹町3-6　住友不動産麹町ビル3号館</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>Ｃ&amp;Ｒ社　3号館4Ｆセミナールーム</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6846395</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.7384984</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>182578</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>株式会社クリーク・アンド・リバー社　プロフェッショナルエデュケーションセンター</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/pecpecko" target="_blank">@pecpecko</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2015-04-21</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

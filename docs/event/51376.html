@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATND Archive</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <h1 class="title">
+                <a class="navbar-item title" href="/">
+                    ATND Archive
+                </a>
+            </h1>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="/">TOP</a></li>
+                <li class="is-active">技評×オングス　FreeBSDをインストールする</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h2 class="title">技評×オングス　FreeBSDをインストールする</h2>
+
+            <div class="buttons">
+                <a href="../json/events/51376.json" download="event.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>イベント</span>
+                </a>
+                <a href="../json/users/51376.json" download="user.json" class="button is-small is-info">
+                    <span class="icon is-small"><i class="fas fa-file-download"></i></span>
+                    <span>ユーザー</span>
+                </a>
+            </div>
+
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <tbody>
+                <tr>
+                    <th>event_id</th>
+                    <td>51376</td>
+                </tr>
+                <tr>
+                    <th>title</th>
+                    <td>技評×オングス　FreeBSDをインストールする</td>
+                </tr>
+                <tr>
+                    <th>catch</th>
+                    <td>〜インストーラを使ってインストールする方法、インストールを使わないでインストールする方法〜</td>
+                </tr>
+                <tr>
+                    <th>description</th>
+                    <td><h1>技評×オングス　FreeBSDをインストールする方法</h1>
+<h2>〜インストーラを使ってインストールする方法、インストーラを使わないでインストールする方法〜</h2>
+<dl>
+ <dt>講師</dt>
+ <dd>後藤大地</dd>
+ <dt>経歴</dt>
+ <dd>オングス代表取締役 / BSDコンサルティング株式会社取締役</dd>
+</dl>
+<p>FreeBSDをインストールしたことがない、またはLinuxを使っているもののFreeBSDも使ってみたい、という方向けにFreeBSDをインストーラを使ってインストールする方法を紹介します。パーティションの考え方、ファイルシステムの選択の指針、インストール後に最初に設定すべき内容なども紹介します。</p>
+<p>インストールという作業はパーティショニング、ファイルシステムフォーマット、成果物の展開、ユーザとグループの作成、各種設定などの作業をコマンドを叩いて実行するのと同じでもあります。インストーラを使ったインストール作業を紹介したあとは、同じ内容をコマンドを実行して行う方法を紹介します。</p>
+<p>数台ほどであれば手動インストールでもよいのですが、数十台や数百台といったホストにFreeBSDをインストールする場合には、ネットワークインストールを実行するか、インストーラを開発して自動インストールが行われるようにします。こうしたインストーラはコマンドを使うだけで実現できます。本講演ではこうしたテクニックについても紹介します。</p>
+<hr />
+<dl>
+ <dt>開催日時</dt>
+ <dd>2014年6月23日（月）19:00～21:00 (18:30開場)</dd>
+ <dt>場所</dt>
+ <dd>技術評論社 本社5F会議室 （東京都新宿区市谷左内町21-13）</dd>
+ <dt>参加費</dt>
+ <dd>2,000円（領収書発行あり）</dd>
+</dl>
+<hr />
+<dl>
+ <dt>協力</dt>
+ <dd>株式会社技術評論社<br />
+有限会社オングス<br />
+BSDコンサルティング株式会社</dd>
+</dl>
+<hr />
+<dl>
+ <dt>実行委員</dt>
+<p>後藤大地（BSDコンサルティング株式会社 取締役／有限会社オングス代表取締役／FreeBSD committer）<br />
+馮富久（技術評論社 クロスメディア事業部）<br />
+佐々木宣文（有限会社オングス メディア担当）</dd></p>
+</dl>
+<hr />
+<dl>
+ <dt>参考資料</dt>
+ <dd></dd>
+</dl>
+<ul>
+  <li>安定サーバを作ろう！～FreeBSD 9.2-RELEASEでサーバ構築 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6164-8">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00GIF7SOW/gihyojp-22">Kindle</a></li>
+  <li>開発環境としてのFreeBSD～FreeBSD 9.2-RELEASEでデスクトップ環境を構築 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6165-5">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00GN5OCLE/gihyojp-22">Kindle</a></li>
+  <li>安全・堅牢なFreeBSDシステムづくり～セキュリティパッチ適用虎の巻 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6166-2">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00GSMONLQ/gihyojp-22">Kindle</a></li>
+  <li>最新アプリケーションを追いかけて～FreeBSD上でのアプリアップデートのコツ <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6167-9">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00GXYDR5W/gihyojp-22">Kindle</a></li>
+</ul>
+<ul>
+  <li>今知るべき，AWSとFreeBSDと仮想化技術 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6071-9">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00FQXUR2M/gihyojp-22">Kindle</a></li>
+  <li>クラウド徹底活用！FreeBSD on Amazon EC2 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6072-6">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00FYLBTEQ/gihyojp-22">Kindle</a></li>
+  <li>ハイパワーFreeBSDシステムをクラウドで構築～課金上手になろう <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6073-3">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00G44GRH6/gihyojp-22">Kindle</a></li>
+  <li>AWSで活用できるカスタムFreeBSDの作り方 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6074-0">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00GAZK47S/gihyojp-22">Kindle</a></li>
+</ul>
+<ul>
+  <li>ゼロからはじめるカーネルモジュール開発 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6014-6">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00EYZU0NO/gihyojp-22">amazon.co.jp</a></li>
+  <li>カーネルモジュールを理解する～/dev/nullを読み解く <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6015-3">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00F418QYC/gihyojp-22">amazon</a></li>
+   <li>実践！カーネルモジュール開発～世界時計をデバイスファイルで実装する <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6016-0">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00FAHBJL2/gihyojp-22">amazon</a></li>
+   <li>実践！カーネルモジュール開発～システム情報を表示する <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-6017-7">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00FF51X38/gihyojp-22">amazon</a></li>
+</ul>
+<ul>
+  <li>管理ネットワークの構築と運用 <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-5960-7">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00EE4DW30/gihyojp-22">amazon</a></li>
+  <li>time(1)でソフトウェアの中身を調べる <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-5961-4">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00EE4MEL6/gihyojp-22">amazon</a></li>
+  <li>実行中のプロセスの情報を知る <a href="https://gihyo.jp/dp/ebook/2013/978
+-4-7741-5962-1">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00EE4MG96/gihyojp-22">amazon</a></li>
+  <li>top(1)で実行中のシステムの情報を知る <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-5963-8">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00EE59B0W/gihyojp-22">amazon</a></li>
+  <li>iostat(8)でディスク性能とシステム負荷を調べる <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-5964-5">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00EODV0TY/gihyojp-22">amazon</a></li>
+  <li>チャーリー・ルートからのメール <a href="https://gihyo.jp/dp/ebook/2013/978-4-7741-5965-2">技評</a> / <a href="http://www.amazon.co.jp/o/ASIN/B00ET0AET4/gihyojp-22">amazon</a></li>
+</ul></td>
+                </tr>
+                <tr>
+                    <th>event_url</th>
+                    <td><a href="http://atnd.org/events/51376" target="_blank">http://atnd.org/events/51376</a></td>
+                </tr>
+                <tr>
+                    <th>started_at</th>
+                    <td>2014-06-23</td>
+                </tr>
+                <tr>
+                    <th>ended_at</th>
+                    <td>2014-06-23</td>
+                </tr>
+                <tr>
+                    <th>url</th>
+                    <td><a href="http://gihyo.jp/admin/clip/01/fdt" target="_blank">http://gihyo.jp/admin/clip/01/fdt</a></td>
+                </tr>
+                <tr>
+                    <th>limit</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th>address</th>
+                    <td>東京都新宿区市谷左内町21-13</td>
+                </tr>
+                <tr>
+                    <th>place</th>
+                    <td>技術評論社 本社5F会議室</td>
+                </tr>
+                <tr>
+                    <th>lat</th>
+                    <td>35.6934328</td>
+                </tr>
+                <tr>
+                    <th>lon</th>
+                    <td>139.735577</td>
+                </tr>
+                <tr>
+                    <th>owner_id</th>
+                    <td>124570</td>
+                </tr>
+                <tr>
+                    <th>owner_nickname</th>
+                    <td>daichigoto</td>
+                </tr>
+                <tr>
+                    <th>owner_twitter_id</th>
+                    <td>
+                    
+                    <a href="https://twitter.com/daichigoto" target="_blank">@daichigoto</a>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <th>accepted</th>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>waiting</th>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>updated_at</th>
+                    <td>2014-06-02</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/ko31/atnd-archive" target="_blank">ATND Archive</a> by <a
+                    href="https://twitter.com/ko31">@ko31</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
